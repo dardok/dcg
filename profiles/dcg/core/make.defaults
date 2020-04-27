@@ -1,0 +1,21 @@
+ALSA_CARDS="-* hda-intel usb-audio"
+
+OFED_DRIVERS="mthca mlx4 mlx5 ipath rxe"
+
+USE="-cups dbus session"
+
+USE="${USE} pam ssl tls openssl ssh sasl crypt cracklib sudo"
+USE="${USE} kerberos gss gssapi keyring smartcard pkcs11"
+USE="${USE} snmp ldap curl lm_sensors"
+
+USE="${USE} aio xattr inotify"
+USE="${USE} readline ncurses -slang"
+USE="${USE} nls icu unicode unicode3 iconv"
+USE="${USE} numa sockets"
+
+USE="${USE} cxx nptl gmp openmp libffi lua luajit xml"
+USE="${USE} bzip2 zlib lzma lz4 lzo minizip"
+
+USE="${USE} vim vim-syntax bash-completion"
+
+USE="${USE} infiniband rdma"

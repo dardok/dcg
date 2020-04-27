@@ -1,0 +1,9 @@
+app-editors/vim python
+
+dev-lang/python sqlite threads
+
+sys-apps/systemd nat idn libidn2 gcrypt importd python http curl lzma qrcode elfutils
+
+sys-libs/timezone-data leaps_timezone
+
+sys-process/audit python
