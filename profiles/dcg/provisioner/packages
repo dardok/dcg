@@ -1,0 +1,6 @@
+*dev-db/postgresql
+*net-dns/bind
+*net-ftp/atftp
+*net-misc/dhcp
+*net-nds/openldap
+*www-servers/apache

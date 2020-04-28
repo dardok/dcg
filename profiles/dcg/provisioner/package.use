@@ -1,0 +1,6 @@
+dev-db/postgresql server
+net-dns/bind dlz postgres
+net-ftp/atftp pcre
+net-misc/dhcp ldap
+net-nds/openldap experimental odbc
+www-servers/apache ssl
