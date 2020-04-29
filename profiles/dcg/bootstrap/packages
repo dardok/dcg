@@ -1,5 +1,7 @@
 *app-admin/ansible
 
+*net-fs/nfs-utils
+
 *net-misc/curl
 
 *sys-apps/dmidecode
