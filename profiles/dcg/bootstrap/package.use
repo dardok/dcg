@@ -1,5 +1,7 @@
 dev-python/netaddr -cli
 
+net-nds/rpcbind warmstarts
+
 sys-firmware/ipxe -binary undi
 
 sys-fs/btrfs-progs python
