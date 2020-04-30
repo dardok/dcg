@@ -2,6 +2,7 @@ app-admin/logrotate -cron
 app-admin/ulogd pcap nfacct
 app-admin/sudo sssd
 
+app-arch/libarchive -lz4 # circular
 app-arch/unzip natspec
 app-arch/xz-utils static-libs
 
