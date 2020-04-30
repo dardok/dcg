@@ -17,6 +17,7 @@
 *app-vim/pathogen
 *app-vim/vim-tmux
 
+*dev-libs/libbpf
 *dev-libs/nss
 
 *dev-python/dbus-python

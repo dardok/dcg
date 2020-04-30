@@ -13,10 +13,9 @@ net-fs/openafs
 
 net-misc/linuxptp
 
-sys-auth/nss_afspag
 sys-auth/pam-afs-session
 
-sys-fabric/rdma-core
+sys-cluster/rdma-core
 
 sys-fs/bcache-tools
 
