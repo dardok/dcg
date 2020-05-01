@@ -58,9 +58,11 @@ sys-auth/sssd -acl augeas autofs netlink
 #>=sys-devel/clang-9 python_single_target_python3_6
 #sys-devel/llvm python clang gold
 
-sys-firmware/intel-microcode initramfs
+sys-firmware/intel-microcode initramfs hostonly
 
 sys-fs/zfs -rootfs
+
+sys-kernel/linux-firmware initramfs
 
 sys-libs/glibc nscd # required by sssd
 sys-libs/ldb python_single_target_python3_6
