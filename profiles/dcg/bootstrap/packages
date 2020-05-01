@@ -8,6 +8,7 @@
 *sys-apps/ethtool
 *sys-apps/ipmitool
 *sys-apps/kexec-tools
+*sys-apps/nvme-cli
 *sys-apps/pciutils
 
 *sys-block/parted
