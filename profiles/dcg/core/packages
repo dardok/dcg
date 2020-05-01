@@ -50,6 +50,7 @@
 *net-misc/quagga
 *net-misc/socat
 
+*sys-apps/haveged
 *sys-apps/irqbalance
 *sys-apps/keyutils
 *sys-apps/lm-sensors
