@@ -9,4 +9,4 @@ sys-fs/lvm2 thin -device-mapper-only
 
 sys-kernel/gentoo-sources experimental
 
-sys-libs/libblockdev python_single_target_python3_6 bcache dmraid
+sys-libs/libblockdev bcache dmraid

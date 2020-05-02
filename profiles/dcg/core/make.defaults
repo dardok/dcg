@@ -2,7 +2,7 @@ ALSA_CARDS="-* hda-intel usb-audio"
 
 OFED_DRIVERS="mthca mlx4 mlx5 ipath rxe"
 
-USE="-cups dbus session"
+USE="-cups dbus python session"
 
 USE="${USE} pam ssl tls openssl ssh sasl crypt cracklib sudo"
 USE="${USE} kerberos gss gssapi keyring smartcard pkcs11"
