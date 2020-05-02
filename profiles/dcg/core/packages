@@ -20,9 +20,7 @@
 *dev-libs/libbpf
 *dev-libs/nss
 
-*dev-python/dbus-python
-*dev-python/jsonrpclib
-*dev-python/numpy
+*dev-python/pip
 *dev-python/virtualenv
 
 *dev-util/cmake

@@ -6,8 +6,8 @@ LINGUAS="-* en"
 
 FEATURES="buildpkg"
 
-USE="systemd udev audit introspection policykit"
+USE="systemd udev audit policykit"
 USE="${USE} -bindist -consolekit -elogind -networkmanager -tcpd -xinetd"
 
 PYTHON_SINGLE_TARGET="-* python3_6"
-PYTHON_TARGETS="-* python2_7 python3_6"
+PYTHON_TARGETS="-* python3_6"

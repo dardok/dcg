@@ -1,4 +1,4 @@
 GRUB_PLATFORMS="-* efi-32 efi-64 pc qemu"
 
-USE="acpi caps efi expat pcre pcre16 -debug -doc -examples"
+USE="acpi caps efi expat introspection pcre pcre16 -debug -doc -examples"
 USE="${USE} btrfs nfs nfsv4 nfsv41 xfs fuse device-mapper"
