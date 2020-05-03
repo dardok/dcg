@@ -30,8 +30,6 @@
 *dev-util/strace
 *dev-util/systemtap
 
-*dev-vcs/subversion
-
 *mail-mta/nullmailer
 
 *net-firewall/conntrack-tools
