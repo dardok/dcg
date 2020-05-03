@@ -1,7 +1,6 @@
 app-editors/vim python
 
 dev-lang/python sqlite threads
-dev-lang/python-exec -python_targets_python2_7 -python_targets_python3_6 -python_targets_python3_8
 
 sys-apps/systemd nat idn libidn2 gcrypt importd python http curl lzma qrcode elfutils
 
