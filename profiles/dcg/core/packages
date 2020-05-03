@@ -52,6 +52,7 @@
 *sys-apps/lm-sensors
 *sys-apps/lsb-release
 *sys-apps/sg3_utils
+*sys-apps/smartmontools
 *sys-apps/usbutils
 
 *sys-auth/pam-afs-session
