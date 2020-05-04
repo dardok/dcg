@@ -1,5 +1,4 @@
 app-admin/logrotate -cron
-app-admin/ulogd pcap nfacct
 app-admin/sudo sssd
 
 app-arch/libarchive -lz4 # circular
@@ -26,10 +25,6 @@ dev-libs/nss utils
 
 dev-util/perf -python systemtap unwind
 
-dev-vcs/subversion -python
-
-media-libs/freetype auto-hinter
-
 net-analyzer/net-snmp pci -python
 
 net-firewall/ipset -modules
@@ -39,8 +34,6 @@ net-fs/nfs-utils nfsdcld
 net-libs/nghttp2 hpack-tools
 
 net-misc/curl http2
-net-misc/openvswitch -modules
-net-misc/ptpd ntp experimental
 net-misc/quagga multipath tcp-zebra
 
 net-nds/rpcbind warmstarts
@@ -51,8 +44,6 @@ sys-apps/iproute2 elf
 
 sys-auth/sssd -acl augeas autofs netlink
 
-#sys-devel/llvm python clang gold
-
 sys-firmware/intel-microcode initramfs hostonly
 
 sys-fs/zfs -rootfs
@@ -60,6 +51,3 @@ sys-fs/zfs -rootfs
 sys-kernel/linux-firmware initramfs
 
 sys-libs/glibc nscd # required by sssd
-
-x11-libs/cairo X # required for x11-libs/gtk+
-x11-libs/pixman static-libs

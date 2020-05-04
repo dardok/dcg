@@ -8,6 +8,7 @@
 *sys-apps/ethtool
 *sys-apps/ipmitool
 *sys-apps/kexec-tools
+*sys-apps/mlxup-bin
 *sys-apps/nvme-cli
 *sys-apps/pciutils
 

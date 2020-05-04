@@ -1,7 +1,3 @@
-app-crypt/coolkey
-app-crypt/pkcs11-data
-app-crypt/pkcs11-dump
-
 app-misc/tmate
 
 dev-libs/libbpf
