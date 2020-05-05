@@ -4,6 +4,8 @@
 
 *app-crypt/mit-krb5
 
+*app-metrics/node_exporter
+
 *app-misc/screen
 *app-misc/tmate
 *app-misc/tmux
