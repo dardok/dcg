@@ -23,11 +23,15 @@ dev-libs/libpcre static-libs
 dev-libs/libxslt -python
 dev-libs/nss utils
 
+dev-python/pygobject -cairo
+
 dev-util/perf -python systemtap unwind
 
 net-analyzer/net-snmp pci -python
 
+net-firewall/firewalld iptables nftables
 net-firewall/ipset -modules
+net-firewall/nftables xtables
 
 net-fs/nfs-utils nfsdcld
 

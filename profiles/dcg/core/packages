@@ -38,6 +38,7 @@
 *net-firewall/ebtables
 *net-firewall/firewalld
 *net-firewall/ipset
+*net-firewall/nftables
 
 *net-fs/nfs4-acl-tools
 *net-fs/nfs-utils
