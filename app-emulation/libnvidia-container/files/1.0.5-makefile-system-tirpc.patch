@@ -1,5 +1,5 @@
 diff --git a/Makefile b/Makefile
-index d6fd53e..c0923c9 100644
+index d6fd53e..21addfa 100644
 --- a/Makefile
 +++ b/Makefile
 @@ -128,9 +128,9 @@ else
@@ -15,6 +15,15 @@ index d6fd53e..c0923c9 100644
  endif
  ifeq ($(WITH_SECCOMP), yes)
  LIB_CPPFLAGS       += -DWITH_SECCOMP $(shell pkg-config --cflags libseccomp)
+@@ -144,7 +144,7 @@ LIB_LDLIBS_SHARED  += $(LDLIBS)
+ LIB_LDLIBS         = $(LIB_LDLIBS_STATIC) $(LIB_LDLIBS_SHARED)
+ 
+ # Binary flags (recursively expanded to handle target-specific flags)
+-BIN_CPPFLAGS       = -include $(BUILD_DEFS) $(CPPFLAGS)
++BIN_CPPFLAGS       = -include $(BUILD_DEFS) $(CPPFLAGS) -I/usr/include/tirpc
+ BIN_CFLAGS         = -I$(SRCS_DIR) -fPIE -flto $(CFLAGS)
+ BIN_LDFLAGS        = -L. -pie $(LDFLAGS) -Wl,-rpath='$$ORIGIN/../$$LIB'
+ BIN_LDLIBS         = -l:$(LIB_SHARED) -lcap $(LDLIBS)
 @@ -222,9 +222,6 @@ deps: $(LIB_RPC_SRCS) $(BUILD_DEFS)
  ifeq ($(WITH_LIBELF), no)
  	$(MAKE) -f $(MAKE_DIR)/elftoolchain.mk install
