@@ -1,0 +1,58 @@
+diff -u -r -N a/Makefile b/Makefile
+--- a/Makefile	2018-05-09 15:19:59.135342127 -0400
++++ b/Makefile	2018-05-09 15:20:54.392850405 -0400
+@@ -120,13 +120,15 @@
+ LIB_CPPFLAGS       = -DNV_LINUX -isystem $(CUDA_DIR)/include -isystem $(DEPS_DIR)$(includedir) -include $(BUILD_DEFS)
+ LIB_CFLAGS         = -fPIC
+ LIB_LDFLAGS        = -L$(DEPS_DIR)$(libdir) -shared -Wl,-soname=$(LIB_SONAME)
+-LIB_LDLIBS_STATIC  = -l:libnvidia-modprobe-utils.a
++LIB_LDLIBS_UTILS   = -l:libnvidia-modprobe-utils.a
++LIB_LDLIBS_STATIC  =
+ LIB_LDLIBS_SHARED  = -ldl -lcap
+ ifeq ($(WITH_LIBELF), yes)
+ LIB_CPPFLAGS       += -DWITH_LIBELF
+ LIB_LDLIBS_SHARED  += -lelf
+ else
+ LIB_LDLIBS_STATIC  += -l:libelf.a
++LIB_LDLIBS_SHARED  += -l:libelf.a
+ endif
+ ifeq ($(WITH_TIRPC), yes)
+ LIB_CPPFLAGS       += -isystem $(DEPS_DIR)$(includedir)/tirpc -DWITH_TIRPC
+@@ -183,21 +185,18 @@
+ 
+ $(LIB_SHARED): $(LIB_OBJS)
+ 	$(MKDIR) -p $(DEBUG_DIR)
+-	$(CC) $(LIB_CFLAGS) $(LIB_CPPFLAGS) $(LIB_LDFLAGS) $(OUTPUT_OPTION) $^ $(LIB_SCRIPT) $(LIB_LDLIBS)
++	$(CC) $(LIB_CFLAGS) $(LIB_CPPFLAGS) $(LIB_LDFLAGS) $(OUTPUT_OPTION) $^ $(LIB_SCRIPT) $(LIB_LDLIBS_UTILS) $(LIB_LDLIBS_SHARED)
+ 	$(OBJCPY) --only-keep-debug $@ $(LIB_SONAME)
+ 	$(OBJCPY) --add-gnu-debuglink=$(LIB_SONAME) $@
+ 	$(MV) $(LIB_SONAME) $(DEBUG_DIR)
+-	$(STRIP) --strip-unneeded -R .comment $@
+ 
+ $(LIB_STATIC_OBJ): $(LIB_OBJS)
+ 	# FIXME Handle user-defined LDFLAGS and LDLIBS
+-	$(LD) -d -r --exclude-libs ALL -L$(DEPS_DIR)$(libdir) $(OUTPUT_OPTION) $^ $(LIB_LDLIBS_STATIC)
++	$(LD) -d -r --exclude-libs ALL -L$(DEPS_DIR)$(libdir) $(OUTPUT_OPTION) $^ $(LIB_LDLIBS_UTILS) $(LIB_LDLIBS_STATIC)
+ 	$(OBJCPY) --localize-hidden $@
+-	$(STRIP) --strip-unneeded -R .comment $@
+ 
+ $(BIN_NAME): $(BIN_OBJS)
+ 	$(CC) $(BIN_CFLAGS) $(BIN_CPPFLAGS) $(BIN_LDFLAGS) $(OUTPUT_OPTION) $^ $(BIN_SCRIPT) $(BIN_LDLIBS)
+-	$(STRIP) --strip-unneeded -R .comment $@
+ 
+ ##### Public rules #####
+ 
+diff -u -r -N a/mk/libtirpc.mk b/mk/libtirpc.mk
+--- a/mk/libtirpc.mk	2018-04-26 18:41:12.000000000 -0400
++++ b/mk/libtirpc.mk	2018-05-09 15:25:09.827241129 -0400
+@@ -39,8 +39,8 @@
+ 
+ unexport DESTDIR
+ install: all
+-	$(MAKE) -C $(SRCS_DIR) install
++	$(BMAKE) -C $(SRCS_DIR) install INCSDIR=$(INCSDIR) DESTDIR=$(DESTDIR)
+ 
+ clean:
+ 	$(RM) $(SRCS_DIR)/.build_stamp
+-	$(MAKE) -C $(SRCS_DIR) clean
++	$(BMAKE) -C $(SRCS_DIR) clean
