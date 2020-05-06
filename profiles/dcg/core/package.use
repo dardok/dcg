@@ -29,9 +29,8 @@ dev-util/perf -python systemtap unwind
 
 net-analyzer/net-snmp pci -python
 
-net-firewall/firewalld iptables nftables
+net-firewall/firewalld iptables -nftables
 net-firewall/ipset -modules
-net-firewall/nftables xtables
 
 net-fs/nfs-utils nfsdcld
 
