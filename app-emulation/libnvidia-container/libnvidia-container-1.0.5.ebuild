@@ -83,7 +83,6 @@ src_install() {
     dodir /usr/$(get_libdir)/pkgconfig
     LIB_LDLIBS_SHARED="-ldl -lcap"
     use system-libelf && LIB_LDLIBS_SHARED+=" -lelf"
-    use tirpc && LIB_LDLIBS_SHARED+=" -ltirpc"
     use seccomp && LIB_LDLIBS_SHARED+=" -lseccomp"
     prefix="${EPREFIX}/usr" \
     exec_prefix="\${prefix}" \
