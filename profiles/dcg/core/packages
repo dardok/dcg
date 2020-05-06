@@ -36,6 +36,7 @@
 
 *net-firewall/conntrack-tools
 *net-firewall/ebtables
+*net-firewall/firewalld
 *net-firewall/ipset
 
 *net-fs/nfs4-acl-tools
