@@ -68,6 +68,7 @@ src_compile() {
 src_install() {
     newbin runc nvidia-container-runtime
     dobin $WORKDIR/$NV_GITHUB_REPO/toolkit/nvidia-container-toolkit/nvidia-container-toolkit
+    dosym /usr/bin/nvidia-container-{toolkit,runtime-hook}
     dodir /usr/libexec/oci/hooks.d
     exeinto /usr/libexec/oci/hooks.d
     doexe $WORKDIR/$NV_GITHUB_REPO/toolkit/oci-nvidia-hook

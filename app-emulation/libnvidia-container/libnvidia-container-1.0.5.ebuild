@@ -34,6 +34,7 @@ DOCS="NOTICE LICENSE COPYING COPYING.LESSER"
 
 PATCHES=(
 	"${FILESDIR}/${PV}-makefile-system-tirpc.patch"
+	"${FILESDIR}/${PV}-opt-bin.patch"
 )
 
 src_unpack() {
