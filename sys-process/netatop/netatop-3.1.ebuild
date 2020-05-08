@@ -39,7 +39,7 @@ src_compile() {
 src_install() {
 	linux-mod_src_install
 	dosbin daemon/netatopd
-	dounit netatop.service
+	systemd_dounit netatop.service
 	doman man/netatop.4
 	doman man/netatop.8
 }
