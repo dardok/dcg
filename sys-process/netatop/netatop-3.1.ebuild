@@ -41,5 +41,5 @@ src_install() {
 	dosbin daemon/netatopd
 	systemd_dounit netatop.service
 	doman man/netatop.4
-	doman man/netatop.8
+	doman man/netatopd.8
 }
