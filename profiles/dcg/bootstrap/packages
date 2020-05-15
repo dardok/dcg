@@ -16,6 +16,8 @@
 
 *sys-boot/grub
 
+*sys-fabric/mstflint
+
 *sys-firmware/ipxe
 
 *sys-fs/btrfs-progs
