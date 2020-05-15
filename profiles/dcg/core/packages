@@ -6,6 +6,7 @@
 
 *app-metrics/node_exporter
 
+*app-misc/jq
 *app-misc/screen
 *app-misc/tmate
 *app-misc/tmux
