@@ -2,6 +2,8 @@
 
 *dev-tcltk/expect
 
+*x11-libs/gtk+:2
+
 *x11-terms/xterm
 
 *virtual/emacs

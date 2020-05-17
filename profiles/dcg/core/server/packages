@@ -2,5 +2,3 @@
 *app-emulation/docker-compose 
 *app-emulation/libvirt
 *app-emulation/qemu
-
-*x11-libs/gtk+:2
