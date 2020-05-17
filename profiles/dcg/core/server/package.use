@@ -1,1 +1,5 @@
 sys-firmware/ipxe binary
+
+app-emulation/libvirt firewalld lvm parted virt-network
+
+x11-terms/xterm  truetype
