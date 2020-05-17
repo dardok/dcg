@@ -33,6 +33,8 @@
 *dev-util/strace
 *dev-util/systemtap
 
+*dev-vcs/git-lfs
+
 *mail-mta/nullmailer
 
 *net-firewall/conntrack-tools
