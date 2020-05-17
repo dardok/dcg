@@ -1,5 +1,5 @@
-sys-firmware/ipxe binary
-
 app-emulation/libvirt firewalld lvm parted virt-network
 
-x11-terms/xterm  truetype
+net-dns/dnsmasq script # required by app-emulation/libvirt[virt-network]
+
+sys-firmware/ipxe binary # required by app-emulation/qemu[pin-upstream-blobs]
