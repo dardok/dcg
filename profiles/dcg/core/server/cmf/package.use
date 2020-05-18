@@ -1,4 +1,4 @@
-app-editors/emacs X # requested
+app-editors/emacs X gtk # requested
 
 app-emacs/emacs-common-gentoo X # # required by app-editors/emacs[X]
 
