@@ -1,6 +1,2 @@
 >=app-crypt/mit-krb5-1.18 # single des
 <sys-devel/clang-9
-
-# too soon
->=sys-libs/readline-8
->=app-shells/bash-5
