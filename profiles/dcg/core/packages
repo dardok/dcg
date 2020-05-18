@@ -2,6 +2,7 @@
 *app-admin/mcelog
 *app-admin/sudo
 
+*app-crypt/intel-ipsec-mb
 *app-crypt/mit-krb5
 
 *app-metrics/node_exporter
