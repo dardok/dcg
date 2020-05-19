@@ -2,6 +2,10 @@
 
 *dev-tcltk/expect
 
+*dev-util/global
+
+*sys-apps/the_silver_searcher
+
 *x11-libs/gtk+:2
 
 *x11-terms/xterm

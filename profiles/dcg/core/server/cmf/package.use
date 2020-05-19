@@ -4,6 +4,8 @@ app-emacs/emacs-common-gentoo X # # required by app-editors/emacs[X]
 
 app-emulation/virt-manager gtk # requested
 
+dev-util/global emacs vim
+
 >=net-misc/spice-gtk-0.37-r2 usbredir # required by app-emulation/virt-manager[gtk]
 
 x11-libs/cairo X # required by x11-libs/gtk+:3
