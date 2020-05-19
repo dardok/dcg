@@ -4,6 +4,8 @@
 
 *dev-util/global
 
+*net-misc/tigervnc
+
 *sys-apps/the_silver_searcher
 
 *sys-devel/clang
