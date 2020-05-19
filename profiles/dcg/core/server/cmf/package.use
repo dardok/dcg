@@ -2,6 +2,7 @@ app-editors/emacs X gtk # requested
 
 app-emacs/emacs-common-gentoo X # # required by app-editors/emacs[X]
 
+app-emulation/qemu spice
 app-emulation/virt-manager gtk # requested
 
 dev-util/global emacs vim
