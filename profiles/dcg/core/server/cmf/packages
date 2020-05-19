@@ -4,6 +4,7 @@
 
 *dev-util/global
 
+*sys-apps/ripgrep
 *sys-apps/the_silver_searcher
 
 *sys-devel/clang
