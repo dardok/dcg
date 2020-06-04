@@ -3,3 +3,4 @@ sys-fs/udev
 dev-lang/python:2.7
 dev-lang/python:3.6
 dev-lang/python:3.8
+>=sys-kernel/linux-headers-5
