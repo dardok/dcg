@@ -6,6 +6,9 @@
 
 *dev-util/global
 
+*net-analyzer/tcpdump
+*net-analyzer/wireshark
+
 *net-misc/tigervnc
 
 *sys-apps/the_silver_searcher
