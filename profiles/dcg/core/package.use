@@ -45,6 +45,7 @@ net-nds/rpcbind warmstarts
 sys-apps/attr static-libs
 sys-apps/busybox -pam
 sys-apps/iproute2 elf
+sys-apps/shadow -cracklib
 
 sys-auth/sssd -acl augeas autofs netlink
 
