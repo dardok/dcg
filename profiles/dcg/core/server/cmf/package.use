@@ -7,6 +7,8 @@ app-emulation/virt-manager gtk # requested
 
 app-text/hunspell l10n_en
 
+dev-lang/python tk
+
 dev-util/global emacs vim
 
 >=net-misc/spice-gtk-0.37-r2 usbredir # required by app-emulation/virt-manager[gtk]
