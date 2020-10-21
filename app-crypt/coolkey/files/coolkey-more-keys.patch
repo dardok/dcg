@@ -1,0 +1,64 @@
+diff -up ./src/coolkey/slot.cpp.coolkey-more-keys ./src/coolkey/slot.cpp
+--- ./src/coolkey/slot.cpp.coolkey-more-keys	2016-01-20 11:04:38.507533104 -0800
++++ ./src/coolkey/slot.cpp	2016-01-20 12:14:21.429947833 -0800
+@@ -32,6 +32,8 @@
+ 
+ #define MIN(x, y) ((x) < (y) ? (x) : (y))
+ 
++#define MAX_NUM_KEYS 32
++#define MAX_NUM_CERTS 32
+ 
+ 
+ #ifdef DEBUG
+@@ -3458,7 +3460,7 @@ Slot::loadObjects()
+         } else if( type == 'c' ) {
+             // cert attribute object. find the DER encoding
+             unsigned short certnum = getObjectIndex(iter->obj.objectID);
+-            if( certnum > 9 ) {
++            if( certnum > MAX_NUM_CERTS ) {
+                 //invalid object id
+                 throw PKCS11Exception(CKR_DEVICE_ERROR,
+                     "Invalid object id %08x",iter->obj.objectID);
+@@ -4154,7 +4156,7 @@ Slot::objectToKeyNum(const PKCS11Object
+         throw PKCS11Exception(CKR_KEY_HANDLE_INVALID);
+     }
+     unsigned short keyNum = getObjectIndex(id);
+-    if( keyNum > 9 ) {
++    if( keyNum > MAX_NUM_KEYS ) {
+         throw PKCS11Exception(CKR_KEY_HANDLE_INVALID);
+     }
+     return keyNum & 0xFF;
+@@ -4911,7 +4913,6 @@ Slot::generateRandom(SessionHandleSuffix
+     }
+ }
+ 
+-#define MAX_NUM_KEYS 8
+ unsigned int
+ Slot::getRSAKeySize(PKCS11Object *key)
+ {
+diff -up ./src/coolkey/slot.h.coolkey-more-keys ./src/coolkey/slot.h
+--- ./src/coolkey/slot.h.coolkey-more-keys	2016-01-20 11:04:45.610475971 -0800
++++ ./src/coolkey/slot.h	2016-01-20 11:43:09.981528125 -0800
+@@ -511,9 +511,20 @@ class Slot {
+     char getObjectClass(unsigned long objectID) const {
+         return (char) (objectID >> 24) & 0xff;
+     }
++
+     unsigned short getObjectIndex(unsigned long objectID) const {
+-        return (char )((objectID >> 16) & 0xff) - '0';
+-    }
++       char char_index = (char) ((objectID >> 16) & 0xff);
++       if (char_index >= '0' && char_index <= '9') {
++           return char_index - '0';
++       }
++       if (char_index >= 'A' && char_index <= 'Z') {
++           return char_index - 'A' + 10;
++       }
++       if (char_index >= 'a' && char_index <= 'z') {
++           return char_index - 'a' + 26;
++       }
++        return 0x0100 + char_index;
++     }
+ 
+     // actually get the size of a key in bits from the card
+     unsigned int getRSAKeySize(PKCS11Object *key);
