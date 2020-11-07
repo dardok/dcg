@@ -3,4 +3,6 @@ sys-fs/udev
 dev-lang/python:2.7
 dev-lang/python:3.6
 dev-lang/python:3.8
+dev-lang/python:3.9
 >=sys-kernel/linux-headers-5
+!=sys-auth/polkit-0.118 # pin for duktape vs spidermonkey
