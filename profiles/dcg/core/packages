@@ -73,6 +73,8 @@
 
 *sys-devel/gdb
 
+*sys-fabric/libfabric
+
 *sys-firmware/intel-microcode
 
 *sys-fs/bcache-tools

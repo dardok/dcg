@@ -14,6 +14,8 @@ net-misc/linuxptp
 
 sys-auth/pam-afs-session
 
+sys-fabric/libfabric
+
 sys-cluster/rdma-core
 
 sys-fs/bcache-tools
