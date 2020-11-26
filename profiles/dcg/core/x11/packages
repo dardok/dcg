@@ -1,3 +1,7 @@
+*dev-libs/rocm-comgr
+*dev-libs/rocm-device-libs
+*dev-libs/rocm-hostcall
+*dev-libs/rocm-opencl-runtime
 *media-fonts/artwiz-aleczapka-en
 *media-fonts/corefonts
 *media-fonts/dejavu
