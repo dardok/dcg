@@ -1,3 +1,4 @@
+dev-libs/libclc
 dev-libs/rocclr
 dev-libs/rocm-comgr
 dev-libs/rocm-device-libs
