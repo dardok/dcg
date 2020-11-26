@@ -5,6 +5,7 @@ dev-libs/rocm-hostcall
 dev-libs/rocm-opencl-runtime
 dev-libs/rocr-runtime
 dev-libs/roct-thunk-interface
+dev-util/rocm-cmake
 x11-terms/kitty
 x11-terms/kitty-terminfo
 media-libs/mesa
