@@ -9,3 +9,4 @@ dev-util/rocm-cmake
 x11-terms/kitty
 x11-terms/kitty-terminfo
 media-libs/mesa
+sys-devel/llvm-roc
