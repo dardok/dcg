@@ -23,7 +23,7 @@ net-misc/modemmanager -qmi
 net-misc/spice-gtk python usbredir webdav
 net-print/cups zeroconf
 sys-apps/hwloc gl
-x11-base/xorg-server glamor tslib xnest xvfb xephyr kdrive
+x11-base/xorg-server -minimal glamor tslib xnest xvfb xephyr kdrive
 x11-drivers/nvidia-drivers uvm tools static-libs
 x11-drivers/xf86-video-ati glamor
 x11-drivers/xf86-video-qxl xspice
