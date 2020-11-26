@@ -1,0 +1,34 @@
+app-text/ghostscript-gpl cups
+dev-python/PyQt5 declarative designer doc -gles2 gui location multimedia network positioning printsupport sensors serialport sql webchannel webengine webkit websockets widgets x11extras xmlpatterns
+dev-libs/weston wayland-compositor xwayland
+dev-qt/qtmultimedia widgets
+dev-qt/qtwebchannel qml
+dev-qt/qtwebengine widgets
+dev-qt/qtwebkit printsupport
+dev-util/cmake server -qt5
+gnome-base/gvfs ios zeroconf udisks google cdda archive
+media-libs/gst-plugins-bad gtk
+media-libs/gst-plugins-base egl gles2 opengl
+media-gfx/graphviz tcl gdk-pixbuf
+media-libs/libvpx svc
+media-libs/mesa gallium llvm llvm-shared-libs osmesa xvmc -vaapi
+media-video/ffmpeg sdl
+net-analyzer/wireshark -qt4 libssh libxml2 nghttp2 snappy
+net-libs/gtk-vnc python
+net-libs/libproxy spidermonkey -webkit
+net-libs/phodav spice zeroconf
+net-libs/webkit-gtk libnotify spell -gles2
+net-misc/freerdp xv
+net-misc/modemmanager -qmi
+net-misc/spice-gtk python usbredir webdav
+net-print/cups zeroconf
+sys-apps/hwloc gl
+x11-base/xorg-server glamor tslib xnest xvfb xephyr kdrive
+x11-drivers/nvidia-drivers uvm tools static-libs
+x11-drivers/xf86-video-ati glamor
+x11-drivers/xf86-video-qxl xspice
+x11-libs/gtk+ broadway
+x11-libs/libdrm libkms
+x11-libs/libva nvidia
+x11-libs/vte python
+x11-misc/notify-osd minimal
