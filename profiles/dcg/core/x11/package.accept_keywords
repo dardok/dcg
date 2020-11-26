@@ -2,6 +2,7 @@ dev-libs/rocm-comgr
 dev-libs/rocm-device-libs
 dev-libs/rocm-hostcall
 dev-libs/rocm-opencl-runtime
+dev-libs/rocr-runtime
 x11-terms/kitty
 x11-terms/kitty-terminfo
 media-libs/mesa
