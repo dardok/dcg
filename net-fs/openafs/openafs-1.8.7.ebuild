@@ -1,4 +1,4 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -7,7 +7,7 @@ inherit autotools linux-mod flag-o-matic pam systemd tmpfiles toolchain-funcs
 
 MY_PV=${PV/_/}
 MY_P="${PN}-${MY_PV}"
-PVER=20200913
+PVER=20210116
 KERNEL_LIMIT=5.10
 
 DESCRIPTION="The OpenAFS distributed file system"
@@ -22,7 +22,7 @@ SRC_URI="
 
 LICENSE="IBM BSD openafs-krb5-a APSL-2"
 SLOT="0"
-KEYWORDS="amd64 ~sparc x86 ~amd64-linux ~x86-linux"
+KEYWORDS="amd64 ~sparc ~x86 ~amd64-linux ~x86-linux"
 
 IUSE="apidoc bitmap-later debug doc fuse kauth kerberos +modules +namei
 ncurses perl +pthreaded-ubik +supergroups tsm ubik-read-while-write"
