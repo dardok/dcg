@@ -56,3 +56,4 @@ sys-fs/zfs -rootfs
 sys-kernel/linux-firmware initramfs
 
 sys-libs/glibc nscd # required by sssd
+sys-libs/zlib static-libs
