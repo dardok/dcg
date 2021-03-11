@@ -19,4 +19,6 @@
 
 *x11-terms/xterm
 
-*virtual/emacs
+*app-editors/emacs
+*app-emacs/emacs-common-gentoo
+*app-eselect/eselect-emacs
