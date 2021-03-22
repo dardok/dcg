@@ -5,4 +5,5 @@ dev-lang/python:3.6
 dev-lang/python:3.8
 dev-lang/python:3.9
 >=sys-kernel/linux-headers-5.5
+>app-misc/pax-utils-1.2.6
 !=sys-auth/polkit-0.118 # pin for duktape vs spidermonkey
