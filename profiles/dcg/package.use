@@ -1,5 +1,6 @@
 app-editors/vim python
 
+app-emulation/libvirt -lxc # conflicts with sys-apps/systemd[cgroup-hybrid(-)]
 dev-lang/python sqlite threads
 
 sys-apps/net-tools nis
