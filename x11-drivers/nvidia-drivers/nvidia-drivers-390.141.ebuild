@@ -418,7 +418,14 @@ src_install-libs() {
 		done
 	else
 		NV_GLX_LIBRARIES+=(
+			"libcuda.so.${PV}"
+			"libnvcuvid.so.${PV}"
+			"libnvidia-compiler.so.${PV}"
 			"libnvidia-ml.so.${PV}"
+			"libnvidia-encode.so.${PV}"
+			"libnvidia-fatbinaryloader.so.${PV}"
+			"libnvidia-opencl.so.${PV}"
+			"libnvidia-ptxjitcompiler.so.${PV}"
 			"tls/libnvidia-tls.so.${PV}"
 		)
 
