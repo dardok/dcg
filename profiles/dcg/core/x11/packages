@@ -1,5 +1,5 @@
 *app-crypt/coolkey
-*app-crypt/opensc
+*dev-libs/opensc
 *dev-libs/rocm-comgr
 *dev-libs/rocm-device-libs
 *dev-libs/rocm-hostcall
