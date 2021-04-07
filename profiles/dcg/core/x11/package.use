@@ -16,7 +16,7 @@ media-libs/mesa gallium llvm llvm-shared-libs osmesa xvmc -vaapi
 media-video/ffmpeg sdl
 net-analyzer/wireshark -qt4 libssh libxml2 nghttp2 snappy
 net-libs/gtk-vnc python
-net-libs/libproxy spidermonkey -webkit
+net-libs/libproxy -spidermonkey -webkit
 net-libs/phodav spice zeroconf
 net-libs/webkit-gtk libnotify spell -gles2
 net-misc/freerdp xv
