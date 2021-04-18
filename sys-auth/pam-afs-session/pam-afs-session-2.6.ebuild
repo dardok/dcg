@@ -1,3 +1,5 @@
+EAPI=5
+
 inherit pam
 
 DESCRIPTION="OpenAFS PAM Module"
