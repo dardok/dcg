@@ -1,4 +1,4 @@
 app-emulation/docker btrfs overlay
-app-emulation/libvirt firewalld lvm parted virt-network
+app-emulation/libvirt firewalld lvm parted virt-network -lxc # requires sys-apps/systemd[cgroup-hybrid(-)]
 
 net-dns/dnsmasq script # required by app-emulation/libvirt[virt-network]
