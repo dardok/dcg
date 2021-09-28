@@ -1,1 +1,2 @@
 dev-lang/duktape
+=sys-auth/polkit-0.119
