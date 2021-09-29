@@ -16,3 +16,5 @@ x11-libs/cairo X # required by x11-libs/gtk+:3
 media-libs/libglvnd X # required by media-libs/mesa[libglvnd]
 
 net-analyzer/wireshark -qt5
+
+media-libs/freetype harfbuzz
