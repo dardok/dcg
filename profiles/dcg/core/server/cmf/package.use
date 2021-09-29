@@ -3,6 +3,7 @@ app-editors/emacs gtk # requested
 app-emulation/qemu spice
 app-emulation/virt-manager gtk # requested
 
+app-dicts/myspell-en l10n_en
 app-text/hunspell l10n_en
 
 dev-lang/python tk
