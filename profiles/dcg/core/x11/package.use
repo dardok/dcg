@@ -11,6 +11,7 @@ media-libs/gst-plugins-bad gtk
 media-libs/gst-plugins-base egl gles2 opengl
 media-gfx/graphviz tcl gdk-pixbuf
 media-gfx/imagemagick png
+media-libs/freetype harfbuzz
 media-libs/libvpx svc
 media-libs/mesa gallium llvm llvm-shared-libs osmesa xvmc -vaapi
 media-video/ffmpeg sdl
