@@ -2,3 +2,4 @@ app-emulation/conmon
 app-emulation/podman
 app-emulation/slirp4netns
 dev-python/podman-py
+sys-fs/fuse-overlayfs
