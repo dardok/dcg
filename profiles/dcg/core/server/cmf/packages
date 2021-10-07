@@ -1,8 +1,11 @@
+*app-emulation/podman
 *app-emulation/virt-manager
 
 *dev-tcltk/expect
 
 *app-text/hunspell
+
+*dev-python/podman-py
 
 *dev-util/global
 
