@@ -1,15 +1,15 @@
 diff -u -r -N a/prov/psm3/psm3/ptl_am/am_reqrep_shmem.c b/prov/psm3/psm3/ptl_am/am_reqrep_shmem.c
---- a/prov/psm3/psm3/ptl_am/am_reqrep_shmem.c	2021-10-28 05:48:11.398165509 -0400
-+++ b/prov/psm3/psm3/ptl_am/am_reqrep_shmem.c	2021-10-12 05:40:44.393874146 -0400
+--- a/prov/psm3/psm3/ptl_am/am_reqrep_shmem.c	2021-10-12 05:40:44.393874146 -0400
++++ b/prov/psm3/psm3/ptl_am/am_reqrep_shmem.c	2021-10-28 05:48:11.398165509 -0400
 @@ -292,9 +292,9 @@
  				err = psmi_handle_error(NULL,
  							PSM2_SHMEM_SEGMENT_ERR,
  							"Error creating shared "
--							"memory object NULL in "
-+							"memory object %s in "
+-							"memory object %s in "
++							"memory object NULL in "
  							"shm_open: %s",
--							strerror(errno));
-+							amsh_keyname, strerror(errno));
+-							amsh_keyname, strerror(errno));
++							strerror(errno));
  				goto fail;
  			}
  		} else {
