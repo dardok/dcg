@@ -49,6 +49,8 @@ sys-apps/shadow -cracklib
 
 sys-auth/sssd -acl augeas autofs netlink
 
+sys-block/libfabric verbs
+
 sys-libs/libseccomp static-libs
 
 sys-firmware/intel-microcode initramfs hostonly
