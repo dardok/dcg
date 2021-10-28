@@ -73,7 +73,7 @@
 
 *sys-devel/gdb
 
-*sys-fabric/libfabric
+*sys-block/libfabric
 
 *sys-firmware/intel-microcode
 

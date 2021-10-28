@@ -14,7 +14,7 @@ net-misc/linuxptp
 
 sys-auth/pam-afs-session
 
-sys-fabric/libfabric
+sys-block/libfabric
 
 sys-cluster/rdma-core
 
