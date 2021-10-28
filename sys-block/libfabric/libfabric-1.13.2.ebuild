@@ -35,6 +35,8 @@ DOCS=(
 	#README.md
 )
 
+PATCHES=( "${FILESDIR}"/null-string.patch )
+
 src_prepare() {
 	default
 	eautoreconf
