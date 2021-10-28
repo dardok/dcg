@@ -56,7 +56,7 @@ src_configure() {
 		# no psm libraries packaged that I can find (patches accepted)
 		--enable-psm=no
 		--enable-psm2=no
-		#--enable-psm3=no
+		--enable-psm3=no
 		--enable-rocr-dlopen=$(usex rocr yes no)
 		--enable-rstream=yes
 		--enable-rxd=yes
