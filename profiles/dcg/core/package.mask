@@ -1,2 +1,3 @@
 >=app-crypt/mit-krb5-1.18 # single des
+>=sys-auth/sssd-2.5 # requires newer mit-krb5
 <sys-devel/clang-9
