@@ -47,7 +47,7 @@ sys-apps/busybox -pam
 sys-apps/iproute2 elf
 sys-apps/shadow -cracklib
 
-sys-auth/sssd -acl augeas autofs netlink
+sys-auth/sssd -acl augeas autofs netlink -python
 
 sys-block/libfabric verbs
 
