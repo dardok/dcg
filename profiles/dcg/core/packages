@@ -50,8 +50,8 @@
 
 *net-misc/adjtimex
 *net-misc/bridge-utils
+*net-misc/frr
 *net-misc/linuxptp
-*net-misc/quagga
 *net-misc/socat
 
 *sys-apps/haveged
