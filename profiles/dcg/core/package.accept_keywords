@@ -10,6 +10,8 @@ dev-libs/libbpf
 net-fs/nfs4-acl-tools
 net-fs/openafs
 
+net-libs/grpc # for net-misc/frr[grpc]
+
 net-misc/linuxptp
 
 sys-auth/pam-afs-session
