@@ -36,9 +36,9 @@
 *x11-libs/libnotify
 *x11-libs/libXScrnSaver
 *x11-libs/libva
-*x11-misc/compton
 *x11-misc/lightdm-gtk-greeter
 *x11-misc/lightdm
+*x11-misc/picom
 *x11-misc/unclutter
 *x11-misc/virtualgl
 *x11-misc/x2x
