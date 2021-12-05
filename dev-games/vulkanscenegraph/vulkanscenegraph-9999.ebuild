@@ -3,15 +3,18 @@
 
 EAPI=8
 
-inherit cmake flag-o-matic
+inherit git-r3 cmake
 
-MY_PN="VulkanSceneGraph"
-MY_P=${MY_PN}-${PV}
+#MY_PN="VulkanSceneGraph"
+#MY_P=${MY_PN}-${PV}
 
 DESCRIPTION="Open source high performance 3D graphics toolkit"
 HOMEPAGE="https://vsg-dev.github.io/VulkanSceneGraph/"
-SRC_URI="https://github.com/vsg-dev/${MY_PN}/archive/refs/tags/${MY_P}.tar.gz"
-S="${WORKDIR}/${MY_PN}-${MY_P}"
+#SRC_URI="https://github.com/vsg-dev/${MY_PN}/archive/refs/tags/${MY_P}.tar.gz"
+#S="${WORKDIR}/${MY_PN}-${MY_P}"
+SRC_URI=""
+EGIT_REPO_URI="https://github.com/vsg-dev/VulkanSceneGraph.git"
+EGIT_BRANCH="master"
 
 LICENSE="MIT"
 SLOT="0"
