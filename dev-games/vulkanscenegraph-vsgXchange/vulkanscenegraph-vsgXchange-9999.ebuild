@@ -20,12 +20,13 @@ LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~hppa ~ppc64 ~x86"
 
-IUSE="freetype curl assimp"
+IUSE="-gis freetype curl assimp"
 
 BDEPEND="
 "
 RDEPEND="
 	dev-games/vulkanscenegraph
+	gis? ( dev-games/vulkanscenegraph-vsgGIS )
 	freetype? ( media-libs/freetype )
 	curl? ( net-misc/curl )
 	assimp? ( media-libs/assimp )
@@ -34,6 +35,7 @@ DEPEND="${RDEPEND}
 "
 
 PATCHES=(
+	"${FILESDIR}/assimp-libraries.patch"
 )
 
 src_configure() {

@@ -1,0 +1,12 @@
+diff -u -r -N a/src/assimp/build_vars.cmake b/src/assimp/build_vars.cmake
+--- a/src/assimp/build_vars.cmake	2021-12-05 07:01:46.337909733 -0500
++++ b/src/assimp/build_vars.cmake	2021-12-05 07:16:06.001493809 -0500
+@@ -10,7 +10,7 @@
+         assimp/assimp.cpp
+     )
+     set(EXTRA_INCLUDES ${EXTRA_INCLUDES} ${assimp_INCLUDE_DIRS})
+-    set(EXTRA_LIBRARIES ${EXTRA_LIBRARIES} assimp::assimp)
++    set(EXTRA_LIBRARIES ${EXTRA_LIBRARIES} ${assimp_LIBRARIES})
+     if(NOT BUILD_SHARED_LIBS)
+         set(FIND_DEPENDENCY ${FIND_DEPENDENCY} "find_dependency(assimp)")
+     endif()
