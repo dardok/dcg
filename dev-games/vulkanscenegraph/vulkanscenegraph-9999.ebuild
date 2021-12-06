@@ -24,6 +24,7 @@ BDEPEND="
 	dev-util/glslang
 	dev-util/spirv-headers
 	dev-util/vulkan-headers
+	media-libs/vulkan-loader
 "
 RDEPEND="
 "
