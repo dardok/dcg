@@ -15,6 +15,7 @@ media-libs/freetype harfbuzz
 media-libs/libvpx svc
 media-libs/mesa gallium llvm llvm-shared-libs osmesa xvmc -vaapi
 media-video/ffmpeg sdl
+media-video/pipewire bluetooth v4l jack-sdk extra
 net-analyzer/wireshark -qt4 libssh libxml2 nghttp2 snappy
 net-libs/gtk-vnc python
 net-libs/libproxy -spidermonkey -webkit
