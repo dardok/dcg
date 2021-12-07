@@ -1,0 +1,14 @@
+[Unit]
+Description=AuriStorFS Client Service
+After=syslog.target network.target
+
+[Service]
+Type=forking
+ExecStartPre=/sbin/modprobe yfs
+ExecStart=/usr/sbin/afsd
+ExecStop=/bin/umount /afs
+ExecStop=/sbin/rmmod yfs
+KillMode=none
+
+[Install]
+WantedBy=multi-user.target remote-fs.target
