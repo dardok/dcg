@@ -48,6 +48,3 @@
 *x11-misc/xscreensaver
 *x11-terms/kitty
 *x11-wm/awesome
-
--*net-fs/openafs
--*sys-auth/pam-afs-session
