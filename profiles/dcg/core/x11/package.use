@@ -30,7 +30,6 @@ sys-devel/gcc fortran # for sys-devel/llvm-roc->cblas
 x11-base/xorg-server -minimal glamor tslib xnest xvfb xephyr kdrive
 x11-drivers/nvidia-drivers uvm tools static-libs
 x11-drivers/xf86-video-ati glamor
-x11-drivers/xf86-video-qxl xspice
 x11-libs/gtk+ broadway
 x11-libs/libdrm libkms
 x11-libs/libva nvidia

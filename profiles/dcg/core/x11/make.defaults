@@ -1,4 +1,4 @@
-VIDEO_CARDS="-* nvidia radeon radeonsi mga modesetting fbdev vesa dummy v4l qxl virgl amdgpu"
+VIDEO_CARDS="-* nvidia radeon radeonsi mga modesetting fbdev vesa dummy v4l virgl amdgpu"
 
 ALSA_CARDS="-* hda-intel usb-audio"
 
