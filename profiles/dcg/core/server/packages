@@ -1,4 +1,4 @@
-*app-emulation/docker
-*app-emulation/docker-compose 
+*app-containers/docker
+*app-containers/docker-compose 
 *app-emulation/libvirt
 *app-emulation/qemu

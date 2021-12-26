@@ -1,5 +1,6 @@
-*app-emulation/crun
-*app-emulation/podman
+*app-containers/crun
+*app-containers/podman
+
 *app-emulation/virt-manager
 
 *dev-tcltk/expect

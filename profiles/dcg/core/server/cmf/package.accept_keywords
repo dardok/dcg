@@ -1,5 +1,5 @@
-app-emulation/conmon
-app-emulation/podman
-app-emulation/slirp4netns
+app-containers/conmon
+app-containers/podman
+app-containers/slirp4netns
 dev-python/podman-py
 sys-fs/fuse-overlayfs
