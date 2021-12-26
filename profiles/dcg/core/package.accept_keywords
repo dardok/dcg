@@ -24,4 +24,3 @@ sys-cluster/rdma-core
 sys-fs/bcache-tools
 
 sys-process/atop
-sys-process/netatop

@@ -85,6 +85,5 @@
 
 *sys-process/atop
 *sys-process/lsof
-*sys-process/netatop
 
 *x11-apps/xauth
