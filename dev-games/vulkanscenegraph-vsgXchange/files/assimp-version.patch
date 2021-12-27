@@ -1,14 +1,15 @@
 diff --git a/src/assimp/build_vars.cmake b/src/assimp/build_vars.cmake
-index 0ceff6a..a5ceab0 100644
+index 0ceff6a..34cd0d5 100644
 --- a/src/assimp/build_vars.cmake
 +++ b/src/assimp/build_vars.cmake
-@@ -12,13 +12,13 @@ endif()
+@@ -12,20 +12,20 @@ endif()
  
  if (${vsgXchange_assimp})
  
-+    message("\nassimp_VERSION "${assimp_VERSION})
+-    string(REPLACE "." ";" ASSIMP_VERSION_LIST ${assimp_VERSION})
++    message("\nassimp_VERSION "${ASSIMP_VERSION})
 +
-     string(REPLACE "." ";" ASSIMP_VERSION_LIST ${assimp_VERSION})
++    string(REPLACE "." ";" ASSIMP_VERSION_LIST ${ASSIMP_VERSION})
      list(GET ASSIMP_VERSION_LIST 0 ASSIMP_VERSION_MAJOR)
      list(GET ASSIMP_VERSION_LIST 1 ASSIMP_VERSION_MINOR)
      list(GET ASSIMP_VERSION_LIST 2 ASSIMP_VERSION_PATCH)
@@ -18,3 +19,11 @@ index 0ceff6a..a5ceab0 100644
      set(EXTRA_DEFINES ${EXTRA_DEFINES} "ASSIMP_VERSION_MAJOR=${ASSIMP_VERSION_MAJOR}" "ASSIMP_VERSION_MINOR=${ASSIMP_VERSION_MINOR}" "ASSIMP_VERSION_PATCH=${ASSIMP_VERSION_PATCH}" )
  
      set(SOURCES ${SOURCES}
+         assimp/assimp.cpp
+     )
+     set(EXTRA_INCLUDES ${EXTRA_INCLUDES} ${assimp_INCLUDE_DIRS})
+-    set(EXTRA_LIBRARIES ${EXTRA_LIBRARIES} assimp::assimp)
++    set(EXTRA_LIBRARIES ${EXTRA_LIBRARIES} ${assimp_LIBRARIES})
+     if(NOT BUILD_SHARED_LIBS)
+         set(FIND_DEPENDENCY ${FIND_DEPENDENCY} "find_dependency(assimp)")
+     endif()
