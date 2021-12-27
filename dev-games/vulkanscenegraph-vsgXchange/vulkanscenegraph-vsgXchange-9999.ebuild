@@ -35,6 +35,7 @@ DEPEND="${RDEPEND}
 "
 
 PATCHES=(
+	"${FILESDIR}/assimp-version.patch"
 )
 
 src_configure() {
