@@ -1,8 +1,21 @@
 diff --git a/src/assimp/build_vars.cmake b/src/assimp/build_vars.cmake
-index 0ceff6a..34cd0d5 100644
+index 0ceff6a..f423e4c 100644
 --- a/src/assimp/build_vars.cmake
 +++ b/src/assimp/build_vars.cmake
-@@ -12,20 +12,20 @@ endif()
+@@ -4,7 +4,11 @@ if(NOT assimp_FOUND)
+ find_package(assimp 5.0 QUIET)
+ endif()
+ 
+-
++get_cmake_property(_variableNames VARIABLES)
++list (SORT _variableNames)
++foreach (_variableName ${_variableNames})
++    message(STATUS "${_variableName}=${${_variableName}}")
++endforeach()
+ 
+ if(assimp_FOUND)
+     OPTION(vsgXchange_assimp "Optional Assimp support provided" ON)
+@@ -12,20 +16,20 @@ endif()
  
  if (${vsgXchange_assimp})
  
