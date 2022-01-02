@@ -22,5 +22,5 @@ src_compile() {
 src_install() {
         dopammod .libs/pam_afs_session.so
         doman pam_afs_session.5
-        dodoc CHANGES NEWS README TODO
+        dodoc NEWS README TODO
 }
