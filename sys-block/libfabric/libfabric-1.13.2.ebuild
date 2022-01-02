@@ -17,7 +17,7 @@ IUSE="cuda efa usnic rocr verbs"
 DEPEND="
 	rocr? ( dev-libs/rocr-runtime:= )
 	usnic? ( dev-libs/libnl:= )
-	verbs? ( sys-fabric/libibverbs:= )
+	verbs? ( sys-cluster/rdma-core )
 "
 RDEPEND="
 	${DEPEND}
