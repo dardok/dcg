@@ -2,5 +2,5 @@ dev-db/postgresql server
 net-dns/bind dlz postgres
 net-ftp/atftp pcre
 net-misc/dhcp ldap
-net-nds/openldap experimental odbc -minimal
+net-nds/openldap experimental odbc overlays -minimal
 www-servers/apache ssl
