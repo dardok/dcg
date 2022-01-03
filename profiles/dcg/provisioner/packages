@@ -1,6 +1,7 @@
 *app-containers/docker
 *dev-db/postgresql:13
 *dev-python/docker-py
+*dev-python/psycopg
 *net-dns/bind
 *net-ftp/atftp
 *net-misc/dhcp
