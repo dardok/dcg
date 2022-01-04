@@ -3,6 +3,7 @@
 *dev-db/psqlodbc
 *dev-python/docker-py
 *dev-python/psycopg
+*dev-python/flask
 *net-dns/bind
 *net-ftp/atftp
 *net-misc/dhcp
