@@ -34,7 +34,8 @@ RDEPEND="
 		>=sys-fs/zfs-0.8
 	)
 "
-BEPEND="${RDEPEND}
+BDEPEND="${RDEPEND}
+	sys-devel/gcc:10
 	dev-python/docutils
 	virtual/linux-sources"
 
