@@ -3,4 +3,5 @@ net-dns/bind dlz postgres
 net-ftp/atftp pcre
 net-misc/dhcp ldap
 net-nds/openldap experimental odbc overlays -minimal
+sys-firmware/ipxe efi undi usb
 www-servers/apache ssl

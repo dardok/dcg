@@ -8,4 +8,5 @@
 *net-ftp/atftp
 *net-misc/dhcp
 *net-nds/openldap
+*sys-firmware/ipxe
 *www-servers/apache
