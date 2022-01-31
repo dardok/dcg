@@ -15,3 +15,4 @@ x11-terms/kitty-terminfo
 media-libs/mesa
 media-video/wireplumber
 sys-devel/llvm-roc
+x11-terms/kitty-shell-integration
