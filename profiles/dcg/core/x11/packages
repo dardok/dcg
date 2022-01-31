@@ -21,6 +21,7 @@
 *media-fonts/ttf-bitstream-vera
 *media-fonts/unifont
 *media-video/pipewire
+*media-video/wireplumber
 *x11-apps/xbacklight
 *x11-apps/xdpyinfo
 *x11-apps/xlsfonts
