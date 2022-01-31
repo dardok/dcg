@@ -53,7 +53,7 @@ sys-block/libfabric verbs
 
 sys-libs/libseccomp static-libs
 
-sys-firmware/intel-microcode initramfs hostonly
+sys-firmware/intel-microcode initramfs -hostonly
 
 sys-fs/zfs -rootfs
 
