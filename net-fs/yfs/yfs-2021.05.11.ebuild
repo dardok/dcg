@@ -22,7 +22,8 @@ IUSE="debug fuse +kerberos +modules +namei"
 BDEPEND="
 	dev-lang/perl
 	sys-devel/flex
-	virtual/yacc"
+	virtual/yacc
+	dev-lang/yasm"
 DEPEND="
 	virtual/libcrypt:=
 	!sys-auth/pam-afs-session
