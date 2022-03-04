@@ -197,19 +197,20 @@ diff -u -r -N linuxptp-3.1.1/sk.h linuxptp-3.1.1.b/sk.h
   * @param info      Struct containing obtained timestamping information.
 diff -u -r -N linuxptp-3.1.1/transport.c linuxptp-3.1.1.b/transport.c
 --- linuxptp-3.1.1/transport.c	2021-07-04 21:51:59.000000000 -0400
-+++ linuxptp-3.1.1.b/transport.c	2022-03-04 08:04:22.608973780 -0500
-@@ -21,7 +21,10 @@
++++ linuxptp-3.1.1.b/transport.c	2022-03-04 08:16:18.399082665 -0500
+@@ -21,7 +21,11 @@
  
  #include "transport.h"
  #include "transport_private.h"
 +#include "config.h"
 +#include "print.h"
++#include "interface.h"
  #include "raw.h"
 +#include "sk.h"
  #include "udp.h"
  #include "udp6.h"
  #include "uds.h"
-@@ -34,6 +37,11 @@
+@@ -34,6 +38,11 @@
  int transport_open(struct transport *t, struct interface *iface,
  		   struct fdarray *fda, enum timestamp_type tt)
  {
