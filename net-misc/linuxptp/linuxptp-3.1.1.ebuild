@@ -20,7 +20,6 @@ RDEPEND="${DEPEND}"
 CONFIG_CHECK="~PPS ~NETWORK_PHY_TIMESTAMPING ~PTP_1588_CLOCK"
 
 PATCHES=(
-	"${FILESDIR}"/${PN}-3.1.1_netns.patch
 )
 
 pkg_setup() {
