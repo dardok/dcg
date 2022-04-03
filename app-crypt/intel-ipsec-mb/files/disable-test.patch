@@ -1,0 +1,21 @@
+diff -u -r -N a/Makefile b/Makefile
+--- a/Makefile	2022-02-14 10:11:03.000000000 -0500
++++ b/Makefile	2022-04-03 07:33:53.824461033 -0400
+@@ -29,17 +29,14 @@
+ 
+ all:
+ 	$(MAKE) -C lib
+-	$(MAKE) -C test
+ 	$(MAKE) -C perf
+ 
+ clean:
+ 	$(MAKE) -C lib clean
+-	$(MAKE) -C test clean
+ 	$(MAKE) -C perf clean
+ 
+ style:
+ 	$(MAKE) -C lib style
+-	$(MAKE) -C test style
+ 	$(MAKE) -C perf style
+ 
+ install:

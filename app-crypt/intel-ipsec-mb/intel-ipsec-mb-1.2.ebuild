@@ -12,6 +12,8 @@ IUSE="debug safe-data safe-param static-libs"
 DEPEND=">=dev-lang/nasm-2.13.03"
 RDEPEND=""
 
+PATCHES=( "${FILESDIR}"/disable-test.patch )
+
 src_configure() {
 	return
 }
