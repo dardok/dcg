@@ -5,6 +5,7 @@ app-misc/tmate
 
 dev-libs/libbpf
 
+dev-util/bcc
 dev-util/clippy
 <dev-util/perf-6
 

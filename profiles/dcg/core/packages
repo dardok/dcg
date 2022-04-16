@@ -26,6 +26,7 @@
 *dev-libs/nss
 
 *dev-python/pip
+*dev-python/pyroute2
 *dev-python/virtualenv
 
 *dev-util/cmake
