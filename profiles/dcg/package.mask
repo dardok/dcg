@@ -12,4 +12,4 @@ dev-lang/python:3.10
 >=sys-apps/hwloc-2.6.0 # netloc gone
 >=dev-python/docutils-0.18.0 # sphinx requires <dev-python/docutils-0.18
 
->=sys-fs/e2fsprogs-1.46.5 # missing equivalent e2fsprogs-libs
+#>=sys-fs/e2fsprogs-1.46.5 # missing equivalent e2fsprogs-libs
