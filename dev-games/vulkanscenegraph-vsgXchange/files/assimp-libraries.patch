@@ -1,8 +1,23 @@
 diff --git a/src/assimp/build_vars.cmake b/src/assimp/build_vars.cmake
-index 0ceff6a..89d5dbb 100644
+index 3903ec8..1f46acd 100644
 --- a/src/assimp/build_vars.cmake
 +++ b/src/assimp/build_vars.cmake
-@@ -25,7 +25,7 @@ if (${vsgXchange_assimp})
+@@ -1,11 +1,13 @@
+ # add assimp if vailable
++find_package(assimp 5.2 QUIET)
++if(NOT assimp_FOUND)
+ find_package(assimp 5.1 QUIET)
++endif()
+ if(NOT assimp_FOUND)
+ find_package(assimp 5.0 QUIET)
+ endif()
+ 
+ 
+-
+ if(assimp_FOUND)
+     OPTION(vsgXchange_assimp "Optional Assimp support provided" ON)
+ endif()
+@@ -25,7 +27,7 @@ if (${vsgXchange_assimp})
          assimp/assimp.cpp
      )
      set(EXTRA_INCLUDES ${EXTRA_INCLUDES} ${assimp_INCLUDE_DIRS})
