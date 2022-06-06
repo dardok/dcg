@@ -32,6 +32,7 @@ DEPEND="${RDEPEND}
 "
 
 PATCHES=(
+	"${FILESDIR}"/atomic_int.patch
 )
 
 src_configure() {

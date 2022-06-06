@@ -1,0 +1,13 @@
+diff --git a/src/vsg/CMakeLists.txt b/src/vsg/CMakeLists.txt
+index 6467a0bd..77889785 100644
+--- a/src/vsg/CMakeLists.txt
++++ b/src/vsg/CMakeLists.txt
+@@ -225,7 +225,7 @@ if(NOT MSVC AND NOT ANDROID AND NOT APPLE)
+   set(HAVE_CXX_ATOMIC_WITHOUT_LIB FALSE)
+   check_cxx_source_compiles("
+     #include <atomic>
+-    std::atomic a;
++    std::atomic_int a;
+     int main() { return a; }"
+   HAVE_CXX_ATOMIC_WITHOUT_LIB)
+   if(NOT HAVE_CXX_ATOMIC_WITHOUT_LIB)
