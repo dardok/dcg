@@ -1,9 +1,9 @@
 diff --git a/src/assimp/build_vars.cmake b/src/assimp/build_vars.cmake
-index 3903ec8..77679d7 100644
+index d987aef..bdc60e9 100644
 --- a/src/assimp/build_vars.cmake
 +++ b/src/assimp/build_vars.cmake
 @@ -1,5 +1,8 @@
- # add assimp if vailable
+ # add assimp if available
 +find_package(assimp 5.2 QUIET)
 +if(NOT assimp_FOUND)
  find_package(assimp 5.1 QUIET)
