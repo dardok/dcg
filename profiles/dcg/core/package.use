@@ -38,7 +38,7 @@ net-fs/nfs-utils nfsdcld
 net-libs/nghttp2 hpack-tools
 
 net-misc/curl http2
-net-misc/frr grpc
+#net-misc/frr grpc
 
 net-nds/openldap minimal
 net-nds/rpcbind warmstarts
