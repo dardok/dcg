@@ -49,7 +49,6 @@ src_configure() {
 		--enable-bgq=no
 		$(usex cuda "--enable-cuda-dlopen" "")
 		$(usex cuda "--with-cuda=/opt/cuda" "")
-		--with-cuda=/opt/cuda
 		--enable-efa=$(usex efa yes no)
 		--enable-gni=no
 		#--enable-gdrcopy-dlopen=no
