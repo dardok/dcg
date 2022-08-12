@@ -48,6 +48,7 @@ src_configure() {
 		# let's try to avoid automagic deps
 		--enable-bgq=no
 		--enable-cuda-dlopen=$(usex cuda yes no)
+		--with-cuda=/opt/cuda
 		--enable-efa=$(usex efa yes no)
 		--enable-gni=no
 		#--enable-gdrcopy-dlopen=no
