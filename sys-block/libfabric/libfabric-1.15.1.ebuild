@@ -47,7 +47,6 @@ src_configure() {
 		--disable-static
 		# let's try to avoid automagic deps
 		--enable-bgq=no
-		--enable-cuda-dlopen=$(usex cuda yes no)
 		$(usex cuda "--enable-cuda-dlopen" "")
 		$(usex cuda "--with-cuda=/opt/cuda" "")
 		--with-cuda=/opt/cuda
