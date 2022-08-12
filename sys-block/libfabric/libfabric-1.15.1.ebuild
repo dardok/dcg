@@ -48,6 +48,8 @@ src_configure() {
 		# let's try to avoid automagic deps
 		--enable-bgq=no
 		--enable-cuda-dlopen=$(usex cuda yes no)
+		$(usex cuda "--enable-cuda-dlopen" "")
+		$(usex cuda "--with-cuda=/opt/cuda" "")
 		--with-cuda=/opt/cuda
 		--enable-efa=$(usex efa yes no)
 		--enable-gni=no
@@ -58,7 +60,7 @@ src_configure() {
 		--enable-psm=no
 		--enable-psm2=no
 		--enable-psm3=no
-		--enable-rocr-dlopen=$(usex rocr yes no)
+		$(usex rocr "--enable-rocr-dlopen" "")
 		--enable-rstream=yes
 		--enable-rxd=yes
 		--enable-rxm=yes
