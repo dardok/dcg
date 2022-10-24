@@ -7,7 +7,7 @@ dev-libs/rocm-hostcall
 dev-libs/rocm-opencl-runtime
 dev-libs/rocr-runtime
 dev-libs/roct-thunk-interface
-<dev-util/nvidia-cuda-toolkit-11.5
+<dev-util/nvidia-cuda-toolkit-11.6
 dev-util/rocm-cmake
 x11-libs/libdrm
 x11-terms/kitty
