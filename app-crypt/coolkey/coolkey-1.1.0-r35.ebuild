@@ -51,6 +51,7 @@ src_prepare() {
 src_configure() {
 	econf \
 		--enable-pk11install \
+		--disable-static \
 		$(use_enable debug)
 }
 
