@@ -32,6 +32,6 @@ x11-drivers/nvidia-drivers uvm tools static-libs
 x11-drivers/xf86-video-ati glamor
 x11-libs/gtk+ broadway
 x11-libs/libdrm libkms
-x11-libs/libva nvidia
+#x11-libs/libva nvidia
 x11-libs/vte python
 x11-misc/notify-osd minimal
