@@ -1,13 +1,13 @@
 diff --git a/src/assimp/build_vars.cmake b/src/assimp/build_vars.cmake
-index 0ceff6a..89d5dbb 100644
+index d987aef..bdc60e9 100644
 --- a/src/assimp/build_vars.cmake
 +++ b/src/assimp/build_vars.cmake
-@@ -25,7 +25,7 @@ if (${vsgXchange_assimp})
-         assimp/assimp.cpp
-     )
-     set(EXTRA_INCLUDES ${EXTRA_INCLUDES} ${assimp_INCLUDE_DIRS})
--    set(EXTRA_LIBRARIES ${EXTRA_LIBRARIES} assimp::assimp)
-+    set(EXTRA_LIBRARIES ${EXTRA_LIBRARIES} ${assimp_LIBRARIES})
-     if(NOT BUILD_SHARED_LIBS)
-         set(FIND_DEPENDENCY ${FIND_DEPENDENCY} "find_dependency(assimp)")
-     endif()
+@@ -1,5 +1,8 @@
+ # add assimp if available
++find_package(assimp 5.2 QUIET)
++if(NOT assimp_FOUND)
+ find_package(assimp 5.1 QUIET)
++endif()
+ if(NOT assimp_FOUND)
+ find_package(assimp 5.0 QUIET)
+ endif()

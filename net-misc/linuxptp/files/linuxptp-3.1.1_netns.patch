@@ -1,0 +1,747 @@
+diff -u -r -N linuxptp-3.1.1/bmc.d linuxptp-3.1.1.b/bmc.d
+--- linuxptp-3.1.1/bmc.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/bmc.d	2022-03-04 08:17:25.462153231 -0500
+@@ -0,0 +1,4 @@
++bmc.o bmc.d : bmc.c bmc.h clock.h dm.h ds.h ddt.h pdt.h fault.h filter.h tmv.h \
++ tsproc.h config.h interface.h sk.h address.h transport.h fd.h msg.h \
++ tlv.h mtab.h unicast_fsm.h servo.h monitor.h port.h foreign.h fsm.h \
++ notification.h
+Binary files linuxptp-3.1.1/bmc.o and linuxptp-3.1.1.b/bmc.o differ
+diff -u -r -N linuxptp-3.1.1/clockadj.d linuxptp-3.1.1.b/clockadj.d
+--- linuxptp-3.1.1/clockadj.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/clockadj.d	2022-03-04 08:17:25.466153173 -0500
+@@ -0,0 +1,3 @@
++clockadj.o clockadj.d : clockadj.c clockadj.h missing.h print.h util.h address.h \
++ ddt.h pdt.h ether.h transport.h fd.h msg.h tlv.h ds.h fault.h filter.h \
++ tmv.h tsproc.h
+Binary files linuxptp-3.1.1/clockadj.o and linuxptp-3.1.1.b/clockadj.o differ
+diff -u -r -N linuxptp-3.1.1/clock.c linuxptp-3.1.1.b/clock.c
+--- linuxptp-3.1.1/clock.c	2021-07-04 21:51:59.000000000 -0400
++++ linuxptp-3.1.1.b/clock.c	2022-03-04 08:18:54.036925274 -0500
+@@ -992,6 +992,10 @@
+ 	c->timestamping = timestamping;
+ 	required_modes = clock_required_modes(c);
+ 	STAILQ_FOREACH(iface, &config->interfaces, list) {
++ 		tmp = config_get_string(config, interface_name(iface), "network_namespace");
++ 		if (sk_reassociate_namespace(tmp)) {
++ 			return NULL;
++ 		}
+ 		memset(ts_label, 0, sizeof(ts_label));
+ 		rtnl_get_ts_device(interface_name(iface), ts_label);
+ 		interface_set_label(iface, ts_label);
+diff -u -r -N linuxptp-3.1.1/clockcheck.d linuxptp-3.1.1.b/clockcheck.d
+--- linuxptp-3.1.1/clockcheck.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/clockcheck.d	2022-03-04 08:17:25.462153231 -0500
+@@ -0,0 +1,3 @@
++clockcheck.o clockcheck.d : clockcheck.c clockcheck.h print.h util.h address.h ddt.h \
++ pdt.h ether.h transport.h fd.h msg.h tlv.h ds.h fault.h filter.h tmv.h \
++ tsproc.h
+Binary files linuxptp-3.1.1/clockcheck.o and linuxptp-3.1.1.b/clockcheck.o differ
+diff -u -r -N linuxptp-3.1.1/clock.d linuxptp-3.1.1.b/clock.d
+--- linuxptp-3.1.1/clock.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/clock.d	2022-03-04 08:19:11.116688444 -0500
+@@ -0,0 +1,5 @@
++clock.o clock.d : clock.c address.h bmc.h clock.h dm.h ds.h ddt.h pdt.h fault.h \
++ filter.h tmv.h tsproc.h config.h interface.h sk.h transport.h fd.h msg.h \
++ tlv.h mtab.h unicast_fsm.h servo.h monitor.h port.h foreign.h fsm.h \
++ notification.h clockadj.h clockcheck.h missing.h phc.h stats.h print.h \
++ util.h ether.h rtnl.h uds.h
+Binary files linuxptp-3.1.1/clock.o and linuxptp-3.1.1.b/clock.o differ
+diff -u -r -N linuxptp-3.1.1/config.c linuxptp-3.1.1.b/config.c
+--- linuxptp-3.1.1/config.c	2021-07-04 21:51:59.000000000 -0400
++++ linuxptp-3.1.1.b/config.c	2022-03-04 08:04:18.801026162 -0500
+@@ -275,6 +275,8 @@
+ 	PORT_ITEM_INT("msg_interval_request", 0, 0, 1),
+ 	PORT_ITEM_INT("neighborPropDelayThresh", 20000000, 0, INT_MAX),
+ 	PORT_ITEM_INT("net_sync_monitor", 0, 0, 1),
++	GLOB_ITEM_STR("netns_path", "/var/run/netns/"),
++	PORT_ITEM_STR("network_namespace", ""),
+ 	PORT_ITEM_ENU("network_transport", TRANS_UDP_IPV4, nw_trans_enu),
+ 	GLOB_ITEM_INT("ntpshm_segment", 0, INT_MIN, INT_MAX),
+ 	GLOB_ITEM_INT("offsetScaledLogVariance", 0xffff, 0, UINT16_MAX),
+diff -u -r -N linuxptp-3.1.1/config.d linuxptp-3.1.1.b/config.d
+--- linuxptp-3.1.1/config.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/config.d	2022-03-04 08:17:25.462153231 -0500
+@@ -0,0 +1,4 @@
++config.o config.d : config.c as_capable.h bmc.h clock.h dm.h ds.h ddt.h pdt.h \
++ fault.h filter.h tmv.h tsproc.h config.h interface.h sk.h address.h \
++ transport.h fd.h msg.h tlv.h mtab.h unicast_fsm.h servo.h monitor.h \
++ port.h foreign.h fsm.h notification.h ether.h hash.h print.h util.h
+Binary files linuxptp-3.1.1/config.o and linuxptp-3.1.1.b/config.o differ
+diff -u -r -N linuxptp-3.1.1/designated_fsm.d linuxptp-3.1.1.b/designated_fsm.d
+--- linuxptp-3.1.1/designated_fsm.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/designated_fsm.d	2022-03-04 08:17:25.450153398 -0500
+@@ -0,0 +1 @@
++designated_fsm.o designated_fsm.d : designated_fsm.c fsm.h designated_fsm.h
+Binary files linuxptp-3.1.1/designated_fsm.o and linuxptp-3.1.1.b/designated_fsm.o differ
+diff -u -r -N linuxptp-3.1.1/e2e_tc.d linuxptp-3.1.1.b/e2e_tc.d
+--- linuxptp-3.1.1/e2e_tc.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/e2e_tc.d	2022-03-04 08:17:25.454153342 -0500
+@@ -0,0 +1,5 @@
++e2e_tc.o e2e_tc.d : e2e_tc.c port.h dm.h fd.h foreign.h ds.h ddt.h pdt.h fault.h \
++ filter.h tmv.h tsproc.h fsm.h notification.h transport.h msg.h address.h \
++ tlv.h port_private.h as_capable.h clock.h config.h interface.h sk.h \
++ mtab.h unicast_fsm.h servo.h monitor.h print.h util.h ether.h rtnl.h \
++ tc.h
+Binary files linuxptp-3.1.1/e2e_tc.o and linuxptp-3.1.1.b/e2e_tc.o differ
+diff -u -r -N linuxptp-3.1.1/fault.d linuxptp-3.1.1.b/fault.d
+--- linuxptp-3.1.1/fault.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/fault.d	2022-03-04 08:17:25.450153398 -0500
+@@ -0,0 +1 @@
++fault.o fault.d : fault.c fault.h
+Binary files linuxptp-3.1.1/fault.o and linuxptp-3.1.1.b/fault.o differ
+diff -u -r -N linuxptp-3.1.1/filter.d linuxptp-3.1.1.b/filter.d
+--- linuxptp-3.1.1/filter.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/filter.d	2022-03-04 08:17:25.442153509 -0500
+@@ -0,0 +1,2 @@
++filter.o filter.d : filter.c filter_private.h tmv.h ddt.h pdt.h contain.h mave.h \
++ filter.h mmedian.h
+Binary files linuxptp-3.1.1/filter.o and linuxptp-3.1.1.b/filter.o differ
+diff -u -r -N linuxptp-3.1.1/fsm.d linuxptp-3.1.1.b/fsm.d
+--- linuxptp-3.1.1/fsm.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/fsm.d	2022-03-04 08:17:25.446153451 -0500
+@@ -0,0 +1 @@
++fsm.o fsm.d : fsm.c fsm.h
+Binary files linuxptp-3.1.1/fsm.o and linuxptp-3.1.1.b/fsm.o differ
+diff -u -r -N linuxptp-3.1.1/hash.d linuxptp-3.1.1.b/hash.d
+--- linuxptp-3.1.1/hash.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/hash.d	2022-03-04 08:17:25.450153398 -0500
+@@ -0,0 +1 @@
++hash.o hash.d : hash.c hash.h
+Binary files linuxptp-3.1.1/hash.o and linuxptp-3.1.1.b/hash.o differ
+Binary files linuxptp-3.1.1/hwstamp_ctl and linuxptp-3.1.1.b/hwstamp_ctl differ
+diff -u -r -N linuxptp-3.1.1/hwstamp_ctl.d linuxptp-3.1.1.b/hwstamp_ctl.d
+--- linuxptp-3.1.1/hwstamp_ctl.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/hwstamp_ctl.d	2022-03-04 08:17:25.394154174 -0500
+@@ -0,0 +1 @@
++hwstamp_ctl.o hwstamp_ctl.d : hwstamp_ctl.c version.h missing.h
+Binary files linuxptp-3.1.1/hwstamp_ctl.o and linuxptp-3.1.1.b/hwstamp_ctl.o differ
+diff -u -r -N linuxptp-3.1.1/interface.d linuxptp-3.1.1.b/interface.d
+--- linuxptp-3.1.1/interface.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/interface.d	2022-03-04 08:17:25.450153398 -0500
+@@ -0,0 +1,2 @@
++interface.o interface.d : interface.c interface.h sk.h address.h transport.h fd.h \
++ msg.h ddt.h pdt.h tlv.h ds.h fault.h filter.h tmv.h tsproc.h
+Binary files linuxptp-3.1.1/interface.o and linuxptp-3.1.1.b/interface.o differ
+diff -u -r -N linuxptp-3.1.1/linreg.d linuxptp-3.1.1.b/linreg.d
+--- linuxptp-3.1.1/linreg.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/linreg.d	2022-03-04 08:17:25.438153562 -0500
+@@ -0,0 +1,3 @@
++linreg.o linreg.d : linreg.c linreg.h servo.h print.h util.h address.h ddt.h pdt.h \
++ ether.h transport.h fd.h msg.h tlv.h ds.h fault.h filter.h tmv.h \
++ tsproc.h servo_private.h contain.h
+Binary files linuxptp-3.1.1/linreg.o and linuxptp-3.1.1.b/linreg.o differ
+diff -u -r -N linuxptp-3.1.1/lstab.d linuxptp-3.1.1.b/lstab.d
+--- linuxptp-3.1.1/lstab.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/lstab.d	2022-03-04 08:17:25.346154839 -0500
+@@ -0,0 +1 @@
++lstab.o lstab.d : lstab.c lstab.h
+Binary files linuxptp-3.1.1/lstab.o and linuxptp-3.1.1.b/lstab.o differ
+diff -u -r -N linuxptp-3.1.1/mave.d linuxptp-3.1.1.b/mave.d
+--- linuxptp-3.1.1/mave.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/mave.d	2022-03-04 08:17:25.450153398 -0500
+@@ -0,0 +1,2 @@
++mave.o mave.d : mave.c mave.h filter.h tmv.h ddt.h pdt.h filter_private.h \
++ contain.h
+Binary files linuxptp-3.1.1/mave.o and linuxptp-3.1.1.b/mave.o differ
+diff -u -r -N linuxptp-3.1.1/mmedian.d linuxptp-3.1.1.b/mmedian.d
+--- linuxptp-3.1.1/mmedian.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/mmedian.d	2022-03-04 08:17:25.450153398 -0500
+@@ -0,0 +1,2 @@
++mmedian.o mmedian.d : mmedian.c mmedian.h filter.h tmv.h ddt.h pdt.h \
++ filter_private.h contain.h
+Binary files linuxptp-3.1.1/mmedian.o and linuxptp-3.1.1.b/mmedian.o differ
+diff -u -r -N linuxptp-3.1.1/monitor.d linuxptp-3.1.1.b/monitor.d
+--- linuxptp-3.1.1/monitor.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/monitor.d	2022-03-04 08:17:25.446153451 -0500
+@@ -0,0 +1,4 @@
++monitor.o monitor.d : monitor.c address.h monitor.h config.h ds.h ddt.h pdt.h \
++ fault.h filter.h tmv.h tsproc.h dm.h interface.h sk.h transport.h fd.h \
++ msg.h tlv.h mtab.h unicast_fsm.h servo.h port.h foreign.h fsm.h \
++ notification.h print.h util.h ether.h
+Binary files linuxptp-3.1.1/monitor.o and linuxptp-3.1.1.b/monitor.o differ
+diff -u -r -N linuxptp-3.1.1/msg.d linuxptp-3.1.1.b/msg.d
+--- linuxptp-3.1.1/msg.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/msg.d	2022-03-04 08:17:25.454153342 -0500
+@@ -0,0 +1,2 @@
++msg.o msg.d : msg.c contain.h msg.h address.h ddt.h pdt.h tlv.h ds.h fault.h \
++ filter.h tmv.h tsproc.h print.h util.h ether.h transport.h fd.h
+Binary files linuxptp-3.1.1/msg.o and linuxptp-3.1.1.b/msg.o differ
+diff -u -r -N linuxptp-3.1.1/nmea.d linuxptp-3.1.1.b/nmea.d
+--- linuxptp-3.1.1/nmea.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/nmea.d	2022-03-04 08:17:25.374154449 -0500
+@@ -0,0 +1,2 @@
++nmea.o nmea.d : nmea.c nmea.h print.h util.h address.h ddt.h pdt.h ether.h \
++ transport.h fd.h msg.h tlv.h ds.h fault.h filter.h tmv.h tsproc.h
+Binary files linuxptp-3.1.1/nmea.o and linuxptp-3.1.1.b/nmea.o differ
+Binary files linuxptp-3.1.1/nsm and linuxptp-3.1.1.b/nsm differ
+diff -u -r -N linuxptp-3.1.1/nsm.d linuxptp-3.1.1.b/nsm.d
+--- linuxptp-3.1.1/nsm.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/nsm.d	2022-03-04 08:17:25.378154395 -0500
+@@ -0,0 +1,3 @@
++nsm.o nsm.d : nsm.c config.h ds.h ddt.h pdt.h fault.h filter.h tmv.h tsproc.h \
++ dm.h interface.h sk.h address.h transport.h fd.h msg.h tlv.h mtab.h \
++ unicast_fsm.h servo.h print.h util.h ether.h rtnl.h version.h
+Binary files linuxptp-3.1.1/nsm.o and linuxptp-3.1.1.b/nsm.o differ
+diff -u -r -N linuxptp-3.1.1/ntpshm.d linuxptp-3.1.1.b/ntpshm.d
+--- linuxptp-3.1.1/ntpshm.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/ntpshm.d	2022-03-04 08:17:25.422153784 -0500
+@@ -0,0 +1,4 @@
++ntpshm.o ntpshm.d : ntpshm.c config.h ds.h ddt.h pdt.h fault.h filter.h tmv.h \
++ tsproc.h dm.h interface.h sk.h address.h transport.h fd.h msg.h tlv.h \
++ mtab.h unicast_fsm.h servo.h print.h util.h ether.h ntpshm.h \
++ servo_private.h contain.h
+Binary files linuxptp-3.1.1/ntpshm.o and linuxptp-3.1.1.b/ntpshm.o differ
+diff -u -r -N linuxptp-3.1.1/nullf.d linuxptp-3.1.1.b/nullf.d
+--- linuxptp-3.1.1/nullf.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/nullf.d	2022-03-04 08:17:25.426153730 -0500
+@@ -0,0 +1,3 @@
++nullf.o nullf.d : nullf.c nullf.h servo.h print.h util.h address.h ddt.h pdt.h \
++ ether.h transport.h fd.h msg.h tlv.h ds.h fault.h filter.h tmv.h \
++ tsproc.h servo_private.h contain.h
+Binary files linuxptp-3.1.1/nullf.o and linuxptp-3.1.1.b/nullf.o differ
+diff -u -r -N linuxptp-3.1.1/p2p_tc.d linuxptp-3.1.1.b/p2p_tc.d
+--- linuxptp-3.1.1/p2p_tc.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/p2p_tc.d	2022-03-04 08:17:25.422153784 -0500
+@@ -0,0 +1,5 @@
++p2p_tc.o p2p_tc.d : p2p_tc.c port.h dm.h fd.h foreign.h ds.h ddt.h pdt.h fault.h \
++ filter.h tmv.h tsproc.h fsm.h notification.h transport.h msg.h address.h \
++ tlv.h port_private.h as_capable.h clock.h config.h interface.h sk.h \
++ mtab.h unicast_fsm.h servo.h monitor.h print.h util.h ether.h rtnl.h \
++ tc.h
+Binary files linuxptp-3.1.1/p2p_tc.o and linuxptp-3.1.1.b/p2p_tc.o differ
+Binary files linuxptp-3.1.1/phc2sys and linuxptp-3.1.1.b/phc2sys differ
+diff -u -r -N linuxptp-3.1.1/phc2sys.d linuxptp-3.1.1.b/phc2sys.d
+--- linuxptp-3.1.1/phc2sys.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/phc2sys.d	2022-03-04 08:17:25.374154449 -0500
+@@ -0,0 +1,5 @@
++phc2sys.o phc2sys.d : phc2sys.c clockadj.h clockcheck.h ds.h ddt.h pdt.h fault.h \
++ filter.h tmv.h tsproc.h fsm.h missing.h notification.h ntpshm.h servo.h \
++ phc.h pi.h pmc_common.h config.h dm.h interface.h sk.h address.h \
++ transport.h fd.h msg.h tlv.h mtab.h unicast_fsm.h print.h util.h ether.h \
++ stats.h sysoff.h uds.h version.h
+Binary files linuxptp-3.1.1/phc2sys.o and linuxptp-3.1.1.b/phc2sys.o differ
+Binary files linuxptp-3.1.1/phc_ctl and linuxptp-3.1.1.b/phc_ctl differ
+diff -u -r -N linuxptp-3.1.1/phc_ctl.d linuxptp-3.1.1.b/phc_ctl.d
+--- linuxptp-3.1.1/phc_ctl.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/phc_ctl.d	2022-03-04 08:17:25.382154338 -0500
+@@ -0,0 +1,3 @@
++phc_ctl.o phc_ctl.d : phc_ctl.c clockadj.h missing.h phc.h print.h util.h address.h \
++ ddt.h pdt.h ether.h transport.h fd.h msg.h tlv.h ds.h fault.h filter.h \
++ tmv.h tsproc.h sk.h sysoff.h version.h
+Binary files linuxptp-3.1.1/phc_ctl.o and linuxptp-3.1.1.b/phc_ctl.o differ
+diff -u -r -N linuxptp-3.1.1/phc.d linuxptp-3.1.1.b/phc.d
+--- linuxptp-3.1.1/phc.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/phc.d	2022-03-04 08:17:25.438153562 -0500
+@@ -0,0 +1 @@
++phc.o phc.d : phc.c phc.h missing.h
+Binary files linuxptp-3.1.1/phc.o and linuxptp-3.1.1.b/phc.o differ
+diff -u -r -N linuxptp-3.1.1/pi.d linuxptp-3.1.1.b/pi.d
+--- linuxptp-3.1.1/pi.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/pi.d	2022-03-04 08:17:25.418153841 -0500
+@@ -0,0 +1,4 @@
++pi.o pi.d : pi.c config.h ds.h ddt.h pdt.h fault.h filter.h tmv.h tsproc.h dm.h \
++ interface.h sk.h address.h transport.h fd.h msg.h tlv.h mtab.h \
++ unicast_fsm.h servo.h pi.h print.h util.h ether.h servo_private.h \
++ contain.h
+Binary files linuxptp-3.1.1/pi.o and linuxptp-3.1.1.b/pi.o differ
+Binary files linuxptp-3.1.1/pmc and linuxptp-3.1.1.b/pmc differ
+diff -u -r -N linuxptp-3.1.1/pmc_common.d linuxptp-3.1.1.b/pmc_common.d
+--- linuxptp-3.1.1/pmc_common.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/pmc_common.d	2022-03-04 08:17:25.378154395 -0500
+@@ -0,0 +1,4 @@
++pmc_common.o pmc_common.d : pmc_common.c notification.h print.h util.h address.h ddt.h \
++ pdt.h ether.h transport.h fd.h msg.h tlv.h ds.h fault.h filter.h tmv.h \
++ tsproc.h pmc_common.h config.h dm.h interface.h sk.h mtab.h \
++ unicast_fsm.h servo.h
+Binary files linuxptp-3.1.1/pmc_common.o and linuxptp-3.1.1.b/pmc_common.o differ
+diff -u -r -N linuxptp-3.1.1/pmc.d linuxptp-3.1.1.b/pmc.d
+--- linuxptp-3.1.1/pmc.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/pmc.d	2022-03-04 08:17:25.362154617 -0500
+@@ -0,0 +1,4 @@
++pmc.o pmc.d : pmc.c ds.h ddt.h pdt.h fault.h filter.h tmv.h tsproc.h fsm.h \
++ notification.h pmc_common.h config.h dm.h interface.h sk.h address.h \
++ transport.h fd.h msg.h tlv.h mtab.h unicast_fsm.h servo.h print.h util.h \
++ ether.h uds.h version.h
+Binary files linuxptp-3.1.1/pmc.o and linuxptp-3.1.1.b/pmc.o differ
+diff -u -r -N linuxptp-3.1.1/port.d linuxptp-3.1.1.b/port.d
+--- linuxptp-3.1.1/port.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/port.d	2022-03-04 08:17:25.442153509 -0500
+@@ -0,0 +1,6 @@
++port.o port.d : port.c bmc.h clock.h dm.h ds.h ddt.h pdt.h fault.h filter.h tmv.h \
++ tsproc.h config.h interface.h sk.h address.h transport.h fd.h msg.h \
++ tlv.h mtab.h unicast_fsm.h servo.h monitor.h port.h foreign.h fsm.h \
++ notification.h designated_fsm.h missing.h phc.h port_private.h \
++ as_capable.h print.h util.h ether.h rtnl.h tc.h unicast_client.h \
++ unicast_service.h
+Binary files linuxptp-3.1.1/port.o and linuxptp-3.1.1.b/port.o differ
+diff -u -r -N linuxptp-3.1.1/port_signaling.d linuxptp-3.1.1.b/port_signaling.d
+--- linuxptp-3.1.1/port_signaling.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/port_signaling.d	2022-03-04 08:17:25.438153562 -0500
+@@ -0,0 +1,5 @@
++port_signaling.o port_signaling.d : port_signaling.c port.h dm.h fd.h foreign.h ds.h ddt.h \
++ pdt.h fault.h filter.h tmv.h tsproc.h fsm.h notification.h transport.h \
++ msg.h address.h tlv.h port_private.h as_capable.h clock.h config.h \
++ interface.h sk.h mtab.h unicast_fsm.h servo.h monitor.h print.h util.h \
++ ether.h unicast_client.h unicast_service.h
+Binary files linuxptp-3.1.1/port_signaling.o and linuxptp-3.1.1.b/port_signaling.o differ
+diff -u -r -N linuxptp-3.1.1/pqueue.d linuxptp-3.1.1.b/pqueue.d
+--- linuxptp-3.1.1/pqueue.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/pqueue.d	2022-03-04 08:17:25.426153730 -0500
+@@ -0,0 +1 @@
++pqueue.o pqueue.d : pqueue.c pqueue.h
+Binary files linuxptp-3.1.1/pqueue.o and linuxptp-3.1.1.b/pqueue.o differ
+diff -u -r -N linuxptp-3.1.1/print.d linuxptp-3.1.1.b/print.d
+--- linuxptp-3.1.1/print.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/print.d	2022-03-04 08:17:25.438153562 -0500
+@@ -0,0 +1,2 @@
++print.o print.d : print.c print.h util.h address.h ddt.h pdt.h ether.h transport.h \
++ fd.h msg.h tlv.h ds.h fault.h filter.h tmv.h tsproc.h
+Binary files linuxptp-3.1.1/print.o and linuxptp-3.1.1.b/print.o differ
+Binary files linuxptp-3.1.1/ptp4l and linuxptp-3.1.1.b/ptp4l differ
+diff -u -r -N linuxptp-3.1.1/ptp4l.8 linuxptp-3.1.1.b/ptp4l.8
+--- linuxptp-3.1.1/ptp4l.8	2021-07-04 21:51:59.000000000 -0400
++++ linuxptp-3.1.1.b/ptp4l.8	2022-03-04 08:04:18.801026162 -0500
+@@ -292,6 +292,15 @@
+ The MAC address to which peer delay messages should be sent.
+ Relevant only with L2 transport. The default is 01:80:C2:00:00:0E.
+ .TP
++.B network_namespace
++The network namspace in which the port operate.
++This option should be used if atleast one port operates in different
++namespaces than the other. When used, the ptp4l program needs to be
++opened in default namespace.
++Skip this option to select default namespace for the port.
++If all ports operates in same namespace, the ptp4l program can be opened
++directly in that namespace and this option can be disregarded.
++.TP
+ .B network_transport
+ Select the network transport. Possible values are UDPv4, UDPv6 and L2.
+ The default is UDPv4.
+@@ -375,6 +384,10 @@
+ .SH PROGRAM AND CLOCK OPTIONS
+ 
+ .TP
++.B netns_path
++Specifies the path where the named network namspace object is located.
++The default is /var/run/netns/
++.TP
+ .B twoStepFlag
+ Enable two-step mode for sync messages. One-step mode can be used only with
+ hardware time stamping.
+diff -u -r -N linuxptp-3.1.1/ptp4l.c linuxptp-3.1.1.b/ptp4l.c
+--- linuxptp-3.1.1/ptp4l.c	2021-07-04 21:51:59.000000000 -0400
++++ linuxptp-3.1.1.b/ptp4l.c	2022-03-04 08:04:22.608973780 -0500
+@@ -70,7 +70,7 @@
+ 
+ int main(int argc, char *argv[])
+ {
+-	char *config = NULL, *req_phc = NULL, *progname;
++	char *config = NULL, *req_phc = NULL, *progname, *tmp;
+ 	enum clock_type type = CLOCK_TYPE_ORDINARY;
+ 	int c, err = -1, index, print_level;
+ 	struct clock *clock = NULL;
+@@ -240,6 +240,11 @@
+ 		goto out;
+ 	}
+ 
++	tmp = config_get_string(cfg, NULL, "netns_path");
++	if (sk_initiate_namespace_reassociation(tmp) < 0) {
++		goto out;
++	}
++
+ 	clock = clock_create(type, cfg, req_phc);
+ 	if (!clock) {
+ 		fprintf(stderr, "failed to create a clock\n");
+@@ -253,8 +258,11 @@
+ 			break;
+ 	}
+ out:
+-	if (clock)
++	if (clock) {
+ 		clock_destroy(clock);
++	}
++
++	sk_close_initial_namespace_fd();
+ 	config_destroy(cfg);
+ 	return err;
+ }
+diff -u -r -N linuxptp-3.1.1/ptp4l.d linuxptp-3.1.1.b/ptp4l.d
+--- linuxptp-3.1.1/ptp4l.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/ptp4l.d	2022-03-04 08:17:25.442153509 -0500
+@@ -0,0 +1,5 @@
++ptp4l.o ptp4l.d : ptp4l.c clock.h dm.h ds.h ddt.h pdt.h fault.h filter.h tmv.h \
++ tsproc.h config.h interface.h sk.h address.h transport.h fd.h msg.h \
++ tlv.h mtab.h unicast_fsm.h servo.h monitor.h port.h foreign.h fsm.h \
++ notification.h ntpshm.h pi.h print.h util.h ether.h raw.h udp6.h uds.h \
++ version.h
+Binary files linuxptp-3.1.1/ptp4l.o and linuxptp-3.1.1.b/ptp4l.o differ
+diff -u -r -N linuxptp-3.1.1/raw.d linuxptp-3.1.1.b/raw.d
+--- linuxptp-3.1.1/raw.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/raw.d	2022-03-04 08:17:25.410153952 -0500
+@@ -0,0 +1,4 @@
++raw.o raw.d : raw.c address.h config.h ds.h ddt.h pdt.h fault.h filter.h tmv.h \
++ tsproc.h dm.h interface.h sk.h transport.h fd.h msg.h tlv.h mtab.h \
++ unicast_fsm.h servo.h contain.h ether.h print.h util.h raw.h \
++ transport_private.h
+Binary files linuxptp-3.1.1/raw.o and linuxptp-3.1.1.b/raw.o differ
+diff -u -r -N linuxptp-3.1.1/rtnl.d linuxptp-3.1.1.b/rtnl.d
+--- linuxptp-3.1.1/rtnl.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/rtnl.d	2022-03-04 08:17:25.426153730 -0500
+@@ -0,0 +1,2 @@
++rtnl.o rtnl.d : rtnl.c missing.h print.h util.h address.h ddt.h pdt.h ether.h \
++ transport.h fd.h msg.h tlv.h ds.h fault.h filter.h tmv.h tsproc.h rtnl.h
+Binary files linuxptp-3.1.1/rtnl.o and linuxptp-3.1.1.b/rtnl.o differ
+diff -u -r -N linuxptp-3.1.1/serial.d linuxptp-3.1.1.b/serial.d
+--- linuxptp-3.1.1/serial.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/serial.d	2022-03-04 08:17:25.354154728 -0500
+@@ -0,0 +1,3 @@
++serial.o serial.d : serial.c print.h util.h address.h ddt.h pdt.h ether.h \
++ transport.h fd.h msg.h tlv.h ds.h fault.h filter.h tmv.h tsproc.h \
++ serial.h
+Binary files linuxptp-3.1.1/serial.o and linuxptp-3.1.1.b/serial.o differ
+diff -u -r -N linuxptp-3.1.1/servo.d linuxptp-3.1.1.b/servo.d
+--- linuxptp-3.1.1/servo.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/servo.d	2022-03-04 08:17:25.410153952 -0500
+@@ -0,0 +1,4 @@
++servo.o servo.d : servo.c config.h ds.h ddt.h pdt.h fault.h filter.h tmv.h \
++ tsproc.h dm.h interface.h sk.h address.h transport.h fd.h msg.h tlv.h \
++ mtab.h unicast_fsm.h servo.h linreg.h ntpshm.h nullf.h pi.h \
++ servo_private.h contain.h print.h util.h ether.h
+Binary files linuxptp-3.1.1/servo.o and linuxptp-3.1.1.b/servo.o differ
+diff -u -r -N linuxptp-3.1.1/sk.c linuxptp-3.1.1.b/sk.c
+--- linuxptp-3.1.1/sk.c	2021-07-04 21:51:59.000000000 -0400
++++ linuxptp-3.1.1.b/sk.c	2022-03-04 08:04:21.004995844 -0500
+@@ -26,6 +26,8 @@
+ #include <netinet/in.h>
+ #include <string.h>
+ #include <sys/ioctl.h>
++#include <fcntl.h>
++#include <sched.h>
+ #include <unistd.h>
+ #include <ifaddrs.h>
+ #include <stdlib.h>
+@@ -43,6 +45,9 @@
+ int sk_check_fupsync;
+ enum hwts_filter_mode sk_hwts_filter_mode = HWTS_FILTER_NORMAL;
+ 
++static int sk_initial_fd = -1;
++static char sk_netns_path[64];
++
+ /* private methods */
+ 
+ static void init_ifreq(struct ifreq *ifreq, struct hwtstamp_config *cfg,
+@@ -155,6 +160,52 @@
+ 	}
+ 	return 0;
+ }
++
++int sk_initiate_namespace_reassociation(const char *netns) {
++	snprintf(sk_netns_path, sizeof sk_netns_path, "%s", netns);
++	sk_initial_fd = open("/proc/self/ns/net", O_RDONLY);
++	if (sk_initial_fd < 0) {
++		pr_err("open initial namespace fd failed: %m");
++		return -1;
++	}
++	return 0;
++}
++
++void sk_close_initial_namespace_fd(void) {
++	if (sk_initial_fd >= 0) {
++		close(sk_initial_fd);
++		sk_initial_fd = -1;
++	}
++}
++
++int sk_reassociate_namespace(const char *ns)
++{
++	char path[64];
++	int fd;
++
++	if (*ns == '\0') {
++		if (setns(sk_initial_fd, CLONE_NEWNET) < 0) {
++			pr_err("setns failed: %m");
++			return -1;
++		}
++		pr_notice("setns for default namespace ok");
++        } else {
++		snprintf(path, sizeof path, "%s%s", sk_netns_path, ns);
++		fd = open(path, O_RDONLY);
++		if (fd < 0) {
++			pr_err("failed to open %s: %m", path);
++			return -1;
++		}
++		if (setns(fd, CLONE_NEWNET) < 0) {
++			pr_err("setns failed: %m");
++			close(fd);
++			return -1;
++		}
++		pr_notice("setns ok, %s", path);
++		close(fd);
++	}
++	return 0;
++}
+ 
+ int sk_get_ts_info(const char *name, struct sk_ts_info *sk_info)
+ {
+diff -u -r -N linuxptp-3.1.1/sk.d linuxptp-3.1.1.b/sk.d
+--- linuxptp-3.1.1/sk.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/sk.d	2022-03-04 08:17:25.446153451 -0500
+@@ -0,0 +1,2 @@
++sk.o sk.d : sk.c address.h ether.h missing.h print.h util.h ddt.h pdt.h \
++ transport.h fd.h msg.h tlv.h ds.h fault.h filter.h tmv.h tsproc.h sk.h
+diff -u -r -N linuxptp-3.1.1/sk.h linuxptp-3.1.1.b/sk.h
+--- linuxptp-3.1.1/sk.h	2021-07-04 21:51:59.000000000 -0400
++++ linuxptp-3.1.1.b/sk.h	2022-03-04 08:04:21.004995844 -0500
+@@ -71,6 +71,25 @@
+ int sk_general_init(int fd);
+ 
+ /**
++ * Initialize netns path and initial file descriptor
++ * @param netns     Path to netns object.
++ * @return          zero on success, negative on failure.
++ */
++int sk_initiate_namespace_reassociation(const char *netns);
++
++/**
++ * Close initial namespace file descriptor
++ */
++void sk_close_initial_namespace_fd(void);
++
++/**
++ * Prepare namespace for the process before socket is opened
++ * @param ns	    The namespace to reassociate to.
++ * @return          zero on success, negative on failure.
++ */
++int sk_reassociate_namespace(const char *ns);
++
++/**
+  * Obtain supported timestamping information
+  * @param name	    The name of the interface
+  * @param info      Struct containing obtained timestamping information.
+Binary files linuxptp-3.1.1/sk.o and linuxptp-3.1.1.b/sk.o differ
+diff -u -r -N linuxptp-3.1.1/sock.d linuxptp-3.1.1.b/sock.d
+--- linuxptp-3.1.1/sock.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/sock.d	2022-03-04 08:17:25.378154395 -0500
+@@ -0,0 +1,2 @@
++sock.o sock.d : sock.c print.h util.h address.h ddt.h pdt.h ether.h transport.h \
++ fd.h msg.h tlv.h ds.h fault.h filter.h tmv.h tsproc.h sock.h
+Binary files linuxptp-3.1.1/sock.o and linuxptp-3.1.1.b/sock.o differ
+diff -u -r -N linuxptp-3.1.1/stats.d linuxptp-3.1.1.b/stats.d
+--- linuxptp-3.1.1/stats.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/stats.d	2022-03-04 08:17:25.402154063 -0500
+@@ -0,0 +1 @@
++stats.o stats.d : stats.c stats.h
+Binary files linuxptp-3.1.1/stats.o and linuxptp-3.1.1.b/stats.o differ
+diff -u -r -N linuxptp-3.1.1/sysoff.d linuxptp-3.1.1.b/sysoff.d
+--- linuxptp-3.1.1/sysoff.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/sysoff.d	2022-03-04 08:17:25.382154338 -0500
+@@ -0,0 +1,3 @@
++sysoff.o sysoff.d : sysoff.c print.h util.h address.h ddt.h pdt.h ether.h \
++ transport.h fd.h msg.h tlv.h ds.h fault.h filter.h tmv.h tsproc.h \
++ sysoff.h missing.h
+Binary files linuxptp-3.1.1/sysoff.o and linuxptp-3.1.1.b/sysoff.o differ
+diff -u -r -N linuxptp-3.1.1/tc.d linuxptp-3.1.1.b/tc.d
+--- linuxptp-3.1.1/tc.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/tc.d	2022-03-04 08:17:25.406154005 -0500
+@@ -0,0 +1,4 @@
++tc.o tc.d : tc.c port.h dm.h fd.h foreign.h ds.h ddt.h pdt.h fault.h filter.h \
++ tmv.h tsproc.h fsm.h notification.h transport.h msg.h address.h tlv.h \
++ print.h util.h ether.h tc.h port_private.h as_capable.h clock.h config.h \
++ interface.h sk.h mtab.h unicast_fsm.h servo.h monitor.h
+Binary files linuxptp-3.1.1/tc.o and linuxptp-3.1.1.b/tc.o differ
+diff -u -r -N linuxptp-3.1.1/telecom.d linuxptp-3.1.1.b/telecom.d
+--- linuxptp-3.1.1/telecom.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/telecom.d	2022-03-04 08:17:25.402154063 -0500
+@@ -0,0 +1,4 @@
++telecom.o telecom.d : telecom.c bmc.h clock.h dm.h ds.h ddt.h pdt.h fault.h filter.h \
++ tmv.h tsproc.h config.h interface.h sk.h address.h transport.h fd.h \
++ msg.h tlv.h mtab.h unicast_fsm.h servo.h monitor.h port.h foreign.h \
++ fsm.h notification.h
+Binary files linuxptp-3.1.1/telecom.o and linuxptp-3.1.1.b/telecom.o differ
+Binary files linuxptp-3.1.1/timemaster and linuxptp-3.1.1.b/timemaster differ
+diff -u -r -N linuxptp-3.1.1/timemaster.d linuxptp-3.1.1.b/timemaster.d
+--- linuxptp-3.1.1/timemaster.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/timemaster.d	2022-03-04 08:17:25.358154670 -0500
+@@ -0,0 +1,3 @@
++timemaster.o timemaster.d : timemaster.c print.h util.h address.h ddt.h pdt.h ether.h \
++ transport.h fd.h msg.h tlv.h ds.h fault.h filter.h tmv.h tsproc.h rtnl.h \
++ sk.h version.h
+Binary files linuxptp-3.1.1/timemaster.o and linuxptp-3.1.1.b/timemaster.o differ
+diff -u -r -N linuxptp-3.1.1/tlv.d linuxptp-3.1.1.b/tlv.d
+--- linuxptp-3.1.1/tlv.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/tlv.d	2022-03-04 08:17:25.406154005 -0500
+@@ -0,0 +1,2 @@
++tlv.o tlv.d : tlv.c port.h dm.h fd.h foreign.h ds.h ddt.h pdt.h fault.h filter.h \
++ tmv.h tsproc.h fsm.h notification.h transport.h msg.h address.h tlv.h
+Binary files linuxptp-3.1.1/tlv.o and linuxptp-3.1.1.b/tlv.o differ
+diff -u -r -N linuxptp-3.1.1/transport.c linuxptp-3.1.1.b/transport.c
+--- linuxptp-3.1.1/transport.c	2021-07-04 21:51:59.000000000 -0400
++++ linuxptp-3.1.1.b/transport.c	2022-03-04 08:19:10.056703142 -0500
+@@ -21,7 +21,10 @@
+ 
+ #include "transport.h"
+ #include "transport_private.h"
++#include "config.h"
++#include "print.h"
+ #include "raw.h"
++#include "sk.h"
+ #include "udp.h"
+ #include "udp6.h"
+ #include "uds.h"
+@@ -34,6 +37,11 @@
+ int transport_open(struct transport *t, struct interface *iface,
+ 		   struct fdarray *fda, enum timestamp_type tt)
+ {
++	char *ns = config_get_string(t->cfg, interface_name(iface), "network_namespace");
++	if (sk_reassociate_namespace(ns)) {
++		pr_err("sk_reassociate_namespace failed");
++		return -1;
++	}
+ 	return t->open(t, iface, fda, tt);
+ }
+ 
+diff -u -r -N linuxptp-3.1.1/transport.d linuxptp-3.1.1.b/transport.d
+--- linuxptp-3.1.1/transport.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/transport.d	2022-03-04 08:19:11.100688666 -0500
+@@ -0,0 +1,4 @@
++transport.o transport.d : transport.c transport.h fd.h msg.h address.h ddt.h pdt.h \
++ tlv.h ds.h fault.h filter.h tmv.h tsproc.h transport_private.h config.h \
++ dm.h interface.h sk.h mtab.h unicast_fsm.h servo.h print.h util.h \
++ ether.h raw.h udp.h udp6.h uds.h
+Binary files linuxptp-3.1.1/transport.o and linuxptp-3.1.1.b/transport.o differ
+Binary files linuxptp-3.1.1/ts2phc and linuxptp-3.1.1.b/ts2phc differ
+diff -u -r -N linuxptp-3.1.1/ts2phc.d linuxptp-3.1.1.b/ts2phc.d
+--- linuxptp-3.1.1/ts2phc.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/ts2phc.d	2022-03-04 08:17:25.366154559 -0500
+@@ -0,0 +1,4 @@
++ts2phc.o ts2phc.d : ts2phc.c config.h ds.h ddt.h pdt.h fault.h filter.h tmv.h \
++ tsproc.h dm.h interface.h sk.h address.h transport.h fd.h msg.h tlv.h \
++ mtab.h unicast_fsm.h servo.h print.h util.h ether.h ts2phc_master.h \
++ ts2phc_slave.h version.h
+diff -u -r -N linuxptp-3.1.1/ts2phc_generic_master.d linuxptp-3.1.1.b/ts2phc_generic_master.d
+--- linuxptp-3.1.1/ts2phc_generic_master.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/ts2phc_generic_master.d	2022-03-04 08:17:25.366154559 -0500
+@@ -0,0 +1,4 @@
++ts2phc_generic_master.o ts2phc_generic_master.d : ts2phc_generic_master.c missing.h print.h util.h \
++ address.h ddt.h pdt.h ether.h transport.h fd.h msg.h tlv.h ds.h fault.h \
++ filter.h tmv.h tsproc.h ts2phc_generic_master.h ts2phc_master.h \
++ ts2phc_master_private.h contain.h
+Binary files linuxptp-3.1.1/ts2phc_generic_master.o and linuxptp-3.1.1.b/ts2phc_generic_master.o differ
+diff -u -r -N linuxptp-3.1.1/ts2phc_master.d linuxptp-3.1.1.b/ts2phc_master.d
+--- linuxptp-3.1.1/ts2phc_master.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/ts2phc_master.d	2022-03-04 08:17:25.342154892 -0500
+@@ -0,0 +1,3 @@
++ts2phc_master.o ts2phc_master.d : ts2phc_master.c ts2phc_generic_master.h ts2phc_master.h \
++ ts2phc_master_private.h contain.h ts2phc_nmea_master.h \
++ ts2phc_phc_master.h
+Binary files linuxptp-3.1.1/ts2phc_master.o and linuxptp-3.1.1.b/ts2phc_master.o differ
+diff -u -r -N linuxptp-3.1.1/ts2phc_nmea_master.d linuxptp-3.1.1.b/ts2phc_nmea_master.d
+--- linuxptp-3.1.1/ts2phc_nmea_master.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/ts2phc_nmea_master.d	2022-03-04 08:17:25.358154670 -0500
+@@ -0,0 +1,5 @@
++ts2phc_nmea_master.o ts2phc_nmea_master.d : ts2phc_nmea_master.c config.h ds.h ddt.h pdt.h \
++ fault.h filter.h tmv.h tsproc.h dm.h interface.h sk.h address.h \
++ transport.h fd.h msg.h tlv.h mtab.h unicast_fsm.h servo.h lstab.h \
++ missing.h nmea.h print.h util.h ether.h serial.h sock.h \
++ ts2phc_master_private.h contain.h ts2phc_master.h ts2phc_nmea_master.h
+Binary files linuxptp-3.1.1/ts2phc_nmea_master.o and linuxptp-3.1.1.b/ts2phc_nmea_master.o differ
+Binary files linuxptp-3.1.1/ts2phc.o and linuxptp-3.1.1.b/ts2phc.o differ
+diff -u -r -N linuxptp-3.1.1/ts2phc_phc_master.d linuxptp-3.1.1.b/ts2phc_phc_master.d
+--- linuxptp-3.1.1/ts2phc_phc_master.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/ts2phc_phc_master.d	2022-03-04 08:17:25.358154670 -0500
+@@ -0,0 +1,5 @@
++ts2phc_phc_master.o ts2phc_phc_master.d : ts2phc_phc_master.c config.h ds.h ddt.h pdt.h \
++ fault.h filter.h tmv.h tsproc.h dm.h interface.h sk.h address.h \
++ transport.h fd.h msg.h tlv.h mtab.h unicast_fsm.h servo.h phc.h \
++ missing.h print.h util.h ether.h ts2phc_master_private.h contain.h \
++ ts2phc_master.h ts2phc_phc_master.h
+Binary files linuxptp-3.1.1/ts2phc_phc_master.o and linuxptp-3.1.1.b/ts2phc_phc_master.o differ
+diff -u -r -N linuxptp-3.1.1/ts2phc_slave.d linuxptp-3.1.1.b/ts2phc_slave.d
+--- linuxptp-3.1.1/ts2phc_slave.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/ts2phc_slave.d	2022-03-04 08:17:25.358154670 -0500
+@@ -0,0 +1,4 @@
++ts2phc_slave.o ts2phc_slave.d : ts2phc_slave.c config.h ds.h ddt.h pdt.h fault.h filter.h \
++ tmv.h tsproc.h dm.h interface.h sk.h address.h transport.h fd.h msg.h \
++ tlv.h mtab.h unicast_fsm.h servo.h clockadj.h missing.h phc.h print.h \
++ util.h ether.h ts2phc_master.h ts2phc_slave.h
+Binary files linuxptp-3.1.1/ts2phc_slave.o and linuxptp-3.1.1.b/ts2phc_slave.o differ
+diff -u -r -N linuxptp-3.1.1/tsproc.d linuxptp-3.1.1.b/tsproc.d
+--- linuxptp-3.1.1/tsproc.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/tsproc.d	2022-03-04 08:17:25.382154338 -0500
+@@ -0,0 +1,2 @@
++tsproc.o tsproc.d : tsproc.c tsproc.h filter.h tmv.h ddt.h pdt.h print.h util.h \
++ address.h ether.h transport.h fd.h msg.h tlv.h ds.h fault.h
+Binary files linuxptp-3.1.1/tsproc.o and linuxptp-3.1.1.b/tsproc.o differ
+diff -u -r -N linuxptp-3.1.1/udp6.d linuxptp-3.1.1.b/udp6.d
+--- linuxptp-3.1.1/udp6.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/udp6.d	2022-03-04 08:17:25.402154063 -0500
+@@ -0,0 +1,4 @@
++udp6.o udp6.d : udp6.c address.h config.h ds.h ddt.h pdt.h fault.h filter.h tmv.h \
++ tsproc.h dm.h interface.h sk.h transport.h fd.h msg.h tlv.h mtab.h \
++ unicast_fsm.h servo.h contain.h print.h util.h ether.h \
++ transport_private.h udp6.h
+Binary files linuxptp-3.1.1/udp6.o and linuxptp-3.1.1.b/udp6.o differ
+diff -u -r -N linuxptp-3.1.1/udp.d linuxptp-3.1.1.b/udp.d
+--- linuxptp-3.1.1/udp.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/udp.d	2022-03-04 08:17:25.430153673 -0500
+@@ -0,0 +1,4 @@
++udp.o udp.d : udp.c address.h config.h ds.h ddt.h pdt.h fault.h filter.h tmv.h \
++ tsproc.h dm.h interface.h sk.h transport.h fd.h msg.h tlv.h mtab.h \
++ unicast_fsm.h servo.h contain.h print.h util.h ether.h \
++ transport_private.h udp.h
+Binary files linuxptp-3.1.1/udp.o and linuxptp-3.1.1.b/udp.o differ
+diff -u -r -N linuxptp-3.1.1/uds.d linuxptp-3.1.1.b/uds.d
+--- linuxptp-3.1.1/uds.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/uds.d	2022-03-04 08:17:25.402154063 -0500
+@@ -0,0 +1,4 @@
++uds.o uds.d : uds.c address.h contain.h print.h util.h ddt.h pdt.h ether.h \
++ transport.h fd.h msg.h tlv.h ds.h fault.h filter.h tmv.h tsproc.h \
++ transport_private.h uds.h config.h dm.h interface.h sk.h mtab.h \
++ unicast_fsm.h servo.h
+Binary files linuxptp-3.1.1/uds.o and linuxptp-3.1.1.b/uds.o differ
+diff -u -r -N linuxptp-3.1.1/unicast_client.d linuxptp-3.1.1.b/unicast_client.d
+--- linuxptp-3.1.1/unicast_client.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/unicast_client.d	2022-03-04 08:17:25.390154227 -0500
+@@ -0,0 +1,5 @@
++unicast_client.o unicast_client.d : unicast_client.c port.h dm.h fd.h foreign.h ds.h ddt.h \
++ pdt.h fault.h filter.h tmv.h tsproc.h fsm.h notification.h transport.h \
++ msg.h address.h tlv.h port_private.h as_capable.h clock.h config.h \
++ interface.h sk.h mtab.h unicast_fsm.h servo.h monitor.h print.h util.h \
++ ether.h unicast_client.h
+Binary files linuxptp-3.1.1/unicast_client.o and linuxptp-3.1.1.b/unicast_client.o differ
+diff -u -r -N linuxptp-3.1.1/unicast_fsm.d linuxptp-3.1.1.b/unicast_fsm.d
+--- linuxptp-3.1.1/unicast_fsm.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/unicast_fsm.d	2022-03-04 08:17:25.378154395 -0500
+@@ -0,0 +1 @@
++unicast_fsm.o unicast_fsm.d : unicast_fsm.c unicast_fsm.h
+Binary files linuxptp-3.1.1/unicast_fsm.o and linuxptp-3.1.1.b/unicast_fsm.o differ
+diff -u -r -N linuxptp-3.1.1/unicast_service.d linuxptp-3.1.1.b/unicast_service.d
+--- linuxptp-3.1.1/unicast_service.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/unicast_service.d	2022-03-04 08:17:25.386154284 -0500
+@@ -0,0 +1,5 @@
++unicast_service.o unicast_service.d : unicast_service.c address.h clock.h dm.h ds.h ddt.h \
++ pdt.h fault.h filter.h tmv.h tsproc.h config.h interface.h sk.h \
++ transport.h fd.h msg.h tlv.h mtab.h unicast_fsm.h servo.h monitor.h \
++ port.h foreign.h fsm.h notification.h missing.h port_private.h \
++ as_capable.h pqueue.h print.h util.h ether.h unicast_service.h
+Binary files linuxptp-3.1.1/unicast_service.o and linuxptp-3.1.1.b/unicast_service.o differ
+diff -u -r -N linuxptp-3.1.1/util.d linuxptp-3.1.1.b/util.d
+--- linuxptp-3.1.1/util.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/util.d	2022-03-04 08:17:25.386154284 -0500
+@@ -0,0 +1,3 @@
++util.o util.d : util.c address.h phc.h missing.h print.h util.h ddt.h pdt.h \
++ ether.h transport.h fd.h msg.h tlv.h ds.h fault.h filter.h tmv.h \
++ tsproc.h sk.h
+Binary files linuxptp-3.1.1/util.o and linuxptp-3.1.1.b/util.o differ
+diff -u -r -N linuxptp-3.1.1/.version linuxptp-3.1.1.b/.version
+--- linuxptp-3.1.1/.version	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/.version	2022-03-04 08:19:11.476683452 -0500
+@@ -0,0 +1 @@
++3.1.1
+diff -u -r -N linuxptp-3.1.1/version.d linuxptp-3.1.1.b/version.d
+--- linuxptp-3.1.1/version.d	1969-12-31 19:00:00.000000000 -0500
++++ linuxptp-3.1.1.b/version.d	2022-03-04 08:17:25.370154506 -0500
+@@ -0,0 +1 @@
++version.o version.d : version.c version.h
+Binary files linuxptp-3.1.1/version.o and linuxptp-3.1.1.b/version.o differ

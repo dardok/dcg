@@ -1,0 +1,106 @@
+app-admin/keepassxc autotype browser
+app-arch/libarchive expat lz4 lzo nettle
+app-containers/apptainer -network
+app-containers/docker -cli
+app-crypt/pinentry gnome-keyring
+app-editors/vim cscope lua luajit
+app-emulation/libvirt fuse lvm numa parted virt-network # xen lxc(sys-apps/systemd[cgroup-hybrid(-)])
+app-emulation/qemu xkb io-uring lzo multipath numa opengl snappy spice static-user usb usbredir vde vhost-user-fs virgl virtfs # xen
+app-emulation/xen efi
+app-emulation/xen-tools -qemu -qemu-traditional -ipxe system-qemu system-ipxe system-seabios
+app-misc/jq oniguruma
+app-text/ghostscript-gpl cups
+app-text/poppler nss
+app-text/texlive-core xetex
+app-text/xmlto text
+dev-cpp/eigen cuda
+dev-db/postgresql threads uuid llvm icu
+dev-games/vulkanscenegraph-vsgXchange gis freetype assimp
+dev-lang/python tk
+dev-libs/boost context icu
+dev-libs/libbpf static-libs
+dev-libs/glib static-libs
+dev-libs/libdbusmenu gtk3
+dev-libs/libpcre2 pcre16
+dev-libs/libpcre static-libs
+dev-libs/msgpack boost
+dev-libs/nss utils
+dev-libs/pkcs11-helper nss
+dev-libs/weston lcms wayland-compositor xwayland fullscreen ivi remoting rdp screen-sharing webp
+dev-python/numpy lapack
+dev-python/pandas full-support
+dev-python/PyQt5 designer sql positioning network widgets gui printsupport declarative
+dev-python/sympy aesara imaging symengine
+dev-qt/qtgui egl
+dev-util/perf clang systemtap slang libpfm
+dev-util/strace aio elfutils
+gnome-extra/zenity webkit libnotify
+gui-apps/waybar mpd network tray wifi
+gui-libs/wlroots x11-backend
+gui-wm/hyprland system-wlroots
+media-gfx/blender jemalloc cycles ffmpeg player collada llvm openimageio cuda -opensubdiv -embree
+media-gfx/graphviz pdf qt5 postscript
+media-libs/libcanberra gtk2
+media-libs/clutter egl
+media-libs/cogl gles2
+media-libs/freetype harfbuzz utils
+media-libs/harfbuzz icu
+media-libs/libsdl2 gles2 pipewire
+media-libs/mesa vulkan-overlay
+media-libs/opencv cuda threads gdal download contrib contribdnn contribfreetype contribxfeatures2d contribcvv qt5 -openexr
+media-libs/vulkan-loader layers
+media-plugins/calf experimental
+media-plugins/gst-plugins-meta a52 aac cdda dts dv dvb dvd ffmpeg flac http lame libass libvisual mms modplug mp3 mpeg ogg opus oss taglib v4l vcd vpx wavpack
+media-sound/bluez-alsa aac mpg123
+media-sound/pulseaudio realtime bluetooth equalizer libsamplerate native-headset -daemon
+#media-sound/pulseaudio-daemon bluetooth
+media-video/cheese egl
+media-video/ffmpeg cuda nvenc libv4l opus xvid vpx jpeg2k
+media-video/obs-studio nvenc pipewire
+media-video/pipewire bluetooth v4l jack-sdk extra sound-server
+net-analyzer/wireshark http2
+net-dns/dnsmasq script
+net-libs/gnutls tools
+net-libs/phodav spice
+net-libs/zeromq drafts
+net-misc/freerdp usb server
+net-misc/openssh X509
+net-misc/spice-gtk usbredir webdav
+net-vpn/openconnect libproxy stoken lz4
+net-vpn/openvpn iproute2
+net-wireless/bluez experimental user-session deprecated
+sci-geosciences/qgis hdf5 netcdf 3d georeferencer postgres mapserver
+sci-libs/armadillo lapack
+sci-libs/fftw threads
+sci-libs/hdf5 cxx szip
+sci-libs/gdal ogdi postgres java geos threads spatialite armadillo fits gif gml hdf5 jpeg2k lzma mdb netcdf odbc pdf webp xls
+sci-libs/netcdf szip
+sys-apps/attr static-libs
+sys-apps/busybox -static
+sys-apps/dbus user-session
+sys-apps/hwloc cuda
+sys-apps/kexec-tools lzma # xen 
+sys-apps/smartmontools update_drivedb
+sys-apps/systemd nat policykit idn libidn2 gcrypt importd python http curl lzma qrcode elfutils cgroup-hybrid gnuefi
+sys-block/libfabric cuda verbs
+sys-block/nbd netlink
+sys-block/parted device-mapper
+sys-boot/grub device-mapper
+sys-cluster/openmpi cma cuda cxx ipv6 java mpi-threads numa romio threads vt
+sys-devel/binutils multitarget
+sys-firmware/intel-microcode initramfs hostonly
+sys-firmware/ipxe efi
+sys-fs/e2fsprogs fuse
+sys-kernel/gentoo-sources experimental
+sys-kernel/linux-firmware initramfs
+sys-libs/libomp cuda
+sys-libs/libseccomp static-libs
+sys-libs/zlib minizip static-libs
+sys-process/atop modules
+x11-base/xorg-server kdrive xephyr xnest xvfb
+x11-drivers/nvidia-drivers uvm
+x11-libs/motif xft
+x11-misc/xscreensaver fonts offensive suid
+x11-terms/kitty transfer
+x11-wm/awesome luajit
+

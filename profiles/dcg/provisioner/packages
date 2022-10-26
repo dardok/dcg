@@ -1,8 +1,8 @@
 *app-containers/docker
-*dev-db/postgresql:13
+*dev-db/postgresql:14
 *dev-db/psqlodbc
 *dev-python/docker-py
-*dev-python/psycopg
+*dev-python/psycopg:2
 *dev-python/flask
 *net-dns/bind
 *net-ftp/atftp

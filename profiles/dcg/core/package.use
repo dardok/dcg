@@ -15,6 +15,7 @@ dev-lang/yasm -python
 dev-libs/boost context
 dev-libs/cyrus-sasl -postgres -openldap
 dev-libs/glib systemtap fam static-libs
+dev-libs/libbpf static-libs
 dev-libs/libgcrypt static-libs
 dev-libs/libgamin -python
 dev-libs/libgpg-error static-libs
@@ -37,7 +38,7 @@ net-fs/nfs-utils nfsdcld
 net-libs/nghttp2 hpack-tools
 
 net-misc/curl http2
-net-misc/frr grpc
+#net-misc/frr grpc
 
 net-nds/openldap minimal
 net-nds/rpcbind warmstarts
