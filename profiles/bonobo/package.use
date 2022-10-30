@@ -100,6 +100,7 @@ sys-process/atop modules
 x11-base/xorg-server kdrive xephyr xnest xvfb
 x11-drivers/nvidia-drivers uvm
 x11-libs/motif xft
+x11-misc/redshift geoclue appindicator
 x11-misc/xscreensaver fonts offensive suid
 x11-terms/kitty transfer
 x11-wm/awesome luajit
