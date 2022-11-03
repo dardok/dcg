@@ -94,6 +94,7 @@ sys-libs/libnvidia-container
 sys-process/atop
 =x11-drivers/nvidia-drivers-515*
 x11-libs/libdrm
+x11-misc/xscreensaver
 x11-terms/kitty
 x11-terms/kitty-shell-integration
 x11-terms/kitty-terminfo
