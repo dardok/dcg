@@ -89,7 +89,7 @@
 *dev-python/toml
 *dev-python/twine
 *dev-python/werkzeug
-*dev-python/zeroconf
+*dev-python/python-zeroconf
 *dev-util/bcc
 *dev-util/clinfo
 *dev-util/cookiecutter

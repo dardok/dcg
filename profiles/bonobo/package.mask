@@ -11,7 +11,7 @@ sys-cluster/mpich2
 
 #>=media-libs/openimageio-2.2.12.0
 
-#>=dev-util/nvidia-cuda-toolkit-11.6.0 # waiting for cudnn
+>=dev-util/nvidia-cuda-toolkit-11.6.0 # opencv/blender/openmpi/grrr....
 #>=dev-libs/cudnn-8.3 # waiting for nvidia-cuda-toolkit-11.5
 
 >=media-gfx/openvdb-9.0.0 # pulls imcompatible dev-cpp/tbb
