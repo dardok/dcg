@@ -15,7 +15,7 @@ MY_PV=2021.05-22
 
 LICENSE="Proprietary"
 SLOT="0"
-KEYWORDS="amd64"
+KEYWORDS="~amd64"
 
 IUSE="debug fuse +kerberos +modules +namei"
 
