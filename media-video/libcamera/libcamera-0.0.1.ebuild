@@ -16,9 +16,12 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE="android android_platform cam docs gstreamer ipas lc-compliance pipelines qcam test tracing v4l2 pycamera"
 
-DEPEND="sys-libs/libunwind"
+DEPEND="sys-libs/libunwind
+	pycamera ? ( dev-python/pycamera )"
 RDEPEND="${DEPEND}"
 BDEPEND=""
+
+PATCHES=( "${FILESDIR}"/system-pybind.patch )
 
 src_configure() {
 	local emesonargs=(
