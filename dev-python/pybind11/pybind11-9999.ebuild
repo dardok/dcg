@@ -16,7 +16,7 @@ HOMEPAGE="
 "
 SRC_URI=""
 EGIT_REPO_URI="https://git.libcamera.org/libcamera/libcamera.git"
-EGIT_BRANCH="aebdf00cd060b871c5a1e0c2cf4a333503dd0431"
+EGIT_BRANCH="smart_holder"
 
 LICENSE="BSD"
 SLOT="0"
