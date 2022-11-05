@@ -20,6 +20,7 @@ dev-lang/ispc
 dev-libs/cudnn
 dev-libs/date
 dev-libs/weston
+dev-python/aesara
 dev-python/aiofiles
 dev-python/ajsonrpc
 dev-python/appdirs
