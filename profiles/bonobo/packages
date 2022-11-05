@@ -94,6 +94,7 @@
 *dev-util/bcc
 *dev-util/clinfo
 *dev-util/cookiecutter
+*ev-util/debugedit
 *dev-util/indent
 *dev-util/ltrace
 *dev-util/nvidia-cuda-toolkit
@@ -106,6 +107,7 @@
 *dev-util/vulkan-tools
 *dev-vcs/git
 *gnome-base/gconf
+*gnome-base/gnome-keyring
 *gnome-extra/zenity
 *gui-apps/swaybg
 *gui-apps/swaylock-effects

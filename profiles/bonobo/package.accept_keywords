@@ -100,3 +100,4 @@ x11-terms/kitty-shell-integration
 x11-terms/kitty-terminfo
 x11-wm/awesome **
 virtual/mpi
+net-libs/libsoup
