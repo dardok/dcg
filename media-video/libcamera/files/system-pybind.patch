@@ -1,8 +1,8 @@
 diff --git a/src/py/libcamera/meson.build b/src/py/libcamera/meson.build
-index af19ffdd..76e72d26 100644
+index af19ffdd..142a5009 100644
 --- a/src/py/libcamera/meson.build
 +++ b/src/py/libcamera/meson.build
-@@ -9,8 +9,8 @@ endif
+@@ -9,8 +9,10 @@ endif
  
  pycamera_enabled = true
  
@@ -10,15 +10,8 @@ index af19ffdd..76e72d26 100644
 -pybind11_dep = pybind11_proj.get_variable('pybind11_dep')
 +#pybind11_proj = subproject('pybind11')
 +#pybind11_dep = pybind11_proj.get_variable('pybind11_dep')
++pybind11_incdir = include_directories('/usr/lib/python3.9/site-packages/pybind11/include')
++pybind11_dep = declare_dependency(include_directories : pybind11_incdir)
  
  pycamera_sources = files([
      'py_camera_manager.cpp',
-@@ -63,7 +63,7 @@ pycamera_sources += custom_target('py_gen_formats',
- pycamera_deps = [
-     libcamera_private,
-     py3_dep,
--    pybind11_dep,
-+    #    pybind11_dep,
- ]
- 
- pycamera_args = [
