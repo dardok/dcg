@@ -64,6 +64,7 @@ media-libs/opencollada
 media-libs/opencv
 media-sound/bluez-alsa
 media-video/obs-studio
+media-video/libcamera
 #media-video/pipewire
 media-video/v4l2loopback
 #media-video/wireplumber

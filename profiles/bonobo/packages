@@ -199,6 +199,7 @@
 *media-sound/pulseeffects
 *media-sound/qjackctl
 *media-video/obs-studio
+*media-video/libcamera
 *media-video/pipewire
 *media-video/pitivi
 *media-video/subtitleeditor
@@ -241,6 +242,7 @@
 *sys-apps/nvme-cli
 *sys-apps/smartmontools
 *sys-apps/usbutils
+*sys-apps/xdg-desktop-portal-gtk
 *sys-auth/google-authenticator-libpam-hardened
 *sys-auth/polkit
 *sys-auth/rtkit
