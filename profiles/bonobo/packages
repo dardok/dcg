@@ -94,7 +94,7 @@
 *dev-util/bcc
 *dev-util/clinfo
 *dev-util/cookiecutter
-*ev-util/debugedit
+*dev-util/debugedit
 *dev-util/indent
 *dev-util/ltrace
 *dev-util/nvidia-cuda-toolkit
