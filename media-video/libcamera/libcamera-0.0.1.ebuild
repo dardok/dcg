@@ -44,7 +44,8 @@ src_configure() {
 
 	local emesonargs+=( -Dpipelines=simple,uvcvideo )
 
-	meson_src_configure
+	meson_src_configure \
+		--includedir=/usr/lib/python3.9/site-packages/pybind11/include
 }
 
 src_install() {
