@@ -56,6 +56,7 @@ media-sound/bluez-alsa aac mpg123
 media-sound/pulseaudio realtime bluetooth equalizer libsamplerate native-headset -daemon
 #media-sound/pulseaudio-daemon bluetooth
 media-video/cheese egl
+media-video/libcamera gstreamer cam qcam v4l2 pycamera
 media-video/ffmpeg cuda nvenc libv4l opus xvid vpx jpeg2k
 media-video/obs-studio nvenc pipewire
 media-video/pipewire bluetooth v4l jack-sdk extra sound-server

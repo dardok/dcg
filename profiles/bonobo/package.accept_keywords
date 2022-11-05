@@ -37,6 +37,7 @@ dev-python/netcdf4-python
 dev-python/nspektr
 dev-python/ordered-set
 dev-python/packaging
+dev-python/pycamera
 dev-python/pynvml
 dev-python/pyparsing
 dev-python/pysnmp-mibs
