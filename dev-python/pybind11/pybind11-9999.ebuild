@@ -15,7 +15,7 @@ HOMEPAGE="
 	https://pypi.org/project/pybind11/
 "
 SRC_URI=""
-EGIT_REPO_URI="https://git.libcamera.org/libcamera/libcamera.git"
+EGIT_REPO_URI="https://github.com/pybind/pybind11.git"
 EGIT_BRANCH="smart_holder"
 
 LICENSE="BSD"
