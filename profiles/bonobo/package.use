@@ -59,7 +59,7 @@ media-video/cheese egl
 media-video/libcamera gstreamer cam qcam v4l2 pycamera
 media-video/ffmpeg cuda nvenc libv4l opus xvid vpx jpeg2k
 media-video/obs-studio nvenc pipewire
-media-video/pipewire bluetooth v4l jack-sdk extra sound-server
+media-video/pipewire bluetooth v4l jack-sdk extra sound-server libcamera
 net-analyzer/wireshark http2
 net-dns/dnsmasq script
 net-libs/gnutls tools
