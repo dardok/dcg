@@ -42,10 +42,10 @@ src_configure() {
 		$(meson_feature pycamera)
 	)
 
-	local emesonargs+=( -Dpipelines=simple,uvcvideo )
+	local emesonargs+=( -Dipas=ipu3,raspberrypi,rkisp1,vimc )
+	local emesonargs+=( -Dpipelines=ipu3,raspberrypi,rkisp1,simple,uvcvideo,vimc )
 
-	meson_src_configure \
-		--includedir=/usr/lib/python3.9/site-packages/pybind11/include
+	meson_src_configure
 }
 
 src_install() {
