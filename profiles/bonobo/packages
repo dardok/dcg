@@ -75,6 +75,7 @@
 *dev-python/poetry-core
 *dev-python/pyaes
 *dev-python/pyasn1-modules
+*dev-python/pydot
 *dev-python/pylint
 *dev-python/pynvml
 *dev-python/pyopenssl
