@@ -214,6 +214,7 @@
 *net-ftp/atftp
 *net-fs/yfs
 *net-im/rocketchat-desktop-bin
+*net-libs/nodejs
 *net-libs/xdp-tools
 *net-mail/tnef
 *net-misc/autossh

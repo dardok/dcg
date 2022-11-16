@@ -27,3 +27,5 @@
 *app-editors/emacs
 *app-emacs/emacs-common
 *app-eselect/eselect-emacs
+
+*net-libs/nodejs
