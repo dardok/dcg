@@ -21,7 +21,7 @@ dev-libs/boost context icu
 dev-libs/libbpf static-libs
 dev-libs/glib static-libs
 dev-libs/libdbusmenu gtk3
-dev-libs/libpcre2 pcre16
+dev-libs/libpcre2 pcre16 static-libs
 dev-libs/libpcre static-libs
 dev-libs/msgpack boost
 dev-libs/nss utils
