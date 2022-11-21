@@ -23,6 +23,7 @@ dev-libs/libnatspec -python
 dev-libs/libpcre static-libs
 dev-libs/libxslt -python
 dev-libs/nss utils
+dev-libs/libpcre2 static-libs
 
 dev-python/pygobject -cairo
 
