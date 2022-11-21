@@ -13,4 +13,5 @@ sys-cluster/mpich2
 
 >=dev-python/docutils-0.18 # dev-python/sphinx
 
->=dev-libs/protobuf-3.20 # curaengine/opencv
+dev-libs/protobuf:0/32 # curaengine/opencv
+dev-python/protobuf-python:0/32 # dev-libs/protobuf:0/32
