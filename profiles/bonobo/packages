@@ -21,7 +21,7 @@
 *app-crypt/tpm-tools
 *app-crypt/tpm2-tss-engine
 *app-editors/neovim
-*app-editors/sublime-text
+*=app-editors/sublime-text-4_p4126
 *app-editors/vim
 *app-emulation/libvirt
 *app-emulation/nvidia-container-toolkit
