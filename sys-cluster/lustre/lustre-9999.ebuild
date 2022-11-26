@@ -14,7 +14,7 @@ KEYWORDS=""
 EGIT_BRANCH="master"
 
 SUPPORTED_KV_MAJOR=5
-SUPPORTED_KV_MINOR=15
+SUPPORTED_KV_MINOR=11
 
 inherit ${scm} autotools linux-info linux-mod toolchain-funcs udev flag-o-matic
 
