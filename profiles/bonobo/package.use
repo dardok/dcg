@@ -29,6 +29,7 @@ dev-libs/pkcs11-helper nss
 dev-libs/weston lcms wayland-compositor xwayland fullscreen ivi remoting rdp screen-sharing webp
 dev-python/numpy lapack
 dev-python/pandas full-support
+dev-python/pillow webp
 dev-python/PyQt5 designer sql positioning network widgets gui printsupport declarative
 dev-python/sympy aesara imaging symengine
 dev-qt/qtgui egl
@@ -90,6 +91,7 @@ sys-block/parted device-mapper
 sys-boot/grub device-mapper
 sys-cluster/openmpi cma cuda cxx ipv6 java mpi-threads numa romio threads vt
 sys-devel/binutils multitarget
+sys-firmware/edk2-ovmf binary
 sys-firmware/intel-microcode initramfs hostonly
 sys-firmware/ipxe efi
 sys-fs/e2fsprogs fuse
@@ -106,4 +108,3 @@ x11-misc/redshift geoclue appindicator
 x11-misc/xscreensaver fonts offensive suid
 x11-terms/kitty transfer
 x11-wm/awesome luajit
-

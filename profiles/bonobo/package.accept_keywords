@@ -1,3 +1,4 @@
+app-arch/createrepo_c
 app-containers/apptainer
 app-crypt/ccid
 app-crypt/coolkey
@@ -19,6 +20,7 @@ dev-games/vulkanscenegraph-vsgXchange **
 dev-lang/ispc
 dev-libs/cudnn
 dev-libs/date
+dev-libs/wayland-protocols
 dev-libs/weston
 dev-python/aesara
 dev-python/aiofiles
@@ -56,7 +58,7 @@ gui-apps/swaylock-effects
 gui-libs/egl-wayland
 gui-libs/eglexternalplatform
 gui-libs/wlroots **
-gui-wm/hyprland
+gui-wm/hyprland **
 lxde-base/lxtask
 media-gfx/openvdb
 media-libs/embree
@@ -96,7 +98,7 @@ sys-fs/squashfuse
 sys-libs/libapparmor
 sys-libs/libnvidia-container
 sys-process/atop
-x11-drivers/nvidia-drivers:0/520
+x11-drivers/nvidia-drivers:0/525
 x11-libs/libdrm
 x11-misc/xscreensaver
 x11-terms/kitty
