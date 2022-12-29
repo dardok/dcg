@@ -22,7 +22,7 @@ IUSE="debug fuse +kerberos +modules +namei"
 BDEPEND="
 	dev-lang/perl
 	sys-devel/flex
-	virtual/yacc
+	dev-util/yacc
 	dev-lang/yasm"
 DEPEND="
 	virtual/libcrypt:=
