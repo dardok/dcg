@@ -49,6 +49,7 @@
 *app-vim/pathogen
 *dev-cpp/nlohmann_json
 *dev-cpp/websocketpp
+*=dev-cpp/tbb-2020.3 # media-libs/oidn media-gfx/openvdb media-gfx/blender
 *dev-db/spatialite
 *dev-java/icedtea-web
 #*dev-java/openjdk-bin:11
@@ -61,7 +62,7 @@
 *dev-libs/light
 *dev-libs/msgpack
 *dev-libs/opensc
-*dev-libs/protobuf
+*dev-libs/protobuf:0/30 # media-gfx/curaengine sci-geosciences/qgis dev-libs/libarcus
 *dev-libs/volume_key
 *dev-libs/weston
 *dev-python/asn1crypto
