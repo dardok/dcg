@@ -108,3 +108,9 @@ x11-misc/redshift geoclue appindicator
 x11-misc/xscreensaver fonts offensive suid
 x11-terms/kitty transfer
 x11-wm/awesome luajit
+
+# https://wiki.hyprland.org/Useful-Utilities/Hyprland-desktop-portal/
+dev-qt/qtbase opengl egl eglfs gles2-only
+dev-qt/qtdeclarative opengl
+gui-libs/xdg-desktop-portal-hyprland select-window select-region
+sys-apps/xdg-desktop-portal screencast

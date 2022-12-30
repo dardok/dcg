@@ -107,3 +107,9 @@ x11-terms/kitty-terminfo
 x11-wm/awesome **
 virtual/mpi
 net-libs/libsoup
+
+gui-libs/xdg-desktop-portal-hyprland **
+dev-qt/qtbase:6
+dev-qt/qtwayland:6
+dev-qt/qtdeclarative:6
+dev-qt/qtshadertools:6
