@@ -11,6 +11,7 @@ app-emulation/podman
 app-emulation/slirp4netns
 app-forensics/lynis
 app-misc/tmux
+app-text/tesseract
 dev-cpp/pystring
 dev-cpp/websocketpp
 dev-java/icedtea-web
@@ -44,6 +45,8 @@ dev-python/pycamera
 dev-python/pynvml
 dev-python/pyparsing
 dev-python/pysnmp-mibs
+dev-python/pytesseract
+dev-python/pyzbar
 #=dev-python/setuptools-60*
 dev-python/simplekml
 dev-python/starlette

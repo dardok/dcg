@@ -11,6 +11,7 @@ app-emulation/xen-tools -qemu -qemu-traditional -ipxe system-qemu system-ipxe sy
 app-misc/jq oniguruma
 app-text/ghostscript-gpl cups
 app-text/poppler nss
+app-text/tessdata_fast l10n_en
 app-text/texlive-core xetex
 app-text/xmlto text
 dev-cpp/eigen cuda

@@ -87,11 +87,13 @@
 *dev-python/pyroute2
 *dev-python/pysnmp
 *dev-python/pysnmp-mibs
+*dev-python/pyzbar
 *dev-python/scipy
 *dev-python/semantic_version
 *dev-python/shapely
 *dev-python/simplekml
 *dev-python/sympy
+*dev-python/pytesseract
 *dev-python/toml
 *dev-python/twine
 *dev-python/werkzeug
