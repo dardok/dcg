@@ -32,7 +32,7 @@ SLOT="0"
 IUSE="+client +utils +modules +dlc server readline tests o2ib gss +lru-resize +checksum"
 
 RDEPEND="
-	virtual/awk
+	app-alternatives/awk
 	dlc? ( dev-libs/libyaml )
 	readline? ( sys-libs/readline:0 )
 	server? (
