@@ -13,6 +13,3 @@ USE="${USE} vnc xinerama xcb xlib-xcb xkb xft colord startup-notification"
 USE="${USE} gstreamer alsa gpm bluetooth pulseaudio jack v4l libv4l wifi joystick"
 
 RUBY_TARGETS="-* ruby27"
-
-PYTHON_SINGLE_TARGET="-* python3_10"
-PYTHON_TARGETS="-* python3_10"
