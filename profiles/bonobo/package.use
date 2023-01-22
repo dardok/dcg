@@ -1,9 +1,11 @@
 app-admin/keepassxc autotype browser
 app-arch/libarchive expat lz4 lzo nettle
+app-arch/unzip natspec
 app-containers/apptainer -network
 app-containers/docker -cli
 app-crypt/pinentry gnome-keyring
 app-editors/vim cscope lua luajit
+app-emulation/libguestfs -ocaml libvirt
 app-emulation/libvirt fuse lvm numa parted virt-network # xen lxc(sys-apps/systemd[cgroup-hybrid(-)])
 app-emulation/qemu xkb io-uring lzo multipath numa opengl snappy spice static-user usb usbredir vde vhost-user-fs virgl virtfs # xen
 app-emulation/xen efi

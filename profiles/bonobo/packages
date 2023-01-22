@@ -25,6 +25,7 @@
 *app-editors/neovim
 *=app-editors/sublime-text-4_p4126
 *app-editors/vim
+*app-emulation/libguestfs
 *app-emulation/libvirt
 *app-emulation/nvidia-container-toolkit
 *app-emulation/virt-manager
@@ -63,6 +64,7 @@
 *dev-libs/msgpack
 *dev-libs/opensc
 *dev-libs/protobuf:0/30 # media-gfx/curaengine sci-geosciences/qgis dev-libs/libarcus
+*dev-libs/xmlsec
 *dev-libs/volume_key
 *dev-python/asn1crypto
 *dev-python/autobahn
@@ -98,6 +100,7 @@
 *dev-python/twine
 *dev-python/werkzeug
 *dev-python/python-zeroconf
+*dev-qt/qtxmlpatterns
 *dev-util/bcc
 *dev-util/clinfo
 *dev-util/cookiecutter

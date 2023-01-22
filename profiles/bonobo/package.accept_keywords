@@ -6,10 +6,13 @@ app-crypt/tpm2-tss-engine
 app-editors/sublime-text
 app-emulation/conmon
 app-emulation/docker-compose
+app-emulation/libguestfs
+app-emulation/libguestfs-appliance
 app-emulation/nvidia-container-toolkit
 app-emulation/podman
 app-emulation/slirp4netns
 app-forensics/lynis
+app-misc/hivex
 app-misc/tmux
 app-text/tesseract
 dev-cpp/pystring
