@@ -216,6 +216,7 @@
 *media-video/v4l2loopback
 *media-video/wireplumber
 *net-analyzer/net-snmp
+*net-analyzer/sslscan
 *net-analyzer/tcpdump
 *net-analyzer/wireshark
 *net-dialup/picocom
@@ -264,7 +265,7 @@
 *sys-boot/syslinux
 sys-cluster/kubectl
 *sys-cluster/openmpi
-*=sys-cluster/rdma-core-34.1
+*sys-cluster/rdma-core
 #*sys-devel/gcc:10
 *sys-devel/gdb
 *sys-devel/lld

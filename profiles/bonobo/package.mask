@@ -1,6 +1,6 @@
 >=sys-kernel/gentoo-sources-5.19
 
->=dev-lang/python-3.10
+>=dev-lang/python-3.11
 
 dev-lang/spidermonkey
 
@@ -13,5 +13,5 @@ sys-cluster/mpich2
 
 >=dev-python/docutils-0.18 # dev-python/sphinx
 
-dev-libs/protobuf:0/32 # curaengine/opencv
-dev-python/protobuf-python:0/32 # dev-libs/protobuf:0/32
+#dev-libs/protobuf:0/32 # curaengine/opencv
+#dev-python/protobuf-python:0/32 # dev-libs/protobuf:0/32

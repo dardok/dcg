@@ -98,6 +98,7 @@ sys-firmware/edk2-ovmf binary
 sys-firmware/intel-microcode initramfs hostonly
 sys-firmware/ipxe efi
 sys-fs/e2fsprogs fuse
+sys-fs/lvm2 lvm thin
 sys-kernel/gentoo-sources experimental
 sys-kernel/linux-firmware initramfs
 sys-libs/libomp cuda
