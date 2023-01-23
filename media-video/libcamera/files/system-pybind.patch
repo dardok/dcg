@@ -10,7 +10,7 @@ index af19ffdd..142a5009 100644
 -pybind11_dep = pybind11_proj.get_variable('pybind11_dep')
 +#pybind11_proj = subproject('pybind11')
 +#pybind11_dep = pybind11_proj.get_variable('pybind11_dep')
-+pybind11_incdir = include_directories('/usr/lib/python3.9/site-packages/pybind11/include')
++pybind11_incdir = include_directories('/usr/lib/python3.10/site-packages/pybind11/include')
 +pybind11_dep = declare_dependency(include_directories : pybind11_incdir)
  
  pycamera_sources = files([

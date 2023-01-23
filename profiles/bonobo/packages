@@ -100,6 +100,9 @@
 *dev-python/twine
 *dev-python/werkzeug
 *dev-python/python-zeroconf
+*dev-qt/qtbase
+*dev-qt/qtshadertools
+*dev-qt/qtwayland
 *dev-qt/qtxmlpatterns
 *dev-util/bcc
 *dev-util/clinfo
