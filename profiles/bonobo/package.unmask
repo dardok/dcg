@@ -2,3 +2,4 @@ dev-qt/qtbase:6
 dev-qt/qtwayland:6
 dev-qt/qtdeclarative:6
 dev-qt/qtshadertools:6
+sys-auth/google-authenticator-libpam-hardened

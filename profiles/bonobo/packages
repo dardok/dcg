@@ -63,7 +63,7 @@
 *dev-libs/light
 *dev-libs/msgpack
 *dev-libs/opensc
-*dev-libs/protobuf:0/30 # media-gfx/curaengine sci-geosciences/qgis dev-libs/libarcus
+*dev-libs/protobuf
 *dev-libs/xmlsec
 *dev-libs/volume_key
 *dev-python/asn1crypto
@@ -254,6 +254,7 @@
 *sys-apps/nvme-cli
 *sys-apps/smartmontools
 *sys-apps/usbutils
+*sys-apps/xdg-desktop-portal-gtk
 *sys-auth/google-authenticator-libpam-hardened
 *sys-auth/polkit
 *sys-auth/rtkit
@@ -273,6 +274,7 @@ sys-cluster/kubectl
 *sys-fs/dosfstools
 *sys-fs/inotify-tools
 *sys-fs/mtools
+*sys-fs/xfsprogs
 *sys-kernel/dracut
 *sys-kernel/linux-firmware
 *sys-libs/libapparmor
@@ -328,4 +330,4 @@ sys-cluster/kubectl
 *x11-wm/awesome
 
 # https://wiki.hyprland.org/Useful-Utilities/Hyprland-desktop-portal/
-*gui-libs/xdg-desktop-portal-hyprland
+# *gui-libs/xdg-desktop-portal-hyprland
