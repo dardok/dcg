@@ -14,6 +14,7 @@
 *app-containers/docker
 *app-containers/docker-cli
 *app-containers/docker-compose
+*app-containers/nvidia-container-toolkit
 *app-containers/podman
 *app-crypt/coolkey
 *app-crypt/intel-ipsec-mb
@@ -27,7 +28,6 @@
 *app-editors/vim
 *app-emulation/libguestfs
 *app-emulation/libvirt
-*app-emulation/nvidia-container-toolkit
 *app-emulation/virt-manager
 *app-emulation/virt-viewer
 #*app-emulation/xen

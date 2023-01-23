@@ -1,5 +1,6 @@
 app-arch/createrepo_c
 app-containers/apptainer
+app-containers/nvidia-container-toolkit
 app-crypt/ccid
 app-crypt/coolkey
 app-crypt/tpm2-tss-engine
@@ -8,7 +9,6 @@ app-emulation/conmon
 app-emulation/docker-compose
 app-emulation/libguestfs
 app-emulation/libguestfs-appliance
-app-emulation/nvidia-container-toolkit
 app-emulation/podman
 app-emulation/slirp4netns
 app-forensics/lynis
