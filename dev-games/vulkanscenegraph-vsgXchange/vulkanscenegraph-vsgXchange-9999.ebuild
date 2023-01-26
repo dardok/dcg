@@ -26,7 +26,7 @@ BDEPEND="
 "
 RDEPEND="
 	dev-games/vulkanscenegraph
-	gis? ( dev-games/vulkanscenegraph-vsgGIS )
+	gis? ( sci-libs/gdal )
 	freetype? ( media-libs/freetype )
 	curl? ( net-misc/curl )
 	assimp? ( media-libs/assimp )
