@@ -84,7 +84,7 @@ net-libs/xdp-tools
 net-wireless/bluez-tools
 sci-geosciences/qgis
 sci-geosciences/mapserver
-#sci-libs/gdal
+sci-libs/gdal
 sci-libs/kissfft
 sec-policy/apparmor-profiles
 sys-apps/apparmor
