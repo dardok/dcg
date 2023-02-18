@@ -22,6 +22,7 @@ dev-games/vulkanscenegraph **
 dev-games/vulkanscenegraph-vsgGIS **
 dev-games/vulkanscenegraph-vsgXchange **
 dev-lang/ispc
+dev-lang/go
 dev-libs/cudnn
 dev-libs/date
 dev-libs/wayland-protocols
@@ -78,6 +79,7 @@ media-video/libcamera
 #media-video/pipewire
 media-video/v4l2loopback
 #media-video/wireplumber
+net-analyzer/nessus-bin
 net-im/rocketchat-desktop-bin
 net-libs/xdp-tools
 =net-misc/usbip-4*

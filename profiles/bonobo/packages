@@ -40,6 +40,7 @@
 *app-misc/ranger
 *app-misc/tmux
 *app-misc/wayland-utils
+*app-office/mdbtools
 *app-portage/eix
 *app-portage/cpuid2cpuflags
 *app-portage/gentoolkit
@@ -100,6 +101,8 @@
 *dev-python/twine
 *dev-python/werkzeug
 *dev-python/python-zeroconf
+*dev-qt/qdbus
+*dev-qt/qdbusviewer
 *dev-qt/qtbase
 *dev-qt/qtshadertools
 *dev-qt/qtwayland
@@ -218,7 +221,9 @@
 *media-video/subtitleeditor
 *media-video/v4l2loopback
 *media-video/wireplumber
+*net-analyzer/nessus-bin
 *net-analyzer/net-snmp
+*net-analyzer/nmap
 *net-analyzer/sslscan
 *net-analyzer/tcpdump
 *net-analyzer/wireshark
@@ -291,6 +296,7 @@ sys-cluster/kubectl
 *sys-process/lsof
 *www-client/firefox-bin
 *www-client/google-chrome
+*www-servers/gunicorn
 *www-servers/thttpd
 *x11-apps/bitmap
 *x11-apps/luit

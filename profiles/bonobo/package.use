@@ -6,11 +6,12 @@ app-containers/docker -cli
 app-crypt/pinentry gnome-keyring
 app-editors/vim cscope lua luajit
 app-emulation/libguestfs -ocaml libvirt
-app-emulation/libvirt fuse lvm numa parted virt-network # xen lxc(sys-apps/systemd[cgroup-hybrid(-)])
+app-emulation/libvirt fuse lvm numa parted virt-network libssh2 # xen lxc(sys-apps/systemd[cgroup-hybrid(-)])
 app-emulation/qemu xkb io-uring lzo multipath numa opengl snappy spice static-user usb usbredir vde vhost-user-fs virgl virtfs # xen
 app-emulation/xen efi
 app-emulation/xen-tools -qemu -qemu-traditional -ipxe system-qemu system-ipxe system-seabios
 app-misc/jq oniguruma
+app-office/mdbtools glib odbc
 app-text/ghostscript-gpl cups
 app-text/poppler nss
 app-text/tessdata_fast l10n_en
@@ -65,7 +66,7 @@ media-video/ffmpeg cuda nvenc libv4l opus xvid vpx jpeg2k
 media-video/obs-studio nvenc pipewire
 media-video/pipewire bluetooth v4l jack-sdk extra sound-server libcamera
 net-analyzer/wireshark http2
-net-dns/dnsmasq script
+net-dns/dnsmasq script tftp
 net-libs/gnutls tools
 net-libs/phodav spice
 net-libs/zeromq drafts
