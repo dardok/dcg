@@ -24,6 +24,7 @@
 *media-video/pipewire
 *media-video/wireplumber
 *sys-auth/rtkit
+*sys-apps/xdg-desktop-portal-gnome
 *x11-apps/xbacklight
 *x11-apps/xdpyinfo
 *x11-apps/xlsfonts
