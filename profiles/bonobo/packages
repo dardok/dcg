@@ -100,7 +100,7 @@
 *dev-python/toml
 *dev-python/twine
 *dev-python/werkzeug
-*dev-python/python-zeroconf
+*dev-python/zeroconf
 *dev-qt/qdbus
 *dev-qt/qdbusviewer
 *dev-qt/qtbase
@@ -338,6 +338,7 @@ sys-cluster/kubectl
 *x11-misc/xscreensaver
 *x11-terms/kitty
 *x11-wm/awesome
+*x11-wm/xpra
 
 # https://wiki.hyprland.org/Useful-Utilities/Hyprland-desktop-portal/
 # *gui-libs/xdg-desktop-portal-hyprland

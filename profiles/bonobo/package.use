@@ -106,6 +106,7 @@ sys-libs/libomp cuda
 sys-libs/libseccomp static-libs
 sys-libs/zlib minizip static-libs
 sys-process/atop modules
+www-client/google-chrome qt5
 x11-base/xorg-server kdrive xephyr xnest xvfb
 x11-drivers/nvidia-drivers uvm
 x11-libs/motif xft
