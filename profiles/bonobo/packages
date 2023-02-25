@@ -334,6 +334,7 @@ sys-cluster/kubectl
 *x11-misc/picom
 *x11-misc/redshift
 *x11-misc/rofi
+*x11-misc/virtualgl
 *x11-misc/x2x
 *x11-misc/xscreensaver
 *x11-terms/kitty
