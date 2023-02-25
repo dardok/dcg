@@ -15,6 +15,7 @@ media-gfx/imagemagick png
 media-libs/freetype harfbuzz
 media-libs/libvpx svc
 media-libs/mesa gallium llvm llvm-shared-libs osmesa xvmc -vaapi
+media-libs/opencv cuda threads gdal download contrib contribdnn contribfreetype contribxfeatures2d contribcvv qt5 -gtk3 -openexr
 media-video/ffmpeg sdl
 media-video/pipewire bluetooth v4l jack-sdk extra
 net-analyzer/wireshark -qt4 libssh libxml2 nghttp2 snappy
@@ -36,4 +37,4 @@ x11-libs/libdrm libkms
 #x11-libs/libva nvidia
 x11-libs/vte python
 x11-misc/notify-osd minimal
-x11-wm/xpra brotli html5 pillow sound vpx webcam webp xdg
+x11-wm/xpra brotli html pillow sound vpx webcam webp xdg

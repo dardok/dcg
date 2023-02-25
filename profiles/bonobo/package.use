@@ -52,7 +52,7 @@ media-libs/freetype harfbuzz utils
 media-libs/harfbuzz icu
 media-libs/libsdl2 gles2 pipewire
 media-libs/mesa vulkan-overlay
-media-libs/opencv cuda threads gdal download contrib contribdnn contribfreetype contribxfeatures2d contribcvv qt5 -openexr
+media-libs/opencv cuda threads gdal download contrib contribdnn contribfreetype contribxfeatures2d contribcvv qt5 -gtk3 -openexr
 media-libs/vulkan-loader layers
 media-libs/suil gtk2
 media-plugins/calf experimental
@@ -114,7 +114,7 @@ x11-misc/redshift geoclue appindicator
 x11-misc/xscreensaver fonts offensive suid
 x11-terms/kitty transfer
 x11-wm/awesome luajit
-x11-wm/xpra brotli html5 pillow sound vpx webcam webp xdg
+x11-wm/xpra brotli html pillow sound vpx webcam webp xdg
 
 # https://wiki.hyprland.org/Useful-Utilities/Hyprland-desktop-portal/
 dev-qt/qtbase opengl egl eglfs gles2-only
