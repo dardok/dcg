@@ -69,6 +69,7 @@ gui-wm/hyprland **
 lxde-base/lxtask
 media-gfx/openvdb
 media-libs/embree
+media-libs/libdisplay-info
 media-libs/mesa
 media-libs/oidn
 media-libs/opencollada
