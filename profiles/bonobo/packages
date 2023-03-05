@@ -24,7 +24,7 @@
 *app-crypt/tpm2-tss-engine
 *app-crypt/tpm2-tools
 *app-editors/neovim
-*=app-editors/sublime-text-4_p4126
+*=app-editors/sublime-text-4_p4126-r1
 *app-editors/vim
 *app-emulation/libguestfs
 *app-emulation/libvirt

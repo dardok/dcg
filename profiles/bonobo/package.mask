@@ -15,3 +15,5 @@ sys-cluster/mpich2
 
 #dev-libs/protobuf:0/32 # curaengine/opencv
 #dev-python/protobuf-python:0/32 # dev-libs/protobuf:0/32
+
+>=app-editors/sublime-text-4_p4143
