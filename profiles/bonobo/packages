@@ -122,7 +122,6 @@
 *dev-util/strace
 *dev-util/vulkan-tools
 *dev-vcs/git
-*gnome-base/gconf
 *gnome-base/gnome-keyring
 *gnome-extra/zenity
 *gui-apps/swaybg
