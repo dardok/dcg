@@ -310,7 +310,6 @@ sys-cluster/kubectl
 *x11-apps/xcursorgen
 *x11-apps/xdpyinfo
 *x11-apps/xev
-*x11-apps/xf86dga
 *x11-apps/xgamma
 *x11-apps/xhost
 *x11-apps/xinput
