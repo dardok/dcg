@@ -273,7 +273,7 @@
 *sys-boot/grub
 *sys-boot/mokutil
 *sys-boot/syslinux
-sys-cluster/kubectl
+*sys-cluster/kubectl
 *sys-cluster/openmpi
 *sys-cluster/rdma-core
 #*sys-devel/gcc:10
