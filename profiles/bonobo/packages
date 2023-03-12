@@ -98,6 +98,7 @@
 *dev-python/sympy
 *dev-python/pytesseract
 *dev-python/toml
+*dev-python/tornado
 *dev-python/twine
 *dev-python/werkzeug
 *dev-python/zeroconf
