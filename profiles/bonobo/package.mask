@@ -1,14 +1,13 @@
 >=sys-kernel/gentoo-sources-6
 
 >=sys-kernel/linux-headers-5.16
->=dev-lang/python-3.11
 
 dev-lang/spidermonkey
 
 sys-cluster/mpich
 sys-cluster/mpich2
 
->=dev-util/nvidia-cuda-toolkit-11.6.0 # opencv/blender/openmpi/grrr....
+>=dev-util/nvidia-cuda-toolkit-12 # opencv/blender/openmpi/grrr....
 
 >=media-gfx/openvdb-9.0.0 # pulls imcompatible dev-cpp/tbb
 
@@ -18,3 +17,13 @@ sys-cluster/mpich2
 #dev-python/protobuf-python:0/32 # dev-libs/protobuf:0/32
 
 >=app-editors/sublime-text-4_p4143
+
+>=dev-db/postgresql-15
+>=dev-python/cryptography-40 # dev-python/pyopenssl
+
+>=net-libs/xdp-tools-1.3 # pulls in broken bpftool
+
+>=dev-lang/ocaml-4.12 # breaks app-emulation/libguestfs
+>=dev-ml/ocaml-expat-1.3.0 # requires >=dev-lang/ocaml-4.14.1
+
+>dev-util/cmake-3.25.2 # broken compiler check

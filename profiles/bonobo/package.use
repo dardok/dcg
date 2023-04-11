@@ -5,7 +5,7 @@ app-containers/apptainer -network
 app-containers/docker -cli
 app-crypt/pinentry gnome-keyring
 app-editors/vim cscope lua luajit
-app-emulation/libguestfs -ocaml libvirt
+app-emulation/libguestfs ocaml libvirt
 app-emulation/libvirt fuse lvm numa parted virt-network libssh2 # xen lxc(sys-apps/systemd[cgroup-hybrid(-)])
 app-emulation/qemu xkb io-uring lzo multipath numa opengl snappy spice static-user usb usbredir vde vhost-user-fs virgl virtfs # xen
 app-emulation/xen efi
@@ -32,6 +32,7 @@ dev-libs/msgpack boost
 dev-libs/nss utils
 dev-libs/pkcs11-helper nss
 dev-libs/weston lcms wayland-compositor xwayland fullscreen ivi remoting rdp screen-sharing webp
+dev-ml/cudf llvm-libunwind
 dev-python/numpy lapack
 dev-python/pandas full-support
 dev-python/pillow webp
@@ -68,6 +69,8 @@ media-video/obs-studio nvenc pipewire
 media-video/pipewire bluetooth v4l jack-sdk extra sound-server libcamera
 net-analyzer/wireshark http2
 net-dns/dnsmasq script tftp
+net-firewall/iptables nftables
+net-firewall/nftables json libedit xtables -readline
 net-libs/gnutls tools
 net-libs/phodav spice
 net-libs/zeromq drafts
@@ -86,7 +89,7 @@ sci-libs/netcdf szip
 sys-apps/attr static-libs
 sys-apps/busybox -static
 sys-apps/dbus user-session
-sys-apps/hwloc cuda
+sys-apps/hwloc cuda nvml
 sys-apps/kexec-tools lzma # xen 
 sys-apps/smartmontools update_drivedb
 sys-apps/systemd nat policykit idn libidn2 gcrypt importd python http curl lzma qrcode elfutils cgroup-hybrid gnuefi
@@ -95,7 +98,8 @@ sys-block/nbd netlink
 sys-block/parted device-mapper
 sys-boot/grub device-mapper
 sys-cluster/openmpi cma cuda cxx ipv6 java mpi-threads numa romio threads vt
-sys-devel/binutils multitarget
+sys-devel/binutils multitarget gold
+sys-devel/clang-common default-compiler-rt default-lld llvm-libunwind
 sys-firmware/edk2-ovmf binary
 sys-firmware/intel-microcode initramfs hostonly
 sys-firmware/ipxe efi
@@ -103,8 +107,10 @@ sys-fs/e2fsprogs fuse
 sys-fs/lvm2 lvm thin
 sys-kernel/gentoo-sources experimental
 sys-kernel/linux-firmware initramfs
+sys-libs/binutils-libs multitarget
 sys-libs/libomp cuda
 sys-libs/libseccomp static-libs
+sys-libs/llvm-libunwind static-libs
 sys-libs/zlib minizip static-libs
 sys-process/atop modules
 www-client/google-chrome qt5

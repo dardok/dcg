@@ -1,4 +1,6 @@
 app-arch/createrepo_c
+app-arch/drpm
+app-arch/zchunk
 app-containers/apptainer
 app-containers/nvidia-container-toolkit
 app-crypt/ccid
@@ -29,6 +31,7 @@ dev-libs/wayland-protocols
 dev-libs/weston
 dev-python/aesara
 dev-python/aiofiles
+dev-python/aiostream
 dev-python/ajsonrpc
 dev-python/appdirs
 dev-python/botocore
@@ -40,7 +43,7 @@ dev-python/importlib_metadata
 dev-python/jaraco-text
 dev-python/marshmallow
 dev-python/more-itertools
-dev-python/netcdf4-python
+dev-python/netcdf4
 dev-python/nspektr
 dev-python/ordered-set
 dev-python/packaging
@@ -56,6 +59,7 @@ dev-python/simplekml
 dev-python/starlette
 dev-python/wheel
 dev-util/bcc
+dev-util/bpftool
 dev-util/clinfo
 dev-util/nvidia-cuda-toolkit
 dev-util/rustup
@@ -105,6 +109,7 @@ sys-devel/gcc:12
 sys-fs/fuse-overlayfs
 sys-fs/squashfuse
 sys-libs/libapparmor
+sys-libs/libmodulemd
 sys-libs/libnvidia-container
 sys-process/atop
 x11-drivers/nvidia-drivers:0/525
