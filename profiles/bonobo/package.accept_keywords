@@ -91,7 +91,8 @@ net-libs/xdp-tools
 net-wireless/bluez-tools
 sci-geosciences/qgis
 sci-geosciences/mapserver
-sci-libs/gdal
+#sci-libs/gdal
+#=sci-libs/gdal-3.6.2
 sci-libs/kissfft
 sec-policy/apparmor-profiles
 sys-apps/apparmor
@@ -104,7 +105,6 @@ sys-block/libfabric
 sys-boot/mokutil
 sys-cluster/openmpi
 sys-cluster/rdma-core
-#sys-devel/gcc:10
 sys-devel/gcc:12
 sys-fs/fuse-overlayfs
 sys-fs/squashfuse
