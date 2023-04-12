@@ -101,6 +101,7 @@ sys-apps/hwloc
 sys-auth/google-authenticator-libpam-hardened **
 sys-auth/rtkit
 sys-apps/hwdata
+sys-apps/nvme-cli
 sys-block/libfabric
 sys-boot/mokutil
 sys-cluster/openmpi
@@ -111,6 +112,7 @@ sys-fs/squashfuse
 sys-libs/libapparmor
 sys-libs/libmodulemd
 sys-libs/libnvidia-container
+sys-libs/libnvme
 sys-process/atop
 x11-drivers/nvidia-drivers:0/525
 x11-libs/libdrm

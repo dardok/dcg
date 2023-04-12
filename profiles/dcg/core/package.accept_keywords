@@ -22,3 +22,6 @@ sys-cluster/rdma-core
 sys-fs/bcache-tools
 
 sys-process/atop
+
+sys-libs/libnvme
+sys-apps/nvme-cli
