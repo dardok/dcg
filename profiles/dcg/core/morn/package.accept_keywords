@@ -1,1 +1,10 @@
+app-containers/cri-o
+app-containers/conmon
+app-containers/runc
+app-containers/cri-tools
+dev-libs/pmdk
+dev-libs/thrift
+dev-util/bcc
+net-misc/cni-plugins
 net-misc/lldpd
+sys-cluster/ceph

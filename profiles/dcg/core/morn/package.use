@@ -1,0 +1,9 @@
+app-emulation/libvirt firewalld lvm parted zfs
+app-emulation/qemu io-uring multipath snappy spice static-user systemtap usb usbredir vde vhost-user-fs virtfs zstd
+app-emulation/spice -smartcard
+dev-python/numpy lapack
+dev-python/twisted conch
+net-dns/dnsmasq script
+sys-block/fio io-uring
+sys-cluster/ceph mgr rbd-rwl rbd-ssd diskprediction kafka rabbitmq rgw-lua pmdk spdk
+sys-devel/gcc fortran
