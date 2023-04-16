@@ -5,6 +5,7 @@
 *app-containers/cri-o
 *app-containers/cri-tools
 *dev-util/bcc
+*media-plugins/gst-plugins-meta
 *net-misc/lldpd
 *net-analyzer/tcpdump
 *net-analyzer/traceroute
