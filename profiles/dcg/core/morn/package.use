@@ -4,7 +4,7 @@ app-emulation/spice -smartcard
 dev-python/numpy lapack
 dev-python/twisted conch
 media-libs/mesa -X
-media-plugins/gst-plugins-meta -X ffmpeg x264
+media-plugins/gst-plugins-meta -X ffmpeg x264 http
 net-dns/dnsmasq script
 sys-block/fio io-uring
 sys-cluster/ceph mgr rbd-rwl rbd-ssd diskprediction kafka rabbitmq rgw-lua pmdk spdk
