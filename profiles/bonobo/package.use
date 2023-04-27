@@ -90,6 +90,7 @@ sys-apps/attr static-libs
 sys-apps/busybox -static
 sys-apps/dbus user-session
 sys-apps/hwloc cuda nvml
+sys-apps/iproute2 bpf elf
 sys-apps/kexec-tools lzma # xen 
 sys-apps/smartmontools update_drivedb
 sys-apps/systemd nat policykit idn libidn2 gcrypt importd python http curl lzma qrcode elfutils cgroup-hybrid gnuefi

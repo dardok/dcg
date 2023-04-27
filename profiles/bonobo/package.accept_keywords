@@ -27,6 +27,7 @@ dev-lang/ispc
 dev-lang/go
 dev-libs/cudnn
 dev-libs/date
+dev-libs/wayland
 dev-libs/wayland-protocols
 dev-libs/weston
 dev-python/aesara
@@ -34,6 +35,8 @@ dev-python/aiofiles
 dev-python/aiostream
 dev-python/ajsonrpc
 dev-python/appdirs
+dev-python/asyncssh
+dev-python/awscli-plugin-endpoint
 dev-python/botocore
 dev-python/cftime
 dev-python/docker-py
@@ -63,6 +66,7 @@ dev-util/bpftool
 dev-util/clinfo
 dev-util/nvidia-cuda-toolkit
 dev-util/rustup
+dev-util/wayland-scanner
 gui-apps/waybar
 gui-apps/swaybg
 gui-apps/swaylock-effects

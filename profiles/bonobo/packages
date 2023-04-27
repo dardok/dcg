@@ -70,7 +70,9 @@
 *dev-python/aiofiles
 *dev-python/aiostream
 *dev-python/asn1crypto
+*dev-python/asyncssh
 *dev-python/autobahn
+*dev-python/awscli-plugin-endpoint
 *dev-python/beautifulsoup4
 *dev-python/black
 *dev-python/cbor2
@@ -155,7 +157,6 @@
 *media-fonts/font-bh-type1
 *media-fonts/font-bitstream-100dpi
 *media-fonts/font-bitstream-75dpi
-*media-fonts/font-bitstream-speedo
 *media-fonts/font-bitstream-type1
 *media-fonts/font-cronyx-cyrillic
 *media-fonts/font-cursor-misc
