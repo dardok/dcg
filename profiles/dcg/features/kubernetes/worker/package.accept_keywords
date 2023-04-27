@@ -1,0 +1,3 @@
+sys-cluster/kubeletctl
+app-containers/cni-plugins
+app-containers/conmon
