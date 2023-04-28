@@ -1,2 +1,2 @@
 ..
-dcg:dcg/features/kubernetes/worker/crio
+../../features/kubernetes/worker/crio
