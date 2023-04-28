@@ -2,8 +2,6 @@
 *app-arch/rpm2targz
 *app-emulation/libvirt
 *app-emulation/virt-manager
-*app-containers/cri-o
-*app-containers/cri-tools
 *dev-util/bcc
 *media-plugins/gst-plugins-meta
 *net-misc/lldpd
@@ -13,6 +11,4 @@
 *net-misc/openvswitch
 *sys-apps/hwloc
 *sys-block/fio
-*=sys-cluster/kube-proxy-1.26*
-*=sys-cluster/kubelet-1.26*
 *=sys-cluster/ceph-17*
