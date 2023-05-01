@@ -12,6 +12,7 @@
 *app-containers/apptainer
 *app-containers/cni-plugins
 *app-containers/docker
+*app-containers/docker-buildx
 *app-containers/docker-cli
 *app-containers/docker-compose
 *app-containers/nvidia-container-toolkit
