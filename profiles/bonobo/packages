@@ -82,6 +82,7 @@
 *dev-python/flask
 *dev-python/fuse-python
 *dev-python/mpi4py
+*dev-python/msgpack
 *dev-python/netcdf4
 *dev-python/networkx
 *dev-python/pandas
