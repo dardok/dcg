@@ -116,6 +116,7 @@
 *dev-qt/qtbase
 *dev-qt/qtshadertools
 *dev-qt/qtsvg
+*dev-qt/qttools
 *dev-qt/qtwayland
 *dev-qt/qtxmlpatterns
 *dev-util/bcc
