@@ -15,6 +15,7 @@
 *app-containers/docker-buildx
 *app-containers/docker-cli
 *app-containers/docker-compose
+*app-containers/docker-credential-helpers
 *app-containers/nvidia-container-toolkit
 *app-containers/podman
 *app-crypt/coolkey
@@ -114,6 +115,7 @@
 *dev-qt/qdbusviewer
 *dev-qt/qtbase
 *dev-qt/qtshadertools
+*dev-qt/qtsvg
 *dev-qt/qtwayland
 *dev-qt/qtxmlpatterns
 *dev-util/bcc
@@ -283,6 +285,7 @@
 *sys-boot/grub
 *sys-boot/mokutil
 *sys-boot/syslinux
+*sys-cluster/cilium-cli
 *sys-cluster/kubectl
 *sys-cluster/openmpi
 *sys-cluster/rdma-core

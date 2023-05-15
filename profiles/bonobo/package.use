@@ -3,6 +3,7 @@ app-arch/libarchive expat lz4 lzo nettle
 app-arch/unzip natspec
 app-containers/apptainer -network
 app-containers/docker -cli
+app-containers/docker-credential-helpers gnome-keyring pass
 app-crypt/pinentry gnome-keyring
 app-editors/vim cscope lua luajit
 app-emulation/libguestfs ocaml libvirt
@@ -22,9 +23,11 @@ dev-cpp/eigen cuda
 dev-db/postgresql threads uuid llvm icu
 dev-games/vulkanscenegraph-vsgXchange gis freetype assimp
 dev-lang/python tk
+dev-lang/rust rustfmt
 dev-libs/boost context icu
-dev-libs/libbpf static-libs
 dev-libs/glib static-libs
+dev-libs/libbpf static-libs
+dev-libs/libclc spirv
 dev-libs/libdbusmenu gtk3
 dev-libs/libpcre2 pcre16 static-libs
 dev-libs/libpcre static-libs
@@ -75,7 +78,6 @@ net-libs/gnutls tools
 net-libs/phodav spice
 net-libs/zeromq drafts
 net-misc/freerdp usb server
-net-misc/openssh X509
 net-misc/spice-gtk usbredir webdav
 net-vpn/openconnect libproxy stoken lz4
 net-vpn/openvpn iproute2
@@ -114,6 +116,7 @@ sys-libs/libseccomp static-libs
 sys-libs/llvm-libunwind static-libs
 sys-libs/zlib minizip static-libs
 sys-process/atop modules
+virtual/rust rustfmt
 www-client/google-chrome qt5
 x11-base/xorg-server kdrive xephyr xnest xvfb
 x11-drivers/nvidia-drivers uvm
