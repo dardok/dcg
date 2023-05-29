@@ -1,9 +1,9 @@
 ALSA_CARDS="-* hda-intel usb-audio"
 
-USE="-cups dbus python session -keyring"
+USE="-cups dbus python session"
 
 USE="${USE} pam ssl tls openssl ssh sasl crypt cracklib sudo"
-USE="${USE} kerberos gss gssapi keyring smartcard pkcs11"
+USE="${USE} kerberos gss gssapi -keyring smartcard pkcs11"
 USE="${USE} curl ldap lm_sensors snmp"
 
 USE="${USE} aio xattr inotify"
