@@ -41,8 +41,8 @@ src_configure() {
 		$(meson_feature pycamera)
 	)
 
-	local emesonargs+=( -Dipas=ipu3,raspberrypi,rkisp1,vimc )
-	local emesonargs+=( -Dpipelines=ipu3,raspberrypi,rkisp1,simple,uvcvideo,vimc )
+	local emesonargs+=( -Dipas=ipu3,rkisp1,rpi/vc4,vimc )
+	local emesonargs+=( -Dpipelines=auto )
 
 	meson_src_configure
 }
