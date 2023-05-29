@@ -1,6 +1,6 @@
 ALSA_CARDS="-* hda-intel usb-audio"
 
-USE="-cups dbus python session"
+USE="-cups dbus python session -keyring"
 
 USE="${USE} pam ssl tls openssl ssh sasl crypt cracklib sudo"
 USE="${USE} kerberos gss gssapi keyring smartcard pkcs11"
