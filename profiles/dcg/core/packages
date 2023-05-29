@@ -3,7 +3,6 @@
 *app-admin/sudo
 
 *app-crypt/intel-ipsec-mb
-*app-crypt/gentoo-keys
 *app-crypt/mit-krb5
 
 *app-metrics/node_exporter
@@ -54,6 +53,10 @@
 *net-misc/frr
 *net-misc/linuxptp
 *net-misc/socat
+
+*sec-keys/openpgp-keys-gentoo-auth
+*sec-keys/openpgp-keys-gentoo-developers
+*sec-keys/openpgp-keys-gentoo-release
 
 *sys-apps/haveged
 *sys-apps/irqbalance
