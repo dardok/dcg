@@ -37,4 +37,3 @@ x11-libs/libdrm libkms
 #x11-libs/libva nvidia
 x11-libs/vte python
 x11-misc/notify-osd minimal
-x11-wm/xpra brotli html pillow sound vpx webcam webp xdg
