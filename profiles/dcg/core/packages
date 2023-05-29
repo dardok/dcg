@@ -54,8 +54,6 @@
 *net-misc/linuxptp
 *net-misc/socat
 
-*sec-keys/openpgp-keys-gentoo-auth
-*sec-keys/openpgp-keys-gentoo-developers
 *sec-keys/openpgp-keys-gentoo-release
 
 *sys-apps/haveged
