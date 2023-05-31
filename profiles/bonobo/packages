@@ -102,7 +102,6 @@
 *dev-python/ruamel-yaml
 *dev-python/ruamel-yaml-clib
 *dev-python/scipy
-*dev-python/semantic_version
 *dev-python/shapely
 *dev-python/simplekml
 *dev-python/sympy
