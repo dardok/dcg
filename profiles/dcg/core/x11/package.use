@@ -1,4 +1,5 @@
 app-text/ghostscript-gpl cups
+dev-libs/libclc spirv
 dev-libs/weston wayland-compositor xwayland
 dev-python/PyQt5 declarative designer doc -gles2 gui location multimedia network positioning printsupport sensors serialport sql webchannel webengine webkit websockets widgets x11extras xmlpatterns
 dev-python/pygobject cairo
