@@ -53,7 +53,7 @@ media-gfx/graphviz pdf qt5 postscript
 media-libs/libcanberra gtk2
 media-libs/clutter egl
 media-libs/cogl gles2
-media-libs/freetype harfbuzz utils
+media-libs/freetype harfbuzz utils brotli
 media-libs/harfbuzz icu
 media-libs/libsdl2 gles2 pipewire
 media-libs/mesa vulkan-overlay

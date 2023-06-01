@@ -186,8 +186,7 @@
 *media-fonts/ttf-bitstream-vera
 *media-fonts/unifont
 
-*media-gfx/blender:2.93
-*media-gfx/cura
+*media-gfx/blender:3.3
 *media-gfx/feh
 *media-gfx/gimp
 *media-gfx/graphviz

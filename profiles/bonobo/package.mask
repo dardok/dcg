@@ -7,9 +7,9 @@ dev-lang/spidermonkey
 sys-cluster/mpich
 sys-cluster/mpich2
 
->=dev-util/nvidia-cuda-toolkit-12 # opencv/blender/openmpi/grrr....
+#>=dev-util/nvidia-cuda-toolkit-12 # opencv/blender/openmpi/grrr....
 
->=media-gfx/openvdb-9.0.0 # pulls imcompatible dev-cpp/tbb
+#>=media-gfx/openvdb-9.0.0 # pulls imcompatible dev-cpp/tbb
 
 >=dev-python/docutils-0.18 # dev-python/sphinx
 
@@ -19,13 +19,13 @@ sys-cluster/mpich2
 >=app-editors/sublime-text-4_p4143
 
 >=dev-db/postgresql-15
->=dev-python/cryptography-40 # dev-python/pyopenssl
+#>=dev-python/cryptography-40 # dev-python/pyopenssl
 
 >=net-libs/xdp-tools-1.3 # pulls in broken bpftool
 
 >=dev-lang/ocaml-4.12 # breaks app-emulation/libguestfs
 >=dev-ml/ocaml-expat-1.3.0 # requires >=dev-lang/ocaml-4.14.1
 
->dev-util/cmake-3.25.2 # broken compiler check
+#>dev-util/cmake-3.25.2 # broken compiler check
 
 >=dev-lang/python-3.11
