@@ -113,7 +113,7 @@ sys-boot/mokutil
 sys-cluster/cilium-cli
 sys-cluster/openmpi
 sys-cluster/rdma-core
-sys-devel/gcc:12
+#sys-devel/gcc:12
 sys-fs/fuse-overlayfs
 sys-fs/squashfuse
 sys-libs/libapparmor
