@@ -17,6 +17,7 @@
 *media-fonts/liberation-fonts
 *media-fonts/ttf-bitstream-vera
 *media-fonts/unifont
+*media-libs/glew
 *media-video/pipewire
 *media-video/wireplumber
 *sys-auth/rtkit

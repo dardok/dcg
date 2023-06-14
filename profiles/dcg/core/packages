@@ -75,6 +75,7 @@
 *sys-cluster/rdma-core
 
 *sys-devel/gdb
+*sys-devel/lld
 
 *sys-block/libfabric
 
