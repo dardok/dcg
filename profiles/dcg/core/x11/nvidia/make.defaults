@@ -1,0 +1,3 @@
+VIDEO_CARDS="-* nvidia radeon radeonsi mga modesetting fbdev vesa dummy v4l virgl"
+
+USE="cuda"

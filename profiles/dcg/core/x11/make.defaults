@@ -1,4 +1,4 @@
-VIDEO_CARDS="-* nvidia radeon radeonsi mga modesetting fbdev vesa dummy v4l virgl amdgpu"
+VIDEO_CARDS="-* radeon radeonsi mga modesetting fbdev vesa dummy v4l virgl"
 
 ALSA_CARDS="-* hda-intel usb-audio"
 
@@ -6,7 +6,7 @@ INPUT_DEVICES="-* evdev keyboard mouse tslib joystick libinput"
 
 USE="X wayland dga dmx keyring"
 USE="${USE} dri dri3 virgl nvenc" # vaapi vdpau
-USE="${USE} opengl opencl cuda gles gles2 egl"
+USE="${USE} opengl opencl gles gles2 egl"
 USE="${USE} truetype type1 cleartype corefonts webp"
 USE="${USE} qt5 gtk3 gtk gnome gnome-keyring"
 USE="${USE} vnc xinerama xcb xlib-xcb xkb xft colord startup-notification"

@@ -1,8 +1,5 @@
 *app-crypt/coolkey
 *dev-libs/opensc
-*dev-libs/rocm-comgr
-*dev-libs/rocm-device-libs
-*dev-libs/rocm-opencl-runtime
 *media-fonts/artwiz-aleczapka-en
 *media-fonts/corefonts
 *media-fonts/dejavu
@@ -36,7 +33,6 @@
 *x11-apps/xsetroot
 *x11-base/xorg-drivers
 *x11-base/xorg-server
-*x11-drivers/nvidia-drivers
 *x11-libs/libnotify
 *x11-libs/libXScrnSaver
 #*x11-libs/libva
