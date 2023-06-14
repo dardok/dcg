@@ -62,7 +62,7 @@ pkg_setup() {
 }
 
 src_prepare() {
-	eapply -p0 "${FILESDIR}/gcc12.patch"
+	eapply -p1 "${FILESDIR}/gcc12.patch"
 	eapply_user
 	if [[ ${PV} == "9999" ]]; then
 		# replace upstream autogen.sh by our src_prepare()
