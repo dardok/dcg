@@ -58,6 +58,7 @@ media-libs/harfbuzz icu
 media-libs/libsdl2 gles2 pipewire
 media-libs/mesa vulkan-overlay
 media-libs/opencv cuda threads gdal download contrib contribdnn contribfreetype contribxfeatures2d contribcvv qt5 -gtk3 -openexr
+media-libs/tg_owt screencast
 media-libs/vulkan-loader layers
 media-libs/suil gtk2
 media-plugins/calf experimental
@@ -74,6 +75,7 @@ net-analyzer/wireshark http2
 net-dns/dnsmasq script tftp
 net-firewall/iptables nftables
 net-firewall/nftables json libedit xtables -readline
+net-im/telegram-desktop enchant qt6 qt6-imageformats screencast
 net-libs/gnutls tools
 net-libs/phodav spice
 net-libs/zeromq drafts

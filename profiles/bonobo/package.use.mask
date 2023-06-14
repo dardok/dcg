@@ -4,3 +4,4 @@ media-libs/openimageio opengl
 media-libs/opencolorio opengl
 media-libs/opencv openexr
 app-text/tesseract opencl
+net-im/telegram-desktop -qt6
