@@ -4,7 +4,7 @@
 EAPI=7
 
 WANT_AUTOCONF="2.5"
-WANT_AUTOMAKE="1.15"
+WANT_AUTOMAKE="1.16"
 WANT_LIBTOOL="latest"
 
 scm="git-r3"
@@ -14,7 +14,7 @@ KEYWORDS=""
 EGIT_BRANCH="master"
 
 SUPPORTED_KV_MAJOR=5
-SUPPORTED_KV_MINOR=11
+SUPPORTED_KV_MINOR=15
 
 inherit ${scm} autotools linux-info linux-mod toolchain-funcs udev flag-o-matic
 
@@ -23,7 +23,7 @@ HOMEPAGE="http://wiki.whamcloud.com/"
 
 LICENSE="GPL-2"
 SLOT="0"
-IUSE="+client +utils +modules +dlc server readline tests o2ib gss +lru-resize +checksum"
+IUSE="+client +utils +modules +dlc server readline tests o2ib gss +lru-resize +checksum cuda gds"
 
 RDEPEND="
 	app-alternatives/awk
@@ -34,7 +34,7 @@ RDEPEND="
 		>=sys-fs/zfs-0.8
 	)
 "
-BDEPEND="sys-devel/gcc:10"
+BDEPEND="sys-devel/gcc:12"
 DEPEND="${RDEPEND}
 	dev-python/docutils
 	virtual/linux-sources"
@@ -42,6 +42,10 @@ DEPEND="${RDEPEND}
 REQUIRED_USE="
 	client? ( modules )
 	server? ( modules )"
+
+PATCHES=(
+    "${FILESDIR}"/gcc12.patch
+)
 
 pkg_pretend() {
 	KVSUPP=${SUPPORTED_KV_MAJOR}.${SUPPORTED_KV_MINOR}.x
@@ -87,6 +91,12 @@ src_configure() {
 		ZFS_PATH=$(basename $(echo "${EROOT}/usr/src/zfs-"*)) \
 			myconf="${myconf} --with-zfs=${EROOT}/usr/src/${ZFS_PATH} \
 			--with-zfs-obj=${EROOT}/usr/src/${ZFS_PATH}/${KV_FULL}"
+	fi
+	if use cuda; then
+		myconf="${myconf} --with-cuda=/usr/src/nvidia-530.30.02"
+	fi
+	if use gds; then
+		myconf="${myconf} --with-gds=/root/gds-nvidia-fs/src"
 	fi
 	econf \
 		${myconf} \

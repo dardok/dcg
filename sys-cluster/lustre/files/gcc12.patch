@@ -1,0 +1,46 @@
+diff --git a/lnet/utils/lnetconfig/liblnetconfig.c b/lnet/utils/lnetconfig/liblnetconfig.c
+index dc29ac8306..c2318d0be7 100644
+--- a/lnet/utils/lnetconfig/liblnetconfig.c
++++ b/lnet/utils/lnetconfig/liblnetconfig.c
+@@ -91,8 +91,11 @@ int open_sysfs_file(const char *path, const char *attr, const int mode)
+        if (strlen(path) + strlen(attr) >= LNET_MAX_STR_LEN)
+                return -1;
+ 
++#pragma GCC diagnostic push
++#pragma GCC diagnostic ignored "-Wformat-truncation"
+        snprintf(filename, sizeof(filename), "%s%s",
+                 path, attr);
++#pragma GCC diagnostic pop
+ 
+        fd = open(filename, mode);
+ 
+diff --git a/lustre/utils/lfs_project.c b/lustre/utils/lfs_project.c
+index ccf1c1ab42..616d983827 100644
+--- a/lustre/utils/lfs_project.c
++++ b/lustre/utils/lfs_project.c
+@@ -321,8 +321,11 @@ lfs_project_handle_dir(struct list_head *head, const char *pathname,
+                                        progname, pathname, ent->d_name);
+                        continue;
+                }
++#pragma GCC diagnostic push
++#pragma GCC diagnostic ignored "-Wformat-truncation"
+                snprintf(fullname, PATH_MAX, "%s/%s", pathname,
+                         ent->d_name);
++#pragma GCC diagnostic pop
+ 
+                rc = func(fullname, phc);
+                if (rc && !ret)
+diff --git a/lustre/utils/obd.c b/lustre/utils/obd.c
+index e1e151331f..4c1cddfad9 100644
+--- a/lustre/utils/obd.c
++++ b/lustre/utils/obd.c
+@@ -5093,7 +5093,9 @@ int llog_poollist(char *fsname, char *poolname)
+                else
+                        printf("%s.%s\n", fsname, tmp->lpn_name);
+                list_del(&tmp->lpn_list);
++#if 0
+                free(tmp);
++#endif
+        }
+ 
+        return rc;
