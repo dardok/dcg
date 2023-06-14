@@ -1,43 +1,43 @@
 diff -u -r -N a/lnet/utils/lnetconfig/liblnetconfig.c b/lnet/utils/lnetconfig/liblnetconfig.c
---- a/lnet/utils/lnetconfig/liblnetconfig.c 2023-06-14 19:12:54.642296897 +0000
-+++ b/lnet/utils/lnetconfig/liblnetconfig.c 2023-06-14 19:12:43.806596296 +0000
+--- a/lnet/utils/lnetconfig/liblnetconfig.c	2023-06-14 19:12:54.642296897 +0000
++++ b/lnet/utils/lnetconfig/liblnetconfig.c	2023-06-14 19:12:43.806596296 +0000
 @@ -91,8 +91,11 @@
-    if (strlen(path) + strlen(attr) >= LNET_MAX_STR_LEN)
-        return -1;
-        
+ 	if (strlen(path) + strlen(attr) >= LNET_MAX_STR_LEN)
+ 		return -1;
+ 
 +#pragma GCC diagnostic push
 +#pragma GCC diagnostic ignored "-Wformat-truncation"
-    snprintf(filename, sizeof(filename), "%s%s",
-         path, attr);
+ 	snprintf(filename, sizeof(filename), "%s%s",
+ 		 path, attr);
 +#pragma GCC diagnostic pop
  
-    fd = open(filename, mode);
+ 	fd = open(filename, mode);
  
 diff -u -r -N a/lustre/utils/lfs_project.c b/lustre/utils/lfs_project.c
---- a/lustre/utils/lfs_project.c    2023-06-14 19:12:54.642296897 +0000
-+++ b/lustre/utils/lfs_project.c    2023-06-14 19:12:43.774597180 +0000
+--- a/lustre/utils/lfs_project.c	2023-06-14 19:12:54.642296897 +0000
++++ b/lustre/utils/lfs_project.c	2023-06-14 19:12:43.774597180 +0000
 @@ -321,8 +321,11 @@
-                    progname, pathname, ent->d_name);
-            continue;
-        }   
+ 					progname, pathname, ent->d_name);
+ 			continue;
+ 		}
 +#pragma GCC diagnostic push
 +#pragma GCC diagnostic ignored "-Wformat-truncation"
-        snprintf(fullname, PATH_MAX, "%s/%s", pathname,
-             ent->d_name); 
+ 		snprintf(fullname, PATH_MAX, "%s/%s", pathname,
+ 			 ent->d_name);
 +#pragma GCC diagnostic pop
  
-        rc = func(fullname, phc);
-        if (rc && !ret)
+ 		rc = func(fullname, phc);
+ 		if (rc && !ret)
 diff -u -r -N a/lustre/utils/obd.c b/lustre/utils/obd.c
---- a/lustre/utils/obd.c    2023-06-14 19:12:54.642296897 +0000
-+++ b/lustre/utils/obd.c    2023-06-14 19:12:43.774597180 +0000
+--- a/lustre/utils/obd.c	2023-06-14 19:12:54.642296897 +0000
++++ b/lustre/utils/obd.c	2023-06-14 19:12:43.774597180 +0000
 @@ -5093,7 +5093,9 @@
-        else
-            printf("%s.%s\n", fsname, tmp->lpn_name);
-        list_del(&tmp->lpn_list);
+ 		else
+ 			printf("%s.%s\n", fsname, tmp->lpn_name);
+ 		list_del(&tmp->lpn_list);
 +#if 0
-        free(tmp);
+ 		free(tmp);
 +#endif
-    }
-    
-    return rc;
+ 	}
+ 
+ 	return rc;
