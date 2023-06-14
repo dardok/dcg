@@ -40,7 +40,6 @@ dev-python/asyncssh
 dev-python/awscli-plugin-endpoint
 dev-python/botocore
 dev-python/cftime
-dev-python/docker-py
 dev-python/fuse-python
 dev-python/installer
 dev-python/importlib_metadata
