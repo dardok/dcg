@@ -96,6 +96,13 @@ src_configure() {
 	if use gds; then
 		myconf="${myconf} --with-gds=/root/gds-nvidia-fs/src"
 	fi
+	if use o2ib; then
+		if [ -d /usr/src/ofa_kernel/default ]; then
+			myconf="${myconf} --with-o2ib=/usr/src/ofa_kernel/default"
+		else
+			myconf="${myconf} --with-o2ib"
+		fi
+	fi
 	econf \
 		${myconf} \
 		--without-ldiskfs \
@@ -110,8 +117,7 @@ src_configure() {
 		$(use_enable tests) \
 		$(use_enable gss) \
 		$(use_enable lru-resize) \
-		$(use_enable checksum) \
-		$(use_with o2ib)
+		$(use_enable checksum)
 }
 
 src_compile() {
