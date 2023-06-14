@@ -43,10 +43,6 @@ REQUIRED_USE="
 	client? ( modules )
 	server? ( modules )"
 
-PATCHES=(
-    "${FILESDIR}"/gcc12.patch
-)
-
 pkg_pretend() {
 	KVSUPP=${SUPPORTED_KV_MAJOR}.${SUPPORTED_KV_MINOR}.x
 	if kernel_is gt ${SUPPORTED_KV_MAJOR} ${SUPPORTED_KV_MINOR}; then
@@ -66,6 +62,7 @@ pkg_setup() {
 }
 
 src_prepare() {
+	eapply -p0 "${FILESDIR}/gcc12.patch"
 	eapply_user
 	if [[ ${PV} == "9999" ]]; then
 		# replace upstream autogen.sh by our src_prepare()
