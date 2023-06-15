@@ -91,7 +91,7 @@ src_configure() {
 			--with-zfs-obj=${EROOT}/usr/src/${ZFS_PATH}/${KV_FULL}"
 	fi
 	if use cuda; then
-		myconf="${myconf} --with-cuda=/usr/src/nvidia-530.30.02"
+		myconf="${myconf} --with-cuda=/usr/src/nvidia"
 	fi
 	if use gds; then
 		myconf="${myconf} --with-gds=/root/gds-nvidia-fs/src"
