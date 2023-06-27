@@ -55,6 +55,7 @@
 *dev-cpp/websocketpp
 *=dev-cpp/tbb-2020.3 # media-libs/oidn media-gfx/openvdb media-gfx/blender
 *dev-db/spatialite
+*dev-games/openscenegraph
 *dev-java/icedtea-web
 #*dev-java/openjdk-bin:11
 *dev-lang/lua
@@ -197,6 +198,7 @@
 *media-libs/libsdl2
 *media-libs/libsmf
 *media-libs/opencv
+*media-libs/shaderc
 *media-libs/vulkan-loader
 *media-libs/zita-resampler
 *media-plugins/calf
@@ -244,6 +246,7 @@
 *net-ftp/atftp
 *net-fs/yfs
 *net-im/rocketchat-desktop-bin
+*net-im/telegram-desktop
 *net-libs/nodejs
 *net-libs/xdp-tools
 *net-mail/tnef
