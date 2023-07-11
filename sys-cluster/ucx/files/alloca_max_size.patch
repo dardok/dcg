@@ -1,0 +1,12 @@
+diff -u -r -N a/src/ucs/sys/compiler_def.h b/src/ucs/sys/compiler_def.h
+--- a/src/ucs/sys/compiler_def.h	2023-05-22 04:46:18.000000000 -0400
++++ b/src/ucs/sys/compiler_def.h	2023-07-11 08:58:02.604587733 -0400
+@@ -28,7 +28,7 @@
+      switch(0) {case 0:case (_cond):;}
+ 
+ /* Maximal allocation size for on-stack buffers */
+-#define UCS_ALLOCA_MAX_SIZE  1200
++#define UCS_ALLOCA_MAX_SIZE  3600
+ 
+ /* Aliasing structure */
+ #define UCS_S_MAY_ALIAS __attribute__((may_alias))

@@ -14,7 +14,7 @@ S="${WORKDIR}/${PN}-${MY_PV}"
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64 -riscv ~x86 ~amd64-linux ~x86-linux"
-IUSE="+numa +openmp"
+IUSE="+numa +openmp cuda"
 
 RDEPEND="
 	sys-libs/binutils-libs:=
@@ -23,6 +23,7 @@ RDEPEND="
 DEPEND="${RDEPEND}"
 
 PATCHES=(
+	"${FILESDIR}"/alloca_max_size.patch
 )
 
 pkg_pretend() {
@@ -45,7 +46,8 @@ src_configure() {
 		--without-go \
 		--without-java \
 		$(use_enable numa) \
-		$(use_enable openmp)
+		$(use_enable openmp) \
+		$(usex cuda "--with-cuda=/opt/cuda" "")
 }
 
 src_compile() {
