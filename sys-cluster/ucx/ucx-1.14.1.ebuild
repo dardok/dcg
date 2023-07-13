@@ -45,6 +45,7 @@ src_configure() {
 		--without-fuse3 \
 		--without-go \
 		--without-java \
+		--enable-mt \
 		$(use_enable numa) \
 		$(use_enable openmp) \
 		$(usex cuda "--with-cuda=/opt/cuda" "")
