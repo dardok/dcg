@@ -4,6 +4,7 @@
 *app-admin/keepassxc
 *app-admin/sshguard
 *app-admin/sudo
+*app-admin/terraform
 *app-arch/createrepo_c
 *app-arch/deb2targz
 *app-arch/p7zip
@@ -18,6 +19,7 @@
 *app-containers/docker-credential-helpers
 *app-containers/nvidia-container-toolkit
 *app-containers/podman
+*app-containers/skopeo
 *app-crypt/coolkey
 *app-crypt/intel-ipsec-mb
 *app-crypt/libsecret
@@ -252,6 +254,7 @@
 *net-mail/tnef
 *net-misc/autossh
 *net-misc/ipcalc
+*net-misc/oidc-agent
 *net-misc/rclone
 *net-misc/tigervnc
 *net-misc/socat
