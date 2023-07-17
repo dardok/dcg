@@ -1,0 +1,5 @@
+*app-editors/vim
+*app-portage/gentoolkit
+*dev-vcs/git
+*sys-devel/bc
+*virtual/libelf

@@ -1,0 +1,2 @@
+<sys-devel/clang-9
+>=dev-db/postgresql-15

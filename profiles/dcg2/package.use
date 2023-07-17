@@ -1,0 +1,13 @@
+app-editors/vim python
+
+dev-lang/python sqlite threads
+
+sys-apps/net-tools nis
+sys-apps/systemd nat idn libidn2 gcrypt importd python http curl lzma qrcode elfutils
+sys-apps/systemd cgroup-hybrid # required for docker, still?
+
+sys-auth/polkit duktape
+
+sys-libs/timezone-data leaps_timezone
+
+sys-process/audit python
