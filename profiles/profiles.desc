@@ -1,3 +1,4 @@
 amd64 dcg/bootstrap exp
 amd64 dcg/provisioner exp
 amd64 dcg/core exp
+amd64 dcg2/core exp
