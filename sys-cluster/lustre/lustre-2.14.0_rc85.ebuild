@@ -82,6 +82,13 @@ src_configure() {
 			myconf="${myconf} --with-zfs=${EROOT}/usr/src/${ZFS_PATH} \
 			--with-zfs-obj=${EROOT}/usr/src/${ZFS_PATH}/${KV_FULL}"
 	fi
+	if use o2ib; then
+		if [ -d /usr/src/ofa_kernel/default ]; then
+			myconf="${myconf} --with-o2ib=/usr/src/ofa_kernel/default"
+		else
+			myconf="${myconf} --with-o2ib"
+		fi
+	fi
 	econf \
 		${myconf} \
 		--without-ldiskfs \
