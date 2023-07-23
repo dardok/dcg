@@ -9,8 +9,10 @@ WANT_AUTOCONF="latest"
 WANT_AUTOMAKE="latest"
 WANT_LIBTOOL="latest"
 
-SRC_URI="http://192.168.180.1/lustre-client-2.14.0_ddn85.tar.gz"
+SRC_URI="lustre-client-2.14.0_ddn85.tar.gz"
 KEYWORDS="~amd64"
+MY_PV=2.14.0_ddn85
+S="${WORKDIR}/${PN}-${MY_PV}"
 
 SUPPORTED_KV_MAJOR=5
 SUPPORTED_KV_MINOR=15
