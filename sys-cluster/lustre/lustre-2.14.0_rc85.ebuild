@@ -5,8 +5,8 @@ EAPI=7
 
 RESTRICT="bindist mirror fetch strip"
 
-WANT_AUTOCONF="2.5"
-WANT_AUTOMAKE="1.15"
+WANT_AUTOCONF="latest"
+WANT_AUTOMAKE="latest"
 WANT_LIBTOOL="latest"
 
 SRC_URI="http://192.168.180.1/lustre-client-2.14.0_ddn85.tar.gz"
