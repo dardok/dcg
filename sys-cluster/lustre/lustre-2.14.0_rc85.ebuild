@@ -103,8 +103,7 @@ src_configure() {
 		$(use_enable tests) \
 		$(use_enable gss) \
 		$(use_enable lru-resize) \
-		$(use_enable checksum) \
-		$(use_with o2ib)
+		$(use_enable checksum)
 }
 
 src_compile() {
