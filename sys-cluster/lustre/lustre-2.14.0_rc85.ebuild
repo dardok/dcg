@@ -88,6 +88,7 @@ src_configure() {
 			myconf="${myconf} --with-o2ib"
 		fi
 	fi
+	CFLAGS="-g -O2 -Wall -Werror -Wno-address-of-packed-member -Werror=stringop-overflow=0"
 	econf \
 		${myconf} \
 		--without-ldiskfs \
