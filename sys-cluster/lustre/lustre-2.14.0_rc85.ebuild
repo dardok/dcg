@@ -5,12 +5,14 @@ EAPI=7
 
 RESTRICT="bindist mirror fetch strip"
 
-WANT_AUTOCONF="2.5"
-WANT_AUTOMAKE="1.15"
+WANT_AUTOCONF="latest"
+WANT_AUTOMAKE="latest"
 WANT_LIBTOOL="latest"
 
-SRC_URI="http://192.168.180.1/lustre-client-2.14.0_ddn85.tar.gz"
+SRC_URI="lustre-client-2.14.0_ddn85.tar.gz"
 KEYWORDS="~amd64"
+MY_PV=2.14.0_ddn85
+S="${WORKDIR}/${PN}-${MY_PV}"
 
 SUPPORTED_KV_MAJOR=5
 SUPPORTED_KV_MINOR=15
@@ -80,6 +82,13 @@ src_configure() {
 			myconf="${myconf} --with-zfs=${EROOT}/usr/src/${ZFS_PATH} \
 			--with-zfs-obj=${EROOT}/usr/src/${ZFS_PATH}/${KV_FULL}"
 	fi
+	if use o2ib; then
+		if [ -d /usr/src/ofa_kernel/default ]; then
+			myconf="${myconf} --with-o2ib=/usr/src/ofa_kernel/default"
+		else
+			myconf="${myconf} --with-o2ib"
+		fi
+	fi
 	econf \
 		${myconf} \
 		--without-ldiskfs \
@@ -94,8 +103,7 @@ src_configure() {
 		$(use_enable tests) \
 		$(use_enable gss) \
 		$(use_enable lru-resize) \
-		$(use_enable checksum) \
-		$(use_with o2ib)
+		$(use_enable checksum)
 }
 
 src_compile() {
