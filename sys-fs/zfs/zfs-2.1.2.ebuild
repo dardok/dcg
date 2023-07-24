@@ -49,8 +49,7 @@ DEPEND="
 	)
 "
 
-BDEPEND="virtual/awk
-	virtual/pkgconfig
+BDEPEND="virtual/pkgconfig
 	nls? ( sys-devel/gettext )
 	python? (
 		dev-python/setuptools[${PYTHON_USEDEP}]
@@ -70,7 +69,6 @@ RDEPEND="${DEPEND}
 	!kernel-builtin? ( ~sys-fs/zfs-kmod-${PV}:= )
 	!prefix? ( virtual/udev )
 	sys-fs/udev-init-scripts
-	virtual/awk
 	dist-kernel? ( virtual/dist-kernel:= )
 	rootfs? (
 		app-arch/cpio
