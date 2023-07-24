@@ -37,8 +37,7 @@ RDEPEND="
 "
 BEPEND="${RDEPEND}
 	dev-python/docutils
-	virtual/linux-sources
-	sys-devel/gcc:11"
+	virtual/linux-sources"
 
 REQUIRED_USE="
 	client? ( modules )
@@ -94,7 +93,6 @@ src_configure() {
 		--without-ldiskfs \
 		--with-linux="${KERNEL_DIR}" \
 		--with-linux-obj="${KBUILD_OUTPUT}" \
-		$(use_enable dlc) \
 		$(use_enable client) \
 		$(use_enable utils) \
 		$(use_enable modules) \
