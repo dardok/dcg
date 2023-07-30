@@ -150,3 +150,5 @@ dev-qt/qtwebsockets:6
 dev-qt/qthttpserver:6
 dev-qt/qtwebengine:6
 dev-qt/qtwebchannel:6
+dev-qt/qtpositioning:6
+dev-qt/qtserialport:6

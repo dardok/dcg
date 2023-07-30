@@ -1,3 +1,4 @@
+>=dev-util/nvidia-cuda-toolkit-12.2
 >=sys-kernel/gentoo-sources-6
 
 >=sys-kernel/linux-headers-5.16
@@ -11,7 +12,7 @@ sys-cluster/mpich2
 
 #>=media-gfx/openvdb-9.0.0 # pulls imcompatible dev-cpp/tbb
 
->=dev-python/docutils-0.18 # dev-python/sphinx
+#>=dev-python/docutils-0.18 # dev-python/sphinx
 
 #dev-libs/protobuf:0/32 # curaengine/opencv
 #dev-python/protobuf-python:0/32 # dev-libs/protobuf:0/32

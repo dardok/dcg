@@ -46,6 +46,7 @@ dev-python/pillow webp
 dev-python/PyQt5 designer sql positioning network widgets gui printsupport declarative
 dev-python/sympy aesara imaging symengine
 dev-qt/qtwebengine screencast geolocation widgets
+dev-qt/qtwebchannel qml
 dev-qt/qtgui egl
 dev-util/perf clang systemtap slang libpfm
 dev-util/strace aio elfutils

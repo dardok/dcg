@@ -105,6 +105,7 @@
 *dev-python/poetry-core
 *dev-python/pyaes
 *dev-python/pyasn1-modules
+*dev-python/pydantic
 *dev-python/pydot
 *dev-python/pyjwt
 *dev-python/pylint
@@ -130,6 +131,7 @@
 *dev-python/tornado
 *dev-python/traitlets
 *dev-python/twine
+*dev-python/ujson
 *dev-python/uvicorn
 *dev-python/wcwidth
 *dev-python/websocket-client
@@ -145,7 +147,7 @@
 *dev-qt/qtsvg
 *dev-qt/qttools
 *dev-qt/qtwayland
-*dev-qt/qtwebengine
+*dev-qt/qtwebengine:6
 *dev-qt/qtwebsockets:6
 *dev-qt/qtxmlpatterns
 *dev-util/bcc
