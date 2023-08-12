@@ -23,8 +23,6 @@ LICENSE="BSD GPL-2"
 SLOT="0"
 
 RDEPEND="
-	acct-group/thttpd
-	acct-user/thttpd
 	virtual/libcrypt:=
 "
 DEPEND="${RDEPEND}"
