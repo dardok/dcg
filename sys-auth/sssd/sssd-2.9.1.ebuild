@@ -169,6 +169,8 @@ multilib_src_configure() {
 		$(multilib_native_use_with python python3-bindings)
 		# Annoyingly configure requires that you pick systemd XOR sysv
 		--with-initscript=$(usex systemd systemd sysv)
+		# libjose is required for building oidc_child
+		--with-oidc-child=no
 	)
 
 	use systemd && myconf+=(
