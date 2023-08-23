@@ -272,7 +272,7 @@ multilib_src_install_all() {
 	# strip empty dirs
 	if ! use doc; then
 		rm -r "${ED}"/usr/share/doc/"${PF}"/doc || die
-		rm -r "${ED}"/usr/share/doc/"${PF}"/{hbac,idmap,nss_idmap,sss_simpleifp}_doc || die
+		rm -r "${ED}"/usr/share/doc/"${PF}"/{hbac,idmap,nss_idmap}_doc || die
 	fi
 
 	rm -r "${ED}"/run || die
