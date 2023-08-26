@@ -20,6 +20,7 @@ app-text/tessdata_fast l10n_en
 app-text/texlive-core xetex
 app-text/xmlto text
 dev-cpp/eigen cuda
+dev-db/postgis postgres_targets_postgres14
 dev-db/postgresql threads uuid llvm icu
 dev-games/openscenegraph gdal lua pdf
 dev-games/vulkanscenegraph-vsgXchange gis freetype assimp
@@ -91,6 +92,7 @@ net-vpn/openconnect libproxy stoken lz4
 net-vpn/openvpn iproute2
 net-wireless/bluez experimental user-session deprecated
 sci-geosciences/qgis hdf5 netcdf 3d georeferencer postgres mapserver
+sci-geosciences/mapserver geos postgis
 sci-libs/armadillo lapack
 sci-libs/fftw threads
 sci-libs/hdf5 cxx szip

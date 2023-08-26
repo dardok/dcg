@@ -53,6 +53,7 @@
 *app-portage/smart-live-rebuild
 *app-shells/bash-completion
 *app-text/texlive
+*app-text/xmlformat
 *app-vim/pathogen
 *dev-cpp/nlohmann_json
 *=dev-cpp/tbb-2020.3 # media-libs/oidn media-gfx/openvdb media-gfx/blender
@@ -60,7 +61,8 @@
 *dev-db/spatialite
 *dev-games/openscenegraph
 *dev-java/icedtea-web
-#*dev-java/openjdk-bin:11
+*dev-java/openjdk-bin:11
+*dev-java/maven-bin:3.8
 *dev-lang/lua
 *dev-libs/cudnn
 *dev-libs/icu
@@ -86,13 +88,16 @@
 *dev-python/beautifulsoup4
 *dev-python/black
 *dev-python/blessed
+*dev-python/boto3
 *dev-python/cbor2
 *dev-python/croniter
 *dev-python/dnspython
 *dev-python/exceptiongroup
+*dev-python/ffmpeg-python
 *dev-python/flask
 *dev-python/fsspec
 *dev-python/fuse-python
+*dev-python/graphviz
 *dev-python/h11
 *dev-python/marshmallow
 *dev-python/matplotlib-inline
@@ -105,6 +110,7 @@
 *dev-python/poetry-core
 *dev-python/pyaes
 *dev-python/pyasn1-modules
+*dev-python/pyaudio
 *dev-python/pydantic
 *dev-python/pydot
 *dev-python/pyjwt
@@ -128,6 +134,9 @@
 *dev-python/sniffio
 *dev-python/starlette
 *dev-python/sympy
+*dev-python/tabulate
+*dev-python/tzlocal
+*dev-python/tifffile
 *dev-python/tornado
 *dev-python/traitlets
 *dev-python/twine
@@ -297,8 +306,13 @@
 *net-wireless/iwd
 #*net-wireless/wpa_supplicant
 *sci-geosciences/qgis
+*sci-geosciences/laszip
+*sci-geosciences/mapserver
 *sci-libs/datasets
 *sci-libs/huggingface_hub
+*sci-libs/onnx
+*sci-libs/pdal
+*sci-libs/scikit-image
 *sci-libs/transformers
 *sec-policy/apparmor-profiles
 *sys-apps/apparmor
@@ -347,6 +361,7 @@
 *sys-power/upower
 *sys-process/atop
 *sys-process/lsof
+*www-apps/novnc
 *www-client/firefox-bin
 *www-client/google-chrome
 *www-servers/gunicorn

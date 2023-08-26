@@ -17,6 +17,7 @@ app-forensics/lynis
 app-misc/hivex
 app-misc/tmux
 app-text/tesseract
+app-text/xmlformat
 dev-cpp/pystring
 dev-cpp/websocketpp
 dev-cpp/xsimd
@@ -40,11 +41,13 @@ dev-python/ajsonrpc
 dev-python/appdirs
 dev-python/asyncssh
 dev-python/awscli-plugin-endpoint
+dev-python/boto3
 dev-python/botocore
 dev-python/cftime
 dev-python/fsspec
 dev-python/fuse-python
 dev-python/installer
+dev-python/imageio
 dev-python/importlib_metadata
 dev-python/jaraco-text
 dev-python/marshmallow
@@ -62,10 +65,12 @@ dev-python/pynvml
 dev-python/pyparsing
 dev-python/pysnmp-mibs
 dev-python/pytesseract
+dev-python/pywavelets
 dev-python/pyzbar
 #=dev-python/setuptools-60*
 dev-python/simplekml
 dev-python/starlette
+dev-python/tifffile
 dev-python/wheel
 dev-util/bcc
 dev-util/bindgen
@@ -103,8 +108,11 @@ net-wireless/bluez-tools
 sci-geosciences/qgis
 sci-geosciences/mapserver
 sci-libs/datasets
+sci-libs/geos
 sci-libs/huggingface_hub
 sci-libs/kissfft
+sci-libs/onnx
+sci-libs/scikit-image
 sci-libs/tokenizers
 sci-libs/transformers
 sec-policy/apparmor-profiles
