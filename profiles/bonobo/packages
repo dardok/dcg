@@ -1,5 +1,5 @@
 *app-admin/ansible
-#*app-admin/awscli # requires > python 3.9
+*app-admin/awscli
 *app-admin/helm
 *app-admin/keepassxc
 *app-admin/sshguard

@@ -112,6 +112,8 @@ sci-libs/geos
 sci-libs/huggingface_hub
 sci-libs/kissfft
 sci-libs/onnx
+sci-libs/pdal
+sci-libs/safetensors
 sci-libs/scikit-image
 sci-libs/tokenizers
 sci-libs/transformers
