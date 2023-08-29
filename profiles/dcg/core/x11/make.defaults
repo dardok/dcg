@@ -12,4 +12,4 @@ USE="${USE} qt5 gtk3 gtk gnome gnome-keyring"
 USE="${USE} vnc xinerama xcb xlib-xcb xkb xft colord startup-notification"
 USE="${USE} gstreamer alsa gpm bluetooth pulseaudio jack v4l libv4l wifi joystick"
 
-RUBY_TARGETS="-* ruby30"
+RUBY_TARGETS="-* ruby31"
