@@ -1,0 +1,13 @@
+diff -u -r -N a/src/py/libcamera/py_main.cpp b/src/py/libcamera/py_main.cpp
+--- a/src/py/libcamera/py_main.cpp	2023-09-04 07:23:24.762628412 -0400
++++ b/src/py/libcamera/py_main.cpp	2023-09-04 07:39:46.194427751 -0400
+@@ -93,6 +93,8 @@
+ void init_py_properties_generated(py::module &m);
+ void init_py_transform(py::module &m);
+ 
++PYBIND11_TYPE_CASTER_BASE_HOLDER(PyCameraManager, std::shared_ptr<PyCameraManager>)
++
+ PYBIND11_MODULE(_libcamera, m)
+ {
+ 	init_py_enums(m);
+Binary files a/src/py/libcamera/.py_main.cpp.swp and b/src/py/libcamera/.py_main.cpp.swp differ
