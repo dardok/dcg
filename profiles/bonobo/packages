@@ -266,7 +266,7 @@
 *media-sound/pavucontrol
 *media-sound/pulseeffects
 *media-sound/qjackctl
-*media-video/libcamera
+#*media-video/libcamera # broken as of 9/2023
 *media-video/obs-studio
 *media-video/pipewire
 *media-video/pitivi
