@@ -20,7 +20,7 @@ DEPEND="pycamera? ( dev-python/pycamera )"
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
-PATCHES=( "${FILESDIR}"/system-pybind.patch )
+#PATCHES=( )
 
 src_configure() {
 	local emesonargs=(
