@@ -12,7 +12,7 @@ USE="${USE} nls icu unicode unicode3 iconv"
 USE="${USE} numa sockets"
 
 USE="${USE} cxx -fortran gmp libffi lua luajit nptl openmp xml"
-USE="${USE} bzip2 lzma lz4 lzo minizip zlib"
+USE="${USE} bzip2 lzma lz4 lzo minizip zlib zstd"
 
 USE="${USE} vim vim-syntax bash-completion"
 
