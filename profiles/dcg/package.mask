@@ -1,9 +1,5 @@
 sys-fs/eudev
 sys-fs/udev
-dev-lang/python:2.7
-dev-lang/python:3.8
-dev-lang/python:3.9
-dev-lang/python:3.11
 dev-lang/python:3.12
 #>sys-kernel/linux-headers-5.11
 #>app-misc/pax-utils-1.2.9
@@ -15,3 +11,4 @@ dev-lang/python:3.12
 #>=sys-fs/e2fsprogs-1.46.5 # missing equivalent e2fsprogs-libs
 
 >=dev-python/cython-3 # breaks everything
+>=sys-cluster/rdma-core-47.0 # fscking requires cython-3
