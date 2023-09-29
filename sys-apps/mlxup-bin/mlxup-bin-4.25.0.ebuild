@@ -10,6 +10,7 @@ DESCRIPTION="Mellanox Update and Query Utility"
 HOMEPAGE="https://www.mellanox.com/support/firmware/mlxup-mft"
 SRC_URI="https://www.mellanox.com/downloads/firmware/${MY_PN}/${PV}/SFX/linux_x64/${MY_PN} -> ${MY_P}-amd64.elf"
 S="${WORKDIR}"
+RESTRICT="strip"
 
 LICENSE="Mellanox-AS-IS"
 SLOT="0"
