@@ -1,1 +1,1 @@
-VIDEO_CARDS="-* radeon radeonsi mga modesetting fbdev vesa dummy v4l virgl amdgpu"
+VIDEO_CARDS="-* amdgpu radeon radeonsi modesetting fbdev vesa dummy v4l virgl"
