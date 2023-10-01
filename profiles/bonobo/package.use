@@ -129,6 +129,7 @@ sys-libs/zlib minizip static-libs
 sys-process/atop modules
 virtual/rust rustfmt
 www-client/google-chrome qt5
+www-servers/uwsgi cgi json lua python python-asyncio yaml
 x11-base/xorg-server kdrive xephyr xnest xvfb
 x11-drivers/nvidia-drivers uvm
 x11-libs/motif xft

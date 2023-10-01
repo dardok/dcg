@@ -147,7 +147,7 @@
 *dev-python/websockets
 *dev-python/werkzeug
 *dev-python/yarl
-*dev-python/zeroconf
+#*dev-python/zeroconf
 *dev-qt/qdbus
 *dev-qt/qdbusviewer
 *dev-qt/qtbase
@@ -366,6 +366,7 @@
 *www-client/google-chrome
 *www-servers/gunicorn
 *www-servers/thttpd
+*www-servers/uwsgi
 *x11-apps/bitmap
 *x11-apps/luit
 *x11-apps/sessreg
