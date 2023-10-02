@@ -165,6 +165,7 @@
 *dev-util/indent
 *dev-util/ltrace
 *dev-util/nvidia-cuda-toolkit
+*dev-util/pahole
 *dev-util/perf
 *dev-util/pkgcheck
 *dev-util/pkgdev
