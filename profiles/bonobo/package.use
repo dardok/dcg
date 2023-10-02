@@ -6,8 +6,9 @@ app-containers/docker -cli
 app-containers/docker-credential-helpers gnome-keyring pass
 app-crypt/pinentry gnome-keyring
 app-editors/vim cscope lua luajit
-app-emulation/libguestfs ocaml libvirt
+app-emulation/libguestfs libvirt -ocaml
 app-emulation/libvirt fuse lvm numa parted virt-network libssh2 # xen lxc(sys-apps/systemd[cgroup-hybrid(-)])
+app-emulation/spice -smartcard
 app-emulation/qemu xkb io-uring lzo multipath numa opengl snappy spice static-user usb usbredir vde vhost-user-fs virgl virtfs # xen
 app-emulation/xen efi
 app-emulation/xen-tools -qemu -qemu-traditional -ipxe system-qemu system-ipxe system-seabios
@@ -24,7 +25,7 @@ dev-db/postgis postgres_targets_postgres15
 dev-db/postgresql threads uuid llvm icu
 dev-games/openscenegraph gdal lua pdf
 dev-games/vulkanscenegraph-vsgXchange gis freetype assimp
-dev-lang/python tk
+dev-lang/python tk bluetooth
 dev-lang/rust rustfmt
 dev-libs/apache-arrow brotli compute dataset parquet re2 snappy
 dev-libs/boost context icu
@@ -75,9 +76,9 @@ media-sound/pulseaudio realtime bluetooth equalizer libsamplerate native-headset
 #media-sound/pulseaudio-daemon bluetooth
 media-video/cheese egl
 media-video/libcamera gstreamer cam qcam v4l2 pycamera
-media-video/ffmpeg cuda nvenc libv4l opus xvid vpx jpeg2k
+#temp#media-video/ffmpeg cuda nvenc libv4l opus xvid vpx jpeg2k
 media-video/obs-studio nvenc pipewire
-media-video/pipewire bluetooth v4l jack-sdk extra sound-server libcamera
+#temp#media-video/pipewire bluetooth v4l jack-sdk extra sound-server libcamera ffmpeg
 net-analyzer/wireshark http2
 net-dns/dnsmasq script tftp
 net-firewall/iptables nftables
@@ -129,7 +130,6 @@ sys-libs/zlib minizip static-libs
 sys-process/atop modules
 virtual/rust rustfmt
 www-client/google-chrome qt5
-www-servers/uwsgi cgi json lua python python-asyncio yaml
 x11-base/xorg-server kdrive xephyr xnest xvfb
 x11-drivers/nvidia-drivers uvm
 x11-libs/motif xft
@@ -143,3 +143,13 @@ dev-qt/qtbase opengl egl eglfs gles2-only
 dev-qt/qtdeclarative opengl
 gui-libs/xdg-desktop-portal-hyprland select-window select-region
 sys-apps/xdg-desktop-portal screencast
+
+# temp
+media-libs/freetype -harfbuzz -utils brotli
+app-emulation/spice -smartcard
+app-emulation/qemu xkb io-uring lzo multipath numa opengl snappy -spice static-user usb usbredir vde vhost-user-fs virgl virtfs # xen
+dev-python/pandas -full-support
+media-video/pipewire bluetooth v4l -jack-sdk extra sound-server libcamera -ffmpeg
+media-video/ffmpeg cuda nvenc libv4l opus xvid vpx jpeg2k -jack
+media-libs/libsndfile minimal
+media-sound/mpg123 -pulseaudio

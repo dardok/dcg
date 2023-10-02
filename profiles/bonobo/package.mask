@@ -1,7 +1,7 @@
->=dev-util/nvidia-cuda-toolkit-12.2
 >=sys-kernel/gentoo-sources-6
+>=sys-kernel/linux-headers-6
 
->=sys-kernel/linux-headers-5.16
+>=media-video/ffmpeg-6 # openscenegraph requires <5
 
 dev-lang/spidermonkey
 
@@ -10,16 +10,10 @@ sys-cluster/mpich2
 
 >=app-editors/sublime-text-4_p4143
 
->=net-libs/xdp-tools-1.3 # pulls in broken bpftool
+#>=net-libs/xdp-tools-1.3 # pulls in broken bpftool
 
->=dev-lang/ocaml-4.12 # breaks app-emulation/libguestfs
->=dev-ml/ocaml-expat-1.3.0 # requires >=dev-lang/ocaml-4.14.1
-
->=dev-lang/python-3.11
+>=dev-lang/python-3.12
 
 >=dev-python/cython-3 # breaks everything
-
-#>=sci-libs/gdal-3.7 # breaks pdal?
-#>=dev-db/postgis-3.2 # broken
 
 >=sys-apps/fakeroot-1.32 # broken

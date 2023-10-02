@@ -25,7 +25,7 @@
 *app-crypt/libsecret
 *app-crypt/swtpm
 *app-crypt/tpm2-tools
-*app-crypt/tpm2-tss-engine
+#*app-crypt/tpm2-tss-engine
 *app-crypt/tpm-tools
 *app-editors/neovim
 *=app-editors/sublime-text-4_p4126-r1
@@ -147,7 +147,6 @@
 *dev-python/websockets
 *dev-python/werkzeug
 *dev-python/yarl
-#*dev-python/zeroconf
 *dev-qt/qdbus
 *dev-qt/qdbusviewer
 *dev-qt/qtbase
@@ -318,7 +317,7 @@
 *sys-apps/apparmor
 *sys-apps/apparmor-utils
 *sys-apps/bat
-*sys-apps/exa
+*sys-apps/eza
 *sys-apps/fd
 *sys-apps/haveged
 *sys-apps/ipmitool
@@ -366,7 +365,6 @@
 *www-client/google-chrome
 *www-servers/gunicorn
 *www-servers/thttpd
-*www-servers/uwsgi
 *x11-apps/bitmap
 *x11-apps/luit
 *x11-apps/sessreg

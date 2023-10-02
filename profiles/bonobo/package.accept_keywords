@@ -5,7 +5,7 @@ app-containers/apptainer
 app-containers/nvidia-container-toolkit
 app-crypt/ccid
 app-crypt/coolkey
-app-crypt/tpm2-tss-engine
+#app-crypt/tpm2-tss-engine
 app-editors/sublime-text
 app-emulation/conmon
 app-emulation/docker-compose
@@ -51,6 +51,7 @@ dev-python/imageio
 dev-python/importlib_metadata
 dev-python/jaraco-text
 dev-python/marshmallow
+dev-python/matplotlib
 dev-python/more-itertools
 dev-python/multiprocess
 dev-python/netcdf4
@@ -67,8 +68,8 @@ dev-python/pysnmp-mibs
 dev-python/pytesseract
 dev-python/pywavelets
 dev-python/pyzbar
-dev-python/s3transfer
 #=dev-python/setuptools-60*
+dev-python/s3transfer
 dev-python/simplekml
 dev-python/starlette
 dev-python/tifffile
@@ -104,7 +105,8 @@ media-video/v4l2loopback
 net-analyzer/nessus-bin
 net-im/rocketchat-desktop-bin
 net-libs/xdp-tools
-=net-misc/usbip-4*
+net-misc/autossh
+net-misc/usbip
 net-wireless/bluez-tools
 sci-geosciences/qgis
 sci-geosciences/mapserver
@@ -121,6 +123,7 @@ sci-libs/transformers
 sec-policy/apparmor-profiles
 sys-apps/apparmor
 sys-apps/apparmor-utils
+sys-apps/eza
 sys-apps/hwloc
 sys-auth/google-authenticator-libpam-hardened **
 sys-auth/rtkit
