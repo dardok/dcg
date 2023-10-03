@@ -4,7 +4,12 @@ app-containers/runc
 app-containers/cri-tools
 dev-libs/pmdk
 dev-libs/thrift
+dev-python/aiofiles
+dev-python/grpcio-tools
+dev-python/pyproj
+dev-python/xarray
 dev-util/bcc
 net-misc/cni-plugins
 net-misc/lldpd
+net-misc/rclone
 sys-cluster/ceph
