@@ -1,0 +1,39 @@
+# Copyright 1999-2021 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v2
+
+EAPI=8
+
+inherit git-r3 cmake
+
+DESCRIPTION="Mapnik is an open source toolkit for developing mapping applications"
+HOMEPAGE="https://github.com/mapnik/mapnik"
+SRC_URI=""
+EGIT_REPO_URI="https://github.com/mapnik/mapnik.git"
+EGIT_BRANCH="master"
+
+LICENSE="LGPL-2.1"
+SLOT="0"
+KEYWORDS="~amd64"
+
+BDEPEND="
+	sci-geosciences/protozero
+	sci-geosciences/libosmium
+"
+RDEPEND="
+"
+DEPEND="${RDEPEND}
+"
+
+PATCHES=(
+	"patch1.patch"
+	"patch2.patch"
+)
+
+src_configure() {
+	local mycmakeargs=(
+		-DBUILD_SHARED_LIBS=ON
+		-DUSE_EXTERNAL_MAPBOX_PROTOZERO=ON
+	)
+
+	cmake_src_configure
+}
