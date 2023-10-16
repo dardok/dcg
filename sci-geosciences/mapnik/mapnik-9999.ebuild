@@ -25,8 +25,8 @@ DEPEND="${RDEPEND}
 "
 
 PATCHES=(
-	"patch1.patch"
-	"patch2.patch"
+	"files/patch1.patch"
+	"files/patch2.patch"
 )
 
 src_configure() {
