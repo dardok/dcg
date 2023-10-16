@@ -10,7 +10,7 @@ S="${WORKDIR}/${PN}-${PV}"
 LICENSE="Boost-1.0"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="+gdal +geos +proj test"
+IUSE="+gdal +geos test"
 
 BDEPEND="
 "
@@ -20,18 +20,9 @@ RDEPEND="
 	app-arch/bzip2
 	gdal? ( sci-libs/gdal )
 	geos? ( sci-libs/geos )
-	proj? ( sci-libs/proj )
 "
 DEPEND="${RDEPEND}
 "
 
 PATCHES=(
 )
-
-src_configure() {
-	local mycmakeargs=(
-		-DPROJ_INCLUDE_DIR=/usr/include
-	)
-
-	cmake_src_configure
-}
