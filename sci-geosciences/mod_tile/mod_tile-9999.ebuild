@@ -1,7 +1,7 @@
 # Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=8
+EAPI=7
 
 inherit apache-module depend.apache git-r3 cmake
 
@@ -16,6 +16,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE="memcached rados"
 
+APACHE2_MOD_FILE="${BUILD_DIR}/src/mod_tile.so"
 APACHE2_MOD_CONF="50_${PN}"
 APACHE2_MOD_DEFINE="TILES"
 
