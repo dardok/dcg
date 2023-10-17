@@ -3,6 +3,7 @@ CUSTOM_PROFILE="yes"
 ACCEPT_LICENSE="*"
 
 LINGUAS="-* en"
+LC_MESSAGES=C.utf8
 
 FEATURES="buildpkg"
 

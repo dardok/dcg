@@ -1,0 +1,11 @@
+COMMON_FLAGS="-O2 -pipe -march=native -flto"
+CFLAGS="${COMMON_FLAGS}"
+CXXFLAGS="${COMMON_FLAGS}"
+FCFLAGS="${COMMON_FLAGS}"
+FFLAGS="${COMMON_FLAGS}"
+
+FEATURES="-ipc-sandbox -network-sandbox -pid-sandbox"
+
+USE="${USE} lto"
+USE="${USE} pgo"
+USE="${USE} caps"
