@@ -1,0 +1,24 @@
+diff --git a/include/mapnik/agg_renderer.hpp b/include/mapnik/agg_renderer.hpp
+index d73ea3e8e..1c5ba141d 100644
+--- a/include/mapnik/agg_renderer.hpp
++++ b/include/mapnik/agg_renderer.hpp
+@@ -196,6 +196,7 @@ class MAPNIK_DECL agg_renderer : public feature_style_processor<agg_renderer<T0>
+     void setup(Map const& m, buffer_type& pixmap);
+ };
+ 
++extern template class MAPNIK_DECL feature_style_processor<agg_renderer<image_rgba8>>;
+ extern template class MAPNIK_DECL agg_renderer<image<rgba8_t>>;
+ 
+ } // namespace mapnik
+diff --git a/include/mapnik/cairo/cairo_renderer.hpp b/include/mapnik/cairo/cairo_renderer.hpp
+index 94bbec037..6ed4afd68 100644
+--- a/include/mapnik/cairo/cairo_renderer.hpp
++++ b/include/mapnik/cairo/cairo_renderer.hpp
+@@ -137,6 +137,7 @@ class MAPNIK_DECL cairo_renderer : public feature_style_processor<cairo_renderer
+     void setup(Map const& m);
+ };
+ 
++extern template class MAPNIK_DECL feature_style_processor<cairo_renderer<cairo_ptr>>;
+ extern template class MAPNIK_DECL cairo_renderer<cairo_ptr>;
+ 
+ } // namespace mapnik
