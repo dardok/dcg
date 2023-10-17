@@ -11,3 +11,5 @@ FEATURES="-ipc-sandbox -network-sandbox -pid-sandbox"
 USE="${USE} lto"
 USE="${USE} pgo"
 USE="${USE} caps"
+
+GENTOO_MIRRORS="http://gentoo.largedata.net/distfiles http://distfiles.gentoo.org"
