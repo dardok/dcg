@@ -19,6 +19,7 @@ BDEPEND="
 	sci-geosciences/protozero
 	sci-geosciences/libosmium
 	dev-libs/icu
+	media-libs/freetype
 "
 RDEPEND="
 "
