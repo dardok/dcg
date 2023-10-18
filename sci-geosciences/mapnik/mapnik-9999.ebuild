@@ -20,6 +20,7 @@ BDEPEND="
 	sci-geosciences/libosmium
 	dev-libs/icu
 	media-libs/freetype
+	media-libs/harfbuzz
 "
 RDEPEND="
 "
