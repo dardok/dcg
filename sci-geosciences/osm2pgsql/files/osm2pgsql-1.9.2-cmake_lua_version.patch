@@ -1,0 +1,12 @@
+diff -u -r -N a/CMakeLists.txt b/CMakeLists.txt
+--- a/CMakeLists.txt	2023-09-04 04:57:53.000000000 -0400
++++ b/CMakeLists.txt	2023-10-18 04:27:44.114820679 -0400
+@@ -184,7 +184,7 @@
+         add_definitions(-DHAVE_LUAJIT=1)
+     else()
+         message(STATUS "Building with Lua support")
+-        find_package(Lua REQUIRED)
++        find_package(Lua ${LUA_VERSION} EXACT REQUIRED)
+         include_directories(SYSTEM ${LUA_INCLUDE_DIR})
+     endif()
+     add_definitions(-DHAVE_LUA=1)
