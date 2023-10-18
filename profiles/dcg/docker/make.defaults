@@ -12,4 +12,4 @@ USE="${USE} lto"
 USE="${USE} pgo"
 USE="${USE} caps"
 
-GENTOO_MIRRORS="http://gentoo.largedata.net/distfiles http://distfiles.gentoo.org"
+GENTOO_MIRRORS="http://gentoo.largedata.net http://distfiles.gentoo.org"
