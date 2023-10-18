@@ -22,6 +22,7 @@ BDEPEND="
 	media-libs/freetype
 	media-libs/harfbuzz
 	media-libs/libjpeg-turbo
+	media-libs/libwebp
 "
 RDEPEND="
 "
