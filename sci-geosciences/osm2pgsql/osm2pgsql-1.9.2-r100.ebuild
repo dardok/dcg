@@ -29,7 +29,6 @@ COMMON_DEPEND="
 	dev-python/pyyaml
 	system-protozero? ( sci-geosciences/protozero )
 	system-libosmium? ( sci-geosciences/libosmium )
-	sci-geosciences/libosmium
 	lua? ( ${LUA_DEPS} )
 "
 DEPEND="${COMMON_DEPEND}
