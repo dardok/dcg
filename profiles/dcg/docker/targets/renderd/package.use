@@ -1,5 +1,5 @@
 sys-libs/zlib minizip
 dev-db/postgresql -server
-sys-cluster/ceph -mgr -cephfs -parquet -radosgw -sqlite -tcmalloc -uring 
 media-libs/freetype -X harfbuzz
-sci-geosciences/mod_tile rados
+# sys-cluster/ceph -mgr -cephfs -parquet -radosgw -sqlite -tcmalloc -uring 
+# sci-geosciences/mod_tile rados
