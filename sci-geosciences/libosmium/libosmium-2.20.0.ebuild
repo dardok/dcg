@@ -15,6 +15,7 @@ IUSE="+gdal +geos test"
 BDEPEND="
 "
 RDEPEND="
+	dev-libs/boost
 	dev-libs/expat
 	sys-libs/zlib
 	app-arch/bzip2
