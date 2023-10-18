@@ -21,6 +21,7 @@ BDEPEND="
 	dev-libs/icu
 	media-libs/freetype
 	media-libs/harfbuzz
+	media-libs/libjpeg-turbo
 "
 RDEPEND="
 "
