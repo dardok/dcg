@@ -19,16 +19,21 @@ REQUIRED_USE="lua? ( ${LUA_REQUIRED_USE} )"
 
 COMMON_DEPEND="
 	app-arch/bzip2
+	dev-cpp/nlohmann_json
 	dev-db/postgresql:=
+	dev-libs/boost
 	dev-libs/expat
 	sci-libs/proj:=
 	sys-libs/zlib
+	dev-python/psycopg:2
+	dev-python/pyyaml
 	lua? ( ${LUA_DEPS} )
 "
 DEPEND="${COMMON_DEPEND}
 	dev-libs/boost:=
 "
 RDEPEND="${COMMON_DEPEND}
+	sci-libs/gdal
 "
 
 # Tries to connect to local postgres server and other shenanigans

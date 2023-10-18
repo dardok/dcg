@@ -1,6 +1,1 @@
-*dev-libs/boost
-*dev-python/psycopg:2
-*dev-python/pyyaml
-*dev-cpp/nlohmann_json
-*sci-libs/gdal
-*sci-geosciences/osm2pgsql
+*=sci-geosciences/osm2pgsql-1.9.2-r100
