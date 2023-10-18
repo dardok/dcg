@@ -14,7 +14,7 @@ SRC_URI="https://github.com/openstreetmap/${PN}/archive/${PV}.tar.gz -> ${P}.tar
 LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="amd64 ~x86"
-IUSE="+lua"
+IUSE="+lua system-protozero system-libosmium"
 REQUIRED_USE="lua? ( ${LUA_REQUIRED_USE} )"
 
 COMMON_DEPEND="
@@ -27,6 +27,9 @@ COMMON_DEPEND="
 	sys-libs/zlib
 	dev-python/psycopg:2
 	dev-python/pyyaml
+	system-protozero? ( sci-geosciences/protozero )
+	system-libosmium? ( sci-geosciences/libosmium )
+	sci-geosciences/libosmium
 	lua? ( ${LUA_DEPS} )
 "
 DEPEND="${COMMON_DEPEND}
@@ -50,6 +53,8 @@ src_configure() {
 		-DWITH_LUA=$(usex lua)
 		-DWITH_LUAJIT=$(usex lua_single_target_luajit)
 		-DBUILD_TESTS=OFF
+		-DEXTERNAL_LIBOSMIUM=$(usex system-protozero)
+		-DEXTERNAL_PROTOZERO=$(usex system-libosmium)
 	)
 	# To prevent the "unused variable" QA warning
 	if use lua && ! use lua_single_target_luajit; then
