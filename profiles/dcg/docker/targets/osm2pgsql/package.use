@@ -1,1 +1,2 @@
+sys-libs/zlib minizip
 dev-db/postgresql -server
