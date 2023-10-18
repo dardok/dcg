@@ -18,6 +18,7 @@ KEYWORDS="~amd64"
 BDEPEND="
 	sci-geosciences/protozero
 	sci-geosciences/libosmium
+	dev-libs/icu
 "
 RDEPEND="
 "
