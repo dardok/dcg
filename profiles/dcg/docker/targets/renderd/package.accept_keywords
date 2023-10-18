@@ -1,3 +1,4 @@
 sci-geosciences/protozero
 sci-geosciences/libosmium
 sci-geosciences/mapnik **
+sci-libs/geos
