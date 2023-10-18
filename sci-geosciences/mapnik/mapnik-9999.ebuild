@@ -23,6 +23,7 @@ BDEPEND="
 	media-libs/harfbuzz
 	media-libs/libjpeg-turbo
 	media-libs/libwebp
+	dev-db/postgresql
 "
 RDEPEND="
 "
