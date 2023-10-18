@@ -1,5 +1,5 @@
 sys-libs/zlib minizip
 dev-db/postgresql -server
 sys-cluster/ceph -mgr
-media-libs/freetype -X
+media-libs/freetype -X harfbuzz
 sci-geosciences/mod_tile rados
