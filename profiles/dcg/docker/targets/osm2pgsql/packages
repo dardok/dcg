@@ -1,4 +1,5 @@
 *dev-libs/boost
 *dev-python/psycopg:2
 *dev-python/pyyaml
+*sci-libs/gdal
 *sci-geosciences/osm2pgsql
