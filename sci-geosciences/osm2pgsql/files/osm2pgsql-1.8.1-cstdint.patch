@@ -1,0 +1,11 @@
+diff -u -r -N a/src/flex-index.hpp b/src/flex-index.hpp
+--- a/src/flex-index.hpp	2023-02-13 04:02:52.000000000 -0500
++++ b/src/flex-index.hpp	2023-10-19 05:32:25.491379526 -0400
+@@ -11,6 +11,7 @@
+  */
+ 
+ #include <cassert>
++#include <cstdint>
+ #include <stdexcept>
+ #include <string>
+ #include <vector>
