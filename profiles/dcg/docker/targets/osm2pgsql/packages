@@ -1,2 +1,4 @@
 *=sci-geosciences/osm2pgsql-1.4.0-r100
 *dev-python/pyyaml
+*dev-python/psycopg:2
+*dev-libs/boost
