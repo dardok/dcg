@@ -81,5 +81,5 @@ src_configure() {
         -DBUILD_WEB_PLUGIN=$(usex web ON OFF)
     )
 
-    cmake-utils_src_configure
+    cmake_src_configure
 }
