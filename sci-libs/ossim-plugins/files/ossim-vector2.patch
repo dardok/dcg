@@ -1,0 +1,123 @@
+diff -u -r -N a/gdal/src/ossimGdalOgrVectorAnnotation.cpp b/gdal/src/ossimGdalOgrVectorAnnotation.cpp
+--- a/gdal/src/ossimGdalOgrVectorAnnotation.cpp	2018-04-18 14:04:12.000000000 -0400
++++ b/gdal/src/ossimGdalOgrVectorAnnotation.cpp	2023-10-31 07:55:59.640522305 -0400
+@@ -315,7 +315,7 @@
+    loadOmdFile();
+    
+    theLayersToRenderFlagList.clear();
+-   vector<ossimGpt> points;
++   std::vector<ossimGpt> points;
+    if(isOpen())
+    {
+       int i = 0;
+@@ -594,7 +594,7 @@
+    return (theDataSource!=NULL);
+ }
+ 
+-void ossimGdalOgrVectorAnnotation::initializeBoundingRec(vector<ossimGpt> points)
++void ossimGdalOgrVectorAnnotation::initializeBoundingRec(std::vector<ossimGpt> points)
+ {
+    theImageBound.makeNan();
+ 
+@@ -777,7 +777,7 @@
+       ossimRefPtr<ossimRgbImage> image = new ossimRgbImage;
+       
+       image->setCurrentImageData(tile);
+-      vector<ossimAnnotationObject*> objectList;
++      std::vector<ossimAnnotationObject*> objectList;
+       
+       while(current!=featuresToRender.end())
+       {
+@@ -1540,7 +1540,7 @@
+ }
+ 
+ 
+-void ossimGdalOgrVectorAnnotation::getFeature(vector<ossimAnnotationObject*>& featureList,
++void ossimGdalOgrVectorAnnotation::getFeature(std::vector<ossimAnnotationObject*>& featureList,
+                                               long id)
+ {
+    std::multimap<long, ossimAnnotationObject*>::iterator iter = theFeatureCacheTable.find(id);
+@@ -1617,7 +1617,7 @@
+    if(ring)
+    {
+       int upper = ring->getNumPoints();
+-      vector<ossimGpt> points(upper);
++      std::vector<ossimGpt> points(upper);
+       for(int i = 0; i < upper; ++i)
+       {
+          OGRPoint ogrPt;
+@@ -1661,7 +1661,7 @@
+           {
+              int j = 0;
+              int upper = ring->getNumPoints();
+-             vector<ossimGpt> points(upper);
++             std::vector<ossimGpt> points(upper);
+              for(j = 0; j < upper; ++j)
+              {
+                 OGRPoint ogrPt;
+@@ -1724,7 +1724,7 @@
+    {
+       color = thePenColor;
+    }
+-   vector<ossimGpt> polyLine(upper);
++   std::vector<ossimGpt> polyLine(upper);
+    for(int i = 0; i < upper; ++i)
+    {
+       OGRPoint ogrPt;
+@@ -1783,7 +1783,7 @@
+       origin = theImageGeometry->getProjection()->origin();
+    }
+ 
+-   vector<ossimGeoPolygon> geoPoly;
++   std::vector<ossimGeoPolygon> geoPoly;
+    for(ossim_uint32 geomIdx = 0; geomIdx < numGeometries; ++geomIdx)
+    {
+       OGRGeometry* geomRef = multiLineString->getGeometryRef(geomIdx);
+@@ -1791,7 +1791,7 @@
+       if (lineString)
+       {
+          int upper = lineString->getNumPoints();
+-         vector<ossimGpt> polyLine(upper);
++         std::vector<ossimGpt> polyLine(upper);
+          for(int i = 0; i < upper; ++i)
+          {
+             OGRPoint ogrPt;
+@@ -1963,7 +1963,7 @@
+       origin = theImageGeometry->getProjection()->origin();
+    }
+ 
+-   vector<ossimGeoPolygon> geoPoly;
++   std::vector<ossimGeoPolygon> geoPoly;
+    for(ossim_uint32 geomIdx = 0; geomIdx < numGeometries; ++geomIdx)
+    {
+       OGRGeometry* geomRef = multiPolygon->getGeometryRef(geomIdx);
+diff -u -r -N a/gdal/src/ossimGdalOgrVectorAnnotation.h b/gdal/src/ossimGdalOgrVectorAnnotation.h
+--- a/gdal/src/ossimGdalOgrVectorAnnotation.h	2018-04-18 14:04:12.000000000 -0400
++++ b/gdal/src/ossimGdalOgrVectorAnnotation.h	2023-10-31 07:55:21.625064925 -0400
+@@ -92,7 +92,7 @@
+    //OGRLayer::GetExtent() returns the MBR (minimal bounding rect) of the data in the layer. 
+    //So when only do ossim-info, it is not necessary to go through each feature to calculate
+    //the bounding which cause the memory allocate problem when the shape file is large.
+-   void initializeBoundingRec(vector<ossimGpt> points);
++   void initializeBoundingRec(std::vector<ossimGpt> points);
+ 
+    bool setCurrentEntry(ossim_uint32 entryIdx);
+ 
+@@ -102,7 +102,7 @@
+    ossimFilename                       theFilename;
+    OGREnvelope                         theBoundingExtent;
+    ossimRefPtr<ossimImageGeometry>     theImageGeometry;
+-   vector<bool>                        theLayersToRenderFlagList;
++   std::vector<bool>                        theLayersToRenderFlagList;
+    std::vector<ossimOgrGdalLayerNode*> theLayerTable;
+    ossimRgbVector                      thePenColor;
+    ossimRgbVector                      theBrushColor;
+@@ -137,7 +137,7 @@
+    
+    void getFeatures(std::list<long>& result,
+                     const ossimIrect& rect);
+-   void getFeature(vector<ossimAnnotationObject*>& featureList,
++   void getFeature(std::vector<ossimAnnotationObject*>& featureList,
+                    long id);
+    ossimProjection* createProjFromReference(OGRSpatialReference* reference)const;
+    void initializeTables();
