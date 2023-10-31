@@ -37,7 +37,7 @@ RDEPEND="
     sqlite? (
         dev-db/sqlite:3
         media-libs/libpng:0
-        virtual/jpeg:62
+        virtual/jpeg
     )
     registration? ( media-libs/opencv )
     web? (
