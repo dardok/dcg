@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <use>
+    <flag name="atp">Build OSSIM's automatic tie point plugin</flag>
+    <flag name="aws">Build OSSIM's Amazon Web Services plugin</flag>
+    <flag name="gdal">Build OSSIM's GDAL plugin</flag>
+    <flag name="geopdf">Build OSSIM's GeoPDF plugin</flag>
+    <flag name="kml">Build OSSIM's KML plugin</flag>
+    <flag name="opencv">Build OSSIM's OpenCV plugin</flag>
+    <flag name="potrace">Build OSSIM's raster-to-vector conversion plugin</flag>
+    <flag name="registration">Build OSSIM's automated image registration plugin</flag>
+    <flag name="web">Build OSSIM's web request plugin</flag>
+  </use>
+</pkgmetadata>

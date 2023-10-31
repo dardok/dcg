@@ -1,0 +1,13 @@
+diff -u -r -N a/CMakeLists.txt b/CMakeLists.txt
+--- a/CMakeLists.txt	2018-03-29 14:30:41.051754227 -0400
++++ b/CMakeLists.txt	2018-03-29 14:32:05.107486369 -0400
+@@ -7,6 +7,9 @@
+   cmake_minimum_required(VERSION 2.8)
+ endif(NOT APPLE)
+ 
++cmake_policy(SET CMP0017 NEW)
++set(CMAKE_MODULE_PATH "/usr/share/ossim/cmake/CMakeModules" ${CMAKE_MODULE_PATH})
++
+ include(OssimVersion)
+ include(OssimCommonVariables)
+ include(OssimUtilities)
