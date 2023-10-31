@@ -33,6 +33,7 @@ RDEPEND="
 PATCHES=(
     "${FILESDIR}/ossim-cmake-findmpi.patch"
     "${FILESDIR}/ossim-cmake-openjpeg.patch"
+    "${FILESDIR}/ossim-ambiguous-overload.patch"
 )
 
 src_configure() {
