@@ -48,6 +48,7 @@ RDEPEND="
 PATCHES=(
     "${FILESDIR}/ossim-cmake-modules.patch"
     "${FILESDIR}/ossim-vector.patch"
+    "${FILESDIR}/ossim-memdataset.patch"
 )
 
 src_configure() {

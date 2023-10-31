@@ -1,0 +1,12 @@
+diff -u -r -N a/gdal/src/ossimGdalTiledDataset.cpp b/gdal/src/ossimGdalTiledDataset.cpp
+--- a/gdal/src/ossimGdalTiledDataset.cpp	2019-10-15 14:47:25.000000000 -0400
++++ b/gdal/src/ossimGdalTiledDataset.cpp	2023-10-31 08:16:15.403829753 -0400
+@@ -473,7 +473,7 @@
+                                    "In Memory Raster OSSIM tile bridge" );
+ 
+         poDriver->pfnOpen   = MEMDataset::Open;
+-        poDriver->pfnCreate = MEMDataset::Create;
++        poDriver->pfnCreate = MEMDataset::CreateBase;
+ 
+         GetGDALDriverManager()->RegisterDriver( poDriver );
+     }
