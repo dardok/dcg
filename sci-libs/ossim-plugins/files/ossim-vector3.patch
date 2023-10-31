@@ -1,0 +1,105 @@
+diff -u -r -N a/gdal/src/ossimGdalWriter.cpp b/gdal/src/ossimGdalWriter.cpp
+--- a/gdal/src/ossimGdalWriter.cpp	2018-04-18 14:04:12.000000000 -0400
++++ b/gdal/src/ossimGdalWriter.cpp	2023-10-31 08:00:56.680351167 -0400
+@@ -231,7 +231,7 @@
+      theColorLut->loadState(kwl, newPrefix.c_str());
+    }
+    
+-   vector<ossimString> keys = kwl.getSubstringKeyList( regExpression );
++   std::vector<ossimString> keys = kwl.getSubstringKeyList( regExpression );
+    theDriverOptionValues.clear();
+    
+    deleteGdalDriverOptions();
+@@ -252,7 +252,7 @@
+    return true;
+ }
+ 
+-void ossimGdalWriter::getSupportedWriters(vector<ossimString>& /* writers */)
++void ossimGdalWriter::getSupportedWriters(std::vector<ossimString>& /* writers */)
+ {
+ }
+ 
+@@ -897,7 +897,7 @@
+    deleteGdalDriverOptions();
+    ossimString regExpression =  (ossimString("^")+
+                                  "property[0-9]+");
+-   vector<ossimString> keys = theDriverOptionValues.getSubstringKeyList( regExpression );
++   std::vector<ossimString> keys = theDriverOptionValues.getSubstringKeyList( regExpression );
+ 
+    if(keys.size())
+    {
+@@ -972,7 +972,7 @@
+ {
+    ossimString regExpression =  (ossimString("^")+
+                                  "property[0-9]+");
+-   vector<ossimString> keys = theDriverOptionValues.getSubstringKeyList( regExpression );
++   std::vector<ossimString> keys = theDriverOptionValues.getSubstringKeyList( regExpression );
+    if(keys.size())
+    {
+       ossim_uint32 i = 0;
+@@ -1474,7 +1474,7 @@
+       storedName = storedName.substitute(driverName+"_","");
+       storedValueFlag = getStoredPropertyValue(storedName,
+                                                storedValue);
+-      vector<ossimRefPtr<ossimXmlNode> > nodelist;
++      std::vector<ossimRefPtr<ossimXmlNode> > nodelist;
+       node->findChildNodes("Option", nodelist);
+       ossim_uint32 idx = 0;
+       for(idx = 0; idx < nodelist.size(); ++idx)
+@@ -1486,7 +1486,7 @@
+             {
+                ossimRefPtr<ossimXmlAttribute> type = nodelist[idx]->findAttribute("type");
+                
+-               vector<ossimRefPtr<ossimXmlNode> > valuelist;
++               std::vector<ossimRefPtr<ossimXmlNode> > valuelist;
+                
+                if(type.valid())
+                {
+@@ -1622,7 +1622,7 @@
+       
+       if(node.valid())
+       {
+-         vector<ossimRefPtr<ossimXmlNode> > nodelist;
++         std::vector<ossimRefPtr<ossimXmlNode> > nodelist;
+          node->findChildNodes("Option", nodelist);
+ 
+          if(traceDebug())
+@@ -1664,7 +1664,7 @@
+       {
+          istringstream in(metaData);
+          ossimRefPtr<ossimXmlNode>  node = new ossimXmlNode(in);
+-         vector<ossimRefPtr<ossimXmlNode> > nodelist;
++         std::vector<ossimRefPtr<ossimXmlNode> > nodelist;
+          node->findChildNodes("Option", nodelist);
+          if(nodelist.size())
+          {
+@@ -1681,7 +1681,7 @@
+    ossimString regExpression =  (ossimString("^") +
+                                  "property[0-9]+");
+ 
+-   vector<ossimString> keys = theDriverOptionValues.getSubstringKeyList( regExpression );
++   std::vector<ossimString> keys = theDriverOptionValues.getSubstringKeyList( regExpression );
+    ossim_uint32 idx = 0;
+    for(idx = 0; idx < keys.size(); ++idx)
+    {
+@@ -1714,7 +1714,7 @@
+    ossimString regExpression =  (ossimString("^") +
+                                  "property[0-9]+");
+ 
+-   vector<ossimString> keys = theDriverOptionValues.getSubstringKeyList( regExpression );
++   std::vector<ossimString> keys = theDriverOptionValues.getSubstringKeyList( regExpression );
+    ossim_uint32 idx = 0;
+    for(idx = 0; idx < keys.size(); ++idx)
+    {
+diff -u -r -N a/gdal/src/ossimGdalWriter.h b/gdal/src/ossimGdalWriter.h
+--- a/gdal/src/ossimGdalWriter.h	2018-04-18 14:04:12.000000000 -0400
++++ b/gdal/src/ossimGdalWriter.h	2023-10-31 08:00:02.205108531 -0400
+@@ -9,6 +9,8 @@
+ #ifndef ossimGdalWriter_HEADER
+ #define ossimGdalWriter_HEADER 1
+ 
++#include <vector>
++
+ #include <gdal.h>
+ #include <ossim/imaging/ossimImageFileWriter.h>
+ #include <ossim/base/ossimKeywordlist.h>

@@ -51,6 +51,7 @@ PATCHES=(
     "${FILESDIR}/ossim-make_pair.patch"
     "${FILESDIR}/ossim-vector.patch"
     "${FILESDIR}/ossim-vector2.patch"
+    "${FILESDIR}/ossim-vector3.patch"
 )
 
 src_configure() {
