@@ -1,0 +1,51 @@
+diff -u -r -N a/geopdf/src/ossimGeoPdfReader.cpp b/geopdf/src/ossimGeoPdfReader.cpp
+--- a/geopdf/src/ossimGeoPdfReader.cpp	2018-04-18 14:04:12.000000000 -0400
++++ b/geopdf/src/ossimGeoPdfReader.cpp	2023-10-31 07:50:14.045270516 -0400
+@@ -431,7 +431,7 @@
+       ossim_int32 col = layerNameVector[layerNameVector.size()-2].toInt();
+       ossim_int32 row = layerNameVector[layerNameVector.size()-1].toInt();
+       std::pair<ossim_int32, ossim_int32> tileRowCol;
+-      tileRowCol = make_pair(row, col);
++      tileRowCol = std::make_pair(row, col);
+       ossim_int32 tileIndex = tmpKeyValue[1].toInt();
+ 
+       m_podofoTileInfo[tileIndex] = tileRowCol;
+@@ -1151,7 +1151,7 @@
+                   if (isDctDecode == false)
+                   {
+                      std::pair<ossim_int32, ossim_int32> tileRowCol;
+-                     tileRowCol = make_pair(rowCount, 0);
++                     tileRowCol = std::make_pair(rowCount, 0);
+                      m_podofoTileInfo[count] = tileRowCol;
+                      m_podofoImageObjs[count] = (*it);
+                      m_isJpeg = false;
+@@ -1232,7 +1232,7 @@
+             if (tileRow > 0)
+             {
+                std::pair<ossim_int32, ossim_int32> tileRowCol;
+-               tileRowCol = make_pair(tileRow-1, 0);
++               tileRowCol = std::make_pair(tileRow-1, 0);
+                m_podofoTileInfo[index] = tileRowCol;
+             }
+             else
+diff -u -r -N a/kml/src/ossimKmlSuperOverlayWriter.cpp b/kml/src/ossimKmlSuperOverlayWriter.cpp
+--- a/kml/src/ossimKmlSuperOverlayWriter.cpp	2018-04-18 14:04:12.000000000 -0400
++++ b/kml/src/ossimKmlSuperOverlayWriter.cpp	2023-10-31 07:48:23.118739129 -0400
+@@ -114,7 +114,7 @@
+    if (traceDebug())
+    {
+       ossimNotify(ossimNotifyLevel_DEBUG)
+-         << MODULE << " entered..." << endl;
++         << MODULE << " entered..." << std::endl;
+    }
+ 
+    ossim_int32 bands = theInputConnection->getNumberOfOutputBands();
+@@ -124,7 +124,7 @@
+          << MODULE << " Range Error:"
+          << "\nInvalid number of input bands!  Must be one or three."
+          << "\nInput bands = " << bands
+-         << "\nReturning from method." << endl;
++         << "\nReturning from method." << std::endl;
+ 
+       return false;
+    }

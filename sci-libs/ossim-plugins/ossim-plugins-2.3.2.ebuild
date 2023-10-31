@@ -48,6 +48,7 @@ RDEPEND="
 PATCHES=(
     "${FILESDIR}/ossim-cmake-modules.patch"
     "${FILESDIR}/ossim-endl.patch"
+    "${FILESDIR}/ossim-make_pair.patch"
 )
 
 src_configure() {
