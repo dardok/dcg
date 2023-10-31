@@ -1,13 +1,29 @@
-diff -u -r -N b/src/hdf5/ossimHdf5Info.cpp a/src/hdf5/ossimHdf5Info.cpp
---- b/src/hdf5/ossimHdf5Info.cpp	2020-01-30 13:31:36.000000000 -0500
-+++ a/src/hdf5/ossimHdf5Info.cpp	2023-10-31 05:29:12.172945631 -0400
-@@ -1145,7 +1145,8 @@
-           nArrayElements*=dims[idx]; 
-          }
+diff -u -r -N b/include/ossim/base/ossimString.h a/include/ossim/base/ossimString.h
+--- b/include/ossim/base/ossimString.h	2020-01-30 13:31:36.000000000 -0500
++++ a/include/ossim/base/ossimString.h	2023-10-31 05:42:45.686378467 -0400
+@@ -654,6 +654,7 @@
+    static ossimString toString(ossim_uint32  aValue);
+    static ossimString toString(ossim_int64   aValue);
+    static ossimString toString(ossim_uint64  aValue);
++   static ossimString toString(long unsigned int  aValue);
  
--         dimString = ossimString("(") + dimOut.str() + ossimString::toString(dims[dims.size()-1])+")";  
-+         ossim_uint32 dimValue = reinterpret_cast<const ossim_uint32>(dims[dims.size()-1]);
-+         dimString = ossimString("(") + dimOut.str() + ossimString::toString(dimValue)+")";  
-          m_kwl.addPair(prefix+".dimensions", dimString);
+    /**
+     * @param aValue Value to convert to string.
+diff -u -r -N b/src/base/ossimString.cpp a/src/base/ossimString.cpp
+--- b/src/base/ossimString.cpp	2020-01-30 13:31:36.000000000 -0500
++++ a/src/base/ossimString.cpp	2023-10-31 05:42:42.590417777 -0400
+@@ -977,6 +977,14 @@
+    return result;
+ }
  
-          ossim_uint32 typeSize = superType.getSize();
++ossimString ossimString::toString(long unsigned int aValue)
++{
++   std::ostringstream s;
++   s << aValue;
++   ossimString result(s.str());
++   return result;
++}
++
+ ossimString ossimString::toString(ossim_float32 aValue,
+                                   ossim_int32 precision,
+                                   bool fixed)
