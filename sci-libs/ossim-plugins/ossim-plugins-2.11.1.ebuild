@@ -8,7 +8,7 @@ if [[ ${PV} = *9999* ]]; then
     inherit git-r3
     EGIT_REPO_URI="https://github.com/ossimlabs/ossim-plugins"
 else
-    RELEASE="Gasparilla"
+    RELEASE="OrchidIsland"
     SRC_URI="https://github.com/ossimlabs/ossim-plugins/archive/${RELEASE}-${PV}.tar.gz -> ${P}.tar.gz"
     S=${WORKDIR}/${PN}-${RELEASE}-${PV}
     KEYWORDS="~amd64 ~x86"
@@ -50,8 +50,6 @@ PATCHES=(
     "${FILESDIR}/ossim-endl.patch"
     "${FILESDIR}/ossim-make_pair.patch"
     "${FILESDIR}/ossim-vector.patch"
-    "${FILESDIR}/ossim-vector2.patch"
-    "${FILESDIR}/ossim-vector3.patch"
 )
 
 src_configure() {
