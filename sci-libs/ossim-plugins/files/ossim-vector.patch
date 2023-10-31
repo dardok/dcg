@@ -1,0 +1,12 @@
+diff -u -r -N a/kml/src/ossimKmlSuperOverlayReader.cpp b/kml/src/ossimKmlSuperOverlayReader.cpp
+--- a/kml/src/ossimKmlSuperOverlayReader.cpp	2018-04-18 14:04:12.000000000 -0400
++++ b/kml/src/ossimKmlSuperOverlayReader.cpp	2023-10-31 07:53:07.994967449 -0400
+@@ -117,7 +117,7 @@
+                theImageBound.makeNan();
+ 
+                //if the projection is default or geographic, uses the bounding of the OGR Layer
+-               vector<ossimGpt> points;
++               std::vector<ossimGpt> points;
+                points.push_back(ossimGpt(north, west));
+                points.push_back(ossimGpt(north, east));
+                points.push_back(ossimGpt(south, east));
