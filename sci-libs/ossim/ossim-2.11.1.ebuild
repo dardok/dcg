@@ -23,7 +23,7 @@ RDEPEND="
 	sci-libs/geos
 	sci-libs/libgeotiff
 	dev-libs/jsoncpp
-	virtual/jpeg:62
+	virtual/jpeg
 	sys-libs/zlib
 	freetype? ( media-libs/freetype )
 	mpi? ( sys-cluster/openmpi )
