@@ -1,13 +1,13 @@
-diff -u -r -N a/src/hdf5/ossimHdf5Info.cpp b/src/hdf5/ossimHdf5Info.cpp
---- a/src/hdf5/ossimHdf5Info.cpp	2023-10-31 05:21:22.639237327 -0400
-+++ b/src/hdf5/ossimHdf5Info.cpp	2020-01-30 13:31:36.000000000 -0500
-@@ -1145,8 +1145,7 @@
+diff -u -r -N b/src/hdf5/ossimHdf5Info.cpp a/src/hdf5/ossimHdf5Info.cpp
+--- b/src/hdf5/ossimHdf5Info.cpp	2020-01-30 13:31:36.000000000 -0500
++++ a/src/hdf5/ossimHdf5Info.cpp	2023-10-31 05:21:22.639237327 -0400
+@@ -1145,7 +1145,8 @@
            nArrayElements*=dims[idx]; 
           }
  
--         ossim_uint64 dimValue = reinterpret_cast<const ossim_uint64>(dims[dims.size()-1]);
--         dimString = ossimString("(") + dimOut.str() + ossimString::toString(dimValue)+")";  
-+         dimString = ossimString("(") + dimOut.str() + ossimString::toString(dims[dims.size()-1])+")";  
+-         dimString = ossimString("(") + dimOut.str() + ossimString::toString(dims[dims.size()-1])+")";  
++         ossim_uint64 dimValue = reinterpret_cast<const ossim_uint64>(dims[dims.size()-1]);
++         dimString = ossimString("(") + dimOut.str() + ossimString::toString(dimValue)+")";  
           m_kwl.addPair(prefix+".dimensions", dimString);
  
           ossim_uint32 typeSize = superType.getSize();
