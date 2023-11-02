@@ -35,6 +35,7 @@ DEPEND="
 	app-arch/snappy:=
 	>=app-arch/snappy-1.1.9-r1
 	app-arch/zstd:=
+	dev-libs/libnl
 	dev-libs/openssl:=
 	sys-apps/coreutils
 	sys-apps/keyutils
