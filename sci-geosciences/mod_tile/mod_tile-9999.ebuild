@@ -24,6 +24,8 @@ BDEPEND="
 	www-servers/apache
 "
 RDEPEND="
+	x11-libs/cairo
+	dev-libs/glib
 	sci-geosciences/mapnik
 	>=dev-libs/iniparser-4
 	memcached? ( net-misc/memcached )
