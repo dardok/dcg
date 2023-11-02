@@ -37,6 +37,7 @@ DEPEND="
 	app-arch/zstd:=
 	dev-libs/openssl:=
 	sys-apps/coreutils
+	sys-apps/keyutils
 	sys-apps/util-linux:=
 	sys-libs/zlib:=
 	sys-process/numactl:=
