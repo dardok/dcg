@@ -37,7 +37,6 @@ DEPEND="
 	app-arch/zstd:=
 	dev-libs/openssl:=
 	sys-apps/coreutils
-	sys-apps/keyutils
 	sys-apps/util-linux:=
 	sys-libs/zlib:=
 	sys-process/numactl:=
@@ -54,6 +53,8 @@ BDEPEND="
 	sys-apps/grep
 	sys-apps/util-linux
 	sys-apps/which
+	sys-apps/keyutils
+	sys-fs/cryptsetup
 	sys-devel/bc
 	sys-devel/patch
 	virtual/pkgconfig
