@@ -18,14 +18,14 @@ KEYWORDS="~amd64"
 BDEPEND="
 	sci-geosciences/protozero
 	sci-geosciences/libosmium
+"
+RDEPEND="
 	dev-libs/icu
+	dev-db/postgresql
 	media-libs/freetype
 	media-libs/harfbuzz
 	media-libs/libjpeg-turbo
 	media-libs/libwebp
-	dev-db/postgresql
-"
-RDEPEND="
 "
 DEPEND="${RDEPEND}
 "
