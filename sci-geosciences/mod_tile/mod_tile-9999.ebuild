@@ -27,7 +27,7 @@ RDEPEND="
 	sci-geosciences/mapnik
 	>=dev-libs/iniparser-4
 	memcached? ( net-misc/memcached )
-	rados? ( sys-cluster/ceph )
+	rados? ( sys-cluster/librados )
 "
 DEPEND="${RDEPEND}
 "
