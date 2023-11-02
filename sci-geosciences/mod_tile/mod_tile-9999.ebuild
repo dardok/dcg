@@ -24,6 +24,8 @@ BDEPEND="
 	www-servers/apache
 "
 RDEPEND="
+	dev-libs/icu
+	dev-libs/libnl
 	x11-libs/cairo
 	dev-libs/glib
 	sci-geosciences/mapnik
