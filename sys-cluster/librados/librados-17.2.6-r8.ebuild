@@ -52,6 +52,7 @@ BDEPEND="
 	x86? ( dev-lang/yasm )
 	app-arch/cpio
 	>=dev-util/cmake-3.5.0
+	dev-python/pyyaml
 	sys-apps/coreutils
 	sys-apps/grep
 	sys-apps/util-linux
