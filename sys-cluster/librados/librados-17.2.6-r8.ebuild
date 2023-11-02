@@ -35,7 +35,6 @@ DEPEND="
 	app-arch/snappy:=
 	>=app-arch/snappy-1.1.9-r1
 	app-arch/zstd:=
-	dev-libs/libnl
 	dev-libs/openssl:=
 	sys-apps/coreutils
 	sys-apps/keyutils
@@ -52,6 +51,8 @@ BDEPEND="
 	x86? ( dev-lang/yasm )
 	app-arch/cpio
 	>=dev-util/cmake-3.5.0
+	dev-libs/icu
+	dev-libs/libnl
 	dev-python/pyyaml
 	sys-apps/coreutils
 	sys-apps/grep
