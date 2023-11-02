@@ -3,3 +3,4 @@ sci-geosciences/libosmium
 sci-geosciences/mapnik **
 sci-geosciences/mod_tile
 sci-libs/geos
+sys-cluster/librados
