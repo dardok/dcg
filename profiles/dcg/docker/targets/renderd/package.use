@@ -2,3 +2,4 @@ sys-libs/zlib minizip
 dev-db/postgresql -server
 media-libs/freetype -X harfbuzz
 sci-geosciences/mod_tile rados
+media-libs/libwebp -jpeg # bad lto?
