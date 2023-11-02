@@ -24,6 +24,7 @@ BDEPEND="
 	www-servers/apache
 "
 RDEPEND="
+	dev-libs/boost
 	dev-libs/icu
 	dev-libs/libnl
 	x11-libs/cairo
