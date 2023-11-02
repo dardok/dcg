@@ -56,6 +56,7 @@ BDEPEND="
 	sys-devel/bc
 	sys-devel/patch
 	virtual/pkgconfig
+	dev-python/sphinx
 "
 RDEPEND="
 	${DEPEND}
