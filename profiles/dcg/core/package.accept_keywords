@@ -9,6 +9,7 @@ net-fs/openafs
 net-misc/frr
 
 sys-auth/pam-afs-session
+sys-auth/sssd
 
 sys-block/libfabric
 
