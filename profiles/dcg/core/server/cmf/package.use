@@ -1,7 +1,7 @@
 app-editors/emacs gtk # requested
 
 app-emulation/qemu spice
-app-emulation/virt-manager gtk # requested
+app-emulation/virt-manager gui # requested
 
 app-dicts/myspell-en l10n_en
 app-text/hunspell l10n_en
@@ -21,3 +21,5 @@ net-analyzer/wireshark -gui
 media-libs/freetype harfbuzz
 
 sys-apps/dbus X # required for virt-manager :(
+
+net-firewall/iptables nftables # required by podman
