@@ -41,7 +41,7 @@ net-libs/nghttp2 hpack-tools
 net-misc/curl http2
 #net-misc/frr grpc
 
-net-nds/openldap minimal
+net-nds/openldap minimal experimental
 net-nds/rpcbind warmstarts
 
 sys-apps/attr static-libs
