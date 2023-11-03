@@ -2,3 +2,5 @@ sys-libs/zlib minizip
 dev-db/postgresql -server
 media-libs/freetype -X harfbuzz
 sci-geosciences/mod_tile rados
+sci-libs/gdal jpeg
+x11-libs/cairo -X

@@ -37,6 +37,8 @@ DEPEND="
 	app-arch/zstd:=
 	dev-libs/openssl:=
 	sys-apps/coreutils
+	sys-apps/keyutils
+	sys-fs/cryptsetup
 	sys-apps/util-linux:=
 	sys-libs/zlib:=
 	sys-process/numactl:=
@@ -49,13 +51,19 @@ BDEPEND="
 	x86? ( dev-lang/yasm )
 	app-arch/cpio
 	>=dev-util/cmake-3.5.0
+	dev-libs/icu
+	dev-libs/libnl
+	dev-python/pyyaml
 	sys-apps/coreutils
 	sys-apps/grep
 	sys-apps/util-linux
 	sys-apps/which
+	sys-apps/keyutils
+	sys-fs/cryptsetup
 	sys-devel/bc
 	sys-devel/patch
 	virtual/pkgconfig
+	dev-python/sphinx
 "
 RDEPEND="
 	${DEPEND}
