@@ -27,7 +27,7 @@ RDEPEND="
 	media-libs/harfbuzz
 	media-libs/libjpeg-turbo
 	media-libs/libwebp
-	media-libs/libtiff
+	media-libs/tiff
 	x11-libs/cairo
 	virtual/jpeg
 "
