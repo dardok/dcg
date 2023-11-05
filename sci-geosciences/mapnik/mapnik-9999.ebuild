@@ -22,10 +22,14 @@ BDEPEND="
 RDEPEND="
 	dev-libs/icu
 	dev-db/postgresql
+	sci-libs/proj
 	media-libs/freetype
 	media-libs/harfbuzz
 	media-libs/libjpeg-turbo
 	media-libs/libwebp
+	media-libs/libtiff
+	x11-libs/cairo
+	virtual/jpeg
 "
 DEPEND="${RDEPEND}
 "
