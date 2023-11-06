@@ -23,6 +23,7 @@ RDEPEND="
 	dev-libs/icu
 	dev-db/postgresql
 	sci-libs/proj
+	sci-libs/gdal
 	media-libs/freetype
 	media-libs/harfbuzz
 	media-libs/libjpeg-turbo
