@@ -61,6 +61,7 @@ src_install() {
 	apache-module_src_install
 
 	dosbin "${BUILD_DIR}"/src/renderd
+	dobin "${BUILD_DIR}"/src/render_list
 
 	insinto /etc
 	doins "${BUILD_DIR}"/renderd.conf
