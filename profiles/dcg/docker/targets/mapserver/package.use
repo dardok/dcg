@@ -1,0 +1,5 @@
+sys-libs/zlib minizip
+dev-db/postgresql -server
+media-libs/freetype -X harfbuzz
+sci-libs/gdal jpeg
+x11-libs/cairo -X
