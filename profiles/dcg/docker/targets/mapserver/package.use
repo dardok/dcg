@@ -5,3 +5,4 @@ sci-libs/gdal jpeg
 x11-libs/cairo -X
 media-libs/gd tiff truetype webp
 sci-geosciences/mapserver geos postgis
+x11-libs/agg -X
