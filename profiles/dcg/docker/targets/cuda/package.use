@@ -1,1 +1,2 @@
 x11-drivers/nvidia-drivers -X -modules -tools -wayland
+dev-util/nvidia-cuda-toolkit profiler rdma -vis-profiler
