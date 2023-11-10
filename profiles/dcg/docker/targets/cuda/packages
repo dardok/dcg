@@ -1,3 +1,4 @@
 *x11-drivers/nvidia-drivers:0/535
 *dev-util/nvidia-cuda-toolkit
 *dev-python/pip
+*dev-python/numpy
