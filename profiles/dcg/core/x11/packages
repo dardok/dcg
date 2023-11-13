@@ -18,6 +18,7 @@
 *media-fonts/ttf-bitstream-vera
 *media-fonts/unifont
 *media-libs/glew
+*media-plugins/gst-plugins-meta
 *media-video/pipewire
 *media-video/wireplumber
 *sys-auth/rtkit
