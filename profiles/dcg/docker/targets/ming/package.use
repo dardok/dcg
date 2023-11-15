@@ -1,0 +1,6 @@
+x11-libs/cairo -X
+dev-python/autobahn xbr
+dev-db/postgresql -server python
+dev-python/pillow webp
+virtual/imagemagick-tools jpeg tiff
+media-gfx/imagemagick jpeg tiff
