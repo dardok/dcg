@@ -7,3 +7,4 @@
 *dev-python/psycopg:2
 *dev-python/h5py
 *dev-python/numba
+*dev-python/scipy
