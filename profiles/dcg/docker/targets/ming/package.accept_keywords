@@ -3,3 +3,4 @@ dev-python/rasterio
 sci-libs/branca
 dev-python/h5py
 dev-python/numba
+dev-python/llvmlite
