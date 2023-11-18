@@ -1,0 +1,5 @@
+*dev-db/postgresql
+*dev-python/pip
+*app-arch/snappy
+*dev-python/psycopg:2
+*dev-python/flask
