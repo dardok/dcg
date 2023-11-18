@@ -20,7 +20,7 @@
 *dev-python/hpack
 *dev-python/hyperframe
 *dev-python/hyperlink
-*dev-python/idna
+#*dev-python/idna
 *dev-python/incremental
 *dev-python/lmdb
 *dev-python/mistune
@@ -51,7 +51,7 @@
 *dev-python/txtorcon
 *dev-python/u-msgpack-python
 *dev-python/ujson
-*dev-python/urllib3
+*=dev-python/urllib3-1*
 *dev-python/watchdog
 *dev-python/zope-interface
 
