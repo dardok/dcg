@@ -9,7 +9,6 @@
 *dev-python/bcrypt
 *dev-python/bitarray
 *dev-python/bitstring
-*dev-python/cbor
 *dev-python/cbor2
 *dev-python/certifi
 *dev-python/cffi
