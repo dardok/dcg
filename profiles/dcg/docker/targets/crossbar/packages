@@ -4,7 +4,6 @@
 *dev-python/argon2-cffi
 *dev-python/argon2-cffi-bindings
 *dev-python/attrs
-*dev-python/autobahn
 *dev-python/automat
 *dev-python/bcrypt
 *dev-python/bitarray
