@@ -12,3 +12,4 @@ dev-lang/python:3.12
 
 >=dev-python/cython-3 # breaks everything
 >=dev-python/numpy-1.26 # requires >=cython-3
+>=dev-python/pyproj-3.6.1 # requires >= cython-3
