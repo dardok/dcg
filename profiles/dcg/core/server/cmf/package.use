@@ -23,3 +23,5 @@ media-libs/freetype harfbuzz
 sys-apps/dbus X # required for virt-manager :(
 
 net-firewall/iptables nftables # required by podman
+
+net-libs/gnutls tools
