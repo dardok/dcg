@@ -11,3 +11,5 @@ dev-lang/python:3.12
 #>=sys-fs/e2fsprogs-1.46.5 # missing equivalent e2fsprogs-libs
 
 >=dev-python/cython-3 # breaks everything
+>=dev-python/numpy-1.26 # requires >=cython-3
+>=dev-python/pyproj-3.6.1 # requires >= cython-3
