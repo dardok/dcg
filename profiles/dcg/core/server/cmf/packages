@@ -30,9 +30,11 @@
 *app-editors/emacs
 *app-emacs/emacs-common
 *app-eselect/eselect-emacs
+*app-editors/xemacs
 
 *net-libs/nodejs
 
+*gui-libs/gtk
 *x11-libs/gtk+:2
 
 *net-libs/libyang
