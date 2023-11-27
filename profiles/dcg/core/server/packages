@@ -3,3 +3,4 @@
 *app-containers/docker-compose 
 *app-emulation/libvirt
 *app-emulation/qemu
+*net-misc/lldpd
