@@ -1,4 +1,5 @@
 *app-containers/crun
+*app-containers/docker-buildx
 *app-containers/podman
 
 *app-emulation/virt-manager
@@ -15,8 +16,10 @@
 *net-analyzer/wireshark
 
 *net-misc/tigervnc
+*net-misc/tigervnc-xorg-module
 
 *sys-apps/the_silver_searcher
+*sys-apps/lshw
 
 *sys-devel/clang
 
@@ -27,5 +30,17 @@
 *app-editors/emacs
 *app-emacs/emacs-common
 *app-eselect/eselect-emacs
+*app-editors/xemacs
 
 *net-libs/nodejs
+
+*gui-libs/gtk
+*x11-libs/gtk+:2
+
+*net-libs/libyang
+
+*x11-drivers/xf86-video-qxl
+
+*sys-process/htop
+
+*dev-libs/check
