@@ -4,3 +4,4 @@
 *app-containers/docker-buildx 
 *app-emulation/libvirt
 *app-emulation/qemu
+*net-misc/lldpd
