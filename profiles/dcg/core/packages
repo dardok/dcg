@@ -62,6 +62,7 @@
 *sys-apps/keyutils
 *sys-apps/lm-sensors
 *sys-apps/lsb-release
+*sys-apps/moreutils
 *sys-apps/sg3_utils
 *sys-apps/smartmontools
 *sys-apps/usbutils
