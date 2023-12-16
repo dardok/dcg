@@ -51,6 +51,7 @@ dev-qt/qtwayland compositor
 dev-qt/qtwebengine screencast geolocation widgets
 dev-qt/qtwebchannel qml
 dev-qt/qtgui egl
+dev-util/nvidia-cuda-toolkit debugger nsight profiler rdma vis-profiler
 dev-util/perf clang systemtap slang libpfm
 dev-util/strace aio elfutils
 gnome-extra/zenity webkit libnotify
@@ -77,9 +78,9 @@ media-sound/pulseaudio realtime bluetooth equalizer libsamplerate native-headset
 #media-sound/pulseaudio-daemon bluetooth
 media-video/cheese egl
 media-video/libcamera gstreamer cam qcam v4l2 pycamera
-#temp#media-video/ffmpeg cuda nvenc libv4l opus xvid vpx jpeg2k
+media-video/ffmpeg cuda nvenc libv4l opus xvid vpx jpeg2k
 media-video/obs-studio nvenc pipewire
-#temp#media-video/pipewire bluetooth v4l jack-sdk extra sound-server libcamera ffmpeg
+media-video/pipewire bluetooth v4l jack-sdk extra sound-server libcamera ffmpeg
 net-analyzer/wireshark http2
 net-dns/dnsmasq script tftp
 net-firewall/iptables nftables
@@ -107,6 +108,7 @@ sys-apps/dbus user-session
 sys-apps/hwloc cuda nvml
 sys-apps/iproute2 bpf elf
 sys-apps/kexec-tools lzma # xen 
+sys-apps/moreutils -perl
 sys-apps/smartmontools update_drivedb
 sys-apps/systemd nat policykit idn libidn2 gcrypt importd python http curl lzma qrcode elfutils cgroup-hybrid gnuefi
 sys-block/libfabric cuda verbs
@@ -144,13 +146,3 @@ dev-qt/qtbase opengl egl eglfs gles2-only
 dev-qt/qtdeclarative opengl
 gui-libs/xdg-desktop-portal-hyprland select-window select-region
 sys-apps/xdg-desktop-portal screencast
-
-# temp
-media-libs/freetype -harfbuzz -utils brotli
-app-emulation/spice -smartcard
-app-emulation/qemu xkb io-uring lzo multipath numa opengl snappy -spice static-user usb usbredir vde vhost-user-fs virgl virtfs # xen
-dev-python/pandas -full-support
-media-video/pipewire bluetooth v4l -jack-sdk extra sound-server libcamera -ffmpeg
-media-video/ffmpeg cuda nvenc libv4l opus xvid vpx jpeg2k -jack
-media-libs/libsndfile minimal
-media-sound/mpg123 -pulseaudio
