@@ -17,6 +17,7 @@
 *app-portage/eix
 
 *app-shells/bash-completion
+*app-shells/powerline
 *app-shells/tcsh
 
 *app-vim/pathogen
