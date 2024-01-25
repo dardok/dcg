@@ -29,12 +29,12 @@
 *dev-python/pyroute2
 *dev-python/virtualenv
 
-*dev-util/cmake
+*dev-build/cmake
 *dev-util/debugedit
 *dev-util/indent
 *dev-util/perf
-*dev-util/strace
-*dev-util/systemtap
+*dev-debug/strace
+*dev-debug/systemtap
 
 *dev-vcs/git-lfs
 
@@ -75,7 +75,7 @@
 *sys-cluster/ipvsadm
 *sys-cluster/rdma-core
 
-*sys-devel/gdb
+*dev-debug/gdb
 *sys-devel/lld
 
 *sys-block/libfabric
