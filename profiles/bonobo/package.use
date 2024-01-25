@@ -53,7 +53,7 @@ dev-qt/qtwebchannel qml
 dev-qt/qtgui egl
 dev-util/nvidia-cuda-toolkit debugger nsight profiler rdma vis-profiler
 dev-util/perf clang systemtap slang libpfm
-dev-util/strace aio elfutils
+dev-debug/strace aio elfutils
 gnome-extra/zenity webkit libnotify
 gui-apps/waybar mpd network tray wifi
 gui-libs/wlroots x11-backend
