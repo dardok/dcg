@@ -6,6 +6,8 @@
 *app-crypt/intel-ipsec-mb
 *app-crypt/mit-krb5
 
+*dev-debug/gdb
+
 *app-metrics/node_exporter
 
 *app-misc/jq
@@ -17,6 +19,7 @@
 *app-portage/eix
 
 *app-shells/bash-completion
+*app-shells/powerline
 *app-shells/tcsh
 
 *app-vim/pathogen
@@ -75,7 +78,6 @@
 *sys-cluster/ipvsadm
 *sys-cluster/rdma-core
 
-*dev-debug/gdb
 *sys-devel/lld
 
 *sys-block/libfabric

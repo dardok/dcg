@@ -1,4 +1,5 @@
 app-admin/serf
+app-shells/powerline
 
 dev-util/clippy
 <dev-util/perf-6

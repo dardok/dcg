@@ -14,6 +14,7 @@ sys-cluster/mpich2
 
 >=dev-lang/python-3.12
 
->=dev-python/cython-3 # breaks everything
+#>=dev-python/cython-3 # breaks everything
+#>=dev-python/msgpack-1.0.7 # requires cython-3
 
 >=sys-apps/fakeroot-1.32 # broken

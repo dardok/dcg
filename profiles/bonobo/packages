@@ -99,12 +99,14 @@
 *dev-python/fuse-python
 *dev-python/graphviz
 *dev-python/h11
+*dev-python/h5py
 *dev-python/marshmallow
 *dev-python/matplotlib-inline
 *dev-python/mpi4py
 *dev-python/msgpack
 *dev-python/netcdf4
 *dev-python/networkx
+*dev-python/numba
 *dev-python/pandas
 *dev-python/pip
 *dev-python/poetry-core
@@ -113,6 +115,7 @@
 *dev-python/pyaudio
 *dev-python/pydantic
 *dev-python/pydot
+*dev-python/pygame
 *dev-python/pyjwt
 *dev-python/pylint
 *dev-python/pynvml
@@ -158,6 +161,7 @@
 *dev-qt/qtwebengine:6
 *dev-qt/qtwebsockets:6
 *dev-qt/qtxmlpatterns
+*dev-util/babeltrace
 *dev-util/bcc
 *dev-util/clinfo
 *dev-util/cookiecutter
@@ -181,7 +185,7 @@
 *gui-apps/swaylock-effects
 *gui-apps/waybar
 *gui-libs/egl-wayland
-*gui-wm/hyprland
+# *gui-wm/hyprland
 # https://wiki.hyprland.org/Useful-Utilities/Hyprland-desktop-portal/
 # *gui-libs/xdg-desktop-portal-hyprland
 *lxde-base/lxtask
@@ -286,7 +290,7 @@
 *net-fs/yfs
 *net-ftp/atftp
 *net-im/rocketchat-desktop-bin
-*net-im/telegram-desktop
+#*net-im/telegram-desktop
 *net-libs/libwebsockets
 *net-libs/nodejs
 *net-libs/xdp-tools
@@ -324,6 +328,7 @@
 *sys-apps/ipmitool
 *sys-apps/kexec-tools
 *sys-apps/lm-sensors
+*sys-apps/moreutils
 *sys-apps/nvme-cli
 *sys-apps/smartmontools
 *sys-apps/usbutils
@@ -393,7 +398,7 @@
 *x11-apps/xvinfo
 *x11-apps/xwd
 *x11-apps/xwud
-*x11-drivers/nvidia-drivers:0/525
+*x11-drivers/nvidia-drivers:0/535
 *x11-drivers/xf86-input-libinput
 *x11-drivers/xf86-video-dummy
 *x11-libs/libXScrnSaver

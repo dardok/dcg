@@ -46,16 +46,20 @@ dev-python/botocore
 dev-python/cftime
 dev-python/fsspec
 dev-python/fuse-python
+dev-python/h5py
 dev-python/installer
 dev-python/imageio
 dev-python/importlib_metadata
 dev-python/jaraco-text
+dev-python/lazy_loader
+dev-python/llvmlite
 dev-python/marshmallow
 dev-python/matplotlib
 dev-python/more-itertools
 dev-python/multiprocess
 dev-python/netcdf4
 dev-python/nspektr
+dev-python/numba
 dev-python/ordered-set
 dev-python/packaging
 =dev-python/pandas-1.5*
@@ -68,8 +72,9 @@ dev-python/pysnmp-mibs
 dev-python/pytesseract
 dev-python/pywavelets
 dev-python/pyzbar
-#=dev-python/setuptools-60*
 dev-python/s3transfer
+dev-python/scipy
+#=dev-python/setuptools-60*
 dev-python/simplekml
 dev-python/starlette
 dev-python/tifffile
@@ -104,6 +109,7 @@ media-video/v4l2loopback
 #media-video/wireplumber
 net-analyzer/nessus-bin
 net-im/rocketchat-desktop-bin
+net-im/telegram-desktop
 net-libs/xdp-tools
 net-misc/autossh
 net-misc/usbip
@@ -141,7 +147,6 @@ sys-libs/libmodulemd
 sys-libs/libnvidia-container
 sys-libs/libnvme
 sys-process/atop
-x11-drivers/nvidia-drivers:0/525
 x11-libs/libdrm
 x11-misc/xscreensaver
 x11-terms/kitty
