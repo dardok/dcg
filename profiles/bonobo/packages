@@ -133,6 +133,7 @@
 *dev-python/responses
 *dev-python/ruamel-yaml
 *dev-python/ruamel-yaml-clib
+*dev-python/scikit-image
 *dev-python/scipy
 *dev-python/shapely
 *dev-python/simplekml
@@ -326,7 +327,6 @@
 *sci-libs/huggingface_hub
 *sci-libs/onnx
 *sci-libs/pdal
-*sci-libs/scikit-image
 *sci-libs/transformers
 *sec-policy/apparmor-profiles
 *sys-apps/apparmor

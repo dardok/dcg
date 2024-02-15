@@ -75,6 +75,7 @@ dev-python/pythran
 dev-python/pywavelets
 dev-python/pyzbar
 dev-python/s3transfer
+dev-python/scikit-image
 dev-python/scipy
 #=dev-python/setuptools-60*
 dev-python/simplekml
@@ -87,6 +88,7 @@ dev-util/bpftool
 dev-util/clinfo
 dev-util/nvidia-cuda-toolkit
 dev-util/rustup
+dev-util/spirv-llvm-translator
 dev-util/wayland-scanner
 gui-apps/waybar
 gui-apps/swaybg
@@ -125,7 +127,6 @@ sci-libs/kissfft
 sci-libs/onnx
 sci-libs/pdal
 sci-libs/safetensors
-sci-libs/scikit-image
 sci-libs/scikit-learn
 sci-libs/tokenizers
 sci-libs/transformers
