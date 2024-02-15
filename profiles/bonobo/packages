@@ -52,6 +52,7 @@
 *app-portage/portage-utils
 *app-portage/smart-live-rebuild
 *app-shells/bash-completion
+*app-shells/powerline
 *app-text/texlive
 *app-text/xmlformat
 *app-vim/pathogen
@@ -59,6 +60,7 @@
 *=dev-cpp/tbb-2020.3 # media-libs/oidn media-gfx/openvdb media-gfx/blender
 *dev-cpp/websocketpp
 *dev-db/spatialite
+*dev-debug/gdb
 *dev-games/openscenegraph
 *dev-java/icedtea-web
 *dev-java/openjdk-bin:11
@@ -167,7 +169,7 @@
 *dev-util/cookiecutter
 *dev-util/debugedit
 *dev-util/indent
-*dev-util/ltrace
+*dev-debug/ltrace
 *dev-util/nvidia-cuda-toolkit
 *dev-util/pahole
 *dev-util/perf
@@ -175,7 +177,8 @@
 *dev-util/pkgdev
 *dev-util/rpmdevtools
 *dev-util/rustup
-*dev-util/strace
+*dev-util/shellcheck-bin
+*dev-debug/strace
 *dev-util/vulkan-tools
 *dev-vcs/git
 *dev-vcs/git-lfs
@@ -185,6 +188,7 @@
 *gui-apps/swaylock-effects
 *gui-apps/waybar
 *gui-libs/egl-wayland
+*gui-libs/gtk:4
 # *gui-wm/hyprland
 # https://wiki.hyprland.org/Useful-Utilities/Hyprland-desktop-portal/
 # *gui-libs/xdg-desktop-portal-hyprland
@@ -241,11 +245,12 @@
 *media-libs/libdisplay-info
 *media-libs/libsdl2
 *media-libs/libsmf
-*media-libs/opencv
+*=media-libs/opencv-4.8.1
 *media-libs/shaderc
 *media-libs/vulkan-loader
 *media-libs/zita-resampler
 *media-plugins/calf
+*media-plugins/frei0r-plugins
 *media-plugins/gst-plugins-bluez
 *media-plugins/gst-plugins-cairo
 *media-plugins/gst-plugins-hls
@@ -254,7 +259,11 @@
 *media-plugins/gst-plugins-libpng
 *media-plugins/gst-plugins-lv2
 *media-plugins/gst-plugins-meta
-#*media-plugins/gst-plugins-opencv
+*media-plugins/gst-plugins-rtmp
+*media-plugins/gst-plugins-opencv
+*media-plugins/gst-plugins-faac
+*media-plugins/gst-plugins-vaapi
+*media-plugins/gst-plugins-x264
 *media-plugins/gst-plugins-x265
 *media-plugins/gst-plugins-ximagesrc
 *media-plugins/ir_lv2
@@ -299,6 +308,7 @@
 *net-misc/ipcalc
 *net-misc/oidc-agent
 *net-misc/rclone
+*net-misc/remmina
 *net-misc/socat
 *net-misc/tigervnc
 *net-misc/usbip
@@ -347,7 +357,6 @@
 *sys-cluster/kubectl
 *sys-cluster/openmpi
 *sys-cluster/rdma-core
-*sys-devel/gdb
 *sys-devel/lld
 *sys-firmware/intel-microcode
 *sys-fs/dosfstools
@@ -408,6 +417,8 @@
 *x11-misc/rofi
 *x11-misc/virtualgl
 *x11-misc/x2x
+*x11-misc/xdotool
 *x11-misc/xscreensaver
 *x11-terms/kitty
+*x11-themes/pulse-glass
 *x11-wm/awesome

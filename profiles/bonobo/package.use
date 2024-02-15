@@ -5,7 +5,7 @@ app-containers/apptainer -network
 app-containers/docker -cli
 app-containers/docker-credential-helpers gnome-keyring pass
 app-crypt/pinentry gnome-keyring
-app-editors/vim cscope lua luajit
+app-editors/vim cscope lua luajit python
 app-emulation/libguestfs libvirt -ocaml
 app-emulation/libvirt fuse lvm numa parted virt-network libssh2 # xen lxc(sys-apps/systemd[cgroup-hybrid(-)])
 app-emulation/spice -smartcard
@@ -56,6 +56,7 @@ dev-util/perf clang systemtap slang libpfm
 dev-debug/strace aio elfutils
 gnome-extra/zenity webkit libnotify
 gui-apps/waybar mpd network tray wifi
+gui-libs/gtk broadway colord gstreamer wayland
 gui-libs/wlroots x11-backend
 gui-wm/hyprland system-wlroots
 media-gfx/blender jemalloc cycles ffmpeg player collada llvm openimageio cuda -opensubdiv -embree
@@ -67,15 +68,17 @@ media-libs/freetype harfbuzz utils brotli
 media-libs/harfbuzz icu
 media-libs/libsdl2 gles2 pipewire
 media-libs/mesa vulkan-overlay
-media-libs/opencv cuda threads gdal download contrib -contribdnn contribfreetype contribxfeatures2d contribcvv qt5 -gtk3 -openexr -opencl
+media-libs/opencv cuda threads gdal download contrib contribdnn contribfreetype contribxfeatures2d contribcvv qt5 -gtk3 -openexr -opencl
+media-libs/rubberband ladspa
 media-libs/tg_owt screencast
 media-libs/vulkan-loader layers
 media-libs/suil gtk2
 media-plugins/calf experimental
-media-plugins/gst-plugins-meta a52 aac cdda dts dv dvb dvd ffmpeg flac http lame libass libvisual mms modplug mp3 mpeg ogg opus oss taglib v4l vcd vpx wavpack
+media-plugins/gst-plugins-meta a52 aac cdda dts dv dvb dvd ffmpeg flac http lame libass libvisual mms modplug mpeg ogg opus oss taglib v4l vcd vpx wavpack
 media-sound/bluez-alsa aac mpg123
 media-sound/pulseaudio realtime bluetooth equalizer libsamplerate native-headset -daemon
 #media-sound/pulseaudio-daemon bluetooth
+media-sound/pulseeffects bs2b calf rnnoise rubberband webrtc zamaudio
 media-video/cheese egl
 media-video/libcamera gstreamer cam qcam v4l2 pycamera
 media-video/ffmpeg cuda nvenc libv4l opus xvid vpx jpeg2k
@@ -87,10 +90,13 @@ net-firewall/iptables nftables
 net-firewall/nftables json libedit xtables -readline
 net-im/telegram-desktop enchant qt6 qt6-imageformats screencast
 net-libs/gnutls tools
+net-libs/gssdp -gtk
 net-libs/phodav spice
 net-libs/zeromq drafts
 net-misc/freerdp usb server
+net-misc/remmina crypt gvnc keyring nls python rdp spice ssh vnc wayland webkit
 net-misc/spice-gtk usbredir webdav
+net-misc/tigervnc dri3 java
 net-vpn/openconnect libproxy stoken lz4
 net-vpn/openvpn iproute2
 net-wireless/bluez experimental user-session deprecated
@@ -146,3 +152,4 @@ dev-qt/qtbase opengl egl eglfs gles2-only
 dev-qt/qtdeclarative opengl
 gui-libs/xdg-desktop-portal-hyprland select-window select-region
 sys-apps/xdg-desktop-portal screencast
+
