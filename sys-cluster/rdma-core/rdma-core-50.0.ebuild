@@ -34,11 +34,6 @@ COMMON_DEPEND="
 "
 DEPEND="
 	${COMMON_DEPEND}
-	python? (
-		$(python_gen_cond_dep '
-			<dev-python/cython-3[${PYTHON_USEDEP}]
-		')
-	)
 "
 RDEPEND="${COMMON_DEPEND}
 	!sys-fabric/infiniband-diags
