@@ -18,3 +18,5 @@ sys-cluster/mpich2
 #>=dev-python/msgpack-1.0.7 # requires cython-3
 
 >=sys-apps/fakeroot-1.32 # broken
+
+>=dev-libs/libxml2-2.12

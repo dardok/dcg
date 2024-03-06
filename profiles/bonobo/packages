@@ -246,7 +246,7 @@
 *media-libs/libdisplay-info
 *media-libs/libsdl2
 *media-libs/libsmf
-*=media-libs/opencv-4.8.1
+*=media-libs/opencv-4.8.1-r1
 *media-libs/shaderc
 *media-libs/vulkan-loader
 *media-libs/zita-resampler
