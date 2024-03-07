@@ -19,6 +19,7 @@ app-misc/tmux
 app-shells/powerline
 app-text/tesseract
 app-text/xmlformat
+dev-build/meson
 dev-cpp/pystring
 dev-cpp/websocketpp
 dev-cpp/xsimd
@@ -71,6 +72,7 @@ dev-python/pynvml
 dev-python/pyparsing
 dev-python/pysnmp-mibs
 dev-python/pytesseract
+dev-python/python-multipart
 dev-python/pythran
 dev-python/pywavelets
 dev-python/pyzbar
@@ -88,7 +90,12 @@ dev-util/bpftool
 dev-util/clinfo
 dev-util/nvidia-cuda-toolkit
 dev-util/rustup
+dev-util/glslang
+dev-util/spirv-headers
 dev-util/spirv-llvm-translator
+dev-util/spirv-tools
+dev-util/vulkan-headers
+dev-util/vulkan-utility-libraries
 dev-util/wayland-scanner
 gui-apps/waybar
 gui-apps/swaybg
@@ -105,6 +112,8 @@ media-libs/mesa
 media-libs/oidn
 media-libs/opencollada
 media-libs/opencv
+media-libs/shaderc
+media-libs/vulkan-layers
 media-sound/bluez-alsa
 media-video/obs-studio
 media-video/libcamera

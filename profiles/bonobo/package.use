@@ -39,6 +39,7 @@ dev-libs/libxml2 icu
 dev-libs/msgpack boost
 dev-libs/nss utils
 dev-libs/pkcs11-helper nss
+dev-libs/qtkeychain qt5 -qt6
 dev-libs/weston lcms wayland-compositor xwayland fullscreen ivi remoting rdp screen-sharing webp
 dev-ml/cudf llvm-libunwind
 dev-python/pyarrow snappy parquet ssl
@@ -68,7 +69,7 @@ media-libs/freetype harfbuzz utils brotli
 media-libs/harfbuzz icu
 media-libs/libsdl2 gles2 pipewire
 media-libs/mesa vulkan-overlay
-media-libs/opencv cuda threads gdal download contrib contribdnn contribfreetype contribxfeatures2d contribcvv qt5 -gtk3 -openexr -opencl
+media-libs/opencv cuda threads download contrib contribdnn contribfreetype contribxfeatures2d contribcvv qt5 -gtk3 -openexr -opencl
 media-libs/rubberband ladspa
 media-libs/tg_owt screencast
 media-libs/vulkan-loader layers
