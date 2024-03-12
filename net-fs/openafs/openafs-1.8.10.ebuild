@@ -238,7 +238,7 @@ src_install() {
 
 	# minimal documentation
 	use kauth && doman src/pam/pam_afs.5
-	DOCS=( "${WORKDIR}/gentoo/README.Gentoo"
+	DOCS=( "${FILESDIR}/README.Gentoo"
 			src/afsd/CellServDB NEWS README )
 
 	# documentation package
