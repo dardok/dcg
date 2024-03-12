@@ -21,8 +21,8 @@ diff -u -r -N a/src/cf/linux-test1.m4 b/src/cf/linux-test1.m4
  _ACEOF
 -    echo make -C $LINUX_KERNEL_BUILD M=$SRCDIR_PARENT/conftest.dir $SPARSE_MAKEFLAGS modules KBUILD_VERBOSE=1 >&AS_MESSAGE_LOG_FD &&
 -    make -C $LINUX_KERNEL_BUILD M=$SRCDIR_PARENT/conftest.dir $SPARSE_MAKEFLAGS modules KBUILD_VERBOSE=1 >&AS_MESSAGE_LOG_FD 2>conftest.err &&
-+    echo make -C $LINUX_KERNEL_BUILD M=$SRCDIR_PARENT/conftest.dir $SPARSE_MAKEFLAGS modules KBUILD_VERBOSE=1 CC="${CC}" LD="${LD} >&AS_MESSAGE_LOG_FD &&
-+    make -C $LINUX_KERNEL_BUILD M=$SRCDIR_PARENT/conftest.dir $SPARSE_MAKEFLAGS modules KBUILD_VERBOSE=1 CC="${CC}" LD="${LD} >&AS_MESSAGE_LOG_FD 2>conftest.err &&
++    echo make -C $LINUX_KERNEL_BUILD M=$SRCDIR_PARENT/conftest.dir $SPARSE_MAKEFLAGS modules KBUILD_VERBOSE=1 CC="${CC}" LD="${LD}" >&AS_MESSAGE_LOG_FD &&
++    make -C $LINUX_KERNEL_BUILD M=$SRCDIR_PARENT/conftest.dir $SPARSE_MAKEFLAGS modules KBUILD_VERBOSE=1 CC="${CC}" LD="${LD}" >&AS_MESSAGE_LOG_FD 2>conftest.err &&
      ! grep -i "WARNING: .* undefined!$" conftest.err >/dev/null 2>&1
      then [$3]
      else
