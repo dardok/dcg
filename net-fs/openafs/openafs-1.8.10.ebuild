@@ -63,7 +63,22 @@ RDEPEND="
 
 S="${WORKDIR}/${MY_P}"
 
-PATCHES=( "${FILESDIR}/*.patch" )
+PATCHES=(
+	"${FILESDIR}/0001-compiler-settings.patch"
+	"${FILESDIR}/0002-pam-paths.patch"
+	"${FILESDIR}/0003-fbsd.patch"
+	"${FILESDIR}/0004-sparc.patch"
+	"${FILESDIR}/0005-uname.patch"
+	"${FILESDIR}/0006-resolv.patch"
+	"${FILESDIR}/0007-afsauthent-symbols.patch"
+	"${FILESDIR}/0008-flags.patch"
+	"${FILESDIR}/0009-docbook2pdf.patch"
+	"${FILESDIR}/0010-libperl.patch"
+	"${FILESDIR}/0011-gssapi-configure.patch"
+	"${FILESDIR}/0012-xbsa.patch"
+	"${FILESDIR}/0013-xml-dtd.patch"
+	"${FILESDIR}/0014-kernel-cc-ld.patch"
+)
 
 CONFIG_CHECK="~!AFS_FS KEYS"
 ERROR_AFS_FS="OpenAFS conflicts with the in-kernel AFS-support. Make sure not to load both at the same time!"
