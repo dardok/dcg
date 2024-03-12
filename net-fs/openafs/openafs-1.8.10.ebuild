@@ -63,7 +63,7 @@ RDEPEND="
 
 S="${WORKDIR}/${MY_P}"
 
-PATCHES=( "${FILESDIR}/patches" )
+PATCHES=( "${FILESDIR}/*.patch" )
 
 CONFIG_CHECK="~!AFS_FS KEYS"
 ERROR_AFS_FS="OpenAFS conflicts with the in-kernel AFS-support. Make sure not to load both at the same time!"
