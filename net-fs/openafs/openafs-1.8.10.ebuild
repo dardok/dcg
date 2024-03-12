@@ -184,8 +184,8 @@ src_compile() {
 }
 
 src_install() {
-	local OPENRCDIR="${WORKDIR}/gentoo/openrc"
-	local SYSTEMDDIR="${WORKDIR}/gentoo/systemd"
+	local OPENRCDIR="${FILESDIR}/openrc"
+	local SYSTEMDDIR="${FILESDIR}/systemd"
 
 	emake DESTDIR="${ED}" install_nolibafs
 
