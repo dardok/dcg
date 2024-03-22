@@ -1,5 +1,6 @@
 app-crypt/coolkey
 dev-libs/libclc
+dev-libs/simde
 media-libs/mesa
 x11-libs/libdrm
 x11-terms/kitty
