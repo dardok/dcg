@@ -416,6 +416,7 @@
 *x11-misc/redshift
 *x11-misc/rofi
 *x11-misc/virtualgl
+*x11-misc/x11vnc
 *x11-misc/x2x
 *x11-misc/xdotool
 *x11-misc/xscreensaver
