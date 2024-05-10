@@ -54,7 +54,7 @@ src_prepare() {
 }
 
 multilib_src_configure() {
-	GST_PLUGINS_NOAUTO="bz2 hls ipcpipeline librfb shm va wayland"
+	GST_PLUGINS_NOAUTO="bz2 decklink hls ipcpipeline librfb shm va wayland"
 
 	local emesonargs=(
 		-Dshm=enabled
