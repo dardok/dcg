@@ -1,5 +1,5 @@
 app-emulation/libvirt firewalld lvm parted zfs
-app-emulation/qemu io-uring multipath snappy spice static-user systemtap usb usbredir vde vhost-user-fs virtfs
+app-emulation/qemu bpf io-uring multipath snappy spice static-user systemtap usb usbredir vde vhost-user-fs virtfs
 app-emulation/spice -smartcard
 dev-python/numpy lapack
 dev-python/twisted conch
