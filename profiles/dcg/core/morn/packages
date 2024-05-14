@@ -4,12 +4,9 @@
 *app-emulation/virt-manager
 *dev-python/anyio
 *dev-python/aiofiles
-*dev-python/grpcio
-*dev-python/grpcio-tools
 *dev-python/pyproj
 *dev-python/xarray
 *dev-util/bcc
-*dev-util/pahole
 *media-plugins/gst-plugins-meta
 *net-fs/s3fs
 *net-misc/lldpd

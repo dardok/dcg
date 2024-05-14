@@ -35,6 +35,7 @@
 *dev-build/cmake
 *dev-util/debugedit
 *dev-util/indent
+*dev-util/pahole
 *dev-util/perf
 *dev-debug/strace
 *dev-debug/systemtap
