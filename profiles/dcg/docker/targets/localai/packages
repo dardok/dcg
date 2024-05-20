@@ -3,5 +3,6 @@
 *dev-go/protoc-gen-go-grpc
 *dev-python/protobuf-python
 *media-libs/opencv
+*media-video/ffmpeg
 *net-dns/c-ares
 *net-libs/grpc
