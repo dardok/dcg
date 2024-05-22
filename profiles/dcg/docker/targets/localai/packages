@@ -4,6 +4,7 @@
 *dev-lang/go
 *dev-libs/libfmt
 *dev-libs/spdlog
+*dev-python/pillow
 *dev-python/protobuf-python
 *dev-python/uv
 *media-libs/opencv
