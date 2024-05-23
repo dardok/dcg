@@ -9,7 +9,7 @@ app-editors/vim cscope lua luajit python
 app-emulation/libguestfs libvirt -ocaml
 app-emulation/libvirt fuse lvm numa parted virt-network libssh2 # xen lxc(sys-apps/systemd[cgroup-hybrid(-)])
 app-emulation/spice -smartcard
-app-emulation/qemu xkb io-uring lzo multipath numa opengl snappy spice static-user usb usbredir vde vhost-user-fs virgl virtfs # xen
+app-emulation/qemu bpf xkb io-uring lzo multipath numa opengl snappy spice static-user usb usbredir vde vhost-user-fs virgl virtfs # xen
 app-emulation/xen efi
 app-emulation/xen-tools -qemu -qemu-traditional -ipxe system-qemu system-ipxe system-seabios
 app-emulation/virt-manager gui
@@ -46,11 +46,14 @@ dev-python/pyarrow snappy parquet ssl
 dev-python/numpy lapack
 dev-python/pandas full-support
 dev-python/pillow webp
-dev-python/PyQt5 designer sql positioning network widgets gui printsupport declarative
+dev-python/PyQt5 designer sql positioning network widgets gui printsupport declarative serialport multimedia
 dev-python/sympy aesara imaging symengine
+dev-qt/qtbase opengl egl eglfs gles2-only
+dev-qt/qtdeclarative opengl
+dev-qt/qtmultimedia widgets
 dev-qt/qtwayland compositor
-dev-qt/qtwebengine screencast geolocation widgets
 dev-qt/qtwebchannel qml
+dev-qt/qtwebengine screencast geolocation widgets
 dev-qt/qtgui egl
 dev-util/nvidia-cuda-toolkit debugger nsight profiler rdma vis-profiler
 dev-util/perf clang systemtap slang libpfm
@@ -104,6 +107,7 @@ net-wireless/bluez experimental user-session deprecated
 sci-geosciences/qgis hdf5 netcdf 3d georeferencer postgres mapserver
 sci-geosciences/mapserver geos postgis
 sci-libs/armadillo lapack
+sci-libs/caffe2 cuda opencv
 sci-libs/fftw threads
 sci-libs/hdf5 cxx szip
 sci-libs/gdal ogdi postgres java geos threads spatialite armadillo fits gif gml hdf5 jpeg2k lzma mdb netcdf odbc pdf webp xls
@@ -149,8 +153,5 @@ x11-terms/kitty transfer
 x11-wm/awesome luajit
 
 # https://wiki.hyprland.org/Useful-Utilities/Hyprland-desktop-portal/
-dev-qt/qtbase opengl egl eglfs gles2-only
-dev-qt/qtdeclarative opengl
 gui-libs/xdg-desktop-portal-hyprland select-window select-region
 sys-apps/xdg-desktop-portal screencast
-

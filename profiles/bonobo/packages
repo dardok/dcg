@@ -45,6 +45,7 @@
 *app-misc/ranger
 *app-misc/tmux
 *app-misc/wayland-utils
+*app-misc/yq
 *app-office/mdbtools
 *app-portage/cpuid2cpuflags
 *app-portage/eix
@@ -52,12 +53,13 @@
 *app-portage/portage-utils
 *app-portage/smart-live-rebuild
 *app-shells/bash-completion
+*app-shells/fzf
 *app-shells/powerline
 *app-text/texlive
 *app-text/xmlformat
 *app-vim/pathogen
 *dev-cpp/nlohmann_json
-*=dev-cpp/tbb-2020.3 # media-libs/oidn media-gfx/openvdb media-gfx/blender
+*dev-cpp/tbb # ??? media-libs/oidn media-gfx/openvdb media-gfx/blender
 *dev-cpp/websocketpp
 *dev-db/spatialite
 *dev-debug/gdb
@@ -69,7 +71,7 @@
 *dev-libs/cudnn
 *dev-libs/icu
 *dev-libs/libbpf
-*dev-libs/libp11
+#*dev-libs/libp11 # broken, requires incompat openssl
 *dev-libs/librdkafka
 *dev-libs/light
 *dev-libs/msgpack
@@ -98,7 +100,7 @@
 *dev-python/ffmpeg-python
 *dev-python/flask
 *dev-python/fsspec
-*dev-python/fuse-python
+#*dev-python/fuse-python # deprecated
 *dev-python/graphviz
 *dev-python/h11
 *dev-python/h5py
@@ -236,7 +238,7 @@
 *media-fonts/freefonts
 *media-fonts/ttf-bitstream-vera
 *media-fonts/unifont
-*media-gfx/blender:3.3
+*media-gfx/blender:3.6
 *media-gfx/feh
 *media-gfx/gimp
 *media-gfx/graphviz
@@ -354,6 +356,7 @@
 *sys-boot/mokutil
 *sys-boot/syslinux
 *sys-cluster/cilium-cli
+*sys-cluster/k9scli
 *sys-cluster/kubectl
 *sys-cluster/openmpi
 *sys-cluster/rdma-core
@@ -407,7 +410,7 @@
 *x11-apps/xvinfo
 *x11-apps/xwd
 *x11-apps/xwud
-*x11-drivers/nvidia-drivers:0/535
+*x11-drivers/nvidia-drivers:0/550
 *x11-drivers/xf86-input-libinput
 *x11-drivers/xf86-video-dummy
 *x11-libs/libXScrnSaver

@@ -1,5 +1,9 @@
 >=sys-kernel/gentoo-sources-6
 >=sys-kernel/linux-headers-6
+>=dev-lang/python-3.12
+
+>=dev-util/nvidia-cuda-toolkit-12.4 # opencv openmpi caffe2
+>=sci-libs/onnx-1.15.0 # caffe2
 
 >=media-video/ffmpeg-6 # openscenegraph requires <5
 
@@ -10,13 +14,4 @@ sys-cluster/mpich2
 
 >=app-editors/sublime-text-4_p4143
 
-#>=net-libs/xdp-tools-1.3 # pulls in broken bpftool
-
->=dev-lang/python-3.12
-
-#>=dev-python/cython-3 # breaks everything
-#>=dev-python/msgpack-1.0.7 # requires cython-3
-
 >=sys-apps/fakeroot-1.32 # broken
-
->=dev-libs/libxml2-2.12
