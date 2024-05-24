@@ -1,3 +1,10 @@
+CUSTOM_PROFILE="yes"
+
+ACCEPT_LICENSE="*"
+
+LINGUAS="-* en"
+LC_MESSAGES=C.utf8
+
 UNINSTALL_IGNORE="/bin /lib /lib64 /sbin /usr/sbin"
 
 COMMON_FLAGS="-O2 -pipe -march=native -flto"
