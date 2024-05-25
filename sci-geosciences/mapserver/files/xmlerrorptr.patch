@@ -1,0 +1,24 @@
+diff -u -r -N a/mapwcs20.cpp b/mapwcs20.cpp
+--- a/mapwcs20.cpp	2024-05-25 06:59:16.810227777 -0400
++++ b/mapwcs20.cpp	2023-04-17 13:26:04.000000000 -0400
+@@ -1446,7 +1446,7 @@
+ 
+     /* parse to DOM-Structure and get root element */
+     if(doc == NULL) {
+-      xmlErrorPtr error = (xmlErrorPtr)xmlGetLastError();
++      xmlErrorPtr error = xmlGetLastError();
+       msSetError(MS_WCSERR, "XML parsing error: %s",
+                  "msWCSParseRequest20()", error->message);
+       return MS_FAILURE;
+diff -u -r -N a/mapwcs.cpp b/mapwcs.cpp
+--- a/mapwcs.cpp	2024-05-25 06:58:54.362518396 -0400
++++ b/mapwcs.cpp	2023-04-17 13:26:04.000000000 -0400
+@@ -362,7 +362,7 @@
+     /* parse to DOM-Structure and get root element */
+     if((doc = xmlParseMemory(request->postrequest, strlen(request->postrequest)))
+         == NULL) {
+-      xmlErrorPtr error = (xmlErrorPtr)xmlGetLastError();
++      xmlErrorPtr error = xmlGetLastError();
+       msSetError(MS_WCSERR, "XML parsing error: %s",
+                  "msWCSParseRequest()", error->message);
+       return MS_FAILURE;
