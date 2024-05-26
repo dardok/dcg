@@ -4,3 +4,4 @@ dev-go/protoc-gen-go-grpc
 dev-libs/protobuf
 dev-python/protobuf-python
 dev-python/uv
+net-libs/grpc

@@ -5,7 +5,7 @@
 *dev-libs/libfmt
 *dev-libs/spdlog
 *dev-python/pillow
-*dev-python/protobuf-python:0/22.5.0
+*dev-python/protobuf-python
 *dev-python/uv
 *media-libs/opencv
 *media-video/ffmpeg
