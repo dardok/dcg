@@ -50,7 +50,7 @@ BDEPEND="
 	amd64? ( dev-lang/nasm )
 	x86? ( dev-lang/yasm )
 	app-arch/cpio
-	>=dev-util/cmake-3.5.0
+	>=dev-build/cmake-3.5.0
 	dev-libs/icu
 	dev-libs/libnl
 	dev-python/pyyaml
