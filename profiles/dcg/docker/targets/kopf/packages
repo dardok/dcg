@@ -1,0 +1,12 @@
+dev-python/typing-extensions
+dev-python/python-json-logger
+dev-python/iso8601
+dev-python/click
+dev-python/aiohttp
+dev-python/pyyaml
+dev-python/aiosignal
+dev-python/attrs
+dev-python/frozenlist
+dev-python/multidict
+dev-python/yarl
+dev-python/idna
