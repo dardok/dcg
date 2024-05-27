@@ -1,0 +1,20 @@
+diff -u -r -N a/src/parameterize_style.cpp b/src/parameterize_style.cpp
+--- a/src/parameterize_style.cpp	2024-05-27 04:56:20.826636938 -0400
++++ b/src/parameterize_style.cpp	2024-05-27 04:56:42.126354491 -0400
+@@ -15,7 +15,6 @@
+  * along with this program; If not, see http://www.gnu.org/licenses/.
+  */
+ 
+-#include <boost/optional.hpp>
+ #include <mapnik/datasource.hpp>
+ #include <mapnik/datasource_cache.hpp>
+ #include <mapnik/layer.hpp>
+@@ -65,7 +64,7 @@
+ 		mapnik::parameters params = l.datasource()->params();
+ 
+ 		if (params.find("table") != params.end()) {
+-			boost::optional<std::string> table = params.get<std::string>("table");
++			auto table = params.get<std::string>("table");
+ 
+ 			if (table && table->find(",name") != std::string::npos) {
+ 				std::string str = *table;
