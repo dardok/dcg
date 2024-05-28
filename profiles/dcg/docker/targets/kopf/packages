@@ -1,3 +1,4 @@
+# kopf
 dev-python/pip
 dev-python/typing-extensions
 dev-python/python-json-logger
@@ -11,3 +12,14 @@ dev-python/frozenlist
 dev-python/multidict
 dev-python/yarl
 dev-python/idna
+# kubernetes
+dev-python/pyasn1
+dev-python/pyasn1-modules
+dev-python/websocket-client
+dev-python/six
+dev-python/oauthlib
+dev-python/cachetools
+dev-python/rsa
+dev-python/requests-oauthlib
+dev-python/python-dateutil
+dev-python/google-auth
