@@ -14,6 +14,7 @@ dev-lang/yasm -python
 
 dev-libs/boost context
 dev-libs/cyrus-sasl -postgres -openldap
+dev-libs/elfutils debuginfod
 dev-libs/glib systemtap fam static-libs
 dev-libs/libbpf static-libs
 dev-libs/libgcrypt static-libs
