@@ -1,0 +1,10 @@
+*dev-python/pip
+*dev-python/fsspec
+*dev-python/filelock
+*dev-python/mpmath
+*dev-python/networkx
+*dev-python/pillow
+*dev-python/sympy
+*dev-python/uv
+
+*net-libs/nodejs

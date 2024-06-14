@@ -57,6 +57,7 @@
 *net-misc/bridge-utils
 *net-misc/frr
 *net-misc/linuxptp
+*net-misc/lldpd
 *net-misc/socat
 
 *sec-keys/openpgp-keys-gentoo-release
