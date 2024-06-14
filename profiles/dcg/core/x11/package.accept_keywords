@@ -1,4 +1,5 @@
 app-crypt/coolkey
+dev-build/meson
 dev-libs/libclc
 dev-libs/simde
 media-libs/mesa
