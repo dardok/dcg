@@ -29,6 +29,7 @@ dev-lang/python tk bluetooth
 dev-lang/rust rustfmt
 dev-libs/apache-arrow brotli compute dataset parquet re2 snappy
 dev-libs/boost context icu
+dev-libs/elfutils debuginfod
 dev-libs/glib static-libs
 dev-libs/libbpf static-libs
 dev-libs/libclc spirv
