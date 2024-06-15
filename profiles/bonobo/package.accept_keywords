@@ -40,6 +40,7 @@ dev-libs/FP16
 dev-libs/FXdiv
 sci-libs/kineto
 dev-libs/libliftoff
+dev-libs/pfs
 dev-libs/pocketfft
 dev-libs/psimd
 dev-libs/pthreadpool
