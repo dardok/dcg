@@ -29,7 +29,7 @@ RDEPEND="
 	gis? ( sci-libs/gdal )
 	freetype? ( media-libs/freetype )
 	curl? ( net-misc/curl )
-	assimp? ( media-libs/assimp )
+	assimp? ( =media-libs/assimp-5.2* )
 "
 DEPEND="${RDEPEND}
 "
