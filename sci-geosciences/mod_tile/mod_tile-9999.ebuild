@@ -38,7 +38,6 @@ DEPEND="${RDEPEND}
 "
 
 PATCHES=(
-	"${FILESDIR}"/drop_boost_cpp17.patch
 )
 
 need_apache2
