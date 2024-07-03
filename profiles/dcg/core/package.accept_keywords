@@ -1,4 +1,6 @@
 app-admin/serf
+
+app-shells/liquidprompt
 app-shells/powerline
 
 dev-util/clippy
