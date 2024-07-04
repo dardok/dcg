@@ -2,6 +2,8 @@ dev-python/netaddr -cli
 
 net-nds/rpcbind warmstarts
 
+sys-apps/ipmitool openipmi
+
 sys-fs/btrfs-progs python
 sys-fs/lvm2 thin -device-mapper-only
 
