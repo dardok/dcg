@@ -48,8 +48,8 @@ src_configure() {
 		--disable-static
 		# let's try to avoid automagic deps
 		--enable-bgq=no
-		$(usex cuda "--enable-cuda-dlopen" "")
-		$(usex cuda "--with-cuda=/opt/cuda" "")
+		# $(usex cuda "--enable-cuda-dlopen" "")
+		$(usex cuda "--with-cuda=/opt/cuda" "--without-cuda")
 		--enable-efa=$(usex efa yes no)
 		--enable-gni=no
 		#--enable-gdrcopy-dlopen=no
