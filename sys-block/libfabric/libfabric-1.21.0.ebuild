@@ -12,12 +12,13 @@ SRC_URI="https://github.com/ofiwg/${PN}/releases/download/v${PV}/${P}.tar.bz2"
 LICENSE="BSD GPL-2"
 SLOT="0/1"
 KEYWORDS="~amd64"
-IUSE="cuda efa usnic rocr verbs prefix"
+IUSE="cuda efa usnic rocr verbs prefix valgrind"
 
 DEPEND="
 	rocr? ( dev-libs/rocr-runtime:= )
 	usnic? ( dev-libs/libnl:= )
 	verbs? ( sys-cluster/rdma-core )
+	valgrind? ( dev-debug/valgrind )
 "
 RDEPEND="
 	${DEPEND}
@@ -47,8 +48,8 @@ src_configure() {
 		--disable-static
 		# let's try to avoid automagic deps
 		--enable-bgq=no
-		$(usex cuda "--enable-cuda-dlopen" "")
-		$(usex cuda "--with-cuda=/opt/cuda" "")
+		# $(usex cuda "--enable-cuda-dlopen" "")
+		$(usex cuda "--with-cuda=/opt/cuda" "--without-cuda")
 		--enable-efa=$(usex efa yes no)
 		--enable-gni=no
 		#--enable-gdrcopy-dlopen=no
@@ -69,6 +70,7 @@ src_configure() {
 		--enable-usnic=$(usex usnic yes no)
 		--enable-verbs=$(usex verbs yes no)
 		--enable-xpmem=no
+		$(usex valgrind "--with-valgrind=/usr/include" "")
 	)
 	econf "${myeconfargs[@]}"
 }
