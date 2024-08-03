@@ -1,0 +1,8 @@
+*gui-apps/hypridle
+*gui-apps/hyprpaper
+*gui-apps/hyprlock
+*gui-apps/waybar
+*gui-apps/wofi
+*gui-libs/xdg-desktop-portal-hyprland
+*gui-wm/hyprland
+*gui-wm/hyprland-contrib

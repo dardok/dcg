@@ -1,0 +1,19 @@
+dev-cpp/sdbus-c++ # for hypridle
+dev-libs/hyprland-protocols **
+dev-libs/hyprlang **
+dev-libs/libinput
+dev-libs/wayland-protocols **
+dev-util/hyprwayland-scanner **
+gui-apps/hypridle **
+gui-apps/hyprlock **
+gui-apps/hyprpaper **
+gui-apps/waybar **
+gui-apps/wofi **
+gui-libs/aquamarine **
+gui-libs/hyprcursor **
+gui-libs/hyprutils **
+gui-libs/xdg-desktop-portal-hyprland **
+gui-wm/hyprland **
+gui-wm/hyprland-contrib **
+media-video/pipewire
+media-video/wireplumber
