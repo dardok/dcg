@@ -7,9 +7,11 @@ dev-util/hyprwayland-scanner **
 gui-apps/hypridle **
 gui-apps/hyprlock **
 gui-apps/hyprpaper **
+gui-apps/ReGreet **
 gui-apps/waybar **
 gui-apps/wofi **
 gui-libs/aquamarine **
+gui-libs/greetd
 gui-libs/hyprcursor **
 gui-libs/hyprutils **
 gui-libs/xdg-desktop-portal-hyprland **
