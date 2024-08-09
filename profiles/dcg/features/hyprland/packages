@@ -3,6 +3,7 @@
 *gui-apps/hyprlock
 *gui-apps/ReGreet
 *gui-apps/waybar
+*gui-apps/wlr-randr
 *gui-apps/wofi
 *gui-libs/greetd
 *gui-libs/xdg-desktop-portal-hyprland
