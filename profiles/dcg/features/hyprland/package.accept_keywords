@@ -15,6 +15,7 @@ gui-libs/greetd
 gui-libs/hyprcursor **
 gui-libs/hyprutils **
 gui-libs/xdg-desktop-portal-hyprland **
+gui-apps/wlr-randr **
 gui-wm/hyprland **
 gui-wm/hyprland-contrib **
 media-video/pipewire
