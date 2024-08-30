@@ -36,7 +36,7 @@ DOCS=(
 	#README.md
 )
 
-PATCHES=( "${FILESDIR}"/null-string.patch )
+PATCHES=( "${FILESDIR}"/null-string.patch "${FILESDIR}"/400g-speed.patch )
 
 src_prepare() {
 	default
