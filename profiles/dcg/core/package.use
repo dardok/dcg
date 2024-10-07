@@ -34,7 +34,7 @@ net-analyzer/net-snmp pci -python
 
 net-firewall/firewalld iptables -nftables
 net-firewall/ipset -modules
-net-firewall/nftables json
+net-firewall/nftables json xtables
 
 net-fs/nfs-utils nfsdcld
 
