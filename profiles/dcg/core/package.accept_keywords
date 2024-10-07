@@ -9,6 +9,7 @@ dev-util/clippy
 net-fs/nfs4-acl-tools
 net-fs/openafs
 
+net-libs/libyang
 net-misc/frr
 net-misc/lldpd
 
