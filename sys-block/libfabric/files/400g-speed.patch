@@ -1,0 +1,13 @@
+diff '--color=auto' -u -r -N a/src/common.c b/src/common.c
+--- a/src/common.c	2024-07-19 12:22:44.164190978 -0400
++++ b/src/common.c	2024-08-30 04:17:03.897517297 -0400
+@@ -2393,6 +2393,9 @@
+ 	case 32:
+ 		speed_val = 25 * gbit_2_bit_coef;
+ 		break;
++	case 128:
++		speed_val = 100 * gbit_2_bit_coef;
++		break;
+ 	default:
+ 		speed_val = 0;
+ 		break;
