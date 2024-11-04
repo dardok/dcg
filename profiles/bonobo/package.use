@@ -5,6 +5,7 @@ app-containers/apptainer -network
 app-containers/docker -cli
 app-containers/docker-credential-helpers gnome-keyring pass
 app-crypt/pinentry gnome-keyring
+app-crypt/qca qt6
 app-editors/vim cscope lua luajit python
 app-emulation/libguestfs libvirt -ocaml
 app-emulation/libvirt fuse lvm numa parted virt-network libssh2 # xen lxc(sys-apps/systemd[cgroup-hybrid(-)])
@@ -40,22 +41,33 @@ dev-libs/libxml2 icu
 dev-libs/msgpack boost
 dev-libs/nss utils
 dev-libs/pkcs11-helper nss
-dev-libs/qtkeychain qt5 -qt6
+dev-libs/qtkeychain qt5 qt6
 dev-libs/weston lcms wayland-compositor xwayland fullscreen ivi remoting rdp screen-sharing webp
 dev-ml/cudf llvm-libunwind
-dev-python/pyarrow snappy parquet ssl
+dev-python/netcdf4 szip
 dev-python/numpy lapack
 dev-python/pandas full-support
 dev-python/pillow webp
-dev-python/PyQt5 designer sql positioning network widgets gui printsupport declarative serialport multimedia
+dev-python/pyarrow snappy parquet ssl
+dev-python/python-lsp-server all-plugins
+dev-python/PyQt5 designer sql positioning network widgets gui printsupport declarative serialport multimedia webchannel
+dev-python/PyQt6 designer multimedia positioning serialport gles2-only quick qml webchannel
+dev-python/PyQt6-WebEngine quick
+dev-python/pyzmq drafts
+dev-python/qscintilla-python qt6
+dev-python/QtPy webengine printsupport quick
 dev-python/sympy aesara imaging symengine
-dev-qt/qtbase opengl egl eglfs gles2-only
+dev-qt/qt3d gles2-only
+dev-qt/qtbase opengl egl cups -eglfs gles2-only
+dev-qt/qtcharts gles2-only
 dev-qt/qtdeclarative opengl
 dev-qt/qtmultimedia widgets
+dev-qt/qttools designer qml
 dev-qt/qtwayland compositor
 dev-qt/qtwebchannel qml
-dev-qt/qtwebengine screencast geolocation widgets
+dev-qt/qtwebengine screencast geolocation widgets qml
 dev-qt/qtgui egl
+dev-util/cppcheck gui qt6 charts htmlreport threads
 dev-util/nvidia-cuda-toolkit debugger nsight profiler rdma vis-profiler
 dev-util/perf clang systemtap slang libpfm
 dev-debug/strace aio elfutils
@@ -123,11 +135,12 @@ sys-apps/kexec-tools lzma # xen
 sys-apps/moreutils -perl
 sys-apps/smartmontools update_drivedb
 sys-apps/systemd nat policykit idn libidn2 gcrypt importd python http curl lzma qrcode elfutils cgroup-hybrid gnuefi
-sys-block/libfabric cuda verbs
+sys-block/libfabric -cuda verbs valgrind
 sys-block/nbd netlink
 sys-block/parted device-mapper
 sys-boot/grub device-mapper
 sys-cluster/openmpi cma cuda cxx ipv6 java mpi-threads numa romio threads vt
+sys-cluster/rdma-core valgrind
 sys-devel/binutils multitarget gold
 sys-devel/clang-common default-compiler-rt default-lld llvm-libunwind
 sys-firmware/edk2-ovmf binary
@@ -148,6 +161,8 @@ www-client/google-chrome -qt5 qt6
 x11-base/xorg-server kdrive xephyr xnest xvfb
 x11-drivers/nvidia-drivers uvm
 x11-libs/motif xft
+x11-libs/qscintilla qt6
+x11-libs/qwt designer polar qt6
 x11-misc/redshift geoclue appindicator
 x11-misc/xscreensaver fonts offensive suid
 x11-terms/kitty transfer
