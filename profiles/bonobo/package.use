@@ -134,8 +134,8 @@ sys-apps/iproute2 bpf elf
 sys-apps/kexec-tools lzma # xen 
 sys-apps/moreutils -perl
 sys-apps/smartmontools update_drivedb
-sys-apps/systemd nat policykit idn libidn2 gcrypt importd python http curl lzma qrcode elfutils cgroup-hybrid gnuefi
-sys-block/libfabric -cuda verbs valgrind
+sys-apps/systemd nat policykit idn libidn2 gcrypt importd python http curl lzma qrcode elfutils gnuefi
+sys-block/libfabric cuda verbs
 sys-block/nbd netlink
 sys-block/parted device-mapper
 sys-boot/grub device-mapper
