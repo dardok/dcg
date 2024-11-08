@@ -54,6 +54,7 @@
 *app-portage/smart-live-rebuild
 *app-shells/bash-completion
 *app-shells/fzf
+*app-shells/liquidprompt
 *app-shells/powerline
 *app-text/texlive
 *app-text/xmlformat
@@ -63,6 +64,7 @@
 *dev-cpp/websocketpp
 *dev-db/spatialite
 *dev-debug/gdb
+*dev-debug/valgrind
 *dev-games/openscenegraph
 *dev-java/icedtea-web
 *dev-java/openjdk-bin:11
@@ -111,8 +113,11 @@
 *dev-python/netcdf4
 *dev-python/networkx
 *dev-python/numba
+*dev-python/openapi-core
 *dev-python/pandas
 *dev-python/pip
+*dev-python/plotly
+*dev-python/plotly-geo
 *dev-python/poetry-core
 *dev-python/pyaes
 *dev-python/pyasn1-modules
@@ -140,6 +145,7 @@
 *dev-python/shapely
 *dev-python/simplekml
 *dev-python/sniffio
+*dev-python/spyder
 *dev-python/starlette
 *dev-python/sympy
 *dev-python/tabulate
@@ -154,6 +160,7 @@
 *dev-python/websocket-client
 *dev-python/websockets
 *dev-python/werkzeug
+*dev-python/wsproto
 *dev-python/yarl
 *dev-qt/qdbus
 *dev-qt/qdbusviewer
@@ -170,6 +177,8 @@
 *dev-util/bcc
 *dev-util/clinfo
 *dev-util/cookiecutter
+*dev-util/cppcheck
+*dev-util/cunit
 *dev-util/debugedit
 *dev-util/indent
 *dev-debug/ltrace
@@ -187,14 +196,8 @@
 *dev-vcs/git-lfs
 *gnome-base/gnome-keyring
 *gnome-extra/zenity
-*gui-apps/swaybg
-*gui-apps/swaylock-effects
-*gui-apps/waybar
 *gui-libs/egl-wayland
 *gui-libs/gtk:4
-# *gui-wm/hyprland
-# https://wiki.hyprland.org/Useful-Utilities/Hyprland-desktop-portal/
-# *gui-libs/xdg-desktop-portal-hyprland
 *lxde-base/lxtask
 *mail-client/thunderbird-bin
 *media-fonts/artwiz-aleczapka-en
@@ -248,7 +251,7 @@
 *media-libs/libdisplay-info
 *media-libs/libsdl2
 *media-libs/libsmf
-*=media-libs/opencv-4.8.1-r1
+*=media-libs/opencv-4.8.1-r2
 *media-libs/shaderc
 *media-libs/vulkan-loader
 *media-libs/zita-resampler
@@ -303,6 +306,7 @@
 *net-ftp/atftp
 *net-im/rocketchat-desktop-bin
 #*net-im/telegram-desktop
+*net-libs/grpc
 *net-libs/libwebsockets
 *net-libs/nodejs
 *net-libs/xdp-tools
@@ -316,6 +320,7 @@
 *net-misc/tigervnc
 *net-misc/usbip
 *net-proxy/squid
+*net-proxy/tayga
 *net-vpn/openconnect
 *net-vpn/openvpn
 *net-wireless/bluez
@@ -330,6 +335,7 @@
 *sci-libs/onnx
 *sci-libs/pdal
 *sci-libs/transformers
+*sci-mathematics/glpk
 *sec-policy/apparmor-profiles
 *sys-apps/apparmor
 *sys-apps/apparmor-utils
@@ -392,6 +398,7 @@
 *x11-apps/xbacklight
 *x11-apps/xcmsdb
 *x11-apps/xcursorgen
+*x11-apps/xcur2png
 *x11-apps/xdpyinfo
 *x11-apps/xev
 *x11-apps/xgamma
@@ -426,3 +433,14 @@
 *x11-terms/kitty
 *x11-themes/pulse-glass
 *x11-wm/awesome
+
+*gui-wm/hyprland
+*gui-libs/xdg-desktop-portal-hyprland
+*gui-wm/hyprland-contrib
+*gui-apps/wofi
+*gui-apps/waybar
+*gui-apps/hypridle
+*gui-apps/hyprpaper
+*gui-apps/hyprlock
+*gui-apps/ReGreet
+*gui-apps/wlgreet

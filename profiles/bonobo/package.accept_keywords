@@ -16,11 +16,13 @@ app-emulation/slirp4netns
 app-forensics/lynis
 app-misc/hivex
 app-misc/tmux
+app-shells/liquidprompt
 app-shells/powerline
 app-text/tesseract
 app-text/xmlformat
 dev-build/meson
 dev-cpp/pystring
+dev-cpp/robin-hood-hashing
 dev-cpp/websocketpp
 dev-cpp/xsimd
 dev-java/icedtea-web
@@ -46,8 +48,6 @@ dev-libs/psimd
 dev-libs/pthreadpool
 dev-libs/simde
 dev-libs/wayland
-dev-libs/wayland-protocols
-dev-libs/weston
 dev-python/aesara
 dev-python/aiofiles
 dev-python/aiostream
@@ -58,9 +58,11 @@ dev-python/awscli-plugin-endpoint
 dev-python/boto3
 dev-python/botocore
 dev-python/cftime
+dev-python/dill
 dev-python/fsspec
 dev-python/fuse-python
 dev-python/h5py
+dev-python/inflection
 dev-python/installer
 dev-python/imageio
 dev-python/importlib_metadata
@@ -78,23 +80,31 @@ dev-python/ordered-set
 dev-python/packaging
 =dev-python/pandas-1.5*
 dev-python/PeachPy
+dev-python/plotly
+dev-python/plotly-geo
 dev-python/pyarrow
 dev-python/pybind11 **
 dev-python/pycamera
 dev-python/pynvml
+dev-python/pylint-venv
 dev-python/pyparsing
 dev-python/pysnmp-mibs
 dev-python/pytesseract
 dev-python/python-multipart
 dev-python/pythran
+dev-python/pyuca
 dev-python/pywavelets
 dev-python/pyzbar
+dev-python/qstylizer
 dev-python/s3transfer
 dev-python/scikit-image
 dev-python/scipy
 #=dev-python/setuptools-60*
 dev-python/simplekml
+dev-python/spyder **
+dev-python/spyder-kernels **
 dev-python/starlette
+dev-python/superqt
 dev-python/tifffile
 dev-python/wheel
 dev-util/bcc
@@ -112,14 +122,11 @@ dev-util/vulkan-headers
 dev-util/vulkan-tools
 dev-util/vulkan-utility-libraries
 dev-util/wayland-scanner
-gui-apps/waybar
-gui-apps/swaybg
-gui-apps/swaylock-effects
 gui-libs/egl-wayland
 gui-libs/eglexternalplatform
-gui-libs/wlroots **
-gui-wm/hyprland **
+gui-libs/wlroots
 lxde-base/lxtask
+media-fonts/symbols-nerd-font
 media-gfx/openvdb
 media-libs/embree
 media-libs/libdisplay-info
@@ -131,12 +138,11 @@ media-libs/shaderc
 media-libs/vulkan-layers
 media-libs/vulkan-loader
 media-sound/bluez-alsa
-media-video/obs-studio
+=media-video/obs-studio-30.1.2
 media-video/libcamera
-#media-video/pipewire
 media-video/v4l2loopback
-#media-video/wireplumber
 net-analyzer/nessus-bin
+=net-fs/yfs-2021.05.41
 net-im/rocketchat-desktop-bin
 net-im/telegram-desktop
 net-libs/xdp-tools
@@ -170,7 +176,10 @@ sys-boot/mokutil
 sys-cluster/cilium-cli
 sys-cluster/k9scli
 sys-cluster/openmpi
+sys-cluster/pmix
+sys-cluster/prrte
 sys-cluster/rdma-core
+sys-cluster/ucx
 sys-fs/fuse-overlayfs
 sys-fs/squashfuse
 sci-libs/caffe2
@@ -187,24 +196,29 @@ x11-terms/kitty-terminfo
 x11-themes/pulse-glass
 x11-wm/awesome **
 virtual/mpi
-net-libs/libsoup
 
+x11-apps/xcur2png
+gui-wm/hyprland **
 gui-libs/xdg-desktop-portal-hyprland **
-dev-qt/qtbase:6
-dev-qt/qtwayland:6
-dev-qt/qtdeclarative:6
-dev-qt/qtshadertools:6
-dev-qt/qtsvg:6
-dev-qt/qttools:6
-dev-qt/qt5compat:6
-dev-qt/qtimageformats:6
-dev-qt/qtwebsockets:6
-dev-qt/qthttpserver:6
-dev-qt/qtwebengine:6
-dev-qt/qtwebchannel:6
-dev-qt/qtpositioning:6
-dev-qt/qtserialport:6
-dev-qt/qttranslations:6
+gui-wm/hyprland-contrib **
+dev-util/hyprwayland-scanner **
+dev-libs/hyprland-protocols **
+dev-libs/libinput
+dev-libs/hyprlang **
+dev-libs/wayland-protocols **
+gui-apps/hypridle **
+gui-apps/hyprlock **
+gui-libs/aquamarine **
+gui-libs/hyprcursor **
+gui-libs/hyprutils **
+gui-apps/hyprpaper **
+gui-apps/wofi **
+gui-apps/waybar **
+gui-apps/ReGreet **
+gui-apps/wlgreet
+dev-cpp/sdbus-c++ # for hypridle
+media-video/pipewire
+media-video/wireplumber
 
 =media-libs/gst-plugins-bad-1.22*
 =media-libs/gst-plugins-base-1.22*
