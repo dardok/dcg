@@ -1,2 +1,3 @@
 =dev-util/nvidia-cuda-toolkit-12*
 gui-libs/egl-x11
+gui-libs/eglexternalplatform
