@@ -19,6 +19,7 @@ else
 	scm=""
 	SRC_URI="lustre-release-2.16.1.tar.gz"
 	KEYWORDS="~amd64"
+	S="lustre-release-2.16.1"
 fi
 
 SUPPORTED_KV_MAJOR=6
