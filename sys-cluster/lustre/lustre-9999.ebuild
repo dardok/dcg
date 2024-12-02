@@ -3,19 +3,26 @@
 
 EAPI=7
 
-WANT_AUTOCONF="2.5"
-WANT_AUTOMAKE="1.16"
+RESTRICT="bindist mirror fetch strip"
+
+WANT_AUTOCONF="latest"
+WANT_AUTOMAKE="latest"
 WANT_LIBTOOL="latest"
 
-scm="git-r3"
-SRC_URI=""
-EGIT_REPO_URI="git://git.whamcloud.com/fs/lustre-release.git"
-KEYWORDS=""
-EGIT_BRANCH="master"
-EGIT_OVERRIDE_COMMIT_FS_LUSTRE_RELEASE="a17cefe53f9f7536eb1916b9e73a5d43053386dc"
+if [[ $PV = *9999* ]]; then
+	scm="git-r3"
+	SRC_URI=""
+	EGIT_REPO_URI="git://git.whamcloud.com/fs/lustre-release.git"
+	KEYWORDS=""
+	EGIT_BRANCH="master"
+else
+	scm=""
+	SRC_URI="lustre-release-2.16.1.tar.gz"
+	KEYWORDS="~amd64"
+fi
 
-SUPPORTED_KV_MAJOR=5
-SUPPORTED_KV_MINOR=15
+SUPPORTED_KV_MAJOR=6
+SUPPORTED_KV_MINOR=6
 
 inherit ${scm} autotools linux-info linux-mod toolchain-funcs udev flag-o-matic
 
@@ -24,25 +31,25 @@ HOMEPAGE="http://wiki.whamcloud.com/"
 
 LICENSE="GPL-2"
 SLOT="0"
-IUSE="+client +utils +modules +dlc server readline tests o2ib gss +lru-resize +checksum cuda gds"
+IUSE="+client +utils +modules server readline tests o2ib gss +lru-resize +checksum"
 
 RDEPEND="
 	app-alternatives/awk
-	dlc? ( dev-libs/libyaml )
 	readline? ( sys-libs/readline:0 )
 	server? (
 		>=sys-fs/zfs-kmod-0.8
 		>=sys-fs/zfs-0.8
 	)
 "
-BDEPEND="sys-devel/gcc:12"
-DEPEND="${RDEPEND}
+BEPEND="${RDEPEND}
 	dev-python/docutils
 	virtual/linux-sources"
 
 REQUIRED_USE="
 	client? ( modules )
 	server? ( modules )"
+
+PATCHES=( )
 
 pkg_pretend() {
 	KVSUPP=${SUPPORTED_KV_MAJOR}.${SUPPORTED_KV_MINOR}.x
@@ -63,7 +70,10 @@ pkg_setup() {
 }
 
 src_prepare() {
-	eapply -p1 "${FILESDIR}/gcc12.patch"
+	if [ ${#PATCHES[0]} -ne 0 ]; then
+		eapply ${PATCHES[@]}
+	fi
+
 	eapply_user
 	if [[ ${PV} == "9999" ]]; then
 		# replace upstream autogen.sh by our src_prepare()
@@ -90,12 +100,6 @@ src_configure() {
 			myconf="${myconf} --with-zfs=${EROOT}/usr/src/${ZFS_PATH} \
 			--with-zfs-obj=${EROOT}/usr/src/${ZFS_PATH}/${KV_FULL}"
 	fi
-	if use cuda; then
-		myconf="${myconf} --with-cuda=/usr/src/nvidia"
-	fi
-	if use gds; then
-		myconf="${myconf} --with-gds=/root/gds-nvidia-fs/src"
-	fi
 	if use o2ib; then
 		if [ -d /usr/src/ofa_kernel/default ]; then
 			myconf="${myconf} --with-o2ib=/usr/src/ofa_kernel/default"
@@ -108,7 +112,6 @@ src_configure() {
 		--without-ldiskfs \
 		--with-linux="${KERNEL_DIR}" \
 		--with-linux-obj="${KBUILD_OUTPUT}" \
-		$(use_enable dlc) \
 		$(use_enable client) \
 		$(use_enable utils) \
 		$(use_enable modules) \

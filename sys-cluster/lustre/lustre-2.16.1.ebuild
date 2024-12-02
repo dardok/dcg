@@ -3,8 +3,10 @@
 
 EAPI=7
 
-WANT_AUTOCONF="2.5"
-WANT_AUTOMAKE="1.15"
+RESTRICT="bindist mirror fetch strip"
+
+WANT_AUTOCONF="latest"
+WANT_AUTOMAKE="latest"
 WANT_LIBTOOL="latest"
 
 if [[ $PV = *9999* ]]; then
@@ -15,12 +17,12 @@ if [[ $PV = *9999* ]]; then
 	EGIT_BRANCH="master"
 else
 	scm=""
-	SRC_URI="https://dev.gentoo.org/~alexxy/distfiles/${P}.tar.gz"
+	SRC_URI="lustre-release-2.16.1.tar.gz"
 	KEYWORDS="~amd64"
 fi
 
-SUPPORTED_KV_MAJOR=4
-SUPPORTED_KV_MINOR=19
+SUPPORTED_KV_MAJOR=6
+SUPPORTED_KV_MINOR=6
 
 inherit ${scm} autotools linux-info linux-mod toolchain-funcs udev flag-o-matic
 
@@ -29,11 +31,10 @@ HOMEPAGE="http://wiki.whamcloud.com/"
 
 LICENSE="GPL-2"
 SLOT="0"
-IUSE="+client +utils +modules +dlc server readline tests o2ib gss +lru-resize +checksum"
+IUSE="+client +utils +modules server readline tests o2ib gss +lru-resize +checksum"
 
 RDEPEND="
 	app-alternatives/awk
-	dlc? ( dev-libs/libyaml )
 	readline? ( sys-libs/readline:0 )
 	server? (
 		>=sys-fs/zfs-kmod-0.8
@@ -48,7 +49,7 @@ REQUIRED_USE="
 	client? ( modules )
 	server? ( modules )"
 
-PATCHES=( "${FILESDIR}/${P}-gcc9.patch" )
+PATCHES=( )
 
 pkg_pretend() {
 	KVSUPP=${SUPPORTED_KV_MAJOR}.${SUPPORTED_KV_MINOR}.x
@@ -99,12 +100,18 @@ src_configure() {
 			myconf="${myconf} --with-zfs=${EROOT}/usr/src/${ZFS_PATH} \
 			--with-zfs-obj=${EROOT}/usr/src/${ZFS_PATH}/${KV_FULL}"
 	fi
+	if use o2ib; then
+		if [ -d /usr/src/ofa_kernel/default ]; then
+			myconf="${myconf} --with-o2ib=/usr/src/ofa_kernel/default"
+		else
+			myconf="${myconf} --with-o2ib"
+		fi
+	fi
 	econf \
 		${myconf} \
 		--without-ldiskfs \
 		--with-linux="${KERNEL_DIR}" \
 		--with-linux-obj="${KBUILD_OUTPUT}" \
-		$(use_enable dlc) \
 		$(use_enable client) \
 		$(use_enable utils) \
 		$(use_enable modules) \
@@ -113,8 +120,7 @@ src_configure() {
 		$(use_enable tests) \
 		$(use_enable gss) \
 		$(use_enable lru-resize) \
-		$(use_enable checksum) \
-		$(use_with o2ib)
+		$(use_enable checksum)
 }
 
 src_compile() {
@@ -123,6 +129,4 @@ src_compile() {
 
 src_install() {
 	default
-	newinitd "${FILESDIR}/lnet.initd" lnet
-	newinitd "${FILESDIR}/lustre-client.initd" lustre-client
 }
