@@ -17,4 +17,4 @@
 *net-misc/rclone
 *sys-apps/hwloc
 *sys-block/fio
-*=sys-cluster/ceph-17*
+*=sys-cluster/ceph-18*
