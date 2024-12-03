@@ -21,7 +21,7 @@ media-libs/opencv threads gdal download contrib contribdnn contribfreetype contr
 media-plugins/gst-plugins-meta a52 aac cdda dts dv dvb dvd ffmpeg flac http lame libass libvisual mms modplug mp3 mpeg ogg opus oss taglib v4l vcd vpx wavpack
 media-video/ffmpeg sdl
 media-video/pipewire bluetooth v4l jack-sdk extra sound-server
-net-analyzer/wireshark -qt4 libssh libxml2 nghttp2 snappy
+net-analyzer/wireshark -qt4 libssh libxml2 nghttp2 snappy lua_single_target_lua5-4
 net-libs/gtk-vnc python
 net-libs/libproxy -spidermonkey -webkit
 net-libs/phodav spice zeroconf
