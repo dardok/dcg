@@ -1,4 +1,4 @@
-*=sys-cluster/kubelet-1.28*
+*=sys-cluster/kubelet-1.30*
 *sys-cluster/kubeletctl
 *app-containers/cni-plugins
 *app-containers/cri-tools
