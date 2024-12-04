@@ -58,6 +58,7 @@ dev-python/awscli-plugin-endpoint
 dev-python/boto3
 dev-python/botocore
 dev-python/cftime
+dev-python/contourpy
 dev-python/dill
 dev-python/fsspec
 dev-python/fuse-python
@@ -211,6 +212,7 @@ gui-apps/hyprlock **
 gui-libs/aquamarine **
 gui-libs/hyprcursor **
 gui-libs/hyprutils **
+gui-libs/hyprgraphics **
 gui-apps/hyprpaper **
 gui-apps/wofi **
 gui-apps/waybar **
