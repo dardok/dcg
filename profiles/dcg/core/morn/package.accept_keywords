@@ -11,4 +11,3 @@ dev-util/bcc
 net-misc/cni-plugins
 net-misc/lldpd
 net-misc/rclone
-sys-cluster/ceph
