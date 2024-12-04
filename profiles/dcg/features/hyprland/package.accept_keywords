@@ -13,6 +13,7 @@ gui-apps/wofi **
 gui-libs/aquamarine **
 gui-libs/greetd
 gui-libs/hyprcursor **
+gui-libs/hyprgraphics **
 gui-libs/hyprutils **
 gui-libs/xdg-desktop-portal-hyprland **
 gui-apps/wlr-randr **
