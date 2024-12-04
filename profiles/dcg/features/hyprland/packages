@@ -6,6 +6,7 @@
 *gui-apps/wlr-randr
 *gui-apps/wofi
 *gui-libs/greetd
+*gui-libs/hyprgraphics
 *gui-libs/xdg-desktop-portal-hyprland
 *gui-wm/hyprland
 *gui-wm/hyprland-contrib
