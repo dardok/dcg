@@ -17,3 +17,5 @@ sys-cluster/mpich2
 
 # >=dev-python/numpy-2
 # >=dev-python/numexpr-2.10 # needs numpy-2
+
+>=dev-python/pynvml-12 # breaks atopgpud
