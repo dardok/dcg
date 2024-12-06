@@ -17,7 +17,7 @@ if [[ $PV = *9999* ]]; then
 	EGIT_BRANCH="master"
 else
 	scm=""
-	SRC_URI="lustre-release-2.15.6-rc1.tar.gz"
+	SRC_URI="lustre-release-2.15.6_rc1.tar.gz"
 	KEYWORDS="~amd64"
 	S="${WORKDIR}/${PN}-release-${PV^^}"
 fi
