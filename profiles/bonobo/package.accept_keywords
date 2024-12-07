@@ -75,12 +75,12 @@ dev-python/matplotlib
 dev-python/more-itertools
 dev-python/multiprocess
 dev-python/netcdf4
-dev-python/numba
-dev-python/Opcodes
+#dev-python/numba
+dev-python/opcodes
 dev-python/ordered-set
 dev-python/packaging
 =dev-python/pandas-1.5*
-dev-python/PeachPy
+dev-python/peachpy
 dev-python/plotly
 dev-python/plotly-geo
 dev-python/pyarrow
@@ -89,7 +89,7 @@ dev-python/pycamera
 dev-python/pynvml
 dev-python/pylint-venv
 dev-python/pyparsing
-dev-python/pysnmp-mibs
+#dev-python/pysnmp-mibs
 dev-python/pytesseract
 dev-python/python-multipart
 dev-python/pythran
@@ -100,7 +100,6 @@ dev-python/qstylizer
 dev-python/s3transfer
 dev-python/scikit-image
 dev-python/scipy
-#=dev-python/setuptools-60*
 dev-python/simplekml
 dev-python/spyder **
 dev-python/spyder-kernels **
@@ -188,6 +187,7 @@ sys-libs/libapparmor
 sys-libs/libmodulemd
 sys-libs/libnvidia-container
 sys-libs/libnvme
+sys-libs/liburing
 sys-process/atop
 x11-libs/libdrm
 x11-misc/xscreensaver

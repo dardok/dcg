@@ -50,12 +50,12 @@ dev-python/pandas full-support
 dev-python/pillow webp
 dev-python/pyarrow snappy parquet ssl
 dev-python/python-lsp-server all-plugins
-dev-python/PyQt5 designer sql positioning network widgets gui printsupport declarative serialport multimedia webchannel
-dev-python/PyQt6 designer multimedia positioning serialport gles2-only quick qml webchannel
-dev-python/PyQt6-WebEngine quick
+dev-python/pyqt5 designer sql positioning network widgets gui printsupport declarative serialport multimedia webchannel
+dev-python/pyqt6 designer multimedia positioning serialport gles2-only quick qml webchannel
+dev-python/pyqt6-webengine quick
 dev-python/pyzmq drafts
 dev-python/qscintilla-python qt6
-dev-python/QtPy webengine printsupport quick
+dev-python/qtpy webengine printsupport quick
 dev-python/sympy aesara imaging symengine
 dev-qt/qt3d gles2-only
 dev-qt/qtbase opengl egl cups -eglfs gles2-only
