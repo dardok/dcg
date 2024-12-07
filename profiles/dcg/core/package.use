@@ -69,3 +69,4 @@ sys-libs/glibc nscd # required by sssd
 sys-libs/zlib static-libs
 
 sys-process/atop modules
+sys-process/audit io-uring
