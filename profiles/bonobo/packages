@@ -112,7 +112,7 @@
 *dev-python/msgpack
 *dev-python/netcdf4
 *dev-python/networkx
-*dev-python/numba
+#*dev-python/numba
 *dev-python/openapi-core
 *dev-python/pandas
 *dev-python/pip
@@ -131,8 +131,8 @@
 *dev-python/pyopenssl
 *dev-python/pyproj
 *dev-python/pyroute2
-*dev-python/pysnmp
-*dev-python/pysnmp-mibs
+#*dev-python/pysnmp
+#*dev-python/pysnmp-mibs
 *dev-python/pytesseract
 *dev-python/python-editor
 *dev-python/python-multipart
@@ -241,7 +241,7 @@
 *media-fonts/freefonts
 *media-fonts/ttf-bitstream-vera
 *media-fonts/unifont
-*media-gfx/blender:3.6
+*media-gfx/blender:4.2
 *media-gfx/feh
 *media-gfx/gimp
 *media-gfx/graphviz
@@ -251,7 +251,7 @@
 *media-libs/libdisplay-info
 *media-libs/libsdl2
 *media-libs/libsmf
-*=media-libs/opencv-4.8.1-r2
+*=media-libs/opencv-4.9.0-r2
 *media-libs/shaderc
 *media-libs/vulkan-loader
 *media-libs/zita-resampler

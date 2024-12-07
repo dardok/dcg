@@ -5,5 +5,7 @@ media-libs/opencolorio opengl
 media-libs/opencv openexr
 app-text/tesseract opencl
 net-im/telegram-desktop -qt6
+media-libs/libv4l qt6
+
 net-libs/gssdp gtk
 sys-block/libfabric cuda
