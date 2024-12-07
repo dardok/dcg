@@ -22,5 +22,6 @@ sys-cluster/rdma-core
 
 sys-process/atop
 
+sys-libs/liburing
 sys-libs/libnvme
 sys-apps/nvme-cli
