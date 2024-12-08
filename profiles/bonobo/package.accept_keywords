@@ -1,3 +1,5 @@
+app-admin/ansible
+app-admin/ansible-core
 app-arch/createrepo_c
 app-arch/drpm
 app-arch/zchunk
@@ -107,6 +109,7 @@ dev-python/starlette
 dev-python/superqt
 dev-python/tifffile
 dev-python/wheel
+dev-python/xarray
 dev-util/bcc
 dev-util/bindgen
 dev-util/bpftool

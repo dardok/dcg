@@ -1,11 +1,8 @@
-media-plugins/gst-plugins-meta vaapi
-media-libs/libsdl2 pulseaudio
-media-libs/openimageio opengl
-media-libs/opencolorio opengl
-media-libs/opencv openexr
-app-text/tesseract opencl
-net-im/telegram-desktop -qt6
-media-libs/libv4l qt6
-
-net-libs/gssdp gtk
-sys-block/libfabric cuda
+# media-plugins/gst-plugins-meta vaapi
+# media-libs/libsdl2 pulseaudio
+# media-libs/openimageio opengl
+# media-libs/opencolorio opengl
+# media-libs/opencv openexr
+# app-text/tesseract opencl
+# net-libs/gssdp gtk
+# sys-block/libfabric cuda

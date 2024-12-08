@@ -5,7 +5,6 @@ app-containers/apptainer -network
 app-containers/docker -cli
 app-containers/docker-credential-helpers gnome-keyring pass
 app-crypt/pinentry gnome-keyring
-app-crypt/qca qt6
 app-editors/vim cscope lua luajit python
 app-emulation/libguestfs libvirt -ocaml
 app-emulation/libvirt fuse lvm numa parted virt-network libssh2 # xen lxc(sys-apps/systemd[cgroup-hybrid(-)])
@@ -41,7 +40,6 @@ dev-libs/libxml2 icu
 dev-libs/msgpack boost
 dev-libs/nss utils
 dev-libs/pkcs11-helper nss
-dev-libs/qtkeychain qt5 qt6
 dev-libs/weston lcms wayland-compositor xwayland fullscreen ivi remoting rdp screen-sharing webp
 dev-ml/cudf llvm-libunwind
 dev-python/netcdf4 szip
@@ -54,7 +52,6 @@ dev-python/pyqt5 designer sql positioning network widgets gui printsupport decla
 dev-python/pyqt6 designer multimedia positioning serialport gles2-only quick qml webchannel
 dev-python/pyqt6-webengine quick
 dev-python/pyzmq drafts
-dev-python/qscintilla-python qt6
 dev-python/qtpy webengine printsupport quick
 dev-python/sympy aesara imaging symengine
 dev-qt/qt3d gles2-only
@@ -67,7 +64,7 @@ dev-qt/qtwayland compositor
 dev-qt/qtwebchannel qml
 dev-qt/qtwebengine screencast geolocation widgets qml
 dev-qt/qtgui egl
-dev-util/cppcheck gui qt6 charts htmlreport threads
+dev-util/cppcheck gui charts htmlreport threads
 dev-util/nvidia-cuda-toolkit debugger nsight profiler rdma vis-profiler
 dev-util/perf clang systemtap slang libpfm
 dev-debug/strace aio elfutils
@@ -77,7 +74,7 @@ gui-libs/gtk broadway colord gstreamer wayland
 gui-libs/wlroots x11-backend
 gui-wm/hyprland system-wlroots
 media-gfx/blender jemalloc cycles ffmpeg player collada llvm openimageio cuda -opensubdiv -embree
-media-gfx/graphviz pdf qt5 postscript
+media-gfx/graphviz pdf postscript
 media-libs/libcanberra gtk2
 media-libs/clutter egl
 media-libs/cogl gles2
@@ -85,7 +82,7 @@ media-libs/freetype harfbuzz utils brotli
 media-libs/harfbuzz icu
 media-libs/libsdl2 gles2 pipewire
 media-libs/mesa vulkan-overlay
-media-libs/opencv cuda threads download contrib contribdnn contribfreetype contribxfeatures2d contribcvv qt5 -gtk3 -openexr -opencl
+media-libs/opencv cuda threads download contrib contribdnn contribfreetype contribxfeatures2d contribcvv -gtk3 -openexr -opencl
 media-libs/rubberband ladspa
 media-libs/tg_owt screencast
 media-libs/vulkan-loader layers
@@ -105,7 +102,7 @@ net-analyzer/wireshark http2
 net-dns/dnsmasq script tftp
 net-firewall/iptables nftables
 net-firewall/nftables json libedit xtables -readline
-net-im/telegram-desktop enchant qt6 qt6-imageformats screencast
+net-im/telegram-desktop enchant qt6-imageformats screencast
 net-libs/gnutls tools
 net-libs/gssdp -gtk
 net-libs/phodav spice
@@ -158,12 +155,10 @@ sys-libs/zlib minizip static-libs
 sys-process/atop modules
 sys-process/audit io-uring
 virtual/rust rustfmt
-www-client/google-chrome -qt5 qt6
 x11-base/xorg-server kdrive xephyr xnest xvfb
 x11-drivers/nvidia-drivers uvm
 x11-libs/motif xft
-x11-libs/qscintilla qt6
-x11-libs/qwt designer polar qt6
+x11-libs/qwt designer polar
 x11-misc/redshift geoclue appindicator
 x11-misc/xscreensaver fonts offensive suid
 x11-terms/kitty transfer
