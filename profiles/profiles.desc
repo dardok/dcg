@@ -1,4 +1,6 @@
 amd64 dcg/bootstrap exp
 amd64 dcg/provisioner exp
 amd64 dcg/core exp
+amd64 dcg/core/x11/nvidia exp
+amd64 dcg/core/x11/amdgpu exp
 amd64 dcg2/core exp
