@@ -156,6 +156,7 @@ sys-libs/libseccomp static-libs
 sys-libs/llvm-libunwind static-libs
 sys-libs/zlib minizip static-libs
 sys-process/atop modules
+sys-process/audit io-uring
 virtual/rust rustfmt
 www-client/google-chrome -qt5 qt6
 x11-base/xorg-server kdrive xephyr xnest xvfb
