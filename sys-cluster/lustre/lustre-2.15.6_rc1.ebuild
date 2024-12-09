@@ -22,8 +22,8 @@ else
 	S="${WORKDIR}/${PN}-release-2.15.6-RC1"
 fi
 
-SUPPORTED_KV_MAJOR=6
-SUPPORTED_KV_MINOR=6
+SUPPORTED_KV_MAJOR=5
+SUPPORTED_KV_MINOR=15
 
 inherit ${scm} autotools linux-info linux-mod toolchain-funcs udev flag-o-matic
 
@@ -50,7 +50,7 @@ REQUIRED_USE="
 	client? ( modules )
 	server? ( modules )"
 
-PATCHES=( )
+PATCHES=( "${FILESDIR}"/lustre-2.15-ofed-symbols.patch )
 
 pkg_pretend() {
 	KVSUPP=${SUPPORTED_KV_MAJOR}.${SUPPORTED_KV_MINOR}.x
@@ -108,7 +108,7 @@ src_configure() {
 	fi
 	econf \
 		${myconf} \
-		--without-ldiskfs \
+		--disable-ldiskfs \
 		--with-linux="${KERNEL_DIR}" \
 		--with-linux-obj="${KBUILD_OUTPUT}" \
 		$(use_enable client) \
