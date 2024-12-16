@@ -1,8 +1,7 @@
+*gui-apps/eww
 *gui-apps/hypridle
 *gui-apps/hyprpaper
 *gui-apps/hyprlock
-*gui-apps/ReGreet
-*gui-apps/waybar
 *gui-apps/wlr-randr
 *gui-apps/wofi
 *gui-libs/greetd
