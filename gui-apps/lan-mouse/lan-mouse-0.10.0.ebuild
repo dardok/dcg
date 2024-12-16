@@ -393,9 +393,10 @@ CRATES="
 inherit cargo
 
 DESCRIPTION="Software KVM Switch / mouse & keyboard sharing software for Local Area Networks"
-HOMEPAGE=""
+HOMEPAGE="https://github.com/feschber/lan-mouse"
 SRC_URI="
 	${CARGO_CRATE_URIS}
+	https://github.com/feschber/lan-mouse/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
 "
 
 LICENSE="GPL-3+"
@@ -407,3 +408,12 @@ LICENSE+="
 "
 SLOT="0"
 KEYWORDS="~amd64"
+
+QA_FLAGS_IGNORED="usr/bin/lan-mouse"
+
+src_install() {
+	cargo_src_install
+	doicon -s scalable resources/de.feschber.LanMouse.svg
+	domenu de.feschber.LanMouse.desktop
+	systemd_douserunit service/lan-mouse.service
+}
