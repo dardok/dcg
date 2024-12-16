@@ -2,6 +2,7 @@
 *gui-apps/hypridle
 *gui-apps/hyprpaper
 *gui-apps/hyprlock
+*gui-apps/tuigreet
 *gui-apps/wlr-randr
 *gui-apps/wofi
 *gui-libs/greetd
