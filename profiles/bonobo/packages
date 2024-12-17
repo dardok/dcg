@@ -430,7 +430,6 @@
 *x11-libs/libXScrnSaver
 *x11-misc/dunst
 *x11-misc/lightdm-gtk-greeter
-*x11-misc/mate-notification-daemon
 *x11-misc/picom
 *x11-misc/redshift
 *x11-misc/rofi
@@ -452,5 +451,6 @@
 *gui-apps/hyprpaper
 *gui-apps/hyprlock
 *gui-libs/hyprgraphics
+*gui-libs/hyprland-qtutils
 *gui-apps/ReGreet
 *gui-apps/wlgreet

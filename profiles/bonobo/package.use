@@ -49,20 +49,20 @@ dev-python/pillow webp
 dev-python/pyarrow snappy parquet ssl
 dev-python/python-lsp-server all-plugins
 dev-python/pyqt5 designer sql positioning network widgets gui printsupport declarative serialport multimedia webchannel
-dev-python/pyqt6 designer multimedia positioning serialport gles2-only quick qml webchannel
+dev-python/pyqt6 designer multimedia positioning serialport gles2-only quick webchannel
 dev-python/pyqt6-webengine quick
 dev-python/pyzmq drafts
 dev-python/qtpy webengine printsupport quick
 dev-python/sympy aesara imaging symengine
 dev-qt/qt3d gles2-only
-dev-qt/qtbase opengl egl cups -eglfs gles2-only
+dev-qt/qt5compat icu
+dev-qt/qtbase icu opengl egl cups -eglfs gles2-only
 dev-qt/qtcharts gles2-only
 dev-qt/qtdeclarative opengl
 dev-qt/qtmultimedia widgets
-dev-qt/qttools designer qml
+dev-qt/qttools designer
 dev-qt/qtwayland compositor
-dev-qt/qtwebchannel qml
-dev-qt/qtwebengine screencast geolocation widgets qml
+dev-qt/qtwebengine screencast geolocation widgets
 dev-qt/qtgui egl
 dev-util/cppcheck gui charts htmlreport threads
 dev-util/nvidia-cuda-toolkit debugger nsight profiler rdma vis-profiler

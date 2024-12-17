@@ -221,6 +221,7 @@ gui-libs/aquamarine **
 gui-libs/hyprcursor **
 gui-libs/hyprutils **
 gui-libs/hyprgraphics **
+gui-libs/hyprland-qtutils **
 gui-apps/hyprpaper **
 gui-apps/wofi **
 gui-apps/waybar **
