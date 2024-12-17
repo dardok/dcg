@@ -39,6 +39,8 @@
 *app-eselect/eselect-repository
 *app-forensics/lynis
 *app-laptop/laptop-mode-tools
+*app-misc/brightnessctl
+*app-misc/cliphist
 *app-misc/dateutils
 *app-misc/jq
 *app-misc/neofetch
@@ -59,6 +61,7 @@
 *app-text/texlive
 *app-text/xmlformat
 *app-vim/pathogen
+*app-vim/wayland-clipboard
 *dev-cpp/nlohmann_json
 *dev-cpp/tbb # ??? media-libs/oidn media-gfx/openvdb media-gfx/blender
 *dev-cpp/websocketpp
@@ -196,6 +199,8 @@
 *dev-vcs/git-lfs
 *gnome-base/gnome-keyring
 *gnome-extra/zenity
+*gui-apps/eww
+*gui-apps/wev
 *gui-libs/egl-wayland
 *gui-libs/gtk:4
 *lxde-base/lxtask
@@ -283,6 +288,7 @@
 *media-sound/mpd
 *media-sound/ncmpcpp
 *media-sound/pavucontrol
+*media-sound/playerctl
 *media-sound/pulseeffects
 *media-sound/qjackctl
 #*media-video/libcamera # broken as of 9/2023
@@ -291,6 +297,7 @@
 *media-video/pitivi
 *media-video/subtitleeditor
 *media-video/v4l2loopback
+*media-video/vlc
 *media-video/wireplumber
 *net-analyzer/nessus-bin
 *net-analyzer/net-snmp
@@ -423,6 +430,7 @@
 *x11-libs/libXScrnSaver
 *x11-misc/dunst
 *x11-misc/lightdm-gtk-greeter
+*x11-misc/mate-notification-daemon
 *x11-misc/picom
 *x11-misc/redshift
 *x11-misc/rofi

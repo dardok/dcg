@@ -16,10 +16,13 @@ app-emulation/libguestfs-appliance
 app-emulation/podman
 app-emulation/slirp4netns
 app-forensics/lynis
+app-misc/brightnessctl
 app-misc/hivex
 app-misc/tmux
+app-misc/cliphist
 app-shells/liquidprompt
 app-shells/powerline
+app-vim/wayland-clipboard
 app-text/tesseract
 app-text/xmlformat
 dev-build/meson
@@ -125,6 +128,8 @@ dev-util/vulkan-headers
 dev-util/vulkan-tools
 dev-util/vulkan-utility-libraries
 dev-util/wayland-scanner
+gui-apps/eww **
+gui-apps/wev
 gui-libs/egl-wayland
 gui-libs/eglexternalplatform
 gui-libs/wlroots
