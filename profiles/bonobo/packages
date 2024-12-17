@@ -204,6 +204,8 @@
 *gui-libs/egl-wayland
 *gui-libs/gtk:4
 *llvm-core/lld
+*llvm-runtimes/libcxx
+*llvm-runtimes/libcxxabi
 *lxde-base/lxtask
 *mail-client/thunderbird-bin
 *media-fonts/artwiz-aleczapka-en
@@ -382,8 +384,6 @@
 *sys-kernel/dracut
 *sys-kernel/linux-firmware
 *sys-libs/libapparmor
-*sys-libs/libcxx
-*sys-libs/libcxxabi
 *sys-power/acpi
 *sys-power/acpid
 *sys-power/cpupower
