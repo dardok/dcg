@@ -421,6 +421,7 @@
 *x11-drivers/xf86-input-libinput
 *x11-drivers/xf86-video-dummy
 *x11-libs/libXScrnSaver
+*x11-misc/dunst
 *x11-misc/lightdm-gtk-greeter
 *x11-misc/picom
 *x11-misc/redshift
