@@ -203,6 +203,7 @@
 *gui-apps/wev
 *gui-libs/egl-wayland
 *gui-libs/gtk:4
+*llvm-core/lld
 *lxde-base/lxtask
 *mail-client/thunderbird-bin
 *media-fonts/artwiz-aleczapka-en
@@ -373,7 +374,6 @@
 *sys-cluster/kubectl
 *sys-cluster/openmpi
 *sys-cluster/rdma-core
-*sys-devel/lld
 *sys-firmware/intel-microcode
 *sys-fs/dosfstools
 *sys-fs/inotify-tools
