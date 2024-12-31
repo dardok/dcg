@@ -16,6 +16,7 @@ gui-libs/aquamarine **
 gui-libs/greetd
 gui-libs/hyprcursor **
 gui-libs/hyprgraphics **
+gui-libs/hyprland-qtutils **
 gui-libs/hyprutils **
 gui-libs/xdg-desktop-portal-hyprland **
 gui-wm/hyprland **
