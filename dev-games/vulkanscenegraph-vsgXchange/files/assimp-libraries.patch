@@ -4,7 +4,7 @@ diff -u -r -N a/src/assimp/build_vars.cmake b/src/assimp/build_vars.cmake
 @@ -1,5 +1,5 @@
  # add assimp if available
 -find_package(assimp 5.1 QUIET)
-+find_package(assimp 5.2 QUIET)
++find_package(assimp 5.4 QUIET)
  
  if(assimp_FOUND)
      OPTION(vsgXchange_assimp "Optional Assimp support provided" ON)
