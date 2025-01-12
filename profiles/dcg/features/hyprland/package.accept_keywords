@@ -1,4 +1,5 @@
 dev-cpp/sdbus-c++ # for hypridle
+dev-libs/hyprgraphics **
 dev-libs/hyprland-protocols **
 dev-libs/hyprlang **
 dev-libs/libinput
@@ -15,7 +16,6 @@ gui-apps/wofi **
 gui-libs/aquamarine **
 gui-libs/greetd
 gui-libs/hyprcursor **
-gui-libs/hyprgraphics **
 gui-libs/hyprland-qtutils **
 gui-libs/hyprutils **
 gui-libs/xdg-desktop-portal-hyprland **

@@ -1,3 +1,4 @@
+*dev-libs/hyprgraphics
 *gui-apps/eww
 *gui-apps/hypridle
 *gui-apps/hyprpaper::guru
@@ -6,7 +7,6 @@
 *gui-apps/wlr-randr
 *gui-apps/wofi
 *gui-libs/greetd
-*gui-libs/hyprgraphics
 *gui-libs/hyprland-qtutils
 *gui-libs/xdg-desktop-portal-hyprland
 *gui-wm/hyprland
