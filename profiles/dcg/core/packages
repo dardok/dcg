@@ -81,7 +81,7 @@
 *sys-cluster/ipvsadm
 *sys-cluster/rdma-core
 
-*sys-devel/lld
+*llvm-core/lld
 
 *sys-block/libfabric
 
