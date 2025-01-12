@@ -1,7 +1,7 @@
 *dev-libs/hyprgraphics
 *gui-apps/eww
 *gui-apps/hypridle
-*gui-apps/hyprpaper::guru
+#*gui-apps/hyprpaper::guru
 *gui-apps/hyprlock
 *gui-apps/tuigreet
 *gui-apps/wlr-randr
