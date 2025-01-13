@@ -1,2 +1,3 @@
 gui-apps/waybar evdev experimental -mpd -mpris network pipewire tray
 gui-libs/wlroots vulkan
+gui-wm/hyprland -qtutils
