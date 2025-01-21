@@ -12,6 +12,8 @@
 
 *dev-util/global
 
+*llvm-core/clang
+
 *net-analyzer/tcpdump
 *net-analyzer/wireshark
 
@@ -20,8 +22,6 @@
 
 *sys-apps/the_silver_searcher
 *sys-apps/lshw
-
-*sys-devel/clang
 
 *x11-libs/gtk+
 
