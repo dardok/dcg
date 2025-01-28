@@ -30,4 +30,5 @@ RDEPEND="
 	media-libs/libjxl
 	x11-libs/pixman
 	x11-libs/cairo
+	media-libs/libspng
 "
