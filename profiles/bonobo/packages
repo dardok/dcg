@@ -74,6 +74,7 @@
 *dev-java/maven-bin:3.8
 *dev-lang/lua
 *dev-libs/cudnn
+*dev-libs/glaze
 *dev-libs/icu
 *dev-libs/libbpf
 #*dev-libs/libp11 # broken, requires incompat openssl
@@ -106,6 +107,7 @@
 *dev-python/flask
 *dev-python/fsspec
 #*dev-python/fuse-python # deprecated
+*dev-python/gitpython
 *dev-python/graphviz
 *dev-python/h11
 *dev-python/h5py
@@ -139,6 +141,8 @@
 *dev-python/pytesseract
 *dev-python/python-editor
 *dev-python/python-multipart
+*dev-python/pywayland
+*dev-python/pywlroots
 *dev-python/pyzbar
 *dev-python/responses
 *dev-python/ruamel-yaml
@@ -178,6 +182,7 @@
 *dev-qt/qtxmlpatterns
 *dev-util/babeltrace
 *dev-util/bcc
+*dev-util/cargo-c
 *dev-util/clinfo
 *dev-util/cookiecutter
 *dev-util/cppcheck
@@ -200,9 +205,15 @@
 *gnome-base/gnome-keyring
 *gnome-extra/zenity
 *gui-apps/eww
+*gui-apps/swaylock
+*gui-apps/mpvpaper
+*gui-apps/waypipe
 *gui-apps/wev
 *gui-libs/egl-wayland
 *gui-libs/gtk:4
+*gui-libs/gtk4-layer-shell
+*gui-wm/gamescope
+*gui-wm/sway
 *llvm-core/lld
 *llvm-runtimes/libcxx
 *llvm-runtimes/libcxxabi
@@ -259,6 +270,7 @@
 *media-libs/libdisplay-info
 *media-libs/libsdl2
 *media-libs/libsmf
+*media-libs/libspng
 *=media-libs/opencv-4.9.0-r2
 *media-libs/shaderc
 *media-libs/vulkan-loader
@@ -446,11 +458,10 @@
 *gui-libs/xdg-desktop-portal-hyprland
 *gui-wm/hyprland-contrib
 *gui-apps/wofi
-*gui-apps/waybar
 *gui-apps/hypridle
 *gui-apps/hyprpaper
 *gui-apps/hyprlock
-*gui-libs/hyprgraphics
+*gui-apps/hyprsunset
+*dev-libs/hyprgraphics
 *gui-libs/hyprland-qtutils
-*gui-apps/ReGreet
 *gui-apps/wlgreet

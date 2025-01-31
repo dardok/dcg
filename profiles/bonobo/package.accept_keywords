@@ -45,6 +45,7 @@ dev-libs/date
 dev-libs/dynolog
 dev-libs/FP16
 dev-libs/FXdiv
+dev-libs/glaze
 sci-libs/kineto
 dev-libs/libliftoff
 dev-libs/pfs
@@ -129,20 +130,25 @@ dev-util/vulkan-tools
 dev-util/vulkan-utility-libraries
 dev-util/wayland-scanner
 gui-apps/eww **
+gui-apps/mpvpaper
 gui-apps/wev
 gui-libs/egl-wayland
 gui-libs/eglexternalplatform
+gui-libs/gtk4-layer-shell
 gui-libs/wlroots
+gui-wm/gamescope
 lxde-base/lxtask
 media-fonts/symbols-nerd-font
 media-gfx/openvdb
 media-libs/embree
 media-libs/libdisplay-info
+media-libs/libspng
 media-libs/mesa
 media-libs/oidn
 media-libs/opencollada
 media-libs/opencv
 media-libs/shaderc
+media-libs/vkroots
 media-libs/vulkan-layers
 media-libs/vulkan-loader
 media-sound/bluez-alsa
@@ -217,73 +223,71 @@ dev-libs/hyprlang **
 dev-libs/wayland-protocols **
 gui-apps/hypridle **
 gui-apps/hyprlock **
+gui-apps/hyprsunset **
 gui-libs/aquamarine **
 gui-libs/hyprcursor **
 gui-libs/hyprutils **
-gui-libs/hyprgraphics **
+dev-libs/hyprgraphics **
 gui-libs/hyprland-qtutils **
 gui-apps/hyprpaper **
 gui-apps/wofi **
-gui-apps/waybar **
-gui-apps/ReGreet **
 gui-apps/wlgreet
 dev-cpp/sdbus-c++ # for hypridle
 media-video/pipewire
 media-video/wireplumber
+gui-wm/sway
 
-=media-libs/gst-plugins-bad-1.22*
-=media-libs/gst-plugins-base-1.22*
-=media-libs/gst-plugins-good-1.22*
-=media-libs/gst-plugins-ugly-1.22*
-=media-libs/gst-rtsp-server-1.22*
-=media-libs/gstreamer-1.22*
-=media-plugins/gst-plugins-a52dec-1.22*
-=media-plugins/gst-plugins-assrender-1.22*
-=media-plugins/gst-plugins-bluez-1.22*
-=media-plugins/gst-plugins-bs2b-1.22*
-=media-plugins/gst-plugins-cairo-1.22*
-=media-plugins/gst-plugins-cdparanoia-1.22*
-=media-plugins/gst-plugins-dts-1.22*
-=media-plugins/gst-plugins-dv-1.22*
-=media-plugins/gst-plugins-dvb-1.22*
-=media-plugins/gst-plugins-dvdread-1.22*
-=media-plugins/gst-plugins-faac-1.22*
-=media-plugins/gst-plugins-faad-1.22*
-=media-plugins/gst-plugins-flac-1.22*
-=media-plugins/gst-plugins-gdkpixbuf-1.22*
-=media-plugins/gst-plugins-gtk-1.22*
-=media-plugins/gst-plugins-hls-1.22*
-=media-plugins/gst-plugins-jack-1.22*
-=media-plugins/gst-plugins-jpeg-1.22*
-=media-plugins/gst-plugins-ladspa-1.22*
-=media-plugins/gst-plugins-lame-1.22*
-=media-plugins/gst-plugins-libav-1.22*
-=media-plugins/gst-plugins-libde265-1.22*
-=media-plugins/gst-plugins-libpng-1.22*
-=media-plugins/gst-plugins-libvisual-1.22*
-=media-plugins/gst-plugins-lv2-1.22*
-=media-plugins/gst-plugins-meta-1.22*
-=media-plugins/gst-plugins-modplug-1.22*
-=media-plugins/gst-plugins-mpeg2dec-1.22*
-#=media-plugins/gst-plugins-mpg123-1.22*
-#=media-libs/libmpg123-1.32*
-#media-libs/libsndfile
-=media-plugins/gst-plugins-mplex-1.22*
-=media-plugins/gst-plugins-opencv-1.22*
-=media-plugins/gst-plugins-opus-1.22*
-=media-plugins/gst-plugins-oss-1.22*
-=media-plugins/gst-plugins-pulse-1.22*
-=media-plugins/gst-plugins-resindvd-1.22*
-=media-plugins/gst-plugins-rtmp-1.22*
-=media-plugins/gst-plugins-sctp-1.22*
-=media-plugins/gst-plugins-soup-1.22*
-=media-plugins/gst-plugins-srtp-1.22*
-=media-plugins/gst-plugins-taglib-1.22*
-=media-plugins/gst-plugins-v4l2-1.22*
-=media-plugins/gst-plugins-vaapi-1.22*
-=media-plugins/gst-plugins-vpx-1.22*
-=media-plugins/gst-plugins-wavpack-1.22*
-=media-plugins/gst-plugins-webrtc-1.22*
-=media-plugins/gst-plugins-x264-1.22*
-=media-plugins/gst-plugins-x265-1.22*
-=media-plugins/gst-plugins-ximagesrc-1.22*
+=media-libs/gst-plugins-bad-1.24*
+=media-libs/gst-plugins-base-1.24*
+=media-libs/gst-plugins-good-1.24*
+=media-libs/gst-plugins-ugly-1.24*
+=media-libs/gst-rtsp-server-1.24*
+=media-libs/gstreamer-1.24*
+=media-plugins/gst-plugins-a52dec-1.24*
+=media-plugins/gst-plugins-assrender-1.24*
+=media-plugins/gst-plugins-bluez-1.24*
+=media-plugins/gst-plugins-bs2b-1.24*
+=media-plugins/gst-plugins-cairo-1.24*
+=media-plugins/gst-plugins-cdparanoia-1.24*
+=media-plugins/gst-plugins-dts-1.24*
+=media-plugins/gst-plugins-dv-1.24*
+=media-plugins/gst-plugins-dvb-1.24*
+=media-plugins/gst-plugins-dvdread-1.24*
+=media-plugins/gst-plugins-faac-1.24*
+=media-plugins/gst-plugins-faad-1.24*
+=media-plugins/gst-plugins-flac-1.24*
+=media-plugins/gst-plugins-gdkpixbuf-1.24*
+=media-plugins/gst-plugins-gtk-1.24*
+=media-plugins/gst-plugins-hls-1.24*
+=media-plugins/gst-plugins-jack-1.24*
+=media-plugins/gst-plugins-jpeg-1.24*
+=media-plugins/gst-plugins-ladspa-1.24*
+=media-plugins/gst-plugins-lame-1.24*
+=media-plugins/gst-plugins-libav-1.24*
+=media-plugins/gst-plugins-libde265-1.24*
+=media-plugins/gst-plugins-libpng-1.24*
+=media-plugins/gst-plugins-libvisual-1.24*
+=media-plugins/gst-plugins-lv2-1.24*
+=media-plugins/gst-plugins-meta-1.24*
+=media-plugins/gst-plugins-modplug-1.24*
+=media-plugins/gst-plugins-mpeg2dec-1.24*
+=media-plugins/gst-plugins-mpg123-1.24*
+=media-plugins/gst-plugins-mplex-1.24*
+=media-plugins/gst-plugins-opencv-1.24*
+=media-plugins/gst-plugins-opus-1.24*
+=media-plugins/gst-plugins-oss-1.24*
+=media-plugins/gst-plugins-pulse-1.24*
+=media-plugins/gst-plugins-resindvd-1.24*
+=media-plugins/gst-plugins-rtmp-1.24*
+=media-plugins/gst-plugins-sctp-1.24*
+=media-plugins/gst-plugins-soup-1.24*
+=media-plugins/gst-plugins-srtp-1.24*
+=media-plugins/gst-plugins-taglib-1.24*
+=media-plugins/gst-plugins-v4l2-1.24*
+=media-plugins/gst-plugins-vaapi-1.24*
+=media-plugins/gst-plugins-vpx-1.24*
+=media-plugins/gst-plugins-wavpack-1.24*
+=media-plugins/gst-plugins-webrtc-1.24*
+=media-plugins/gst-plugins-x264-1.24*
+=media-plugins/gst-plugins-x265-1.24*
+=media-plugins/gst-plugins-ximagesrc-1.24*
