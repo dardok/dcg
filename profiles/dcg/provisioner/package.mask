@@ -1,0 +1,2 @@
+>=net-dns/bind-9.18
+>=net-dns/bind-tools-9.18
