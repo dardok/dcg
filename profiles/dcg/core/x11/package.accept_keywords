@@ -2,6 +2,7 @@ app-crypt/coolkey
 dev-build/meson
 dev-libs/libclc
 dev-libs/simde
+gnome-base/gsettings-desktop-schemas
 media-libs/mesa
 x11-libs/libdrm
 x11-terms/kitty
