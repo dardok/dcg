@@ -359,6 +359,7 @@
 *sci-libs/huggingface_hub
 *sci-libs/onnx
 *sci-libs/pdal
+*sci-libs/pytorch
 *sci-libs/transformers
 *sci-mathematics/glpk
 *sec-policy/apparmor-profiles
