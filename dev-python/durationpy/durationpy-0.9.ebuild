@@ -7,7 +7,6 @@ inherit distutils-r1
 DESCRIPTION="Module for converting between datetime.timedelta and Go's Duration strings."
 HOMEPAGE="https://github.com/icholy/durationpy"
 SRC_URI="https://github.com/icholy/durationpy/archive/refs/tags/${PV}.tar.gz"
-S=${WORKDIR}/python-${PV}
 
 LICENSE="MIT"
 SLOT="0"
