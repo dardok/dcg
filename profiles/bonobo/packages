@@ -112,6 +112,7 @@
 *dev-python/graphviz
 *dev-python/h11
 *dev-python/h5py
+*dev-python/kubernetes
 *dev-python/marshmallow
 *dev-python/matplotlib-inline
 *dev-python/mpi4py
