@@ -71,6 +71,7 @@ dev-python/fiona
 dev-python/fsspec
 dev-python/fuse-python
 dev-python/geographiclib
+=dev-python/geopandas-0.14.4
 dev-python/h5py
 dev-python/inflection
 dev-python/installer

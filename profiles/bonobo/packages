@@ -109,6 +109,7 @@
 *dev-python/fsspec
 #*dev-python/fuse-python # deprecated
 *dev-python/gitpython
+*dev-python/geopandas
 *dev-python/graphviz
 *dev-python/h11
 *dev-python/h5py
