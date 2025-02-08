@@ -66,6 +66,7 @@ dev-python/botocore
 dev-python/cftime
 dev-python/contourpy
 dev-python/dill
+dev-python/fiona
 dev-python/fsspec
 dev-python/fuse-python
 dev-python/h5py
