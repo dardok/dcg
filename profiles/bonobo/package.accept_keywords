@@ -70,6 +70,7 @@ dev-python/dill
 dev-python/fiona
 dev-python/fsspec
 dev-python/fuse-python
+dev-python/geographiclib
 dev-python/h5py
 dev-python/inflection
 dev-python/installer
