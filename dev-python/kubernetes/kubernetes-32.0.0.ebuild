@@ -20,6 +20,7 @@ IUSE=""
 DEPEND="
 	dev-python/cachetools
 	dev-python/certifi
+	dev-python/durationpy
 	dev-python/google-auth
 	dev-python/oauthlib
 	dev-python/pyasn1-modules
