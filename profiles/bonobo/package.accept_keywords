@@ -165,6 +165,7 @@ net-libs/xdp-tools
 net-misc/autossh
 net-misc/usbip
 net-wireless/bluez-tools
+sci-geosciences/geopy
 sci-geosciences/qgis
 sci-geosciences/mapserver
 sci-libs/datasets

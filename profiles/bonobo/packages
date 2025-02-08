@@ -352,6 +352,7 @@
 *net-wireless/bluez-tools
 *net-wireless/iwd
 #*net-wireless/wpa_supplicant
+*sci-geosciences/geopy
 *sci-geosciences/qgis
 *sci-geosciences/laszip
 *sci-geosciences/mapserver
