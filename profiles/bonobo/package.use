@@ -68,7 +68,7 @@ dev-util/cppcheck gui charts htmlreport threads
 dev-util/nvidia-cuda-toolkit debugger nsight profiler rdma vis-profiler
 dev-util/perf clang systemtap slang libpfm
 dev-debug/strace aio elfutils
-gnome-extra/zenity webkit libnotify
+gnome-extra/zenity -webkit
 gui-libs/gtk broadway colord gstreamer wayland
 gui-libs/wlroots x11-backend
 gui-wm/gamescope libei

@@ -127,6 +127,7 @@
 *dev-python/pyaes
 *dev-python/pyasn1-modules
 *dev-python/pyaudio
+*dev-python/pycryptodome
 *dev-python/pydantic
 *dev-python/pydot
 *dev-python/pygame
