@@ -1,3 +1,4 @@
+*dev-libs/glaze
 *dev-libs/hyprgraphics
 *gui-apps/eww
 *gui-apps/hypridle
@@ -11,3 +12,4 @@
 *gui-libs/xdg-desktop-portal-hyprland
 *gui-wm/hyprland
 *gui-wm/hyprland-contrib
+*media-libs/libspng

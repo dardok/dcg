@@ -69,9 +69,10 @@ dev-util/nvidia-cuda-toolkit debugger nsight profiler rdma vis-profiler
 dev-util/perf clang systemtap slang libpfm
 dev-debug/strace aio elfutils
 gnome-extra/zenity -webkit
+gui-apps/waybar mpd network tray wifi
 gui-libs/gtk broadway colord gstreamer wayland
 gui-libs/wlroots x11-backend
-gui-wm/gamescope libei
+gui-wm/hyprland system-wlroots
 media-gfx/blender jemalloc cycles ffmpeg player collada llvm openimageio cuda -opensubdiv -embree
 media-gfx/graphviz pdf postscript
 media-libs/libcanberra gtk2
