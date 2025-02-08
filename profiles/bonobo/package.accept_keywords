@@ -64,6 +64,7 @@ dev-python/awscli-plugin-endpoint
 dev-python/boto3
 dev-python/botocore
 dev-python/cftime
+dev-python/cligj
 dev-python/contourpy
 dev-python/dill
 dev-python/fiona
