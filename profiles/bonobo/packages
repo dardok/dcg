@@ -104,6 +104,7 @@
 *dev-python/dnspython
 *dev-python/exceptiongroup
 *dev-python/ffmpeg-python
+*dev-python/fiona
 *dev-python/flask
 *dev-python/fsspec
 #*dev-python/fuse-python # deprecated
