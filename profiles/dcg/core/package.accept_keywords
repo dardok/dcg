@@ -25,3 +25,5 @@ sys-process/atop
 sys-libs/liburing
 sys-libs/libnvme
 sys-apps/nvme-cli
+
+sys-firmware/edk2-bin

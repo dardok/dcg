@@ -7,6 +7,8 @@ app-arch/xz-utils static-libs
 
 app-crypt/mit-krb5 keyutils pkinit
 
+app-emulation/qemu -pin-upstream-blobs
+
 >=app-text/xmlto-0.0.28-r1 text
 
 dev-lang/python berkdb
