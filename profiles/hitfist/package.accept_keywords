@@ -10,6 +10,7 @@ dev-libs/libinput
 dev-libs/wayland-protocols **
 dev-util/hyprwayland-scanner **
 gui-apps/hypridle **
+gui-apps/hyprlock **
 gui-apps/hyprpaper **
 gui-apps/hyprsunset **
 gui-apps/tuigreet

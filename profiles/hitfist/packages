@@ -21,6 +21,7 @@
 *dev-libs/hyprlang
 *dev-util/hyprwayland-scanner
 *gui-apps/hypridle
+*gui-apps/hyprlock
 *gui-apps/hyprpaper
 *gui-apps/hyprsunset
 *gui-apps/swaylock
@@ -35,6 +36,7 @@
 
 *www-client/google-chrome
 *www-client/firefox-bin
+*virtual/wine
 
 *x11-terms/kitty
 *x11-terms/kitty-shell-integration

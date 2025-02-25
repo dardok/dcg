@@ -21,5 +21,9 @@ www-client/w3m gdk-pixbuf gpm
 x11-base/xwayland libei
 x11-libs/gtk+ colord cups sysprof
 x11-misc/xdg-utils dbus gnome
+media-plugins/gst-plugins-meta a52 aac alsa cdda dts dvd flac mp3 mpeg ogg pulseaudio theora v4l vorbis x264
+media-libs/libsdl2 gles2 pipewire
+media-libs/libv4l jpeg qt5 qt6
+virtual/wine proton
 
 gui-wm/hyprland -qtutils
