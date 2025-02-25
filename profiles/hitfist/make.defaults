@@ -1,1 +1,3 @@
 CUSTOM_PROFILE="yes"
+
+VIDEO_CARDS="fbdev intel vesa dummy"
