@@ -1,0 +1,25 @@
+sys-apps/systemd boot cryptsetup homed policykit tpm bpf elfutils audit curl pkcs11
+
+app-admin/keepassxc browser
+app-editors/vim gpm sound
+app-misc/brightnessctl systemd udev
+dev-libs/re2 icu
+dev-qt/qtbase opengl
+dev-qt/qtgui accessibility dbus egl jpeg
+dev-qt/qttools opengl
+media-libs/gst-plugins-base alsa opengl theora
+media-libs/libcanberra -udev -alsa
+media-libs/libjxl gif jpeg
+media-libs/libpulse dbus gtk
+media-sound/pulseaudio-daemon bluetooth dbus gstreamer
+media-video/pipewire bluetooth dbus gstreamer
+net-print/cups dbus usb
+net-wireless/bluez cups
+sys-auth/polkit gtk
+sys-fs/btrfs-progs -udev
+www-client/w3m gdk-pixbuf gpm
+x11-base/xwayland libei
+x11-libs/gtk+ colord cups sysprof
+x11-misc/xdg-utils dbus gnome
+
+gui-wm/hyprland -qtutils

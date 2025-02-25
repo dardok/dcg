@@ -1,0 +1,26 @@
+app-misc/brightnessctl
+app-misc/tmux
+app-shells/liquidprompt
+dev-cpp/sdbus-c++ # for hypridle
+dev-libs/glaze
+dev-libs/hyprgraphics **
+dev-libs/hyprland-protocols **
+dev-libs/hyprlang **
+dev-libs/libinput
+dev-libs/wayland-protocols **
+dev-util/hyprwayland-scanner **
+gui-apps/hypridle **
+gui-apps/hyprpaper **
+gui-apps/hyprsunset **
+gui-apps/tuigreet
+gui-libs/aquamarine **
+gui-libs/hyprcursor **
+gui-libs/hyprland-qtutils **
+gui-libs/hyprutils **
+gui-libs/xdg-desktop-portal-hyprland **
+gui-wm/hyprland **
+gui-wm/hyprland-contrib **
+gui-wm/sway
+media-libs/libspng
+media-video/pipewire
+media-video/wireplumber
