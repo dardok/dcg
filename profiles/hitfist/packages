@@ -2,6 +2,8 @@
 *app-admin/sudo
 *app-crypt/swtpm
 *app-laptop/laptop-mode-tools
+*app-emulation/libvirt
+*app-emulation/qemu
 *app-misc/brightnessctl
 *app-portage/eix
 *app-portage/gentoolkit

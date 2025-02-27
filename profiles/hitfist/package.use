@@ -3,6 +3,8 @@ sys-apps/systemd boot cryptsetup homed policykit tpm bpf elfutils audit curl pkc
 app-admin/keepassxc browser
 app-crypt/swtpm fuse seccomp
 app-editors/vim gpm sound
+app-emulation/qemu pipewire python snappy spice gtk io-uring
+app-emulation/libvirt fuse libssh2 nbd parted policykit virt-network virtiofsd
 app-misc/brightnessctl systemd udev
 dev-libs/appstream qt6
 dev-libs/re2 icu
