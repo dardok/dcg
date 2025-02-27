@@ -34,6 +34,8 @@
 *gui-wm/hyprland-contrib
 *sys-apps/xdg-desktop-portal
 
+*media-plugins/gst-plugins-meta
+
 *www-client/google-chrome
 *www-client/firefox-bin
 
