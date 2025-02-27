@@ -3,6 +3,7 @@
 *app-laptop/laptop-mode-tools
 *app-misc/brightnessctl
 *app-portage/eix
+*app-portage/gentoolkit
 *app-shells/liquidprompt
 *net-wireless/bluez
 *net-wireless/wpa_supplicant
