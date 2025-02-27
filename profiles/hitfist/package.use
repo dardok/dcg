@@ -3,10 +3,12 @@ sys-apps/systemd boot cryptsetup homed policykit tpm bpf elfutils audit curl pkc
 app-admin/keepassxc browser
 app-editors/vim gpm sound
 app-misc/brightnessctl systemd udev
+dev-libs/appstream qt6
 dev-libs/re2 icu
 dev-qt/qtbase opengl
 dev-qt/qtgui accessibility dbus egl jpeg
 dev-qt/qttools opengl
+gui-libs/gtk colord cups gstreamer sysprof
 media-libs/gst-plugins-base alsa opengl theora
 media-libs/libcanberra -udev -alsa
 media-libs/libjxl gif jpeg
