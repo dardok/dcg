@@ -19,11 +19,14 @@ media-libs/libjxl gif jpeg
 media-libs/libpulse dbus gtk
 media-sound/pulseaudio-daemon bluetooth dbus gstreamer
 media-video/pipewire bluetooth dbus gstreamer
+net-dns/dnsmasq script
 net-libs/gnutls pkcs11 tools zstd
 net-print/cups dbus usb
 net-wireless/bluez cups
 sys-auth/polkit gtk
+sys-block/parted device-mapper
 sys-fs/btrfs-progs -udev
+sys-fs/lvm2 lvm
 www-client/w3m gdk-pixbuf gpm
 x11-base/xwayland libei
 x11-libs/gtk+ colord cups sysprof
