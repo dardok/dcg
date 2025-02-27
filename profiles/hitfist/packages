@@ -36,7 +36,6 @@
 
 *www-client/google-chrome
 *www-client/firefox-bin
-*virtual/wine
 
 *x11-terms/kitty
 *x11-terms/kitty-shell-integration
