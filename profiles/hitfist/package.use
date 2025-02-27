@@ -1,6 +1,7 @@
 sys-apps/systemd boot cryptsetup homed policykit tpm bpf elfutils audit curl pkcs11
 
 app-admin/keepassxc browser
+app-crypt/swtpm fuse seccomp
 app-editors/vim gpm sound
 app-misc/brightnessctl systemd udev
 dev-libs/appstream qt6

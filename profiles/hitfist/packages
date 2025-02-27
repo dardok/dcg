@@ -1,5 +1,6 @@
 *app-admin/keepassxc
 *app-admin/sudo
+*app-crypt/swtpm
 *app-laptop/laptop-mode-tools
 *app-misc/brightnessctl
 *app-portage/eix
