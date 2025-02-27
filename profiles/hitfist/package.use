@@ -8,6 +8,7 @@ dev-libs/re2 icu
 dev-qt/qtbase opengl
 dev-qt/qtgui accessibility dbus egl jpeg
 dev-qt/qttools opengl
+gui-apps/waypipe dmabuf ffmpeg lz4 vaapi zstd
 gui-libs/gtk colord cups gstreamer sysprof
 media-libs/gst-plugins-base alsa opengl theora
 media-libs/libcanberra -udev -alsa
