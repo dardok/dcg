@@ -17,6 +17,7 @@ media-libs/libjxl gif jpeg
 media-libs/libpulse dbus gtk
 media-sound/pulseaudio-daemon bluetooth dbus gstreamer
 media-video/pipewire bluetooth dbus gstreamer
+net-libs/gnutls pkcs11 tools
 net-print/cups dbus usb
 net-wireless/bluez cups
 sys-auth/polkit gtk
