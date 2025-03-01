@@ -29,7 +29,7 @@ net-libs/nghttp2 xml
 net-print/cups dbus usb
 net-wireless/bluez cups
 net-wireless/wpa_supplicant dbus
-sys-apps/systemd boot cryptsetup homed policykit tpm bpf elfutils audit curl pkcs11
+sys-apps/systemd boot cryptsetup homed policykit tpm bpf elfutils audit curl pkcs11 ukify
 sys-auth/polkit gtk
 sys-block/parted device-mapper
 sys-firmware/ipxe usb
