@@ -1,3 +1,4 @@
+app-crypt/swtpm
 app-misc/brightnessctl
 app-misc/tmux
 app-shells/liquidprompt
@@ -6,6 +7,7 @@ dev-libs/glaze
 dev-libs/hyprgraphics **
 dev-libs/hyprland-protocols **
 dev-libs/hyprlang **
+dev-libs/libei
 dev-libs/libinput
 dev-libs/wayland-protocols **
 dev-util/hyprwayland-scanner **
@@ -21,7 +23,6 @@ gui-libs/hyprutils **
 gui-libs/xdg-desktop-portal-hyprland **
 gui-wm/hyprland **
 gui-wm/hyprland-contrib **
-gui-wm/sway
 media-libs/libspng
 media-video/pipewire
 media-video/wireplumber

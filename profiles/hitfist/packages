@@ -1,10 +1,13 @@
 *app-admin/keepassxc
 *app-admin/sudo
+*app-crypt/swtpm
 *app-emulation/libvirt
+*app-emulation/qemu
 *app-emulation/virt-firmware
 *app-laptop/laptop-mode-tools
 *app-misc/brightnessctl
 *app-portage/eix
+*app-portage/gentoolkit
 *app-shells/bash-completion
 *app-shells/liquidprompt
 *dev-vcs/git
@@ -31,6 +34,7 @@
 *gui-apps/hyprsunset
 *gui-apps/swaylock
 *gui-apps/tuigreet
+*gui-apps/waypipe
 *gui-libs/aquamarine
 *gui-libs/hyprcursor
 *gui-libs/hyprutils
@@ -39,7 +43,8 @@
 *gui-wm/hyprland-contrib
 *sys-apps/xdg-desktop-portal
 
-*www-client/google-chrome
+*media-plugins/gst-plugins-meta
+
 *www-client/firefox-bin
 
 *x11-terms/kitty
