@@ -1,19 +1,24 @@
 *app-admin/keepassxc
 *app-admin/sudo
+*app-emulation/libvirt
+*app-emulation/virt-firmware
 *app-laptop/laptop-mode-tools
 *app-misc/brightnessctl
 *app-portage/eix
+*app-shells/bash-completion
 *app-shells/liquidprompt
+*dev-vcs/git
+*net-misc/rclone
 *net-wireless/bluez
 *net-wireless/wpa_supplicant
+*sys-apps/haveged
 *sys-block/parted
 *sys-boot/efibootmgr
 *sys-firmware/intel-microcode
 *sys-fs/btrfs-progs
 *sys-kernel/installkernel
 *sys-kernel/linux-firmware
-*sys-apps/haveged
-*net-misc/rclone
+*sys-power/acpid
 
 *dev-libs/glaze
 *dev-libs/hyprgraphics
@@ -36,7 +41,6 @@
 
 *www-client/google-chrome
 *www-client/firefox-bin
-*virtual/wine
 
 *x11-terms/kitty
 *x11-terms/kitty-shell-integration

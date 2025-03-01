@@ -1,5 +1,8 @@
 sys-apps/systemd boot cryptsetup homed policykit tpm bpf elfutils audit curl pkcs11
 
+app-emulation/qemu pipewire python snappy spice gtk io-uring usb usbredir fuse keyutils lzo multipath ssh
+sys-firmware/ipxe usb
+
 app-admin/keepassxc browser
 app-editors/vim gpm sound
 app-misc/brightnessctl systemd udev
@@ -24,6 +27,5 @@ x11-misc/xdg-utils dbus gnome
 media-plugins/gst-plugins-meta a52 aac alsa cdda dts dvd flac mp3 mpeg ogg pulseaudio theora v4l vorbis x264
 media-libs/libsdl2 gles2 pipewire
 media-libs/libv4l jpeg qt5 qt6
-virtual/wine proton
 
 gui-wm/hyprland -qtutils

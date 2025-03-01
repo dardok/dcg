@@ -25,3 +25,4 @@ gui-wm/sway
 media-libs/libspng
 media-video/pipewire
 media-video/wireplumber
+sys-firmware/edk2-bin
