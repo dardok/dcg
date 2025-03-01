@@ -19,5 +19,6 @@ fi
 LICENSE="MIT"
 SLOT="0"
 
-RDEPEND="
+BDEPEND="
+	dev-vcs/git
 "
