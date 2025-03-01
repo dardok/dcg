@@ -24,4 +24,5 @@ gui-wm/hyprland-contrib **
 media-libs/libspng
 media-video/pipewire
 media-video/wireplumber
+net-vpn/cloudflare-warp
 sys-firmware/edk2-bin
