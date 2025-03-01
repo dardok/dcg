@@ -6,9 +6,11 @@ app-emulation/qemu pipewire python snappy spice gtk io-uring usb usbredir fuse k
 app-misc/brightnessctl systemd udev
 dev-libs/appstream qt6
 dev-libs/re2 icu
+dev-qt/qt5compat icu qml
 dev-qt/qtbase opengl
 dev-qt/qtgui accessibility dbus egl jpeg
 dev-qt/qttools opengl
+dev-qt/qtwayland qml
 gui-apps/waypipe dmabuf lz4 zstd
 gui-libs/gtk colord cups gstreamer sysprof
 gui-wm/hyprland -qtutils
@@ -23,6 +25,7 @@ media-sound/pulseaudio-daemon bluetooth dbus gstreamer
 media-video/pipewire bluetooth dbus gstreamer
 net-dns/dnsmasq script
 net-libs/gnutls pkcs11 tools zstd
+net-libs/nghttp2 xml
 net-print/cups dbus usb
 net-wireless/bluez cups
 sys-apps/systemd boot cryptsetup homed policykit tpm bpf elfutils audit curl pkcs11
