@@ -25,18 +25,10 @@ media-sound/pulseaudio-daemon bluetooth dbus gstreamer
 media-video/pipewire bluetooth dbus gstreamer
 net-dns/dnsmasq script
 net-libs/gnutls pkcs11 tools zstd
-net-libs/nghttp2 xml
 net-print/cups dbus usb
 net-wireless/bluez cups
-net-wireless/wpa_supplicant dbus
-sys-apps/systemd boot cryptsetup homed policykit tpm bpf elfutils audit curl pkcs11 ukify
-sys-auth/polkit gtk
-sys-block/parted device-mapper
 sys-firmware/ipxe usb
 sys-fs/btrfs-progs -udev
-sys-fs/lvm2 lvm
-sys-kernel/installkernel systemd-boot uki ukify
-www-client/w3m gdk-pixbuf gpm
 x11-base/xwayland libei
 x11-libs/gtk+ colord cups sysprof
 x11-misc/xdg-utils dbus gnome
