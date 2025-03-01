@@ -23,6 +23,7 @@ RDEPEND="
 	>=dev-libs/hyprlang-0.4.0
 	>=gui-libs/hyprutils-0.2.6
 	>=dev-util/hyprwayland-scanner-0.4.4
+	dev-cpp/sdbus-c++
 	dev-libs/date
 	dev-libs/glib:2
 	dev-libs/wayland
