@@ -1,6 +1,7 @@
 *app-admin/keepassxc
 *app-admin/sudo
 *app-crypt/swtpm
+*app-editors/vim
 *app-emulation/libvirt
 *app-emulation/qemu
 *app-emulation/virt-firmware
