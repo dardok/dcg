@@ -35,6 +35,7 @@ sys-block/parted device-mapper
 sys-firmware/ipxe usb
 sys-fs/btrfs-progs -udev
 sys-fs/lvm2 lvm
+sys-kernel/installkernel systemd-boot uki ukify
 www-client/w3m gdk-pixbuf gpm
 x11-base/xwayland libei
 x11-libs/gtk+ colord cups sysprof

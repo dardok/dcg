@@ -15,6 +15,7 @@
 *dev-vcs/git
 *media-plugins/gst-plugins-meta
 *net-misc/rclone
+*net-vpn/cloudflare-warp
 *net-wireless/bluez
 *net-wireless/wpa_supplicant
 *sys-apps/haveged
@@ -24,6 +25,7 @@
 *sys-firmware/intel-microcode
 *sys-fs/btrfs-progs
 *sys-fs/cryptsetup
+*sys-kernel/installkernel
 *sys-kernel/linux-firmware
 *sys-power/acpid
 *www-client/firefox-bin
