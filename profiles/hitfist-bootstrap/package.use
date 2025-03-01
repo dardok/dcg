@@ -1,11 +1,9 @@
-app-crypt/swtpm fuse seccomp
 net-libs/gnutls pkcs11 tools zstd
 net-libs/nghttp2 xml
 net-wireless/wpa_supplicant dbus
 sys-apps/systemd boot cryptsetup homed policykit tpm bpf elfutils audit curl pkcs11 ukify
 sys-auth/polkit gtk
 sys-block/parted device-mapper
-sys-firmware/ipxe usb
 sys-fs/lvm2 lvm
 sys-kernel/installkernel systemd-boot uki ukify
 www-client/w3m gdk-pixbuf gpm
