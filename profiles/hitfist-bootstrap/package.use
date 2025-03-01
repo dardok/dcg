@@ -5,5 +5,5 @@ sys-apps/systemd boot cryptsetup homed policykit tpm bpf elfutils audit curl pkc
 sys-auth/polkit gtk
 sys-block/parted device-mapper
 sys-fs/lvm2 lvm
-sys-kernel/installkernel systemd-boot uki ukify
+sys-kernel/installkernel systemd-boot uki ukify dracut
 www-client/w3m gdk-pixbuf gpm
