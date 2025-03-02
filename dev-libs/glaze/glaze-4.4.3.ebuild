@@ -28,6 +28,7 @@ src_unpack() {
 	mkdir _deps ; cd _deps
 	unpack ut-0.0.4.tar.gz
 	cd ..
+	unpack ${P}.tar.gz
 }
 
 src_configure() {
