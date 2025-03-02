@@ -27,6 +27,7 @@ DEPEND="
 src_unpack() {
 	mkdir _deps ; cd _deps
 	unpack ut-0.0.4.tar.gz
+	cd ..
 }
 
 src_configure() {
