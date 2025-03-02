@@ -12,8 +12,7 @@ if [[ "${PV}" = *9999 ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/stephenberry/${PN^}.git"
 else
-	SRC_URI="https://github.com/stephenberry/${PN^}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
-			https://github.com/openalgz/0.0.4/archive/refs/tags/v0.0.4.tar.gz -> ut-0.0.4.tar.gz"
+	SRC_URI="https://github.com/stephenberry/${PN^}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 	KEYWORDS="~amd64 ~riscv"
 fi
 
@@ -23,13 +22,6 @@ SLOT="0"
 DEPEND="
 	dev-cpp/eigen
 "
-
-src_unpack() {
-	mkdir _deps ; cd _deps
-	unpack ut-0.0.4.tar.gz
-	cd ..
-	unpack ${P}.tar.gz
-}
 
 src_configure() {
 	local mycmakeargs=(
