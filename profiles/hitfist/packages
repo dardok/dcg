@@ -1,6 +1,7 @@
 *app-admin/keepassxc
 *app-admin/sudo
 *app-crypt/swtpm
+*=app-editors/sublime-text-4_p4126-r1
 *app-editors/vim
 *app-emulation/libvirt
 *app-emulation/qemu
