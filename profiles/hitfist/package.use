@@ -26,6 +26,7 @@ media-sound/pulseaudio-daemon bluetooth dbus gstreamer
 media-video/pipewire bluetooth dbus gstreamer
 net-dns/dnsmasq script
 net-libs/gnutls pkcs11 tools zstd
+net-libs/gtk-vnc -vala
 net-misc/spice-gtk policykit usbredir
 net-print/cups dbus usb
 net-wireless/bluez cups
