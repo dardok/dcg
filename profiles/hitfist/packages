@@ -5,6 +5,7 @@
 *app-emulation/libvirt
 *app-emulation/qemu
 *app-emulation/virt-firmware
+*app-emulation/virt-viewer
 *app-laptop/laptop-mode-tools
 *app-misc/brightnessctl
 *app-misc/tmux
