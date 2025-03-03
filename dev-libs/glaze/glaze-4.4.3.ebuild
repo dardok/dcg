@@ -19,6 +19,15 @@ fi
 LICENSE="MIT"
 SLOT="0"
 
-BDEPEND="
-	dev-vcs/git
+DEPEND="
+	dev-cpp/eigen
 "
+
+src_configure() {
+	local mycmakeargs=(
+		-DBUILD_TESTING=OFF
+		-DFETCHCONTENT_FULLY_DISCONNECTED=yes
+	)
+
+	cmake_src_configure
+}
