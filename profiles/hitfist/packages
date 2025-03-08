@@ -16,6 +16,8 @@
 *app-shells/liquidprompt
 *app-vim/vim-tmux
 *media-plugins/gst-plugins-meta
+*media-sound/pavucontrol
+*media-video/vlc
 *net-misc/rclone
 *net-vpn/cloudflare-warp
 *net-wireless/bluez
