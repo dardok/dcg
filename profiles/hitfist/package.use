@@ -2,7 +2,9 @@ app-admin/keepassxc browser
 app-crypt/swtpm fuse seccomp
 app-editors/vim gpm sound
 app-emulation/libvirt fuse libssh2 nbd parted policykit virt-network virtiofsd
+app-emulation/libvirt-glib -vala
 app-emulation/qemu pipewire python snappy spice gtk io-uring usb usbredir fuse keyutils lzo multipath ssh
+app-emulation/spice gstreamer lz4
 app-misc/brightnessctl systemd udev
 dev-libs/appstream qt6
 dev-libs/re2 icu
@@ -25,6 +27,8 @@ media-sound/pulseaudio-daemon bluetooth dbus gstreamer
 media-video/pipewire bluetooth dbus gstreamer
 net-dns/dnsmasq script
 net-libs/gnutls pkcs11 tools zstd
+net-libs/gtk-vnc -vala
+net-misc/spice-gtk policykit usbredir webdav lz4
 net-print/cups dbus usb
 net-wireless/bluez cups
 sys-firmware/ipxe usb
