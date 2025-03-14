@@ -1,8 +1,5 @@
-app-containers/conmon
-app-containers/containers-common
 app-containers/crun
 app-containers/podman
 app-containers/slirp4netns
 dev-python/podman
-net-misc/passt
 sys-fs/fuse-overlayfs
