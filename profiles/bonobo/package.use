@@ -43,6 +43,7 @@ dev-libs/msgpack boost
 dev-libs/nss utils
 dev-libs/pkcs11-helper nss
 dev-libs/weston lcms wayland-compositor xwayland fullscreen ivi remoting rdp screen-sharing webp
+dev-libs/xmlsec gcrypt
 dev-ml/cudf llvm-libunwind
 dev-python/netcdf4 szip
 dev-python/numpy lapack
