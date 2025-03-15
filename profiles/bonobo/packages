@@ -356,13 +356,13 @@
 *sci-geosciences/qgis
 *sci-geosciences/laszip
 *sci-geosciences/mapserver
-*sci-libs/datasets
-*sci-libs/huggingface_hub
 *sci-libs/onnx
 *sci-libs/pdal
-*sci-libs/pytorch
-*sci-libs/transformers
 *sci-mathematics/glpk
+*sci-ml/datasets
+*sci-ml/huggingface_hub
+*sci-ml/pytorch
+*sci-ml/transformers
 *sec-policy/apparmor-profiles
 *sys-apps/apparmor
 *sys-apps/apparmor-utils
