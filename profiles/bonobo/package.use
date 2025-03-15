@@ -14,6 +14,7 @@ app-emulation/xen efi
 app-emulation/xen-tools -qemu -qemu-traditional -ipxe system-qemu system-ipxe system-seabios
 app-emulation/virt-manager gui
 app-misc/jq oniguruma
+app-office/gnucash aqbanking gnome-keyring ofx postgres python quotes smartcard sqlite
 app-office/mdbtools glib odbc
 app-text/ghostscript-gpl cups
 app-text/poppler nss
@@ -21,6 +22,7 @@ app-text/tessdata_fast l10n_en
 app-text/texlive-core xetex
 app-text/xmlto text
 dev-cpp/eigen cuda
+dev-db/libdbi-drivers postgres
 dev-db/postgis postgres_targets_postgres15
 dev-db/postgresql threads uuid llvm icu
 dev-games/openscenegraph gdal lua pdf
@@ -104,6 +106,7 @@ net-dns/dnsmasq script tftp
 net-firewall/iptables nftables
 net-firewall/nftables json libedit xtables -readline
 net-im/telegram-desktop enchant qt6-imageformats screencast
+net-libs/aqbanking ofx ebics
 net-libs/gnutls tools
 net-libs/gssdp -gtk
 net-libs/phodav spice

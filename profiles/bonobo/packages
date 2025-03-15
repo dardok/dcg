@@ -48,6 +48,7 @@
 *app-misc/tmux
 *app-misc/wayland-utils
 *app-misc/yq
+*app-office/gnucash
 *app-office/mdbtools
 *app-portage/cpuid2cpuflags
 *app-portage/eix

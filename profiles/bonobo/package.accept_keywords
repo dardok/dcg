@@ -20,6 +20,7 @@ app-misc/brightnessctl
 app-misc/hivex
 app-misc/tmux
 app-misc/cliphist
+app-office/gnucash
 app-shells/liquidprompt
 app-shells/powerline
 app-vim/wayland-clipboard
