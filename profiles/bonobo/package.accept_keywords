@@ -77,6 +77,7 @@ dev-python/inflection
 dev-python/installer
 dev-python/imageio
 dev-python/importlib_metadata
+dev-python/ipython-pygments-lexers
 dev-python/jaraco-text
 dev-python/lazy-loader
 dev-python/llvmlite

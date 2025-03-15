@@ -9,7 +9,7 @@
 *app-arch/deb2targz
 *app-arch/p7zip
 *app-arch/rar
-*app-arch/rpm
+*=app-arch/rpm-4.19*
 *app-containers/apptainer
 *app-containers/cni-plugins
 *app-containers/docker
@@ -173,8 +173,6 @@
 *dev-python/werkzeug
 *dev-python/wsproto
 *dev-python/yarl
-*dev-qt/qdbus
-*dev-qt/qdbusviewer
 *dev-qt/qtbase
 *dev-qt/qthttpserver
 *dev-qt/qtshadertools

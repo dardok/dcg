@@ -70,6 +70,7 @@ dev-util/perf clang systemtap slang libpfm
 dev-debug/strace aio elfutils
 gnome-extra/zenity -webkit
 gui-apps/waybar mpd network tray wifi
+gui-apps/waypipe lz4
 gui-libs/gtk broadway colord gstreamer wayland
 gui-libs/wlroots x11-backend
 gui-wm/hyprland system-wlroots
