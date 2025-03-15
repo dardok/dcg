@@ -178,6 +178,7 @@ sci-libs/kissfft
 sci-libs/onnx
 sci-libs/pdal
 sci-libs/scikit-learn
+sci-ml/caffe2
 sci-ml/datasets
 sci-ml/huggingface_hub
 sci-ml/pytorch
@@ -204,7 +205,6 @@ sys-cluster/rdma-core
 sys-cluster/ucx
 sys-fs/fuse-overlayfs
 sys-fs/squashfuse
-sci-libs/caffe2
 sys-libs/libapparmor
 sys-libs/libmodulemd
 sys-libs/libnvidia-container
