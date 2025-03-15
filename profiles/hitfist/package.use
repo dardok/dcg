@@ -29,6 +29,7 @@ media-video/vlc dbus xml libnotify optimisememory v4l vpx x264 x265 svc png rdp 
 net-dns/dnsmasq script
 net-libs/gnutls pkcs11 tools zstd
 net-libs/gtk-vnc -vala
+net-misc/freerdp client gstreamer jpeg pulseaudio server usb
 net-misc/spice-gtk policykit usbredir webdav lz4
 net-print/cups dbus usb
 net-wireless/bluez cups
