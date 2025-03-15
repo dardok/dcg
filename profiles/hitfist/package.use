@@ -25,6 +25,7 @@ media-libs/libv4l jpeg
 media-plugins/gst-plugins-meta a52 aac alsa cdda dts dvd flac mp3 mpeg ogg pulseaudio theora v4l vorbis x264
 media-sound/pulseaudio-daemon bluetooth dbus gstreamer
 media-video/pipewire bluetooth dbus gstreamer
+media-video/vlc dbus xml libnotify optimisememory v4l vpx x264 x265 svc png rdp pulseaudio
 net-dns/dnsmasq script
 net-libs/gnutls pkcs11 tools zstd
 net-libs/gtk-vnc -vala
