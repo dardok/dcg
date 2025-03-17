@@ -17,6 +17,7 @@
 *app-vim/vim-tmux
 *media-plugins/gst-plugins-meta
 *media-sound/pavucontrol
+*media-sound/playerctl
 *media-video/vlc
 *net-misc/rclone
 *net-vpn/cloudflare-warp
