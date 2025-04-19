@@ -3,7 +3,6 @@
 *app-containers/podman
 *app-editors/emacs
 *app-editors/neovim
-*app-editors/neovim
 *app-editors/xemacs
 *app-emacs/emacs-common
 *app-emulation/virt-manager
