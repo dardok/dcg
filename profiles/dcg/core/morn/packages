@@ -5,6 +5,7 @@
 *dev-python/anyio
 *dev-python/aiofiles
 *dev-python/grpcio
+*dev-python/protobuf
 *dev-python/pyproj
 *dev-python/xarray
 *dev-util/bcc
