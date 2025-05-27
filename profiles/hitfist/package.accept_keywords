@@ -3,8 +3,8 @@ app-editors/sublime-text
 app-misc/brightnessctl
 app-misc/tmux
 app-shells/liquidprompt
+dev-cpp/glaze
 dev-cpp/sdbus-c++ # for hypridle
-dev-libs/glaze
 dev-libs/hyprgraphics **
 dev-libs/hyprland-protocols **
 dev-libs/hyprlang **
