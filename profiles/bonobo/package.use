@@ -99,7 +99,7 @@ media-sound/pulseaudio realtime bluetooth equalizer libsamplerate native-headset
 media-sound/pulseeffects bs2b calf rnnoise rubberband webrtc zamaudio
 media-video/cheese egl
 media-video/libcamera gstreamer cam qcam v4l2 pycamera
-media-video/ffmpeg cuda nvenc libv4l opus xvid vpx jpeg2k
+media-video/ffmpeg cuda nvenc libv4l opus xvid vpx jpeg2k lame
 media-video/obs-studio nvenc pipewire
 media-video/pipewire bluetooth v4l jack-sdk extra sound-server libcamera ffmpeg
 net-analyzer/wireshark http2
@@ -110,6 +110,7 @@ net-im/telegram-desktop enchant qt6-imageformats screencast
 net-libs/aqbanking ofx ebics
 net-libs/gnutls tools
 net-libs/gssdp -gtk
+net-libs/nodejs npm
 net-libs/phodav spice
 net-libs/zeromq drafts
 net-misc/freerdp usb server

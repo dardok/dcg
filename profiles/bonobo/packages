@@ -100,6 +100,7 @@
 *dev-python/black
 *dev-python/blessed
 *dev-python/boto3
+*dev-python/build
 *dev-python/cbor2
 *dev-python/croniter
 *dev-python/dnspython
@@ -119,6 +120,7 @@
 *dev-python/matplotlib-inline
 *dev-python/mpi4py
 *dev-python/msgpack
+*dev-python/mypy
 *dev-python/netcdf4
 *dev-python/networkx
 #*dev-python/numba
@@ -320,6 +322,7 @@
 *net-analyzer/nessus-bin
 *net-analyzer/net-snmp
 *net-analyzer/nmap
+*net-analyzer/scapy
 *net-analyzer/sslscan
 *net-analyzer/tcpdump
 *net-analyzer/traceroute
@@ -356,11 +359,11 @@
 *sci-geosciences/qgis
 *sci-geosciences/laszip
 *sci-geosciences/mapserver
-*sci-libs/onnx
 *sci-libs/pdal
 *sci-mathematics/glpk
 *sci-ml/datasets
 *sci-ml/huggingface_hub
+*sci-ml/onnx
 *sci-ml/pytorch
 *sci-ml/transformers
 *sec-policy/apparmor-profiles
@@ -441,7 +444,7 @@
 *x11-apps/xvinfo
 *x11-apps/xwd
 *x11-apps/xwud
-*x11-drivers/nvidia-drivers:0/550
+*x11-drivers/nvidia-drivers:0/570
 *x11-drivers/xf86-input-libinput
 *x11-drivers/xf86-video-dummy
 *x11-libs/libXScrnSaver

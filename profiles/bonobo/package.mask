@@ -1,5 +1,6 @@
 >=sys-kernel/gentoo-sources-6.8
 >=sys-kernel/linux-headers-6.8
+>=sys-fs/xfsprogs-6.12
 >=dev-lang/python-3.13
 
 # >=dev-util/nvidia-cuda-toolkit-12.4 # opencv openmpi caffe2
