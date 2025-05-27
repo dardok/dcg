@@ -27,6 +27,7 @@ app-vim/wayland-clipboard
 app-text/tesseract
 app-text/xmlformat
 dev-build/meson
+dev-cpp/glaze
 dev-cpp/pystring
 dev-cpp/robin-hood-hashing
 dev-cpp/websocketpp
@@ -46,7 +47,6 @@ dev-libs/date
 dev-libs/dynolog
 dev-libs/FP16
 dev-libs/FXdiv
-dev-libs/glaze
 sci-libs/kineto
 dev-libs/libliftoff
 dev-libs/pfs
