@@ -9,7 +9,7 @@ app-misc/brightnessctl systemd udev
 dev-libs/appstream qt6
 dev-libs/re2 icu
 dev-qt/qt5compat icu qml
-dev-qt/qtbase cups gtk icu libproxy
+dev-qt/qtbase opengl
 dev-qt/qtgui accessibility dbus egl jpeg
 dev-qt/qttools opengl
 dev-qt/qtwayland qml
