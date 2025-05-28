@@ -12,6 +12,7 @@ dev-libs/hyprlang **
 dev-libs/libei
 dev-libs/libinput
 dev-libs/wayland-protocols **
+dev-python/pefile
 dev-util/hyprwayland-scanner **
 gui-apps/hypridle **
 gui-apps/hyprlock **
