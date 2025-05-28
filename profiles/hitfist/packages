@@ -30,7 +30,7 @@
 *x11-terms/kitty-shell-integration
 *x11-terms/kitty-terminfo
 
-*dev-libs/glaze
+*dev-cpp/glaze
 *dev-libs/hyprgraphics
 *dev-libs/hyprland-protocols
 *dev-libs/hyprlang
