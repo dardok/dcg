@@ -1,5 +1,6 @@
 app-crypt/swtpm
 app-editors/sublime-text
+app-emulation/virt-firmware
 app-misc/brightnessctl
 app-misc/tmux
 app-shells/liquidprompt
