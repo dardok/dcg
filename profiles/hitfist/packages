@@ -12,6 +12,7 @@
 *app-misc/tmux
 *app-portage/eix
 *app-portage/gentoolkit
+*app-portage/smart-live-rebuild
 *app-shells/bash-completion
 *app-shells/liquidprompt
 *app-vim/vim-tmux
