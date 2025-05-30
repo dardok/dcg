@@ -63,6 +63,7 @@
 *app-text/xmlformat
 *app-vim/pathogen
 *app-vim/wayland-clipboard
+*dev-cpp/glaze
 *dev-cpp/nlohmann_json
 *dev-cpp/tbb # ??? media-libs/oidn media-gfx/openvdb media-gfx/blender
 *dev-cpp/websocketpp
@@ -75,7 +76,6 @@
 *dev-java/maven-bin:3.8
 *dev-lang/lua
 *dev-libs/cudnn
-*dev-libs/glaze
 *dev-libs/icu
 *dev-libs/libbpf
 #*dev-libs/libp11 # broken, requires incompat openssl

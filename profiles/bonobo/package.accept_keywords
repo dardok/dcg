@@ -55,6 +55,8 @@ dev-libs/pthreadpool
 dev-libs/simde
 dev-libs/wayland
 dev-util/nsight-compute
+dev-util/nsight-graphics
+dev-util/nsight-systems
 dev-python/aesara
 dev-python/aiofiles
 dev-python/aiostream
