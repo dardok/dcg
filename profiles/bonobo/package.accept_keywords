@@ -154,7 +154,7 @@ media-libs/libspng
 media-libs/mesa
 media-libs/oidn
 media-libs/opencollada
-media-libs/opencv
+#media-libs/opencv
 media-libs/shaderc
 media-libs/vkroots
 media-libs/vulkan-layers

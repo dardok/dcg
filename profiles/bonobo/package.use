@@ -86,7 +86,7 @@ media-libs/freetype harfbuzz utils brotli
 media-libs/harfbuzz icu
 media-libs/libsdl2 gles2 pipewire
 media-libs/mesa vulkan-overlay
-media-libs/opencv cuda threads download contrib contribdnn contribfreetype contribxfeatures2d contribcvv -gtk3 -openexr -opencl
+media-libs/opencv features2d cuda threads download contrib contribdnn contribfreetype contribxfeatures2d contribcvv -gtk3 -openexr -opencl
 media-libs/rubberband ladspa
 media-libs/tg_owt screencast
 media-libs/vulkan-loader layers
