@@ -47,7 +47,6 @@ dev-libs/date
 dev-libs/dynolog
 dev-libs/FP16
 dev-libs/FXdiv
-sci-libs/kineto
 dev-libs/libliftoff
 dev-libs/pfs
 dev-libs/pocketfft
@@ -55,6 +54,7 @@ dev-libs/psimd
 dev-libs/pthreadpool
 dev-libs/simde
 dev-libs/wayland
+dev-util/nsight-compute
 dev-python/aesara
 dev-python/aiofiles
 dev-python/aiostream
@@ -176,6 +176,7 @@ sci-geosciences/qgis
 sci-geosciences/mapserver
 sci-libs/foxi
 sci-libs/geos
+sci-libs/kineto
 sci-libs/kissfft
 sci-libs/pdal
 sci-libs/scikit-learn
