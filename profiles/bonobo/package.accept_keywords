@@ -209,6 +209,7 @@ sys-cluster/pmix
 sys-cluster/prrte
 sys-cluster/rdma-core
 sys-cluster/ucx
+=sys-devel/gcc-15*
 sys-fs/fuse-overlayfs
 sys-fs/squashfuse
 sys-libs/libapparmor
@@ -217,7 +218,6 @@ sys-libs/libnvidia-container
 sys-libs/libnvme
 sys-libs/liburing
 sys-process/atop
-x11-libs/libdrm
 x11-misc/xscreensaver
 x11-terms/kitty
 x11-terms/kitty-shell-integration
@@ -244,7 +244,6 @@ gui-libs/hyprcursor **
 gui-libs/hyprutils **
 dev-libs/hyprgraphics **
 gui-libs/hyprland-qtutils **
-gui-apps/hyprpaper **
 gui-apps/wofi **
 gui-apps/wlgreet
 dev-cpp/sdbus-c++ # for hypridle

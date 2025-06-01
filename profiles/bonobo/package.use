@@ -129,6 +129,7 @@ sci-libs/gdal ogdi postgres java geos threads spatialite armadillo fits gif gml 
 sci-libs/netcdf szip
 sci-libs/pdal postgres
 sci-ml/caffe2 cuda opencv
+sci-physics/bullet double-precision
 sys-apps/attr static-libs
 sys-apps/busybox -static
 sys-apps/dbus user-session

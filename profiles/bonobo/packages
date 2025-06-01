@@ -265,7 +265,7 @@
 *media-fonts/freefonts
 *media-fonts/ttf-bitstream-vera
 *media-fonts/unifont
-*media-gfx/blender:4.2
+*media-gfx/blender
 *media-gfx/feh
 *media-gfx/gimp
 *media-gfx/graphviz
@@ -467,7 +467,6 @@
 *gui-wm/hyprland-contrib
 *gui-apps/wofi
 *gui-apps/hypridle
-*gui-apps/hyprpaper
 *gui-apps/hyprlock
 *gui-apps/hyprsunset
 *dev-libs/hyprgraphics
