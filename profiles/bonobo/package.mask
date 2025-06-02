@@ -1,5 +1,6 @@
 >=sys-kernel/gentoo-sources-6.8
 >=sys-kernel/linux-headers-6.8
+>=sys-fs/xfsprogs-6.12
 >=dev-lang/python-3.13
 
 # >=dev-util/nvidia-cuda-toolkit-12.4 # opencv openmpi caffe2
@@ -19,3 +20,6 @@ sys-cluster/mpich2
 # >=dev-python/numexpr-2.10 # needs numpy-2
 
 >=dev-python/pynvml-12 # breaks atopgpud
+
+>=dev-util/nvidia-cuda-toolkit-12.4
+>=dev-libs/cudnn-9

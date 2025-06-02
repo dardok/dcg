@@ -12,6 +12,7 @@
 *app-misc/tmux
 *app-portage/eix
 *app-portage/gentoolkit
+*app-portage/smart-live-rebuild
 *app-shells/bash-completion
 *app-shells/liquidprompt
 *app-vim/vim-tmux
@@ -30,7 +31,7 @@
 *x11-terms/kitty-shell-integration
 *x11-terms/kitty-terminfo
 
-*dev-libs/glaze
+*dev-cpp/glaze
 *dev-libs/hyprgraphics
 *dev-libs/hyprland-protocols
 *dev-libs/hyprlang

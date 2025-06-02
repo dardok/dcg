@@ -15,7 +15,7 @@ dev-qt/qttools opengl
 dev-qt/qtwayland qml
 gui-apps/waypipe dmabuf lz4 zstd
 gui-libs/gtk colord cups gstreamer sysprof
-gui-wm/hyprland -qtutils
+gui-wm/hyprland -qtutils -legacy-renderer
 media-libs/gst-plugins-base alsa opengl theora
 media-libs/libcanberra -udev -alsa
 media-libs/libjxl gif jpeg
@@ -24,6 +24,7 @@ media-libs/libsdl2 gles2 pipewire
 media-libs/libv4l jpeg
 media-plugins/gst-plugins-meta a52 aac alsa cdda dts dvd flac mp3 mpeg ogg pulseaudio theora v4l vorbis x264
 media-sound/pulseaudio-daemon bluetooth dbus gstreamer
+media-video/ffmpeg-compat alsa lcms opengl pulseaudio sdl svg vorbis x264 xvid
 media-video/pipewire bluetooth dbus gstreamer
 media-video/vlc dbus xml libnotify optimisememory v4l vpx x264 x265 svc png rdp pulseaudio
 net-dns/dnsmasq script

@@ -86,7 +86,7 @@ media-libs/freetype harfbuzz utils brotli
 media-libs/harfbuzz icu
 media-libs/libsdl2 gles2 pipewire
 media-libs/mesa vulkan-overlay
-media-libs/opencv cuda threads download contrib contribdnn contribfreetype contribxfeatures2d contribcvv -gtk3 -openexr -opencl
+media-libs/opencv features2d cuda threads download contrib contribdnn contribfreetype contribxfeatures2d contribcvv -gtk3 -openexr -opencl
 media-libs/rubberband ladspa
 media-libs/tg_owt screencast
 media-libs/vulkan-loader layers
@@ -99,7 +99,7 @@ media-sound/pulseaudio realtime bluetooth equalizer libsamplerate native-headset
 media-sound/pulseeffects bs2b calf rnnoise rubberband webrtc zamaudio
 media-video/cheese egl
 media-video/libcamera gstreamer cam qcam v4l2 pycamera
-media-video/ffmpeg cuda nvenc libv4l opus xvid vpx jpeg2k
+media-video/ffmpeg cuda nvenc libv4l opus xvid vpx jpeg2k lame
 media-video/obs-studio nvenc pipewire
 media-video/pipewire bluetooth v4l jack-sdk extra sound-server libcamera ffmpeg
 net-analyzer/wireshark http2
@@ -110,6 +110,7 @@ net-im/telegram-desktop enchant qt6-imageformats screencast
 net-libs/aqbanking ofx ebics
 net-libs/gnutls tools
 net-libs/gssdp -gtk
+net-libs/nodejs npm
 net-libs/phodav spice
 net-libs/zeromq drafts
 net-misc/freerdp usb server
@@ -128,6 +129,7 @@ sci-libs/gdal ogdi postgres java geos threads spatialite armadillo fits gif gml 
 sci-libs/netcdf szip
 sci-libs/pdal postgres
 sci-ml/caffe2 cuda opencv
+sci-physics/bullet double-precision
 sys-apps/attr static-libs
 sys-apps/busybox -static
 sys-apps/dbus user-session

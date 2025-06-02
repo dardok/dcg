@@ -27,6 +27,7 @@ app-vim/wayland-clipboard
 app-text/tesseract
 app-text/xmlformat
 dev-build/meson
+dev-cpp/glaze
 dev-cpp/pystring
 dev-cpp/robin-hood-hashing
 dev-cpp/websocketpp
@@ -46,8 +47,6 @@ dev-libs/date
 dev-libs/dynolog
 dev-libs/FP16
 dev-libs/FXdiv
-dev-libs/glaze
-sci-libs/kineto
 dev-libs/libliftoff
 dev-libs/pfs
 dev-libs/pocketfft
@@ -55,6 +54,9 @@ dev-libs/psimd
 dev-libs/pthreadpool
 dev-libs/simde
 dev-libs/wayland
+dev-util/nsight-compute
+dev-util/nsight-graphics
+dev-util/nsight-systems
 dev-python/aesara
 dev-python/aiofiles
 dev-python/aiostream
@@ -86,6 +88,8 @@ dev-python/marshmallow
 dev-python/matplotlib
 dev-python/more-itertools
 dev-python/multiprocess
+dev-python/mypy
+dev-python/narwhals
 dev-python/netcdf4
 #dev-python/numba
 dev-python/opcodes
@@ -152,7 +156,7 @@ media-libs/libspng
 media-libs/mesa
 media-libs/oidn
 media-libs/opencollada
-media-libs/opencv
+#media-libs/opencv
 media-libs/shaderc
 media-libs/vkroots
 media-libs/vulkan-layers
@@ -174,13 +178,15 @@ sci-geosciences/qgis
 sci-geosciences/mapserver
 sci-libs/foxi
 sci-libs/geos
+sci-libs/kineto
 sci-libs/kissfft
-sci-libs/onnx
 sci-libs/pdal
 sci-libs/scikit-learn
 sci-ml/caffe2
 sci-ml/datasets
 sci-ml/huggingface_hub
+sci-ml/kineto
+sci-ml/onnx
 sci-ml/pytorch
 sci-ml/safetensors
 sci-ml/tokenizers
@@ -203,6 +209,7 @@ sys-cluster/pmix
 sys-cluster/prrte
 sys-cluster/rdma-core
 sys-cluster/ucx
+=sys-devel/gcc-15*
 sys-fs/fuse-overlayfs
 sys-fs/squashfuse
 sys-libs/libapparmor
@@ -211,7 +218,6 @@ sys-libs/libnvidia-container
 sys-libs/libnvme
 sys-libs/liburing
 sys-process/atop
-x11-libs/libdrm
 x11-misc/xscreensaver
 x11-terms/kitty
 x11-terms/kitty-shell-integration
@@ -220,6 +226,7 @@ x11-themes/pulse-glass
 x11-wm/awesome **
 virtual/mpi
 
+sys-apps/xdg-desktop-portal
 x11-apps/xcur2png
 gui-wm/hyprland **
 gui-libs/xdg-desktop-portal-hyprland **
@@ -237,7 +244,6 @@ gui-libs/hyprcursor **
 gui-libs/hyprutils **
 dev-libs/hyprgraphics **
 gui-libs/hyprland-qtutils **
-gui-apps/hyprpaper **
 gui-apps/wofi **
 gui-apps/wlgreet
 dev-cpp/sdbus-c++ # for hypridle

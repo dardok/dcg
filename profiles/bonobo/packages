@@ -63,6 +63,7 @@
 *app-text/xmlformat
 *app-vim/pathogen
 *app-vim/wayland-clipboard
+*dev-cpp/glaze
 *dev-cpp/nlohmann_json
 *dev-cpp/tbb # ??? media-libs/oidn media-gfx/openvdb media-gfx/blender
 *dev-cpp/websocketpp
@@ -75,7 +76,6 @@
 *dev-java/maven-bin:3.8
 *dev-lang/lua
 *dev-libs/cudnn
-*dev-libs/glaze
 *dev-libs/icu
 *dev-libs/libbpf
 #*dev-libs/libp11 # broken, requires incompat openssl
@@ -100,6 +100,7 @@
 *dev-python/black
 *dev-python/blessed
 *dev-python/boto3
+*dev-python/build
 *dev-python/cbor2
 *dev-python/croniter
 *dev-python/dnspython
@@ -119,6 +120,7 @@
 *dev-python/matplotlib-inline
 *dev-python/mpi4py
 *dev-python/msgpack
+*dev-python/mypy
 *dev-python/netcdf4
 *dev-python/networkx
 #*dev-python/numba
@@ -263,7 +265,7 @@
 *media-fonts/freefonts
 *media-fonts/ttf-bitstream-vera
 *media-fonts/unifont
-*media-gfx/blender:4.2
+*media-gfx/blender
 *media-gfx/feh
 *media-gfx/gimp
 *media-gfx/graphviz
@@ -274,7 +276,7 @@
 *media-libs/libsdl2
 *media-libs/libsmf
 *media-libs/libspng
-*=media-libs/opencv-4.9.0-r2
+*media-libs/opencv
 *media-libs/shaderc
 *media-libs/vulkan-loader
 *media-libs/zita-resampler
@@ -320,6 +322,7 @@
 *net-analyzer/nessus-bin
 *net-analyzer/net-snmp
 *net-analyzer/nmap
+*net-analyzer/scapy
 *net-analyzer/sslscan
 *net-analyzer/tcpdump
 *net-analyzer/traceroute
@@ -356,11 +359,11 @@
 *sci-geosciences/qgis
 *sci-geosciences/laszip
 *sci-geosciences/mapserver
-*sci-libs/onnx
 *sci-libs/pdal
 *sci-mathematics/glpk
 *sci-ml/datasets
 *sci-ml/huggingface_hub
+*sci-ml/onnx
 *sci-ml/pytorch
 *sci-ml/transformers
 *sec-policy/apparmor-profiles
@@ -441,7 +444,7 @@
 *x11-apps/xvinfo
 *x11-apps/xwd
 *x11-apps/xwud
-*x11-drivers/nvidia-drivers:0/550
+*x11-drivers/nvidia-drivers:0/570
 *x11-drivers/xf86-input-libinput
 *x11-drivers/xf86-video-dummy
 *x11-libs/libXScrnSaver
@@ -464,7 +467,6 @@
 *gui-wm/hyprland-contrib
 *gui-apps/wofi
 *gui-apps/hypridle
-*gui-apps/hyprpaper
 *gui-apps/hyprlock
 *gui-apps/hyprsunset
 *dev-libs/hyprgraphics
