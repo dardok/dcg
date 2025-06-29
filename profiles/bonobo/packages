@@ -95,7 +95,6 @@
 *dev-python/asyncssh
 *dev-python/autobahn
 *dev-python/awscli-plugin-endpoint
-*dev-python/backoff
 *dev-python/beautifulsoup4
 *dev-python/black
 *dev-python/blessed

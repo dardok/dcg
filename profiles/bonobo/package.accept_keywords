@@ -87,6 +87,7 @@ dev-python/llvmlite
 dev-python/marshmallow
 dev-python/matplotlib
 dev-python/more-itertools
+dev-python/mpi4py
 dev-python/multiprocess
 dev-python/mypy
 dev-python/narwhals
