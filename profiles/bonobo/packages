@@ -274,6 +274,7 @@
 *media-libs/aalib
 *media-libs/libcaca
 *media-libs/libdisplay-info
+*media-libs/libebur128
 *media-libs/libsdl2
 *media-libs/libsmf
 *media-libs/libspng
