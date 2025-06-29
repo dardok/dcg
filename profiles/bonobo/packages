@@ -284,9 +284,11 @@
 *media-plugins/calf
 *media-plugins/frei0r-plugins
 *media-plugins/gst-plugins-bluez
+*media-plugins/gst-plugins-bs2b
 *media-plugins/gst-plugins-cairo
 *media-plugins/gst-plugins-hls
 *media-plugins/gst-plugins-jpeg
+*media-plugins/gst-plugins-ladspa
 *media-plugins/gst-plugins-libde265
 *media-plugins/gst-plugins-libpng
 *media-plugins/gst-plugins-lv2
@@ -294,7 +296,9 @@
 *media-plugins/gst-plugins-rtmp
 *media-plugins/gst-plugins-opencv
 *media-plugins/gst-plugins-faac
+*media-plugins/gst-plugins-sctp
 *media-plugins/gst-plugins-vaapi
+*media-plugins/gst-plugins-webrtc
 *media-plugins/gst-plugins-x264
 *media-plugins/gst-plugins-x265
 *media-plugins/gst-plugins-ximagesrc
@@ -310,6 +314,7 @@
 *media-sound/ncmpcpp
 *media-sound/pavucontrol
 *media-sound/playerctl
+*media-sound/pulseaudio
 *media-sound/qjackctl
 #*media-video/libcamera # broken as of 9/2023
 *media-video/obs-studio
