@@ -51,6 +51,7 @@ dev-python/pandas full-support
 dev-python/pillow webp
 dev-python/pyarrow snappy parquet ssl
 dev-python/python-lsp-server all-plugins
+dev-python/python-socketio asyncio-client client
 dev-python/pyqt5 designer sql positioning network widgets gui printsupport declarative serialport multimedia webchannel
 dev-python/pyqt6 designer multimedia positioning serialport gles2-only quick webchannel
 dev-python/pyqt6-webengine quick
@@ -91,12 +92,11 @@ media-libs/rubberband ladspa
 media-libs/tg_owt screencast
 media-libs/vulkan-loader layers
 media-libs/suil gtk2
-media-plugins/calf experimental
+media-plugins/calf experimental gui
 media-plugins/gst-plugins-meta a52 aac cdda dts dv dvb dvd ffmpeg flac http lame libass libvisual mms modplug mpeg ogg opus oss taglib v4l vcd vpx wavpack
 media-sound/bluez-alsa aac mpg123
 media-sound/pulseaudio realtime bluetooth equalizer libsamplerate native-headset -daemon
 #media-sound/pulseaudio-daemon bluetooth
-media-sound/pulseeffects bs2b calf rnnoise rubberband webrtc zamaudio
 media-video/cheese egl
 media-video/libcamera gstreamer cam qcam v4l2 pycamera
 media-video/ffmpeg cuda nvenc libv4l opus xvid vpx jpeg2k lame
@@ -106,6 +106,7 @@ net-analyzer/wireshark http2
 net-dns/dnsmasq script tftp
 net-firewall/iptables nftables
 net-firewall/nftables json libedit xtables -readline
+net-fs/samba ads winbind
 net-im/telegram-desktop enchant qt6-imageformats screencast
 net-libs/aqbanking ofx ebics
 net-libs/gnutls tools

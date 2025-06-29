@@ -107,6 +107,8 @@
 *dev-python/ffmpeg-python
 *dev-python/fiona
 *dev-python/flask
+*dev-python/flask-cors
+*dev-python/flask-socketio
 *dev-python/fsspec
 #*dev-python/fuse-python # deprecated
 *dev-python/gitpython
@@ -308,7 +310,6 @@
 *media-sound/ncmpcpp
 *media-sound/pavucontrol
 *media-sound/playerctl
-*media-sound/pulseeffects
 *media-sound/qjackctl
 #*media-video/libcamera # broken as of 9/2023
 *media-video/obs-studio
