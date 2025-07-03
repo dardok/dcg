@@ -1,5 +1,5 @@
 app-editors/emacs gtk # requested
-app-editors/neovim lua_single_target_lua5-1
+app-editors/neovim lua_single_target_lua5-1 -lua_single_target_luajit
 
 app-emulation/qemu spice
 app-emulation/virt-manager gui # requested
