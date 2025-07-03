@@ -1,8 +1,9 @@
 # Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
+DISTUTILS_USE_PEP517=setuptools
 PYTHON_COMPAT=( pypy3 python3_{9..12} )
 
 inherit distutils-r1
@@ -28,8 +29,6 @@ DEPEND="
 	dev-python/requests-oauthlib
 	dev-python/websocket-client
 "
-
-distutils_enable_tests setup.py
 
 python_install_all() {
 	distutils-r1_python_install_all

@@ -21,8 +21,6 @@ RDEPEND="
 	x11-drivers/nvidia-drivers
 "
 
-distutils_enable_tests setup.py
-
 python_install_all() {
 	distutils-r1_python_install_all
 }

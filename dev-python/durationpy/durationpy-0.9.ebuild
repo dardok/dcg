@@ -1,5 +1,6 @@
-EAPI=7
+EAPI=8
 
+DISTUTILS_USE_PEP517=setuptools
 PYTHON_COMPAT=( pypy3 python3_{9..12} )
 
 inherit distutils-r1
@@ -14,8 +15,6 @@ KEYWORDS="amd64"
 IUSE=""
 
 DEPEND=""
-
-distutils_enable_tests setup.py
 
 python_install_all() {
 	distutils-r1_python_install_all
