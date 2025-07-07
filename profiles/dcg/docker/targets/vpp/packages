@@ -8,3 +8,4 @@
 *sys-process/numactl
 *sys-libs/libunwind
 *net-libs/libsrtp
+*net-misc/socat
