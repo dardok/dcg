@@ -1,3 +1,4 @@
+*dev-build/cmake
 *dev-python/fsspec
 *dev-python/filelock
 *dev-python/mpmath
