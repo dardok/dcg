@@ -3,3 +3,4 @@
 *sys-process/numactl
 *dev-python/pyelftools
 *dev-build/cmake
+*dev-python/ply
