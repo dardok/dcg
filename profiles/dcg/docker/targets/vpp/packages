@@ -5,3 +5,6 @@
 *net-libs/xdp-tools
 *sys-cluster/rdma-core
 *sys-process/numactl
+*net-libs/picotls
+*sys-libs/libunwind
+*net-libs/libsrtp
