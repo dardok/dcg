@@ -1,6 +1,7 @@
 *app-crypt/intel-ipsec-mb
-*sys-cluster/rdma-core
-*sys-process/numactl
-*dev-python/pyelftools
 *dev-build/cmake
 *dev-python/ply
+*dev-python/pyelftools
+*net-libs/xdp-tools
+*sys-cluster/rdma-core
+*sys-process/numactl
