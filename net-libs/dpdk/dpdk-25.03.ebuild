@@ -58,7 +58,8 @@ src_configure() {
 	python-single-r1_pkg_setup
 	local emesonargs=(
 		-Denable_kmods=false
-		-Dplatform=generic
+		-Dplatform=native
+		-Denable_driver_sdk=true
 		$(meson_use test tests)
 	)
 	meson_src_configure
