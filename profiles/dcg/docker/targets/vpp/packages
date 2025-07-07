@@ -2,3 +2,4 @@
 *sys-cluster/rdma-core
 *sys-process/numactl
 *dev-python/pyelftools
+*dev-build/cmake
