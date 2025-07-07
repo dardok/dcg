@@ -1,1 +1,2 @@
 dev-db/postgresql -server
+net-libs/nodejs npm
