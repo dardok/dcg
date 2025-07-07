@@ -1,1 +1,1 @@
-dev-python/ply python_targets_python3_13
+dev-python/ply PYTHON_TARGETS: -* python3_12 python3_13 PYTHON_SINGLE_TARGET: -* python3_13
