@@ -5,5 +5,5 @@
 *dev-python/pillow
 *dev-python/sympy
 *dev-python/uv
-
+*dev-db/postgresql
 *net-libs/nodejs
