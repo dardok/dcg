@@ -1,10 +1,10 @@
 *app-crypt/intel-ipsec-mb
 *dev-build/cmake
+*dev-libs/libnl
 *dev-python/ply
 *dev-python/pyelftools
 *net-libs/xdp-tools
 *sys-cluster/rdma-core
 *sys-process/numactl
-*net-libs/picotls
 *sys-libs/libunwind
 *net-libs/libsrtp
