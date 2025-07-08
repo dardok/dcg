@@ -1,4 +1,5 @@
 *dev-build/cmake
+*dev-python/audioop-lts
 *dev-python/fsspec
 *dev-python/filelock
 *dev-python/mpmath
