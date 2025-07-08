@@ -1,3 +1,4 @@
+*dev-vcs/git-lfs
 *dev-lang/go
 *dev-build/cmake
 *sci-ml/huggingface_hub
