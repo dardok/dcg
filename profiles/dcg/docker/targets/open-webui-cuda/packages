@@ -5,7 +5,9 @@
 *dev-python/mpmath
 *dev-python/networkx
 *dev-python/pillow
+*=dev-python/packaging-24.2
 *dev-python/sympy
 *dev-python/uv
 *dev-db/postgresql
+*media-video/ffmpeg
 *net-libs/nodejs
