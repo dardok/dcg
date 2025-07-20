@@ -122,8 +122,10 @@
 *dev-python/mpi4py
 *dev-python/msgpack
 *dev-python/mypy
+*dev-python/nbclassic
 *dev-python/netcdf4
 *dev-python/networkx
+*dev-python/notebook
 #*dev-python/numba
 *dev-python/openapi-core
 *dev-python/pandas
@@ -456,6 +458,7 @@
 *x11-libs/libXScrnSaver
 *x11-misc/dunst
 *x11-misc/lightdm-gtk-greeter
+*x11-misc/pcmanfm-qt
 *x11-misc/picom
 *x11-misc/redshift
 *x11-misc/rofi

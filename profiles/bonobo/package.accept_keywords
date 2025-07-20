@@ -176,6 +176,7 @@ net-fs/samba
 =net-fs/yfs-2021.05.41
 net-im/rocketchat-desktop-bin
 net-im/telegram-desktop
+net-libs/mbedtls
 net-libs/xdp-tools
 net-misc/autossh
 net-misc/usbip
@@ -189,12 +190,13 @@ sci-libs/kineto
 sci-libs/kissfft
 sci-libs/pdal
 sci-libs/scikit-learn
-sci-ml/caffe2
+=sci-ml/caffe2-2.7.1-r1
+sci-ml/cudnn-frontend
 sci-ml/datasets
 sci-ml/huggingface_hub
 sci-ml/kineto
 sci-ml/onnx
-sci-ml/pytorch
+=sci-ml/pytorch-2.7.1
 sci-ml/safetensors
 sci-ml/tokenizers
 sci-ml/transformers
@@ -297,7 +299,7 @@ gui-wm/sway
 #=media-plugins/gst-plugins-mpeg2dec-1.24*
 #=media-plugins/gst-plugins-mpg123-1.24*
 #=media-plugins/gst-plugins-mplex-1.24*
-#=media-plugins/gst-plugins-opencv-1.24*
+=media-plugins/gst-plugins-opencv-1.24*
 #=media-plugins/gst-plugins-opus-1.24*
 #=media-plugins/gst-plugins-oss-1.24*
 #=media-plugins/gst-plugins-pulse-1.24*
