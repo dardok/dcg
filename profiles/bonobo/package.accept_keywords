@@ -249,7 +249,7 @@ dev-libs/wayland-protocols **
 gui-apps/hypridle **
 gui-apps/hyprlock **
 gui-apps/hyprsunset **
-gui-libs/aquamarine **
+gui-libs/aquamarine
 gui-libs/hyprcursor **
 gui-libs/hyprutils **
 dev-libs/hyprgraphics **
