@@ -17,7 +17,7 @@ dev-util/hyprwayland-scanner **
 gui-apps/hypridle **
 gui-apps/hyprlock **
 gui-apps/tuigreet
-gui-libs/aquamarine **
+gui-libs/aquamarine
 gui-libs/hyprcursor **
 gui-libs/hyprland-qtutils **
 gui-libs/hyprutils **
