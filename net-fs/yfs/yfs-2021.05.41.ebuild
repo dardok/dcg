@@ -20,6 +20,7 @@ KEYWORDS="~amd64"
 IUSE="debug fuse +kerberos +modules +namei"
 
 BDEPEND="
+	sys-devel/gcc:14
 	dev-lang/perl
 	sys-devel/flex
 	dev-util/byacc

@@ -21,5 +21,5 @@ sys-cluster/mpich2
 
 >=dev-python/pynvml-12 # breaks atopgpud
 
->=dev-util/nvidia-cuda-toolkit-12.4
->=dev-libs/cudnn-9
+#>=dev-util/nvidia-cuda-toolkit-12.4
+#>=dev-libs/cudnn-9

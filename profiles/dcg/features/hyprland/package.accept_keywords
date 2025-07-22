@@ -14,7 +14,7 @@ gui-apps/tuigreet **
 gui-apps/waybar **
 gui-apps/wlr-randr **
 gui-apps/wofi **
-gui-libs/aquamarine **
+gui-libs/aquamarine
 gui-libs/greetd
 gui-libs/hyprcursor **
 gui-libs/hyprland-qtutils **
