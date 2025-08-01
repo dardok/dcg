@@ -59,7 +59,7 @@ src_configure() {
 		-Denable_kmods=false
 		-Dplatform=native
 		-Denable_driver_sdk=true
-		-Ddisable_drivers=mlx4
+		-Ddisable_drivers=net/mlx4
 		$(meson_use test tests)
 	)
 	meson_src_configure
