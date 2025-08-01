@@ -20,7 +20,7 @@ gui-libs/hyprcursor **
 gui-libs/hyprland-qtutils **
 gui-libs/hyprutils **
 gui-libs/xdg-desktop-portal-hyprland **
-gui-wm/hyprland
+gui-wm/hyprland **
 gui-wm/hyprland-contrib **
 media-libs/libspng
 media-video/pipewire
