@@ -19,4 +19,4 @@
 *net-misc/rclone
 *sys-apps/hwloc
 *sys-block/fio
-*=sys-cluster/ceph-18*
+*=sys-cluster/ceph-19*
