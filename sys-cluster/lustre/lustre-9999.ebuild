@@ -12,7 +12,8 @@ WANT_LIBTOOL="latest"
 if [[ $PV = *9999* ]]; then
 	scm="git-r3"
 	SRC_URI=""
-	EGIT_REPO_URI="git://git.whamcloud.com/fs/lustre-release.git"
+	#EGIT_REPO_URI="git://git.whamcloud.com/fs/lustre-release.git"
+	EGIT_REPO_URI="https://github.com/lustre/lustre-release.git"
 	KEYWORDS=""
 	EGIT_BRANCH="master"
 else
