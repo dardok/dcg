@@ -190,7 +190,7 @@ sci-libs/kineto
 sci-libs/kissfft
 sci-libs/pdal
 sci-libs/scikit-learn
-=sci-ml/caffe2-2.7.1-r1
+=sci-ml/caffe2-2.7.1-r5
 sci-ml/cudnn-frontend
 sci-ml/datasets
 sci-ml/huggingface_hub
