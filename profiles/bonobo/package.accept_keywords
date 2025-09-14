@@ -196,7 +196,7 @@ sci-ml/datasets
 sci-ml/huggingface_hub
 sci-ml/kineto
 sci-ml/onnx
-=sci-ml/pytorch-2.7.1
+=sci-ml/pytorch-2.7.1-r1
 sci-ml/safetensors
 sci-ml/tokenizers
 sci-ml/transformers
