@@ -29,6 +29,7 @@ RDEPEND="
 	media-libs/libjpeg-turbo
 	media-libs/libwebp
 	media-libs/tiff
+	media-libs/libavif
 	x11-libs/cairo
 	virtual/jpeg
 "
