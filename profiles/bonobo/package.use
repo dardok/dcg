@@ -29,6 +29,7 @@ dev-games/openscenegraph gdal lua pdf
 dev-games/vulkanscenegraph-vsgXchange gis freetype assimp
 dev-lang/python tk bluetooth
 dev-lang/rust rustfmt
+dev-lang/vala valadoc
 dev-libs/apache-arrow brotli compute dataset parquet re2 snappy
 dev-libs/boost context icu
 dev-libs/elfutils debuginfod
@@ -73,9 +74,12 @@ dev-util/nvidia-cuda-toolkit debugger nsight profiler rdma vis-profiler
 dev-util/perf clang systemtap slang libpfm
 dev-debug/strace aio elfutils
 gnome-extra/zenity -webkit
+gui-apps/quickshell -breakpad
 gui-apps/waybar mpd network tray wifi
 gui-apps/waypipe lz4
 gui-libs/gtk broadway colord gstreamer wayland
+gui-libs/gtk-layer-shell vala
+gui-libs/gtk4-layer-shell vala
 gui-libs/wlroots x11-backend
 gui-wm/hyprland system-wlroots
 media-gfx/blender jemalloc cycles ffmpeg player collada llvm openimageio cuda -opensubdiv -embree
