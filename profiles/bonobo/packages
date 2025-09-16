@@ -213,6 +213,7 @@
 *gnome-base/gnome-keyring
 *gnome-extra/zenity
 *gui-apps/eww
+*gui-apps/quickshell
 *gui-apps/swaylock
 *gui-apps/mpvpaper
 *gui-apps/waypipe
@@ -286,9 +287,11 @@
 *media-libs/zita-resampler
 *media-plugins/calf
 *media-plugins/frei0r-plugins
+*media-plugins/gst-plugins-adaptivedemux2
 *media-plugins/gst-plugins-bluez
 *media-plugins/gst-plugins-bs2b
 *media-plugins/gst-plugins-cairo
+*media-plugins/gst-plugins-openh264
 *media-plugins/gst-plugins-hls
 *media-plugins/gst-plugins-jpeg
 *media-plugins/gst-plugins-ladspa
@@ -313,12 +316,14 @@
 *media-sound/guitarix
 *media-sound/jack-keyboard
 *media-sound/mpc
-*media-sound/mpd
+*media-sound/mpd-mpris
 *media-sound/ncmpcpp
 *media-sound/pavucontrol
+*media-sound/pavucontrol-qt
 *media-sound/playerctl
 *media-sound/pulseaudio
 *media-sound/qjackctl
+*mpv-plugin/mpv-mpris
 #*media-video/libcamera # broken as of 9/2023
 *media-video/obs-studio
 *media-video/pipewire
@@ -402,6 +407,7 @@
 *sys-cluster/cilium-cli
 *sys-cluster/k9scli
 *sys-cluster/kubectl
+*sys-cluster/kubeseal
 *sys-cluster/openmpi
 *sys-cluster/rdma-core
 *sys-firmware/intel-microcode
@@ -452,7 +458,7 @@
 *x11-apps/xvinfo
 *x11-apps/xwd
 *x11-apps/xwud
-*x11-drivers/nvidia-drivers:0/570
+*x11-drivers/nvidia-drivers:0/575
 *x11-drivers/xf86-input-libinput
 *x11-drivers/xf86-video-dummy
 *x11-libs/libXScrnSaver

@@ -1,3 +1,5 @@
+x11-drivers/nvidia-drivers
+
 app-admin/ansible
 app-admin/ansible-core
 app-arch/createrepo_c
@@ -145,6 +147,7 @@ dev-util/vulkan-headers
 dev-util/vulkan-tools
 dev-util/vulkan-utility-libraries
 dev-util/wayland-scanner
+gui-apps/quickshell **
 gui-apps/eww **
 gui-apps/mpvpaper
 gui-apps/wev
@@ -168,9 +171,11 @@ media-libs/vkroots
 media-libs/vulkan-layers
 media-libs/vulkan-loader
 media-sound/bluez-alsa
+media-sound/mpd-mpris
 media-video/obs-studio
 media-video/libcamera
 media-video/v4l2loopback
+mpv-plugin/mpv-mpris
 net-analyzer/nessus-bin
 net-fs/samba
 =net-fs/yfs-2021.05.41
@@ -188,15 +193,14 @@ sci-libs/foxi
 sci-libs/geos
 sci-libs/kineto
 sci-libs/kissfft
-sci-libs/pdal
 sci-libs/scikit-learn
-=sci-ml/caffe2-2.7.1-r1
+=sci-ml/caffe2-2.7.1-r5
 sci-ml/cudnn-frontend
 sci-ml/datasets
 sci-ml/huggingface_hub
 sci-ml/kineto
 sci-ml/onnx
-=sci-ml/pytorch-2.7.1
+=sci-ml/pytorch-2.7.1-r1
 sci-ml/safetensors
 sci-ml/tokenizers
 sci-ml/transformers
@@ -213,6 +217,7 @@ sys-block/libfabric
 sys-boot/mokutil
 sys-cluster/cilium-cli
 sys-cluster/k9scli
+sys-cluster/kubeseal
 sys-cluster/openmpi
 sys-cluster/pmix
 sys-cluster/prrte
