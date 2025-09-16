@@ -122,6 +122,7 @@ BDEPEND="${PYTHON_DEPS}
 
 PATCHES=(
 	"${FILESDIR}/${PN}-3.42.2-testReportDir.patch"
+	"${FILESDIR}/${P}-unique_ptr.patch"
 )
 
 src_prepare() {
