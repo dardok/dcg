@@ -122,9 +122,6 @@ BDEPEND="${PYTHON_DEPS}
 
 PATCHES=(
 	"${FILESDIR}/${PN}-3.42.2-testReportDir.patch"
-	# Fixes pulled from upstream branches, see bug #955031
-	"${FILESDIR}/${P}-fix-qt6-heatmap.patch"
-	"${FILESDIR}/${P}-fix-qt6-qgsserver-getmap.patch"
 )
 
 src_prepare() {
