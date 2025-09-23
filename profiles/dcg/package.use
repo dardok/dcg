@@ -11,3 +11,5 @@ sys-auth/polkit duktape
 sys-libs/timezone-data leaps_timezone
 
 sys-process/audit python
+
+net-fs/samba ads # wtf as of 2025-09
