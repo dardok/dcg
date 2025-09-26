@@ -1,6 +1,6 @@
 *dev-cpp/glaze
 *dev-libs/hyprgraphics
-*gui-apps/eww
+#*gui-apps/eww
 *gui-apps/hypridle
 #*gui-apps/hyprpaper::guru
 *gui-apps/hyprlock
