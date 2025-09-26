@@ -39,5 +39,6 @@ x11-libs/gtk+ broadway
 x11-libs/libdrm libkms
 x11-libs/vte python
 x11-misc/notify-osd minimal
+x11-misc/xscreensaver -gles glx
 virtual/rust rustfmt
 dev-lang/rust rustfmt
