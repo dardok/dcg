@@ -49,7 +49,7 @@ RDEPEND="
 	sys-apps/util-linux
 	x11-libs/cairo
 	x11-libs/libdrm
-	x11-libs/libxkbcommon
+	>=x11-libs/libxkbcommon-1.11.0
 	x11-libs/pango
 	x11-libs/pixman
 	x11-libs/libXcursor
