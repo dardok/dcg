@@ -6,7 +6,7 @@ dev-libs/hyprlang **
 dev-libs/libinput
 dev-libs/wayland-protocols **
 dev-util/hyprwayland-scanner **
-gui-apps/eww **
+#gui-apps/eww **
 gui-apps/hypridle **
 gui-apps/hyprlock **
 gui-apps/hyprpaper **
