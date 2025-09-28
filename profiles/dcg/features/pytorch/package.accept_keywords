@@ -1,0 +1,14 @@
+dev-libs/cudnn
+dev-libs/cusparselt
+dev-libs/cutlass
+dev-libs/dynolog
+dev-libs/pfs
+dev-libs/pocketfft
+dev-libs/pthreadpool
+sci-ml/caffe2
+sci-ml/cudnn-frontend
+sci-ml/FP16
+sci-ml/kineto
+sci-ml/onnx
+sci-ml/pytorch
+sci-ml/tensorpipe

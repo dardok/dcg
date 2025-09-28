@@ -1,0 +1,3 @@
+dev-util/nvidia-cuda-toolkit profiler
+dev-libs/cutlass tools
+sci-ml/caffe2 cusparselt distributed flash memefficient
