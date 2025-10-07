@@ -13,6 +13,7 @@
 *app-text/hunspell
 *dev-libs/check
 *dev-python/podman
+*dev-python/uv
 *dev-tcltk/expect
 *dev-util/git-delta
 *dev-util/global
