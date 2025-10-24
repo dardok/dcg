@@ -2,6 +2,7 @@ app-crypt/coolkey
 dev-build/meson
 dev-libs/libclc
 dev-libs/simde
+dev-python/nvidia-ml-py
 media-libs/mesa
 x11-libs/libdrm
 x11-terms/kitty
