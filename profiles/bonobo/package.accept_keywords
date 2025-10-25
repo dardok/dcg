@@ -2,7 +2,7 @@ x11-drivers/nvidia-drivers
 
 app-admin/ansible
 app-admin/ansible-core
-app-arch/createrepo_c
+#app-arch/createrepo_c
 app-arch/drpm
 app-arch/zchunk
 app-containers/apptainer
@@ -56,6 +56,7 @@ dev-libs/psimd
 dev-libs/pthreadpool
 dev-libs/simde
 dev-libs/wayland
+dev-util/go-task
 dev-util/nsight-compute
 dev-util/nsight-graphics
 dev-util/nsight-systems
@@ -73,17 +74,20 @@ dev-python/cftime
 dev-python/cligj
 dev-python/contourpy
 dev-python/dill
+dev-python/fastapi
 dev-python/fiona
 dev-python/flask-socketio
 dev-python/fsspec
 dev-python/fuse-python
 dev-python/geographiclib
 =dev-python/geopandas-0.14.4
+dev-python/greenlet
 dev-python/h5py
 dev-python/inflection
 dev-python/installer
 dev-python/imageio
 dev-python/importlib_metadata
+dev-python/ipython
 dev-python/ipython-pygments-lexers
 dev-python/jaraco-text
 dev-python/lazy-loader
@@ -97,6 +101,7 @@ dev-python/mypy
 dev-python/narwhals
 dev-python/netcdf4
 #dev-python/numba
+dev-python/nvidia-ml-py
 dev-python/opcodes
 dev-python/ordered-set
 dev-python/packaging
@@ -111,8 +116,10 @@ dev-python/pynvml
 dev-python/pylint-venv
 dev-python/pyparsing
 #dev-python/pysnmp-mibs
+dev-python/pytest-asyncio
 dev-python/pytesseract
 dev-python/python-engineio
+dev-python/python-lsp-ruff
 dev-python/python-multipart
 dev-python/python-socketio
 dev-python/pythran
@@ -120,6 +127,7 @@ dev-python/pyuca
 dev-python/pywavelets
 dev-python/pyzbar
 dev-python/qstylizer
+dev-python/qtconsole
 dev-python/s3transfer
 dev-python/scikit-image
 dev-python/scipy
@@ -132,6 +140,7 @@ dev-python/superqt
 dev-python/tifffile
 dev-python/wheel
 dev-python/xarray
+dev-python/xgboost
 dev-util/bcc
 dev-util/bindgen
 dev-util/bpftool
@@ -148,7 +157,6 @@ dev-util/vulkan-tools
 dev-util/vulkan-utility-libraries
 dev-util/wayland-scanner
 gui-apps/quickshell **
-gui-apps/eww **
 gui-apps/mpvpaper
 gui-apps/wev
 gui-libs/egl-wayland
@@ -182,7 +190,6 @@ net-fs/samba
 net-im/rocketchat-desktop-bin
 net-im/telegram-desktop
 net-libs/mbedtls
-net-libs/xdp-tools
 net-misc/autossh
 net-misc/usbip
 net-wireless/bluez-tools
@@ -235,6 +242,7 @@ sys-libs/talloc
 sys-libs/tdb
 sys-libs/tevent
 sys-process/atop
+x11-libs/libxkbcommon
 x11-misc/xscreensaver
 x11-terms/kitty
 x11-terms/kitty-shell-integration
