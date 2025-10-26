@@ -29,3 +29,4 @@ media-video/pipewire
 media-video/wireplumber
 net-vpn/cloudflare-warp
 sys-firmware/edk2-bin
+x11-themes/pulse-glass

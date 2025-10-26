@@ -99,7 +99,7 @@ media-libs/suil gtk2
 media-plugins/calf experimental gui
 media-plugins/gst-plugins-meta a52 aac cdda dts dv dvb dvd ffmpeg flac http lame libass libvisual mms modplug mpeg ogg opus oss taglib v4l vcd vpx wavpack
 media-sound/bluez-alsa aac mpg123
-media-sound/pulseaudio realtime bluetooth equalizer libsamplerate native-headset -daemon
+#media-sound/pulseaudio realtime bluetooth equalizer libsamplerate native-headset -daemon
 #media-sound/pulseaudio-daemon bluetooth
 media-video/cheese egl
 media-video/libcamera gstreamer cam qcam v4l2 pycamera
@@ -158,6 +158,7 @@ sys-firmware/ipxe efi
 sys-fs/e2fsprogs fuse
 sys-fs/lvm2 lvm thin
 sys-kernel/gentoo-sources experimental
+sys-kernel/cachyos-sources mnative_intel preempt_full
 sys-kernel/linux-firmware initramfs
 sys-libs/binutils-libs multitarget
 sys-libs/libomp cuda

@@ -16,6 +16,8 @@
 *app-shells/bash-completion
 *app-shells/liquidprompt
 *app-vim/vim-tmux
+*dev-python/black
+*dev-python/pandas
 *media-plugins/gst-plugins-meta
 *media-sound/pavucontrol
 *media-sound/playerctl
@@ -27,9 +29,11 @@
 *sys-fs/btrfs-progs
 *sys-power/acpid
 *www-client/firefox-bin
+*x11-misc/dunst
 *x11-terms/kitty
 *x11-terms/kitty-shell-integration
 *x11-terms/kitty-terminfo
+*x11-themes/pulse-glass
 
 *dev-cpp/glaze
 *dev-libs/hyprgraphics

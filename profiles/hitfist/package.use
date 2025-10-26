@@ -16,6 +16,7 @@ dev-qt/qtwayland qml
 gui-apps/waypipe dmabuf lz4 zstd
 gui-libs/gtk colord cups gstreamer sysprof
 gui-wm/hyprland -qtutils -legacy-renderer
+media-libs/freetype harfbuzz svg
 media-libs/gst-plugins-base alsa opengl theora
 media-libs/libcanberra -udev -alsa
 media-libs/libjxl gif jpeg
