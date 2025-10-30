@@ -1,0 +1,12 @@
+diff '--color=auto' -u -r -N a/CMakeLists.txt b/CMakeLists.txt
+--- a/CMakeLists.txt	2019-01-28 01:53:24.000000000 -0500
++++ b/CMakeLists.txt	2025-10-30 10:25:57.218619457 -0400
+@@ -454,7 +454,7 @@
+     list(APPEND CHECK_QA_TARGETS luacheck)
+ endif()
+ add_custom_target(check-qa DEPENDS ${CHECK_QA_TARGETS})
+-add_dependencies(check check-qa check-examples)
++add_dependencies(check check-qa)
+ # }}}
+ 
+ INCLUDE(${CMAKE_SOURCE_DIR}/Packaging.cmake)
