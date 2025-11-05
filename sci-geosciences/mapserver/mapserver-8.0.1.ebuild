@@ -81,6 +81,7 @@ BDEPEND="
 PATCHES=(
 	"${FILESDIR}"/xmlerrorptr.patch
 	"${FILESDIR}"/strlcpy.patch
+	"${FILESDIR}"/castchar.patch
 )
 
 want_apache2 apache

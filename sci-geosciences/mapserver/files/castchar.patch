@@ -1,0 +1,12 @@
+diff '--color=auto' -u -r -N a/renderers/agg/src/agg_font_freetype.cpp b/renderers/agg/src/agg_font_freetype.cpp
+--- a/renderers/agg/src/agg_font_freetype.cpp	2023-04-17 13:26:04.000000000 -0400
++++ b/renderers/agg/src/agg_font_freetype.cpp	2025-11-05 05:00:10.886558251 -0500
+@@ -174,7 +174,7 @@
+             FT_Vector v_control = v_start;
+ 
+             point = outline.points + first;
+-            tags  = outline.tags  + first;
++            tags  = (char *) (outline.tags  + first);
+             tag   = FT_CURVE_TAG(tags[0]);
+ 
+             // A contour cannot start with a cubic control point!
