@@ -7,7 +7,7 @@ inherit go-module
 DESCRIPTION="Simple And Flexible Tool For Managing Secrets"
 HOMEPAGE="https://getsops.io/"
 SRC_URI="https://github.com/getsops/sops/archive/v${PV}.tar.gz -> ${P}.tar.gz"
-SRC_URI+="  https://nrl-dc-xe-00/gentoo-mirror/sops-${PV}-vendor.tar.xz"
+SRC_URI+=" http://nrl-dc-xe-00/gentoo-mirror/sops-${PV}-vendor.tar.xz"
 
 LICENSE="MPL-2.0"
 SLOT="0"
