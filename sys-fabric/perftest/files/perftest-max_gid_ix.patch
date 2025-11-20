@@ -1,0 +1,12 @@
+diff '--color=auto' -u -r -N a/src/perftest_parameters.h b/src/perftest_parameters.h
+--- a/src/perftest_parameters.h	2025-11-20 13:04:15.814216957 -0500
++++ b/src/perftest_parameters.h	2022-07-18 04:02:35.000000000 -0400
+@@ -168,7 +168,7 @@
+ #define MIN_SL	      (0)
+ #define MAX_SL	      (15)
+ #define MIN_GID_IX    (0)
+-#define MAX_GID_IX    (256)
++#define MAX_GID_IX    (64)
+ #define MIN_QP_NUM    (1)
+ #define MAX_QP_NUM    (16384)
+ #define MIN_QP_MCAST  (1)
