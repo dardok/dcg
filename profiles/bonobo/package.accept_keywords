@@ -64,6 +64,7 @@ dev-python/aesara
 dev-python/aiofiles
 dev-python/aiostream
 dev-python/ajsonrpc
+dev-python/annotated-doc
 dev-python/appdirs
 dev-python/asyncssh
 dev-python/awscli-plugin-endpoint
@@ -92,6 +93,7 @@ dev-python/ipython-pygments-lexers
 dev-python/jaraco-text
 dev-python/lazy-loader
 dev-python/llvmlite
+dev-python/lsprotocol
 dev-python/marshmallow
 dev-python/matplotlib
 dev-python/more-itertools
@@ -138,6 +140,7 @@ dev-python/spyder-kernels **
 dev-python/starlette
 dev-python/superqt
 dev-python/tifffile
+dev-python/typer
 dev-python/wheel
 dev-python/xarray
 dev-python/xgboost
@@ -211,6 +214,7 @@ sci-ml/onnx
 sci-ml/safetensors
 sci-ml/tokenizers
 sci-ml/transformers
+sci-ml/hf_xet
 sec-policy/apparmor-profiles
 sys-apps/apparmor
 sys-apps/apparmor-utils
