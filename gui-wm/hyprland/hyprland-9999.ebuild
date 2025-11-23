@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit meson toolchain-funcs
+inherit cmake toolchain-funcs
 
 DESCRIPTION="A dynamic tiling Wayland compositor that doesn't sacrifice on its looks"
 HOMEPAGE="https://github.com/hyprwm/Hyprland"
@@ -33,6 +33,7 @@ HYPRPM_RDEPEND="
 "
 RDEPEND="
 	${HYPRPM_RDEPEND}
+	dev-cpp/muParser
 	dev-cpp/tomlplusplus
 	dev-libs/glib:2
 	dev-libs/hyprlang
@@ -87,12 +88,4 @@ pkg_setup() {
 		eerror "Please upgrade Clang: emerge -v1 llvm-core/clang"
 		die "Clang version is too old to compile Hyprland!"
 	fi
-}
-
-src_configure() {
-	local emesonargs=(
-		$(meson_feature systemd)
-		$(meson_feature X xwayland)
-	)
-	meson_src_configure
 }
