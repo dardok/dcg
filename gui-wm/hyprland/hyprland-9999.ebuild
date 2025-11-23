@@ -20,7 +20,7 @@ fi
 
 LICENSE="BSD"
 SLOT="0"
-IUSE="X qtutils systemd"
+IUSE="X +guiutils systemd"
 
 # hyprpm (hyprland plugin manager) requires the dependencies at runtime
 # so that it can clone, compile and install plugins.
@@ -54,7 +54,7 @@ RDEPEND="
 	x11-libs/pango
 	x11-libs/pixman
 	x11-libs/libXcursor
-	qtutils? ( gui-libs/hyprland-qtutils )
+	guiutils? ( gui-libs/hyprland-guiutils )
 	X? (
 		x11-libs/libxcb:0=
 		x11-base/xwayland
