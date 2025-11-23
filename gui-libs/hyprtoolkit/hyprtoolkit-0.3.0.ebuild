@@ -24,7 +24,7 @@ RDEPEND="
 	x11-libs/pango
 	x11-libs/cairo
 	dev-libs/iniparser
-	>=hyprgraphics-0.3.0
-	>=aquamarine-0.9.5
+	>=dev-libs/hyprgraphics-0.3.0
+	>=gui-libs/aquamarine-0.9.5
 "
 DEPEND="${RDEPEND}"
