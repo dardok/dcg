@@ -1,9 +1,9 @@
 # Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
-PYTHON_COMPAT=( python3_{10..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 
 WEBAPP_MANUAL_SLOT=yes
 WEBAPP_OPTIONAL=yes
@@ -80,6 +80,8 @@ BDEPEND="
 
 PATCHES=(
 	"${FILESDIR}"/xmlerrorptr.patch
+	"${FILESDIR}"/strlcpy.patch
+	"${FILESDIR}"/castchar.patch
 )
 
 want_apache2 apache
