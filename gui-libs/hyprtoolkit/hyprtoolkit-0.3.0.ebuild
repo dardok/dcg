@@ -26,5 +26,6 @@ RDEPEND="
 	dev-libs/iniparser
 	>=dev-libs/hyprgraphics-0.3.0
 	>=gui-libs/aquamarine-0.9.5
+	dev-cpp/gtest
 "
 DEPEND="${RDEPEND}"
