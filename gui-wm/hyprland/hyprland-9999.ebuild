@@ -76,6 +76,8 @@ BDEPEND="
 	virtual/pkgconfig
 "
 
+PATCHES=( "${FILESDIR}"/hyprtester-multilib-strict.patch )
+
 pkg_setup() {
 	[[ ${MERGE_TYPE} == binary ]] && return
 

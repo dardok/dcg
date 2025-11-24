@@ -1,0 +1,13 @@
+diff --git a/hyprtester/CMakeLists.txt b/hyprtester/CMakeLists.txt
+index 0b445b0a..60459a4e 100644
+--- a/hyprtester/CMakeLists.txt
++++ b/hyprtester/CMakeLists.txt
+@@ -28,7 +28,7 @@ install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/test.conf
+         DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/hypr)
+ 
+ install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/plugin/hyprtestplugin.so
+-        DESTINATION ${CMAKE_INSTALL_PREFIX}/lib)
++        DESTINATION ${CMAKE_INSTALL_PREFIX}/lib64)
+ 
+ file(WRITE ${CMAKE_CURRENT_SOURCE_DIR}/src/tests/clients/build.hpp
+   "#include <string>\n"
