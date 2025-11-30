@@ -1,0 +1,2 @@
+>=dev-db/postgresql-15
+>=sys-devel/gcc-15
