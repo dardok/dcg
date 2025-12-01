@@ -1,3 +1,2 @@
 sys-libs/zlib minizip
 sci-libs/gdal geos postgres
-dev-db/postgis -postgres_targets_postgres15 postgres_targets_postgres16
