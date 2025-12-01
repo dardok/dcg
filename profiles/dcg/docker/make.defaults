@@ -20,3 +20,5 @@ USE="${USE} pgo"
 USE="${USE} caps"
 
 GENTOO_MIRRORS="http://gentoo.largedata.net http://distfiles.gentoo.org"
+
+POSTGRES_TARGETS="-* postgres17"
