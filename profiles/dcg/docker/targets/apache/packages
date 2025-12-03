@@ -1,1 +1,5 @@
+*acct-user/apache
+*acct-group/apache
 *www-servers/apache
+*dev-libs/apr
+-*dev-vcs/git
