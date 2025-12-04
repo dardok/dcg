@@ -1,0 +1,1 @@
+USE="-* minimal reference static systemd ssl udev http2"
