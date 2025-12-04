@@ -1,3 +1,1 @@
 USE="-* minimal reference static systemd ssl udev http2"
-
-APACHE2_MODULES="-* alias authn_core authz_core dir log_config logio mime socache_shmcb unixd"
