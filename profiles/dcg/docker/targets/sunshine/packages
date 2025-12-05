@@ -1,1 +1,3 @@
 net-misc/sunshine
+dev-util/nvidia-cuda-toolkit:0/12.8.1
+dev-libs/icu
