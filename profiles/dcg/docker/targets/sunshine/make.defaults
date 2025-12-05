@@ -1,1 +1,1 @@
-USE="${USE} X wayland pulseaudio cuda"
+USE="${USE} X pulseaudio cuda"
