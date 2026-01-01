@@ -37,6 +37,7 @@ RDEPEND="
 	dev-cpp/tomlplusplus
 	dev-libs/glib:2
 	>=dev-libs/hyprlang-0.6.7
+	>=dev-libs/hyprwire-0.2.1
 	dev-libs/libinput:=
 	dev-libs/hyprgraphics:=
 	dev-libs/re2:=
