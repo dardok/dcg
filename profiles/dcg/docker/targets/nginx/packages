@@ -1,1 +1,2 @@
-*www-servers/nginx
+www-servers/nginx
+app-misc/ca-certificates

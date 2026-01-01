@@ -1,0 +1,3 @@
+net-misc/sunshine filecaps libdrm svt-av1 vaapi x264 x264
+media-libs/mesa vaapi
+net-libs/nodejs npm
