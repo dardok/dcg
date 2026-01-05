@@ -1,19 +1,20 @@
-From 757418c63277fcee72bdf2a682cc2d4db1ce0bba Mon Sep 17 00:00:00 2001
+From b9bd06a715cf2a68c73d6bdf57d475ae5d1d61d5 Mon Sep 17 00:00:00 2001
 From: Andrew Savchenko <bircoph@gmail.com>
 Date: Sat, 5 Jan 2019 10:15:03 +0300
-Subject: [PATCH 10/14] libperl
+Subject: [PATCH 10/13] libperl
 
 Filter out -lnsl reported by perl.
 libnsl it is neither needed nor provided.
 
 (cherry picked from commit 243186f42cc84af2ff90f6710c6e76b1a4121064)
 (cherry picked from commit 99183cb191e653288ed8ed656ecd9f484a1715e3)
+(cherry picked from commit e27f7a255c4f064c149d57ed965523ef9932f436)
 ---
  src/libuafs/Makefile.common.in | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/src/libuafs/Makefile.common.in b/src/libuafs/Makefile.common.in
-index e062c7c2e..098f5a11b 100644
+index 941605027176..eca360777151 100644
 --- a/src/libuafs/Makefile.common.in
 +++ b/src/libuafs/Makefile.common.in
 @@ -142,7 +142,7 @@ RX	=../rx
@@ -26,5 +27,5 @@ index e062c7c2e..098f5a11b 100644
  LIBUAFS_BUILD_PERL = @LIBUAFS_BUILD_PERL@
  
 -- 
-2.34.1
+2.45.2
 
