@@ -36,13 +36,14 @@ RDEPEND="
 	dev-cpp/muParser
 	dev-cpp/tomlplusplus
 	dev-libs/glib:2
-	dev-libs/hyprlang
+	>=dev-libs/hyprlang-0.6.7
+	>=dev-libs/hyprwire-0.2.1
 	dev-libs/libinput:=
 	dev-libs/hyprgraphics:=
 	dev-libs/re2:=
 	>=dev-libs/udis86-1.7.2
 	>=dev-libs/wayland-1.22.90
-	>=gui-libs/aquamarine-0.9.0:=
+	>=gui-libs/aquamarine-0.10.0:=
 	>=gui-libs/hyprcursor-0.1.9
 	>=gui-libs/hyprutils-0.8.2:=
 	media-libs/libglvnd
