@@ -8,7 +8,7 @@ inherit autotools linux-mod-r1 flag-o-matic pam systemd tmpfiles toolchain-funcs
 
 MY_PV=${PV/_/}
 MY_P="${PN}-${MY_PV}"
-KERNEL_LIMIT=6.17
+KERNEL_LIMIT=6.18
 
 DESCRIPTION="The OpenAFS distributed file system"
 HOMEPAGE="https://www.openafs.org/"
