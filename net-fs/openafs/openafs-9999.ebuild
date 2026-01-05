@@ -72,7 +72,7 @@ PATCHES=(
 		"${FILESDIR}"/0010-libperl.patch
 		"${FILESDIR}"/0011-xbsa.patch
 		"${FILESDIR}"/0012-xml-dtd.patch
-		"${FILESDIR}"/0013-kernel-cc-ld.patch
+		#"${FILESDIR}"/0013-kernel-cc-ld.patch
 		#"${FILESDIR}"/0014-upstream-struct-init.patch
 		#"${FILESDIR}"/0015-upstream-struct-desiginated-init.patch
 )
