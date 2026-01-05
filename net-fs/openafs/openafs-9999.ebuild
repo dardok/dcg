@@ -236,11 +236,11 @@ src_install() {
 		fi
 
 		# move lwp stuff around #200674 #330061
-		mv "${ED}"/usr/include/{lwp,lock,timer}.h "${ED}"/usr/include/afs/ || die
+		mv "${ED}"/usr/include/lwp.h "${ED}"/usr/include/afs/ || die
 		mv "${ED}"/usr/$(get_libdir)/liblwp* "${ED}"/usr/$(get_libdir)/afs/ || die
 		# update paths to the relocated lwp headers
 		sed -ri \
-				-e '/^#include <(lwp|lock|timer).h>/s:<([^>]*)>:<afs/\1>:' \
+				-e '/^#include <lwp.h>/s:<([^>]*)>:<afs/\1>:' \
 				"${ED}"/usr/include/*.h \
 				"${ED}"/usr/include/*/*.h \
 				|| die
