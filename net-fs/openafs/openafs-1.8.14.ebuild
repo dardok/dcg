@@ -70,7 +70,7 @@ PATCHES=(
 		"${FILESDIR}"/0006-resolv.patch
 		"${FILESDIR}"/0007-afsauthent-symbols.patch
 		"${FILESDIR}"/0008-flags.patch
-		"${FILESDIR}"/0009-docbook2pdf.patch
+		#"${FILESDIR}"/0009-docbook2pdf.patch
 		"${FILESDIR}"/0010-libperl.patch
 		"${FILESDIR}"/0011-xbsa.patch
 		"${FILESDIR}"/0012-xml-dtd.patch
