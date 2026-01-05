@@ -62,7 +62,7 @@ RDEPEND="
 		selinux? ( sec-policy/selinux-afs )"
 
 PATCHES=(
-		"${FILESDIR}"/0001-autoconf-use-AC_CHECK_TOOL-for-as-and-ld.patch
+		#"${FILESDIR}"/0001-autoconf-use-AC_CHECK_TOOL-for-as-and-ld.patch
 		"${FILESDIR}"/0002-pam-paths.patch
 		"${FILESDIR}"/0003-fbsd.patch
 		"${FILESDIR}"/0004-sparc.patch
