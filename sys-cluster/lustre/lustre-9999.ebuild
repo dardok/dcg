@@ -24,7 +24,7 @@ else
 fi
 
 SUPPORTED_KV_MAJOR=6
-SUPPORTED_KV_MINOR=6
+SUPPORTED_KV_MINOR=17
 
 inherit ${scm} autotools linux-info linux-mod toolchain-funcs udev flag-o-matic
 
