@@ -234,7 +234,6 @@ sys-cluster/pmix
 sys-cluster/prrte
 sys-cluster/rdma-core
 sys-cluster/ucx
-=sys-devel/gcc-15*
 sys-fs/fuse-overlayfs
 sys-fs/squashfuse
 sys-libs/libapparmor
