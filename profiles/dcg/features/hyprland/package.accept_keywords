@@ -3,6 +3,7 @@ dev-cpp/sdbus-c++ # for hypridle
 dev-libs/hyprgraphics **
 dev-libs/hyprland-protocols **
 dev-libs/hyprlang **
+dev-libs/hyprwire
 dev-libs/libinput
 dev-libs/wayland-protocols **
 dev-util/hyprwayland-scanner **
