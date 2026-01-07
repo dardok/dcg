@@ -7,20 +7,15 @@ dev-util/clippy
 <dev-util/perf-6
 
 net-fs/nfs4-acl-tools
-net-fs/openafs
 
-net-libs/libyang
 net-misc/frr
 net-misc/lldpd
 
 sys-auth/pam-afs-session
-sys-auth/sssd
 
 sys-block/libfabric
 
 sys-cluster/rdma-core
-
-sys-process/atop
 
 sys-libs/liburing
 sys-libs/libnvme
