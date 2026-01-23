@@ -2,3 +2,9 @@
 *dev-lang/go
 *dev-build/cmake
 *sci-ml/huggingface_hub
+
+*dev-util/vulkan-headers
+*dev-util/vulkan-tools
+*dev-util/vulkan-utility-libraries
+*media-libs/vulkan-layers
+*media-libs/vulkan-loader
