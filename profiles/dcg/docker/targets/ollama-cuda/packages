@@ -8,3 +8,4 @@
 *dev-util/vulkan-utility-libraries
 *media-libs/vulkan-layers
 *media-libs/vulkan-loader
+*media-libs/shaderc
