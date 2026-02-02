@@ -11,7 +11,7 @@ RESTRICT="bindist mirror fetch strip"
 DESCRIPTION="The AuriStor distributed file system"
 HOMEPAGE="https://www.auristor.com/filesystem/"
 SRC_URI="yfs-2021.05-67.tar.bz2"
-MY_PV=2021.05-64
+MY_PV=2021.05-67
 
 LICENSE="Proprietary"
 SLOT="0"
