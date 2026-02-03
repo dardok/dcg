@@ -23,9 +23,6 @@ else
 	S="${WORKDIR}/${PN}-release-${PV}"
 fi
 
-SUPPORTED_KV_MAJOR=6
-SUPPORTED_KV_MINOR=17
-
 inherit ${scm} autotools linux-info linux-mod toolchain-funcs udev flag-o-matic
 
 DESCRIPTION="Lustre is a parallel distributed file system"
@@ -52,14 +49,6 @@ REQUIRED_USE="
 	server? ( modules )"
 
 PATCHES=( )
-
-pkg_pretend() {
-	KVSUPP=${SUPPORTED_KV_MAJOR}.${SUPPORTED_KV_MINOR}.x
-	if kernel_is gt ${SUPPORTED_KV_MAJOR} ${SUPPORTED_KV_MINOR}; then
-		eerror "Unsupported kernel version! Latest supported one is ${KVSUPP}"
-		die
-	fi
-}
 
 pkg_setup() {
 	filter-mfpmath sse
