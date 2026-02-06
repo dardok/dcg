@@ -49,11 +49,6 @@ pkg_setup() {
 }
 
 src_configure() {
-	local mycmakeargs=(
-		-DINIPARSER_INCLUDE_DIR=/usr/include/iniparser4
-		-DINIPARSER_LIBRARY=/usr/lib64/libiniparser4.so
-	)
-
 	cmake_src_configure
 }
 
