@@ -1,5 +1,6 @@
 sys-auth/google-authenticator-libpam-hardened
 dev-cpp/glaze
+gui-apps/hypridle
 gui-libs/aquamarine
 gui-libs/hyprutils
 gui-libs/hyprland-qt-support
