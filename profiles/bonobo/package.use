@@ -1,3 +1,4 @@
+
 app-admin/keepassxc autotype browser
 app-arch/libarchive expat lz4 lzo nettle
 app-arch/unzip natspec
@@ -8,11 +9,11 @@ app-crypt/pinentry gnome-keyring
 app-editors/vim cscope lua luajit python
 app-emulation/libguestfs libvirt -ocaml
 app-emulation/libvirt fuse lvm numa parted virt-network libssh2 # xen lxc(sys-apps/systemd[cgroup-hybrid(-)])
-app-emulation/spice -smartcard
 app-emulation/qemu bpf xkb io-uring lzo multipath numa opengl snappy spice static-user usb usbredir vde vhost-user-fs virgl virtfs # xen
+app-emulation/spice -smartcard
+app-emulation/virt-manager gui
 app-emulation/xen efi
 app-emulation/xen-tools -qemu -qemu-traditional -ipxe system-qemu system-ipxe system-seabios
-app-emulation/virt-manager gui
 app-misc/jq oniguruma
 app-office/gnucash aqbanking gnome-keyring ofx postgres python quotes smartcard sqlite
 app-office/mdbtools glib odbc
@@ -25,6 +26,7 @@ dev-cpp/eigen cuda
 dev-db/libdbi-drivers postgres
 dev-db/postgis postgres_targets_postgres15
 dev-db/postgresql threads uuid llvm icu
+dev-debug/strace aio elfutils
 dev-games/openscenegraph gdal lua pdf
 dev-games/vulkanscenegraph-vsgXchange gis freetype assimp
 dev-lang/python tk bluetooth
@@ -32,6 +34,7 @@ dev-lang/rust rustfmt
 dev-lang/vala valadoc
 dev-libs/apache-arrow brotli compute dataset parquet re2 snappy
 dev-libs/boost context icu
+dev-libs/cutlass tools
 dev-libs/elfutils debuginfod
 dev-libs/glib static-libs
 dev-libs/libbpf static-libs
@@ -51,11 +54,11 @@ dev-python/numpy lapack
 dev-python/pandas full-support
 dev-python/pillow webp
 dev-python/pyarrow snappy parquet ssl
-dev-python/python-lsp-server all-plugins
-dev-python/python-socketio asyncio-client client
 dev-python/pyqt5 designer sql positioning network widgets gui printsupport declarative serialport multimedia webchannel
 dev-python/pyqt6 designer multimedia positioning serialport gles2-only quick webchannel
 dev-python/pyqt6-webengine quick
+dev-python/python-lsp-server all-plugins
+dev-python/python-socketio asyncio-client client
 dev-python/pyzmq drafts
 dev-python/qtpy webengine printsupport quick
 dev-python/sympy aesara imaging symengine
@@ -64,46 +67,49 @@ dev-qt/qt5compat icu
 dev-qt/qtbase icu opengl egl cups -eglfs gles2-only
 dev-qt/qtcharts gles2-only
 dev-qt/qtdeclarative opengl
+dev-qt/qtgui egl
 dev-qt/qtmultimedia widgets
 dev-qt/qttools designer
 dev-qt/qtwayland compositor
 dev-qt/qtwebengine screencast geolocation widgets
-dev-qt/qtgui egl
 dev-util/cppcheck gui charts htmlreport threads
 dev-util/nvidia-cuda-toolkit debugger nsight profiler rdma vis-profiler
 dev-util/perf clang systemtap slang libpfm
-dev-debug/strace aio elfutils
 gnome-extra/zenity -webkit
 gui-apps/quickshell -breakpad
 gui-apps/waybar mpd network tray wifi
 gui-apps/waypipe lz4
+gui-libs/gtk4-layer-shell vala
 gui-libs/gtk broadway colord gstreamer wayland
 gui-libs/gtk-layer-shell vala
-gui-libs/gtk4-layer-shell vala
 gui-libs/wlroots x11-backend
+gui-libs/xdg-desktop-portal-hyprland select-window select-region
 gui-wm/hyprland system-wlroots
 media-gfx/blender jemalloc cycles ffmpeg player collada llvm openimageio cuda -opensubdiv -embree
 media-gfx/graphviz pdf postscript
-media-libs/libcanberra gtk2
+media-gfx/imagemagick lcms postscript
+media-libs/babl lcms
 media-libs/clutter egl
 media-libs/cogl gles2
 media-libs/freetype harfbuzz utils brotli
+media-libs/gegl lcms
 media-libs/harfbuzz icu
+media-libs/libcanberra gtk2
 media-libs/libsdl2 gles2 pipewire
 media-libs/mesa vulkan-overlay
 media-libs/opencv features2d cuda threads download contrib contribdnn contribfreetype contribxfeatures2d contribcvv -gtk3 -openexr -opencl
 media-libs/rubberband ladspa
+media-libs/suil gtk2
 media-libs/tg_owt screencast
 media-libs/vulkan-loader layers
-media-libs/suil gtk2
 media-plugins/calf experimental gui
 media-plugins/gst-plugins-meta a52 aac cdda dts dv dvb dvd ffmpeg flac http lame libass libvisual mms modplug mpeg ogg opus oss taglib v4l vcd vpx wavpack
 media-sound/bluez-alsa aac mpg123
-#media-sound/pulseaudio realtime bluetooth equalizer libsamplerate native-headset -daemon
 #media-sound/pulseaudio-daemon bluetooth
+#media-sound/pulseaudio realtime bluetooth equalizer libsamplerate native-headset -daemon
 media-video/cheese egl
-media-video/libcamera gstreamer cam qcam v4l2 pycamera
 media-video/ffmpeg cuda nvenc libv4l opus xvid vpx jpeg2k lame
+media-video/libcamera gstreamer cam qcam v4l2 pycamera
 media-video/obs-studio nvenc pipewire
 media-video/pipewire bluetooth v4l jack-sdk extra sound-server libcamera ffmpeg
 net-analyzer/wireshark http2
@@ -125,12 +131,12 @@ net-misc/tigervnc dri3 java
 net-vpn/openconnect libproxy stoken lz4
 net-vpn/openvpn iproute2
 net-wireless/bluez experimental user-session deprecated
-sci-geosciences/qgis hdf5 netcdf 3d georeferencer postgres mapserver
 sci-geosciences/mapserver geos postgis
+sci-geosciences/qgis hdf5 netcdf 3d georeferencer postgres mapserver
 sci-libs/armadillo lapack
 sci-libs/fftw threads
-sci-libs/hdf5 cxx szip
 sci-libs/gdal ogdi postgres java geos threads spatialite armadillo fits gif gml hdf5 jpeg2k lzma mdb netcdf odbc pdf webp xls
+sci-libs/hdf5 cxx szip
 sci-libs/netcdf szip
 sci-libs/pdal postgres
 sci-ml/caffe2 cuda opencv
@@ -144,6 +150,7 @@ sys-apps/kexec-tools lzma # xen
 sys-apps/moreutils -perl
 sys-apps/smartmontools update_drivedb
 sys-apps/systemd nat policykit idn libidn2 gcrypt importd python http curl lzma qrcode elfutils gnuefi
+sys-apps/xdg-desktop-portal screencast
 sys-block/libfabric cuda verbs
 sys-block/nbd netlink
 sys-block/parted device-mapper
@@ -157,15 +164,15 @@ sys-firmware/intel-microcode initramfs hostonly
 sys-firmware/ipxe efi
 sys-fs/e2fsprogs fuse
 sys-fs/lvm2 lvm thin
-sys-kernel/gentoo-sources experimental
 sys-kernel/cachyos-sources mnative_intel preempt_full
+sys-kernel/gentoo-sources experimental
 sys-kernel/linux-firmware initramfs
 sys-libs/binutils-libs multitarget
 sys-libs/libomp cuda
 sys-libs/libseccomp static-libs
 sys-libs/llvm-libunwind static-libs
 sys-libs/zlib minizip static-libs
-sys-process/atop modules
+sys-process/atop -modules
 sys-process/audit io-uring
 virtual/rust rustfmt
 x11-base/xorg-server kdrive xephyr xnest xvfb
@@ -176,7 +183,3 @@ x11-misc/redshift geoclue appindicator
 x11-misc/xscreensaver fonts offensive suid
 x11-terms/kitty transfer
 x11-wm/awesome luajit
-
-# https://wiki.hyprland.org/Useful-Utilities/Hyprland-desktop-portal/
-gui-libs/xdg-desktop-portal-hyprland select-window select-region
-sys-apps/xdg-desktop-portal screencast

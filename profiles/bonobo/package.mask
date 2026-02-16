@@ -1,8 +1,5 @@
 >=dev-lang/python-3.13
 
->=sys-kernel/cachyos-sources-6.10.0
->=sys-kernel/gentoo-sources-6.8
-
 dev-lang/spidermonkey
 
 sys-cluster/mpich
@@ -13,6 +10,5 @@ sys-cluster/mpich2
 
 >=sci-libs/pdal-2.9 # broken
 
->=sci-ml/onnx-1.18.0 # required by caffe2
->=dev-python/starlette-0.48.0 # required by dev-python/fastapi
->=dev-libs/cudnn-9 # required by sci-ml/cudnn-frontend
+>=sci-ml/huggingface_hub-1 # required by sci-ml/transformers
+>=dev-python/starlette-0.50.0 # required by dev-python/fastapi

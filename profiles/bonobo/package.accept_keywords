@@ -1,4 +1,4 @@
-x11-drivers/nvidia-drivers
+x11-drivers/nvidia-drivers:0/580
 
 app-admin/ansible
 app-admin/ansible-core
@@ -9,6 +9,7 @@ app-containers/apptainer
 app-containers/nvidia-container-toolkit
 app-crypt/ccid
 app-crypt/coolkey
+app-crypt/sops
 #app-crypt/tpm2-tss-engine
 app-editors/sublime-text
 app-emulation/conmon
@@ -22,6 +23,7 @@ app-misc/brightnessctl
 app-misc/hivex
 app-misc/tmux
 app-misc/cliphist
+app-misc/dragon
 app-office/gnucash
 app-shells/liquidprompt
 app-shells/powerline
@@ -47,7 +49,7 @@ dev-libs/cudnn-frontend
 dev-libs/cutlass
 dev-libs/date
 dev-libs/dynolog
-dev-libs/FP16
+sci-ml/FP16
 dev-libs/FXdiv
 dev-libs/libliftoff
 dev-libs/pfs
@@ -92,6 +94,7 @@ dev-python/ipython
 dev-python/ipython-pygments-lexers
 dev-python/jaraco-text
 dev-python/lazy-loader
+dev-python/librt
 dev-python/llvmlite
 dev-python/lsprotocol
 dev-python/marshmallow
@@ -112,7 +115,6 @@ dev-python/peachpy
 dev-python/plotly
 dev-python/plotly-geo
 dev-python/pyarrow
-dev-python/pybind11 **
 dev-python/pycamera
 dev-python/pynvml
 dev-python/pylint-venv
@@ -187,9 +189,9 @@ media-video/obs-studio
 media-video/libcamera
 media-video/v4l2loopback
 mpv-plugin/mpv-mpris
-net-analyzer/nessus-bin
+#=net-analyzer/nessus-bin-10*
 net-fs/samba
-=net-fs/yfs-2021.05.41
+=net-fs/yfs-2021.05.64
 net-im/rocketchat-desktop-bin
 net-im/telegram-desktop
 net-libs/mbedtls
@@ -204,13 +206,13 @@ sci-libs/geos
 sci-libs/kineto
 sci-libs/kissfft
 sci-libs/scikit-learn
-=sci-ml/caffe2-2.7.1-r5
+=sci-ml/caffe2-2.8*
 sci-ml/cudnn-frontend
 sci-ml/datasets
 sci-ml/huggingface_hub
 sci-ml/kineto
 sci-ml/onnx
-=sci-ml/pytorch-2.7.1-r1
+=sci-ml/pytorch-2.8*
 sci-ml/safetensors
 sci-ml/tokenizers
 sci-ml/transformers
@@ -236,6 +238,8 @@ sys-cluster/rdma-core
 sys-cluster/ucx
 sys-fs/fuse-overlayfs
 sys-fs/squashfuse
+=sys-kernel/linux-headers-6.17*
+=sys-kernel/cachyos-sources-6.17*
 sys-libs/libapparmor
 sys-libs/libmodulemd
 sys-libs/libnvidia-container
@@ -269,12 +273,15 @@ gui-apps/hyprlock **
 gui-apps/hyprsunset **
 gui-libs/aquamarine
 gui-libs/hyprcursor **
+gui-libs/hyprtoolkit **
 gui-libs/hyprutils **
 dev-libs/hyprgraphics **
-gui-libs/hyprland-qtutils **
+dev-libs/hyprwire
+gui-libs/hyprland-guiutils **
 gui-apps/wofi **
 gui-apps/wlgreet
 dev-cpp/sdbus-c++ # for hypridle
+media-libs/libcamera
 media-video/pipewire
 media-video/wireplumber
 gui-wm/sway
