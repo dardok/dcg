@@ -23,6 +23,7 @@
 *app-crypt/coolkey
 *app-crypt/intel-ipsec-mb
 *app-crypt/libsecret
+*app-crypt/sops
 *app-crypt/swtpm
 *app-crypt/tpm2-tools
 #*app-crypt/tpm2-tss-engine
@@ -42,13 +43,15 @@
 *app-misc/brightnessctl
 *app-misc/cliphist
 *app-misc/dateutils
+*app-misc/dragon
 *app-misc/jq
 *app-misc/neofetch
 *app-misc/ranger
 *app-misc/tmux
 *app-misc/wayland-utils
 *app-misc/yq
-*app-office/gnucash
+#*app-office/gnucash
+*app-office/libreoffice-bin
 *app-office/mdbtools
 *app-portage/cpuid2cpuflags
 *app-portage/eix
@@ -340,7 +343,7 @@
 *media-video/v4l2loopback
 *media-video/vlc
 *media-video/wireplumber
-*net-analyzer/nessus-bin
+#*net-analyzer/nessus-bin
 *net-analyzer/net-snmp
 *net-analyzer/nmap
 *net-analyzer/scapy
@@ -494,5 +497,5 @@
 *gui-apps/hyprlock
 *gui-apps/hyprsunset
 *dev-libs/hyprgraphics
-*gui-libs/hyprland-qtutils
+*gui-libs/hyprland-guiutils
 *gui-apps/wlgreet
