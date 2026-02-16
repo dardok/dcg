@@ -8,3 +8,4 @@ dev-libs/hyprlang
 dev-libs/hyprland-protocols
 dev-libs/hyprgraphics
 gui-wm/hyprland
+gui-wm/hyprland-contrib
