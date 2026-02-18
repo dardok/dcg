@@ -34,10 +34,6 @@ RDEPEND="
 DEPEND="${RDEPEND}
 "
 
-PATCHES=(
-	"${FILESDIR}/assimp-libraries.patch"
-)
-
 src_configure() {
 	local mycmakeargs=(
 		-DBUILD_SHARED_LIBS=ON
