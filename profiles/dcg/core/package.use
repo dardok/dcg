@@ -73,3 +73,5 @@ sys-libs/zlib static-libs
 
 sys-process/atop modules
 sys-process/audit io-uring
+
+virtual/zlib static-libs
