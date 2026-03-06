@@ -36,8 +36,8 @@ RDEPEND="
 	dev-cpp/muParser
 	dev-cpp/tomlplusplus
 	dev-libs/glib:2
-	>=dev-libs/hyprlang-0.6.7
-	>=dev-libs/hyprwire-0.2.1
+	>=dev-libs/hyprlang-0.6.8
+	>=dev-libs/hyprwire-0.3.0
 	dev-libs/libinput:=
 	dev-libs/hyprgraphics:=
 	dev-libs/re2:=
@@ -45,7 +45,7 @@ RDEPEND="
 	>=dev-libs/wayland-1.22.90
 	>=gui-libs/aquamarine-0.10.0:=
 	>=gui-libs/hyprcursor-0.1.9
-	>=gui-libs/hyprutils-0.8.2:=
+	>=gui-libs/hyprutils-0.11.0:=
 	media-libs/libglvnd
 	media-libs/mesa
 	sys-apps/util-linux
@@ -66,8 +66,8 @@ RDEPEND="
 DEPEND="
 	${RDEPEND}
 	>=dev-cpp/glaze-6.4.1
-	>=dev-libs/hyprland-protocols-0.6.4
-	>=dev-libs/wayland-protocols-1.45
+	>=dev-libs/hyprland-protocols-0.7.0
+	>=dev-libs/wayland-protocols-1.47
 "
 BDEPEND="
 	|| ( >=sys-devel/gcc-15:* >=llvm-core/clang-19:* )
