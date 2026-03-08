@@ -191,7 +191,7 @@ media-video/v4l2loopback
 mpv-plugin/mpv-mpris
 #=net-analyzer/nessus-bin-10*
 net-fs/samba
-=net-fs/yfs-2021.05.64
+=net-fs/yfs-2021.05.67
 net-im/rocketchat-desktop-bin
 net-im/telegram-desktop
 net-libs/mbedtls
