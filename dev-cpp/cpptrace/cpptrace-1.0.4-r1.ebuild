@@ -17,6 +17,7 @@ RESTRICT="!test? ( test )"
 RDEPEND="
 	app-arch/zstd:=
 	dev-libs/libdwarf:=
+	sys-libs/libunwind:=
 "
 DEPEND="
 	${RDEPEND}
