@@ -206,13 +206,13 @@ sci-libs/geos
 sci-libs/kineto
 sci-libs/kissfft
 sci-libs/scikit-learn
-=sci-ml/caffe2-2.8*
+=sci-ml/caffe2-2.10*
 sci-ml/cudnn-frontend
 sci-ml/datasets
 sci-ml/huggingface_hub
 sci-ml/kineto
 sci-ml/onnx
-=sci-ml/pytorch-2.8*
+=sci-ml/pytorch-2.10*
 sci-ml/safetensors
 sci-ml/tokenizers
 sci-ml/transformers
