@@ -5,7 +5,7 @@ dev-lang/spidermonkey
 sys-cluster/mpich
 sys-cluster/mpich2
 
->=app-editors/sublime-text-4_p4143
+#>=app-editors/sublime-text-4_p4143
 >=dev-python/pynvml-12 # breaks atopgpud
 
 >=sci-libs/pdal-2.9 # broken
