@@ -33,6 +33,7 @@ app-text/xmlformat
 dev-build/meson
 dev-cpp/cpptrace
 dev-cpp/robin-hood-hashing
+dev-cpp/safeint
 dev-cpp/websocketpp
 dev-cpp/xsimd
 dev-java/icedtea-web
@@ -111,6 +112,7 @@ dev-python/opcodes
 dev-python/ordered-set
 dev-python/packaging
 =dev-python/pandas-1.5*
+dev-python/pathvalidate
 dev-python/peachpy
 dev-python/plotly
 dev-python/plotly-geo
@@ -143,6 +145,7 @@ dev-python/starlette
 dev-python/superqt
 dev-python/tifffile
 dev-python/typer
+dev-python/webrtcvad
 dev-python/wheel
 dev-python/xarray
 dev-python/xgboost
@@ -154,7 +157,7 @@ dev-util/nvidia-cuda-toolkit
 dev-util/rustup
 dev-util/glslang
 dev-util/spirv-headers
-dev-util/spirv-llvm-translator
+=dev-util/spirv-llvm-translator-21*
 dev-util/spirv-tools
 dev-util/volk
 dev-util/vulkan-headers
@@ -180,11 +183,13 @@ media-libs/oidn
 media-libs/opencollada
 #media-libs/opencv
 media-libs/shaderc
+media-libs/sonic
 media-libs/vkroots
 media-libs/vulkan-layers
 media-libs/vulkan-loader
 media-sound/bluez-alsa
 media-sound/mpd-mpris
+media-sound/piper
 media-video/obs-studio
 media-video/libcamera
 media-video/v4l2loopback
@@ -201,10 +206,12 @@ net-wireless/bluez-tools
 sci-geosciences/geopy
 sci-geosciences/qgis
 sci-geosciences/mapserver
+sci-libs/dlpack
 sci-libs/foxi
 sci-libs/geos
 sci-libs/kineto
 sci-libs/kissfft
+sci-libs/onnxruntime
 sci-libs/scikit-learn
 =sci-ml/caffe2-2.10*
 sci-ml/cudnn-frontend

@@ -9,7 +9,7 @@
 *app-arch/deb2targz
 *app-arch/p7zip
 *app-arch/rar
-*=app-arch/rpm-4.19*
+*=app-arch/rpm-4.20*
 *app-containers/apptainer
 *app-containers/cni-plugins
 *app-containers/docker
@@ -47,6 +47,7 @@
 *app-misc/jq
 *app-misc/neofetch
 *app-misc/ranger
+*app-misc/rlwrap
 *app-misc/tmux
 *app-misc/wayland-utils
 *app-misc/yq
@@ -89,6 +90,7 @@
 *dev-libs/msgpack
 *dev-libs/opensc
 *dev-libs/protobuf
+*dev-libs/tree-sitter-python
 *dev-libs/volume_key
 *dev-libs/xmlsec
 *dev-python/aiofiles
@@ -135,6 +137,7 @@
 #*dev-python/numba
 *dev-python/openapi-core
 *dev-python/pandas
+*dev-python/pathvalidate
 *dev-python/pip
 *dev-python/plotly
 *dev-python/plotly-geo
@@ -152,6 +155,7 @@
 *dev-python/pyopenssl
 *dev-python/pyproj
 *dev-python/pyroute2
+*dev-python/pyserial
 #*dev-python/pysnmp
 #*dev-python/pysnmp-mibs
 *dev-python/pytesseract
@@ -186,6 +190,7 @@
 *dev-python/wcwidth
 *dev-python/websocket-client
 *dev-python/websockets
+*dev-python/webrtcvad
 *dev-python/werkzeug
 *dev-python/wsproto
 *dev-python/xgboost
@@ -332,6 +337,7 @@
 *media-sound/pavucontrol
 *media-sound/pavucontrol-qt
 *media-sound/playerctl
+*media-sound/piper
 #*media-sound/pulseaudio
 *media-sound/qjackctl
 *mpv-plugin/mpv-mpris
