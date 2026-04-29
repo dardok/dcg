@@ -214,6 +214,7 @@ sci-libs/kineto
 sci-libs/kissfft
 sci-libs/onnxruntime
 sci-libs/scikit-learn
+sci-libs/torchaudio
 =sci-ml/caffe2-2.10*
 sci-ml/cudnn-frontend
 sci-ml/datasets
