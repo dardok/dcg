@@ -390,6 +390,7 @@
 *sci-geosciences/laszip
 *sci-geosciences/mapserver
 *sci-libs/pdal
+*sci-libs/torchaudio
 *sci-mathematics/glpk
 *sci-ml/datasets
 *sci-ml/huggingface_hub
