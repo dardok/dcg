@@ -2,7 +2,7 @@ VIDEO_CARDS="-* radeon radeonsi mga modesetting fbdev vesa dummy v4l virgl"
 
 ALSA_CARDS="-* hda-intel usb-audio"
 
-INPUT_DEVICES="-* evdev keyboard mouse tslib joystick"
+INPUT_DEVICES="-*"
 
 USE="X wayland dga dmx keyring"
 USE="${USE} dri dri3 virgl nvenc" # vaapi vdpau
