@@ -498,7 +498,7 @@
 
 *gui-wm/hyprland::dcg
 *gui-libs/xdg-desktop-portal-hyprland
-*gui-wm/hyprland-contrib
+*app-misc/grimblast
 *gui-apps/wofi
 *gui-apps/hypridle
 *gui-apps/hyprlock

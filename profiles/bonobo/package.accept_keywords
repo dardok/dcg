@@ -3,6 +3,7 @@ x11-drivers/nvidia-drivers:0/580
 app-admin/ansible
 app-admin/ansible-core
 #app-arch/createrepo_c
+app-admin/keepassxc
 app-arch/drpm
 app-arch/zchunk
 app-containers/apptainer
@@ -20,6 +21,7 @@ app-emulation/podman
 app-emulation/slirp4netns
 app-forensics/lynis
 app-misc/brightnessctl
+app-misc/grimblast
 app-misc/hivex
 app-misc/tmux
 app-misc/cliphist
@@ -63,7 +65,7 @@ dev-util/go-task
 dev-util/nsight-compute
 dev-util/nsight-graphics
 dev-util/nsight-systems
-dev-util/rpmdevtools
+=dev-util/rpmdevtools-9.6::dcg
 dev-python/aesara
 dev-python/aiofiles
 dev-python/aiostream
@@ -215,7 +217,7 @@ sci-libs/kissfft
 sci-libs/onnxruntime
 sci-libs/scikit-learn
 sci-libs/torchaudio
-=sci-ml/caffe2-2.10*
+=sci-ml/caffe2-2.10* # 2.11 no longer supports gtx-1080ti
 sci-ml/cudnn-frontend
 sci-ml/datasets
 sci-ml/huggingface_hub
@@ -271,7 +273,7 @@ sys-apps/xdg-desktop-portal
 x11-apps/xcur2png
 gui-wm/hyprland **
 gui-libs/xdg-desktop-portal-hyprland **
-gui-wm/hyprland-contrib **
+app-misc/grimblast **
 dev-util/hyprwayland-scanner **
 dev-libs/hyprland-protocols **
 dev-libs/libinput
@@ -285,8 +287,9 @@ gui-libs/hyprcursor **
 gui-libs/hyprtoolkit **
 gui-libs/hyprutils **
 dev-libs/hyprgraphics **
-dev-libs/hyprwire
+gui-libs/hyprwire **
 gui-libs/hyprland-guiutils **
+gui-apps/hyprpicker
 gui-apps/wofi **
 gui-apps/wlgreet
 dev-cpp/sdbus-c++ # for hypridle
