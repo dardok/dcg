@@ -3,7 +3,6 @@ dev-cpp/sdbus-c++ # for hypridle
 dev-libs/hyprgraphics **
 dev-libs/hyprland-protocols **
 dev-libs/hyprlang **
-dev-libs/hyprwire
 dev-libs/libinput
 dev-libs/wayland-protocols **
 dev-util/hyprwayland-scanner **
@@ -20,6 +19,7 @@ gui-libs/greetd
 gui-libs/hyprcursor **
 gui-libs/hyprland-guiutils
 gui-libs/hyprutils **
+gui-libs/hyprwire **
 gui-libs/xdg-desktop-portal-hyprland **
 gui-wm/hyprland **
 gui-wm/hyprland-contrib **
