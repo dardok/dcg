@@ -1,3 +1,4 @@
+app-misc/grimblast
 dev-cpp/glaze
 dev-cpp/sdbus-c++ # for hypridle
 dev-libs/hyprgraphics **
@@ -22,7 +23,6 @@ gui-libs/hyprutils **
 gui-libs/hyprwire **
 gui-libs/xdg-desktop-portal-hyprland **
 gui-wm/hyprland **
-gui-wm/hyprland-contrib **
 media-libs/libspng
 media-video/pipewire
 media-video/wireplumber
