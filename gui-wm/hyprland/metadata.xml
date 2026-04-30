@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>filip@kszczot.pl</email>
+		<name>Filip Kszczot</name>
+	</maintainer>
+	<maintainer type="person">
+		<email>aruhier@mailbox.org</email>
+		<name>Anthony Ruhier</name>
+	</maintainer>
+	<upstream>
+		<changelog>https://github.com/hyprwm/Hyprland/releases</changelog>
+		<doc>https://wiki.hypr.land/</doc>
+		<bugs-to>https://github.com/hyprwm/Hyprland/issues</bugs-to>
+		<remote-id type="github">hyprwm/Hyprland</remote-id>
+	</upstream>
+	<use>
+		<flag name="guiutils">Install Hyprland GUI utility apps</flag>
+		<flag name="X">Enables XWayland support</flag>
+		<flag name="hyprpm">Plugin manager</flag>
+		<flag name="uwsm">Enables support for Universal Wayland Session Manager</flag>
+	</use>
+</pkgmetadata>
