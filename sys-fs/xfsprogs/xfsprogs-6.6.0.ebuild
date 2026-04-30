@@ -89,10 +89,6 @@ src_install() {
 	emake DIST_ROOT="${ED}" HAVE_ZIPPED_MANPAGES=false install
 	emake DIST_ROOT="${ED}" HAVE_ZIPPED_MANPAGES=false install-dev
 
-	# Not actually used but --localstatedir causes this empty dir
-	# to be installed.
-	rmdir "${ED}"/var/lib/xfsprogs "${ED}"/var/lib || die
-
 	if ! use static-libs; then
 		rm "${ED}/usr/$(get_libdir)/libhandle.a" || die
 	fi
