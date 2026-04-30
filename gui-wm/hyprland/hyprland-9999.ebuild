@@ -45,7 +45,7 @@ RDEPEND="
 	>=dev-libs/wayland-1.22.90
 	>=gui-libs/aquamarine-0.10.0:=
 	>=gui-libs/hyprcursor-0.1.9
-	>=gui-libs/hyprutils-0.11.0:=
+	>=gui-libs/hyprutils-0.13.0:=
 	media-libs/libglvnd
 	media-libs/mesa
 	sys-apps/util-linux
