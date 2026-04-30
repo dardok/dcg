@@ -9,6 +9,7 @@ DESCRIPTION="A powerful light-weight programming language designed for extending
 HOMEPAGE="https://www.lua.org/"
 # tarballs produced from ${PV} branches in https://gitweb.gentoo.org/proj/lua-patches.git
 SRC_URI="https://dardo.org/lua-patches-${PV}.tar.gz"
+S="${WORKDIR}"
 
 LICENSE="MIT"
 SLOT="5.5"
