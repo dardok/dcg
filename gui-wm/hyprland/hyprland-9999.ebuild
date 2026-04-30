@@ -34,6 +34,7 @@ RDEPEND="
 	hyprpm? ( ${HYPRPM_RDEPEND} )
 	dev-cpp/tomlplusplus
 	dev-libs/glib:2
+	dev-lang/lua:5.5
 	>=dev-libs/hyprlang-0.6.7
 	dev-libs/libinput:=
 	>=dev-libs/hyprgraphics-0.1.8:=
