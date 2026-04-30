@@ -36,6 +36,7 @@ RDEPEND="
 	dev-cpp/muParser
 	dev-cpp/tomlplusplus
 	dev-libs/glib:2
+	dev-lang/lua:5.5
 	>=dev-libs/hyprlang-0.6.8
 	>=gui-libs/hyprwire-0.3.0
 	dev-libs/libinput:=
