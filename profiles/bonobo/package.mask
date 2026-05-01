@@ -11,3 +11,5 @@ sys-cluster/mpich2
 >=sci-libs/pdal-2.9 # broken
 
 >=dev-libs/cudnn-9.14
+
+>=dev-python/pybind11-3.0.2 # required by sci-ml/caffe2-2.10.0
