@@ -1,0 +1,1 @@
+>=dev-libs/libfmt-12 # ceph-20 needs libfmt-11
