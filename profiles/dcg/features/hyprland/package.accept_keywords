@@ -1,6 +1,7 @@
 app-misc/grimblast
 dev-cpp/glaze
 dev-cpp/sdbus-c++ # for hypridle
+dev-cpp/cpptrace
 dev-libs/hyprgraphics **
 dev-libs/hyprland-protocols **
 dev-libs/hyprlang **
