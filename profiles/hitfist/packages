@@ -9,6 +9,7 @@
 *app-emulation/virt-viewer
 *app-laptop/laptop-mode-tools
 *app-misc/brightnessctl
+*app-misc/grimblast
 *app-misc/tmux
 *app-portage/eix
 *app-portage/gentoolkit
@@ -50,6 +51,5 @@
 *gui-libs/hyprutils
 *gui-libs/xdg-desktop-portal-hyprland
 *gui-wm/hyprland
-*gui-wm/hyprland-contrib
 *sys-apps/xdg-desktop-portal
 *sys-power/upower

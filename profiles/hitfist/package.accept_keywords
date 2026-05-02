@@ -2,6 +2,7 @@ app-crypt/swtpm
 app-editors/sublime-text
 app-emulation/virt-firmware
 app-misc/brightnessctl
+app-misc/grimblast
 app-misc/tmux
 app-shells/liquidprompt
 dev-cpp/glaze
@@ -9,7 +10,6 @@ dev-cpp/sdbus-c++ # for hypridle
 dev-libs/hyprgraphics **
 dev-libs/hyprland-protocols **
 dev-libs/hyprlang **
-dev-libs/hyprwire
 dev-libs/libei
 dev-libs/libinput
 dev-libs/wayland-protocols **
@@ -22,6 +22,7 @@ gui-libs/aquamarine
 gui-libs/hyprcursor **
 gui-libs/hyprland-qtutils **
 gui-libs/hyprutils **
+gui-libs/hyprwire
 gui-libs/xdg-desktop-portal-hyprland **
 gui-wm/hyprland **
 gui-wm/hyprland-contrib **
