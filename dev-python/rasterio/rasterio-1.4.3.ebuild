@@ -16,7 +16,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
 RDEPEND="
-	sci-libs/gdal:=[aux-xml(+),jpeg,png,threads(+)]
+	sci-libs/gdal:=[aux-xml(+),png,threads(+)]
 	dev-python/affine[${PYTHON_USEDEP}]
 	dev-python/attrs[${PYTHON_USEDEP}]
 	dev-python/certifi[${PYTHON_USEDEP}]
@@ -34,7 +34,7 @@ BDEPEND="
 		dev-python/boto3[${PYTHON_USEDEP}]
 		dev-python/hypothesis[${PYTHON_USEDEP}]
 		dev-python/shapely[${PYTHON_USEDEP}]
-		sci-libs/gdal:=[aux-xml(+),jpeg,png,threads(+)]
+		sci-libs/gdal:=[aux-xml(+),png,threads(+)]
 	)
 "
 
