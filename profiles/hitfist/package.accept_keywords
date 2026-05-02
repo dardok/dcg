@@ -17,6 +17,7 @@ dev-python/pefile
 dev-util/hyprwayland-scanner **
 gui-apps/hypridle **
 gui-apps/hyprlock **
+gui-apps/hyprpicker
 gui-apps/tuigreet
 gui-libs/aquamarine
 gui-libs/hyprcursor **
