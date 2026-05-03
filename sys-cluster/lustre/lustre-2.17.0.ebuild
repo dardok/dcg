@@ -3,7 +3,7 @@
 
 EAPI=7
 
-RESTRICT="bindist mirror fetch strip"
+RESTRICT="bindist mirror strip"
 
 WANT_AUTOCONF="latest"
 WANT_AUTOMAKE="latest"
@@ -16,14 +16,15 @@ if [[ $PV = *9999* ]]; then
 	KEYWORDS=""
 	EGIT_BRANCH="master"
 else
-	scm=""
-	SRC_URI="lustre-release-2.15.6_rc1.tar.gz"
+	#scm=""
+	#SRC_URI="lustre-release-2.17.0.tar.gz"
+	SRC_URI="https://github.com/lustre/lustre-release/archive/refs/tags/${PV}.tar.gz"
 	KEYWORDS="~amd64"
-	S="${WORKDIR}/${PN}-release-2.15.6-RC1"
+	S="${WORKDIR}/${PN}-release-${PV}"
 fi
 
-SUPPORTED_KV_MAJOR=5
-SUPPORTED_KV_MINOR=15
+SUPPORTED_KV_MAJOR=6
+SUPPORTED_KV_MINOR=6
 
 inherit ${scm} autotools linux-info linux-mod toolchain-funcs udev flag-o-matic
 
@@ -50,7 +51,7 @@ REQUIRED_USE="
 	client? ( modules )
 	server? ( modules )"
 
-PATCHES=( "${FILESDIR}"/lustre-2.15-ofed-symbols.patch )
+PATCHES=( )
 
 pkg_pretend() {
 	KVSUPP=${SUPPORTED_KV_MAJOR}.${SUPPORTED_KV_MINOR}.x
@@ -108,7 +109,7 @@ src_configure() {
 	fi
 	econf \
 		${myconf} \
-		--disable-ldiskfs \
+		--without-ldiskfs \
 		--with-linux="${KERNEL_DIR}" \
 		--with-linux-obj="${KBUILD_OUTPUT}" \
 		$(use_enable client) \

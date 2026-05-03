@@ -3,7 +3,7 @@
 
 EAPI=7
 
-RESTRICT="bindist mirror fetch strip"
+RESTRICT="bindist mirror strip"
 
 WANT_AUTOCONF="latest"
 WANT_AUTOMAKE="latest"
@@ -12,16 +12,19 @@ WANT_LIBTOOL="latest"
 if [[ $PV = *9999* ]]; then
 	scm="git-r3"
 	SRC_URI=""
-	#EGIT_REPO_URI="git://git.whamcloud.com/fs/lustre-release.git"
-	EGIT_REPO_URI="https://github.com/lustre/lustre-release.git"
+	EGIT_REPO_URI="git://git.whamcloud.com/fs/lustre-release.git"
 	KEYWORDS=""
 	EGIT_BRANCH="master"
 else
-	scm=""
-	SRC_URI="lustre-release-2.16.1.tar.gz"
+	#scm=""
+	#SRC_URI="lustre-release-2.17.0.tar.gz"
+	SRC_URI="https://github.com/lustre/lustre-release/archive/refs/tags/${PV}.tar.gz"
 	KEYWORDS="~amd64"
 	S="${WORKDIR}/${PN}-release-${PV}"
 fi
+
+SUPPORTED_KV_MAJOR=6
+SUPPORTED_KV_MINOR=6
 
 inherit ${scm} autotools linux-info linux-mod toolchain-funcs udev flag-o-matic
 
@@ -50,6 +53,14 @@ REQUIRED_USE="
 
 PATCHES=( )
 
+pkg_pretend() {
+	KVSUPP=${SUPPORTED_KV_MAJOR}.${SUPPORTED_KV_MINOR}.x
+	if kernel_is gt ${SUPPORTED_KV_MAJOR} ${SUPPORTED_KV_MINOR}; then
+		eerror "Unsupported kernel version! Latest supported one is ${KVSUPP}"
+		die
+	fi
+}
+
 pkg_setup() {
 	filter-mfpmath sse
 	filter-mfpmath i386
@@ -67,7 +78,11 @@ src_prepare() {
 
 	eapply_user
 	# replace upstream autogen.sh by our src_prepare()
+	local DIRS="libcfs lnet lustre"
 	local ACLOCAL_FLAGS
+	for dir in $DIRS ; do
+		ACLOCAL_FLAGS="$ACLOCAL_FLAGS -I $dir/autoconf"
+	done
 	_elibtoolize -q
 	eaclocal -I config $ACLOCAL_FLAGS
 	eautoheader
