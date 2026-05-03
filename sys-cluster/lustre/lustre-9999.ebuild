@@ -78,13 +78,8 @@ src_prepare() {
 
 	eapply_user
 	# replace upstream autogen.sh by our src_prepare()
-	local DIRS="libcfs lnet lustre"
-	local ACLOCAL_FLAGS
-	for dir in $DIRS ; do
-		ACLOCAL_FLAGS="$ACLOCAL_FLAGS -I $dir/autoconf"
-	done
 	_elibtoolize -q
-	eaclocal -I config $ACLOCAL_FLAGS
+	eaclocal -I config
 	eautoheader
 	eautomake
 	eautoconf
