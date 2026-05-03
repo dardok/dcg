@@ -10,6 +10,7 @@ dev-libs/appstream qt6
 dev-libs/re2 icu
 dev-qt/qt5compat icu qml
 dev-qt/qtbase opengl
+dev-qt/qtdeclarative opengl
 dev-qt/qtgui accessibility dbus egl jpeg
 dev-qt/qttools opengl
 dev-qt/qtwayland qml
@@ -37,6 +38,7 @@ net-print/cups dbus usb
 net-wireless/bluez cups
 sys-firmware/ipxe usb
 sys-fs/btrfs-progs -udev
+sys-libs/minizip-ng compat
 x11-base/xwayland libei
 x11-libs/gtk+ colord cups sysprof
 x11-misc/xdg-utils dbus gnome
