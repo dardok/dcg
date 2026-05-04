@@ -27,6 +27,7 @@
 *net-vpn/cloudflare-warp
 *net-wireless/bluez
 *sys-apps/haveged
+*sys-auth/rtkit
 *sys-fs/btrfs-progs
 *sys-power/acpid
 *www-client/firefox-bin
