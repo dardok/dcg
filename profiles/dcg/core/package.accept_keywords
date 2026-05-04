@@ -7,6 +7,7 @@ dev-util/clippy
 <dev-util/perf-6
 
 net-fs/nfs4-acl-tools
+net-fs/openafs
 
 net-misc/frr
 net-misc/lldpd
