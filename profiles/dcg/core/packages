@@ -52,7 +52,7 @@
 
 *net-fs/nfs4-acl-tools
 *net-fs/nfs-utils
-*>=net-fs/openafs-1.8
+*=net-fs/openafs-1.8*
 
 *net-misc/adjtimex
 *net-misc/bridge-utils
