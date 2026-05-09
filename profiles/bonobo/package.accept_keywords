@@ -242,6 +242,7 @@ sys-boot/mokutil
 sys-cluster/cilium-cli
 sys-cluster/k9scli
 sys-cluster/kubeseal
+sys-cluster/lustre **
 sys-cluster/openmpi
 sys-cluster/pmix
 sys-cluster/prrte
@@ -249,8 +250,8 @@ sys-cluster/rdma-core
 sys-cluster/ucx
 sys-fs/fuse-overlayfs
 sys-fs/squashfuse
-=sys-kernel/linux-headers-6.17*
-=sys-kernel/cachyos-sources-6.17*
+=sys-kernel/linux-headers-6.18*
+=sys-kernel/cachyos-sources-6.18*
 sys-libs/libapparmor
 sys-libs/libmodulemd
 sys-libs/libnvidia-container

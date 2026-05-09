@@ -427,6 +427,7 @@
 *sys-cluster/k9scli
 *sys-cluster/kubectl
 *sys-cluster/kubeseal
+#*sys-cluster/lustre # needs kernel 6.6
 *sys-cluster/openmpi
 *sys-cluster/rdma-core
 *sys-firmware/intel-microcode

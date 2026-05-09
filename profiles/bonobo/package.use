@@ -158,6 +158,7 @@ sys-block/libfabric cuda verbs
 sys-block/nbd netlink
 sys-block/parted device-mapper
 sys-boot/grub device-mapper
+sys-cluster/lustre o2ib gss -lru-resize -checksum
 sys-cluster/openmpi cma cuda cxx ipv6 java mpi-threads numa romio threads vt
 sys-cluster/rdma-core valgrind
 sys-devel/binutils multitarget gold
