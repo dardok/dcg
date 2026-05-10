@@ -1,0 +1,3 @@
+CC=gcc-15
+CXX=g++-15
+CPP=cpp-15
