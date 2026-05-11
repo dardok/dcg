@@ -495,7 +495,7 @@
 *x11-misc/xdotool
 *x11-misc/xscreensaver
 *x11-terms/kitty
-#*x11-themes/pulse-glass
+*x11-themes/pulse-glass
 *x11-wm/awesome
 
 *gui-wm/hyprland::dcg
