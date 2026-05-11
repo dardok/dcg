@@ -23,6 +23,7 @@ app-forensics/lynis
 app-misc/brightnessctl
 app-misc/grimblast
 app-misc/hivex
+app-misc/nwg-look
 app-misc/tmux
 app-misc/cliphist
 app-misc/dragon
@@ -282,7 +283,7 @@ dev-libs/hyprlang **
 dev-libs/wayland-protocols **
 gui-apps/hypridle **
 gui-apps/hyprlock **
-gui-apps/hyprsunset **
+gui-apps/hyprshutdown **
 gui-libs/aquamarine
 gui-libs/hyprcursor **
 gui-libs/hyprtoolkit **

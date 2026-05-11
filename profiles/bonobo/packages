@@ -46,6 +46,7 @@
 *app-misc/dragon
 *app-misc/jq
 *app-misc/neofetch
+*app-misc/nwg-look
 *app-misc/ranger
 *app-misc/rlwrap
 *app-misc/tmux
@@ -494,7 +495,7 @@
 *x11-misc/xdotool
 *x11-misc/xscreensaver
 *x11-terms/kitty
-*x11-themes/pulse-glass
+#*x11-themes/pulse-glass
 *x11-wm/awesome
 
 *gui-wm/hyprland::dcg
@@ -503,7 +504,7 @@
 *gui-apps/wofi
 *gui-apps/hypridle
 *gui-apps/hyprlock
-*gui-apps/hyprsunset
+*gui-apps/hyprshutdown
 *dev-libs/hyprgraphics
 *gui-libs/hyprland-guiutils
 *gui-apps/wlgreet
