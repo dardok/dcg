@@ -5,6 +5,7 @@
 *gui-apps/hypridle
 #*gui-apps/hyprpaper::guru
 *gui-apps/hyprlock
+*gui-apps/hyprshutdown
 *gui-apps/tuigreet
 *gui-apps/wlr-randr
 *gui-apps/wofi
