@@ -241,6 +241,7 @@
 *gui-wm/gamescope
 *gui-wm/sway
 *llvm-core/lld
+*llvm-core/lldb
 *llvm-runtimes/libcxx
 *llvm-runtimes/libcxxabi
 *lxde-base/lxtask
@@ -342,6 +343,7 @@
 #*media-sound/pulseaudio
 *media-sound/qjackctl
 *mpv-plugin/mpv-mpris
+*media-video/guvcview
 #*media-video/libcamera # broken as of 9/2023
 *media-video/obs-studio
 *media-video/pipewire
@@ -361,6 +363,7 @@
 *net-dialup/picocom
 *net-dns/bind-tools
 *net-firewall/nftables
+*net-fs/samba
 *net-fs/yfs
 *net-ftp/atftp
 *net-im/rocketchat-desktop-bin
@@ -375,6 +378,7 @@
 *net-misc/oidc-agent
 *net-misc/rclone
 *net-misc/remmina
+*net-misc/sipcalc
 *net-misc/socat
 *net-misc/tigervnc
 *net-misc/usbip
@@ -439,6 +443,7 @@
 *sys-kernel/dracut
 *sys-kernel/linux-firmware
 *sys-libs/libapparmor
+*sys-libs/libselinux
 *sys-power/acpi
 *sys-power/acpid
 *sys-power/cpupower
