@@ -14,4 +14,4 @@ sys-cluster/mpich2
 
 >=dev-python/pybind11-3.0.2 # required by sci-ml/caffe2-2.10.0
 
->=x11-drivers/nvidia-drivers-290 # NVIDIA GeForce GTX 1080
+>=x11-drivers/nvidia-drivers-590 # NVIDIA GeForce GTX 1080
