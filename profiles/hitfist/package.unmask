@@ -1,12 +1,1 @@
-dev-cpp/glaze
-gui-apps/hypridle
-gui-libs/aquamarine
-gui-libs/hyprutils
-gui-libs/hyprland-qt-support
-gui-libs/hyprcursor
-dev-util/hyprwayland-scanner
-dev-libs/hyprlang
-dev-libs/hyprland-protocols
-dev-libs/hyprgraphics
-gui-wm/hyprland
-gui-wm/hyprland-contrib
+app-admin/keepassxc
