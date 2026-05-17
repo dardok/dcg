@@ -24,6 +24,7 @@
 *dev-python/black
 *dev-python/pandas
 *dev-util/hyprwayland-scanner
+*gnome-base/dconf
 *gui-apps/hypridle
 *gui-apps/hyprlock
 *gui-apps/hyprshutdown
@@ -46,6 +47,7 @@
 *sys-apps/xdg-desktop-portal
 *sys-auth/rtkit
 *sys-fs/btrfs-progs
+*sys-fs/lvm2
 *sys-power/acpid
 *sys-power/upower
 *www-client/firefox-bin
