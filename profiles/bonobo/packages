@@ -287,7 +287,7 @@
 *media-fonts/freefonts
 *media-fonts/ttf-bitstream-vera
 *media-fonts/unifont
-*media-gfx/blender
+*media-gfx/blender:4.5
 *media-gfx/feh
 *media-gfx/gimp
 *media-gfx/graphviz
