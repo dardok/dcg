@@ -1,5 +1,6 @@
 *app-admin/keepassxc
 *app-admin/sudo
+*app-crypt/mit-krb5
 *app-crypt/swtpm
 *=app-editors/sublime-text-4_p4126-r1
 *app-editors/vim
