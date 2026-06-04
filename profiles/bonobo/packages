@@ -4,6 +4,7 @@
 *app-admin/keepassxc
 *app-admin/sshguard
 *app-admin/sudo
+*app-admin/sysstat
 *app-admin/terraform
 *app-arch/createrepo_c
 *app-arch/deb2targz
@@ -21,18 +22,20 @@
 *app-containers/podman
 *app-containers/skopeo
 *app-crypt/coolkey
+*app-crypt/efitools
 *app-crypt/intel-ipsec-mb
 *app-crypt/libsecret
+*app-crypt/sbsigntools
 *app-crypt/sops
 *app-crypt/swtpm
 *app-crypt/tpm2-tools
 #*app-crypt/tpm2-tss-engine
 *app-crypt/tpm-tools
-*app-editors/neovim
 *app-editors/sublime-text
 *app-editors/vim
 *app-emulation/libguestfs
 *app-emulation/libvirt
+*app-emulation/virt-firmware
 *app-emulation/virt-manager
 *app-emulation/virt-viewer
 #*app-emulation/xen
@@ -76,6 +79,8 @@
 *dev-cpp/websocketpp
 *dev-db/spatialite
 *dev-debug/gdb
+*dev-debug/ltrace
+*dev-debug/strace
 *dev-debug/valgrind
 *dev-games/openscenegraph
 *dev-java/icedtea-web
@@ -214,7 +219,6 @@
 *dev-util/debugedit
 *dev-util/go-task
 *dev-util/indent
-*dev-debug/ltrace
 *dev-util/nvidia-cuda-toolkit
 *dev-util/pahole
 *dev-util/perf
@@ -223,7 +227,6 @@
 *dev-util/rpmdevtools
 *dev-util/rustup
 *dev-util/shellcheck-bin
-*dev-debug/strace
 *dev-util/vulkan-tools
 *dev-util/yamllint
 *dev-vcs/git
@@ -239,7 +242,6 @@
 *gui-libs/gtk:4
 *gui-libs/gtk4-layer-shell
 *gui-wm/gamescope
-*gui-wm/sway
 *llvm-core/lld
 *llvm-core/lldb
 *llvm-runtimes/libcxx
@@ -291,6 +293,7 @@
 *media-gfx/feh
 *media-gfx/gimp
 *media-gfx/graphviz
+*media-gfx/inkscape
 *media-gfx/maim
 *media-libs/aalib
 *media-libs/libcaca
@@ -340,7 +343,6 @@
 *media-sound/pavucontrol-qt
 *media-sound/playerctl
 *media-sound/piper
-#*media-sound/pulseaudio
 *media-sound/qjackctl
 *mpv-plugin/mpv-mpris
 *media-video/guvcview
@@ -352,7 +354,6 @@
 *media-video/v4l2loopback
 *media-video/vlc
 *media-video/wireplumber
-#*net-analyzer/nessus-bin
 *net-analyzer/net-snmp
 *net-analyzer/nmap
 *net-analyzer/scapy
@@ -493,7 +494,6 @@
 *x11-misc/pcmanfm-qt
 *x11-misc/picom
 *x11-misc/redshift
-*x11-misc/rofi
 *x11-misc/virtualgl
 *x11-misc/x11vnc
 *x11-misc/x2x
@@ -501,15 +501,12 @@
 *x11-misc/xscreensaver
 *x11-terms/kitty
 *x11-themes/pulse-glass
-*x11-wm/awesome
 
-*gui-wm/hyprland::dcg
-*gui-libs/xdg-desktop-portal-hyprland
 *app-misc/grimblast
-*gui-apps/wofi
+*dev-libs/hyprgraphics
 *gui-apps/hypridle
 *gui-apps/hyprlock
 *gui-apps/hyprshutdown
-*dev-libs/hyprgraphics
-*gui-libs/hyprland-guiutils
-*gui-apps/wlgreet
+*gui-libs/hyprland-guiutils::hyproverlay
+*gui-libs/xdg-desktop-portal-hyprland
+*gui-wm/hyprland::hyproverlay

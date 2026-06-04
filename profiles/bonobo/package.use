@@ -89,6 +89,7 @@ gui-wm/hyprland system-wlroots
 media-gfx/blender jemalloc cycles ffmpeg player collada llvm openimageio cuda -opensubdiv -embree
 media-gfx/graphviz pdf postscript
 media-gfx/imagemagick lcms postscript
+media-gfx/inkscape exif imagemagick svg2
 media-libs/babl lcms
 media-libs/clutter egl
 media-libs/cogl gles2
