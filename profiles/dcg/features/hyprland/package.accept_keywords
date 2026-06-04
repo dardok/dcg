@@ -2,30 +2,28 @@ app-misc/grimblast
 dev-cpp/glaze
 dev-cpp/sdbus-c++ # for hypridle
 dev-cpp/cpptrace
-dev-libs/hyprgraphics **
-dev-libs/hyprland-protocols **
-dev-libs/hyprlang **
+dev-libs/hyprgraphics
+dev-libs/hyprland-protocols
+dev-libs/hyprlang
 dev-libs/libinput
-dev-libs/wayland-protocols **
-dev-util/hyprwayland-scanner **
-#gui-apps/eww **
-gui-apps/hypridle **
-gui-apps/hyprlock **
-gui-apps/hyprpaper **
-gui-apps/hyprpicker **
-gui-apps/hyprshutdown **
-gui-apps/tuigreet **
-gui-apps/waybar **
-gui-apps/wlr-randr **
-gui-apps/wofi **
+dev-libs/wayland-protocols
+dev-util/hyprwayland-scanner
+gui-apps/hypridle
+gui-apps/hyprlock
+gui-apps/hyprpaper
+gui-apps/hyprpicker
+gui-apps/hyprshutdown
+gui-apps/tuigreet
+gui-apps/waybar
+gui-apps/wlr-randr
 gui-libs/aquamarine
 gui-libs/greetd
-gui-libs/hyprcursor **
+gui-libs/hyprcursor
 gui-libs/hyprland-guiutils
-gui-libs/hyprutils **
-gui-libs/hyprwire **
-gui-libs/xdg-desktop-portal-hyprland **
-gui-wm/hyprland **
+gui-libs/hyprutils
+gui-libs/hyprwire
+gui-libs/xdg-desktop-portal-hyprland
+gui-wm/hyprland
 media-libs/libspng
 media-video/pipewire
 media-video/wireplumber
