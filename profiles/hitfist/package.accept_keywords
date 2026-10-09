@@ -23,6 +23,7 @@ gui-apps/tuigreet
 gui-libs/aquamarine
 gui-libs/hyprcursor
 gui-libs/hyprland-guiutils
+gui-libs/hyprtoolkit
 gui-libs/hyprutils
 gui-libs/hyprwire
 gui-libs/xdg-desktop-portal-hyprland
