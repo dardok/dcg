@@ -1,10 +1,10 @@
 # Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 MODULES_OPTIONAL_USE="modules"
-inherit autotools linux-mod flag-o-matic pam systemd tmpfiles toolchain-funcs
+inherit autotools linux-mod-r1 flag-o-matic pam systemd tmpfiles toolchain-funcs
 
 RESTRICT="bindist mirror fetch strip"
 
@@ -49,7 +49,7 @@ QA_TEXTRELS_x86_fbsd="/boot/modules/libafs.ko"
 QA_TEXTRELS_amd64_fbsd="/boot/modules/libafs.ko"
 
 pkg_nofetch() {
-    einfo "The yfs-2021.05-64.tar.bz2 archive should be placed into your distfiles directory."
+    einfo "The yfs-2021.05-67.tar.bz2 archive should be placed into your distfiles directory."
 }
 
 pkg_setup() {
