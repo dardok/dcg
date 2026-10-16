@@ -1,6 +1,7 @@
 app-containers/cri-o
 app-containers/conmon
 app-containers/container-libs
+app-containers/netavark
 app-containers/runc
 app-containers/cri-tools
 dev-libs/pmdk
