@@ -1,5 +1,9 @@
+app-containers/aardvark-dns
 app-containers/conmon
+app-containers/container-libs
+app-containers/cri-o
 app-containers/crun
+app-containers/netavark
 app-containers/podman
 app-containers/slirp4netns
 dev-python/podman
