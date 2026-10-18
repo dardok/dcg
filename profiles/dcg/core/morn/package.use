@@ -11,3 +11,4 @@ sys-cluster/ceph mgr rbd-rwl rbd-ssd diskprediction kafka rabbitmq rgw-lua pmdk 
 sys-devel/gcc fortran
 net-libs/gnutls tools
 media-libs/freetype harfbuzz
+media-libs/libglvnd X
