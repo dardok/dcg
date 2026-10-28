@@ -5,7 +5,6 @@ dev-libs/dynolog
 dev-libs/pfs
 dev-libs/pocketfft
 dev-libs/pthreadpool
-sci-ml/caffe2
 sci-ml/cudnn-frontend
 sci-ml/FP16
 sci-ml/kineto
