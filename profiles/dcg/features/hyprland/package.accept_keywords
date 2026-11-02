@@ -21,6 +21,7 @@ gui-libs/greetd
 gui-libs/hyprcursor
 gui-libs/hyprland-guiutils
 gui-libs/hyprutils
+gui-libs/hyprtoolkit
 gui-libs/hyprwire
 gui-libs/xdg-desktop-portal-hyprland
 gui-wm/hyprland
